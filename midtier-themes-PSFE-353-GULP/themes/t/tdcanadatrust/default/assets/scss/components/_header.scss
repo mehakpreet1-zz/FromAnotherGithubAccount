@@ -1,0 +1,215 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+.header-primary {
+	background: $header-primary-bg;
+	height: $header-primary-height;
+	font-family: verdana;
+	display: flex;
+
+	.logged-in-links {
+		a:active {
+			color: $custom-adb-layout-default-bg-color;
+		}
+	}
+
+	.right-items {
+		margin-left: auto;
+	}
+
+	&__menu {
+		display: flex;
+
+		&__item {
+			.testname--active {
+				margin-right: 2px !important;
+			}
+
+			.myapps--active:hover {
+				color: $custom-header-text-hover;
+			}
+
+			&--logo {
+				padding: 0;
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				width: $header-primary-logo-width;
+				margin: -6px 30px 0 15px;
+			}
+
+			span {
+				display: flex;
+				list-style: none;
+				font-size: 16px;
+				line-height: 19.5px;
+				margin: 2px 22px 0;
+				color: $custom-adb-layout-default-bg-color;
+				cursor: default;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+
+				display: flex;
+				list-style: none;
+				font-size: 16px;
+				line-height: 19.5px;
+				margin: 2px 22px 0;
+				color: $custom-adb-layout-default-bg-color;
+				cursor: default;
+				list-style: none !important;
+				text-decoration: none;
+			}
+
+			.adb-context_menu--trigger {
+				height: 35px;
+			}
+
+			&--link:hover {
+				background: $custom-adb-layout-default-bg-color;
+				color: $custom-header-text-hover !important;
+				margin-top: 2px;
+				text-decoration: none;
+			}
+		}
+
+		.active--product {
+			font-weight: bold;
+			border-bottom: 4px solid $secondary-nav-selected-item-border-color;
+
+			&:hover {
+				border-bottom: 0;
+				padding-bottom: 5px;
+			}
+		}
+	}
+
+	span {
+		&:hover {
+			background: $custom-adb-layout-default-bg-color;
+			color: $custom-header-text-hover;
+			margin-top: 2px;
+		}
+	}
+}
+
+.header-top {
+	border-bottom: 0;
+	height: $header-top-height;
+	background: $custom-header-top-bg-color;
+	font-family: verdana;
+
+	&__menu {
+		align-items: center;
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+
+		.common {
+			border-right: 1px solid $custom-footer-right-border-item-color;
+
+			a:hover {
+				border-bottom: 1px dotted $custom-header-text-hover;
+				text-decoration: none;
+			}
+		}
+
+		&__item {
+			margin-top: 10px;
+			font-size: 14px;
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link-top;
+
+				font-size: 13px;
+			}
+
+			.signup--active {
+				font-weight: bold;
+				color: $custom-login-button-green-color;
+			}
+
+			.signup--active:hover {
+				color: $custom-header-text-hover;
+			}
+
+			.login {
+				border: 1px solid $custom-login-button-border-green-color;
+				font-weight: bolder;
+				font-size: 11px;
+				padding: 2px 10px 4px 10px;
+				background: $custom-login-button-bg-green-color;
+				border-radius: 5px;
+				text-decoration: none;
+				color: $custom-login-button-green-color;
+			}
+
+			.language-selector {
+				padding: 50px 50px 50px 50px;
+
+				li {
+					align-items: center;
+
+					&:hover {
+						border-bottom: none !important;
+					}
+				}
+			}
+		}
+
+		.easyweb {
+			font-size: 11px;
+			color: $custom-header-text-hover;
+			height: 19px !important;
+		}
+	}
+}
+
+section.adb-layout-default.adb-layout-content--centered-content {
+	background-color: $custom-adb-layout-default-bg-color;
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		&:hover {
+			color: $custom-adb-layout-default-bg-color;
+		}
+
+		color: $custom-adb-layout-default-bg-color;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+
+		color: $custom-adb-layout-default-bg-color;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+
+		color: $custom-adb-layout-default-bg-color;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+
+		color: $custom-adb-layout-default-bg-color;
+	}
+}

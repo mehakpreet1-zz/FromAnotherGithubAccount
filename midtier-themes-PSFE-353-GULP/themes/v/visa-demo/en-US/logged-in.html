@@ -1,0 +1,50 @@
+<nav class="custom-primary">
+    <ul class="adb-layout-default">
+        <li class="menu-item-logo">
+            <a class="custom-logo" href="{{HOME_HREF}}"></a>
+        </li>
+
+        <li class="menu-item"><a href="/myapps">MyApps</a></li>
+        <li class="menu-item"><a href="{{HOME_HREF}}">Marketplace</a></li>
+        <li class="menu-item menu-item-right">
+            <menu class="adb-context_menu" data-placement="right">
+                <a class="js-menu-trigger adb-context_menu--trigger" href="javascript:;">{{USER_NAME}}</a>
+                <div class="js-dropdown-container">
+                    <div class="adb-container adb-context_menu--menu">
+                        <ul class="adb-stack">
+                            <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{PROFILE_HREF}}">My Profile</a></li>
+                            <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{COMPANY_HREF}}">My Company</a></li>
+                            <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{SETTINGS_HREF}}">My Settings</a></li>
+                            <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{LOGOUT_HREF}}">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </menu>
+        </li>
+        <li class="menu-item menu-item-right">
+            <menu class="adb-context_menu" data-placement="right">
+                <a class="js-menu-trigger adb-context_menu--trigger" href="javascript:;">Manage</a>
+                <div class="js-dropdown-container">
+                    <div class="adb-container adb-context_menu--menu">
+                        {{MANAGE_LINKS}}
+                    </div>
+                </div>
+            </menu>
+        </li>
+        <li class="menu-item menu-item-right">
+            {{COMPANIES_DROPDOWN}}
+        </li>
+    </ul>
+</nav>
+<div class="custom-secondary">
+    <div class="adb-layout-default">
+        <div class="half left">
+            <h1>Visa Developer App Marketplace</h1>
+        </div>
+        <div class="half right">
+            <p><span class="emphasis">Interested in having your solution listed in the showcase?</span> <a href="https://developer.visa.com/">Learn More</a></p>
+            <p><a href="https://developer.visa.com/portal/#users/new">Create a Visa Developer Center Account</a> and start coding in our sandbox.</p>
+        </div>
+    </div>
+</div>
+

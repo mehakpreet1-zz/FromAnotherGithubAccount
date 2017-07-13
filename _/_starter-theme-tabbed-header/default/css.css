@@ -1,0 +1,442 @@
+.header-primary__menu__item--link,
+.header-primary__menu__item .adb-context_menu--trigger,
+.companies-dropdown > a {
+  color: #fff;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 60px;
+  line-height: 1.1em;
+  padding: 0 10px;
+  max-width: 77px;
+  min-width: 77px;
+}
+
+.header-primary__menu__item--link:focus,
+.header-primary__menu__item .adb-context_menu--trigger:focus,
+.companies-dropdown > a:focus,
+.header-primary__menu__item--link:hover,
+.header-primary__menu__item .adb-context_menu--trigger:hover,
+.companies-dropdown > a:hover {
+  color: #000 !important;
+  background: #e6e6e6;
+  text-decoration: none;
+}
+
+.header-primary__menu__item--link::after,
+.header-primary__menu__item .adb-context_menu--trigger::after,
+.companies-dropdown > a::after {
+  content: ' ';
+}
+
+.cards-link.header-primary__menu__item--link,
+.header-primary__menu__item .cards-link.adb-context_menu--trigger,
+.companies-dropdown > a.cards-link {
+  max-width: 120px;
+  color: #000 !important;
+  background: #e6e6e6;
+}
+
+.login-link.header-primary__menu__item--link,
+.header-primary__menu__item .login-link.adb-context_menu--trigger,
+.companies-dropdown > a.login-link {
+  margin: 5px 8px 7px 16px;
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  color: #f00;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-link.header-primary__menu__item--link .login-icon,
+.header-primary__menu__item .login-link.adb-context_menu--trigger .login-icon,
+.companies-dropdown > a.login-link .login-icon {
+  width: 15px;
+  height: 20px;
+  margin: 0 5px 5px 0;
+  background: url("https://www.santander.co.uk/Theme_WCSantanderUK-theme/img/home_sprite.png") no-repeat -445px -1253px;
+}
+
+.login-link.header-primary__menu__item--link:hover,
+.header-primary__menu__item .login-link.adb-context_menu--trigger:hover,
+.companies-dropdown > a.login-link:hover {
+  color: #fff !important;
+  background: #000 !important;
+}
+
+.login-link.header-primary__menu__item--link:hover .login-icon,
+.header-primary__menu__item .login-link.adb-context_menu--trigger:hover .login-icon,
+.companies-dropdown > a.login-link:hover .login-icon {
+  background-position: -445px -1339px;
+}
+
+.signup-link.header-primary__menu__item--link,
+.header-primary__menu__item .signup-link.adb-context_menu--trigger,
+.companies-dropdown > a.signup-link {
+  height: 12px;
+  text-decoration: underline;
+  margin: 0 8px 6px 16px;
+}
+
+.signup-link.header-primary__menu__item--link:hover,
+.header-primary__menu__item .signup-link.adb-context_menu--trigger:hover,
+.companies-dropdown > a.signup-link:hover {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+.username.header-primary__menu__item--link,
+.header-primary__menu__item .username.adb-context_menu--trigger,
+.companies-dropdown > a.username {
+  max-width: 120px;
+  min-width: 120px;
+}
+
+[data-page='home'] .marketplace--active,
+[data-page='listing'] .marketplace--active,
+[data-page='profile'] .marketplace--active,
+.myappsV2Page .myapps--active,
+.signupPage .signup--active {
+  color: #fff;
+}
+
+.header-top {
+  background: transparent;
+  height: 44px;
+}
+
+.header-top__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 44px;
+}
+
+.header-top__menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-top__menu__item a {
+  font-size: 12px;
+  color: #666;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+.header-top__menu__item:first-child:after {
+  content: '|';
+}
+
+.header-top__menu__item .custom-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.header-top__menu__item .custom-search--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #dadada;
+  font-size: 14px;
+  color: #000;
+  border-radius: 20px 0 0 20px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.header-top__menu__item .custom-search--box input {
+  background: transparent;
+  padding: 0;
+  height: 28px;
+  border: 0;
+  border-radius: 0;
+  margin-left: 15px;
+}
+
+.header-top__menu__item .custom-search--button {
+  color: #fff;
+  background: #fe0505;
+  height: 28px;
+  width: 35px;
+  padding: 5px;
+  border: 0;
+  border-radius: 0 20px 20px 0;
+  font-size: 14px;
+}
+
+.header-primary {
+  font-family: custombodyfont;
+}
+
+.header-primary__menu {
+  background: #f00;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header-primary__menu_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.header-primary__menu_right .header-primary__menu__item:first-child {
+  border-left: 1px solid #fff;
+}
+
+.header-primary__menu__item:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.header-primary__menu__item--logo {
+  display: block;
+  margin: 0;
+  background: url("https://www.videotron.com/vcom/static/img/logo/head-videotron-logo-black.png") no-repeat;
+  background-size: 100% 100%;
+  height: 60px;
+  width: 65px;
+  margin-right: 10px;
+}
+
+.header-primary__top__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 65px;
+  height: 30px;
+}
+
+.header-primary__top__links__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-primary__top__links__item a {
+  font-size: 12px;
+  background: #e5e5e5;
+  color: #3d3e3e;
+  border-radius: 12px 12px 0 0;
+  padding: 4px 15px;
+  text-decoration: none;
+}
+
+.header-primary__top__links__item a.active {
+  background: #5e606b;
+  color: #fff;
+}
+
+.loginPage .login--active {
+  color: #f00;
+}
+
+.header-primary__menu__item .adb-context_menu--menu {
+  background-color: #e6e6e6;
+  border-bottom: 1px solid #f00;
+  border-radius: 3px;
+  padding-bottom: 15px;
+  margin-top: 0;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li:first-child a:hover,
+.header-primary__menu__item .adb-context_menu--menu li:first-child:hover {
+  border-radius: 3px 3px 0 0;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li:last-child a:hover,
+.header-primary__menu__item .adb-context_menu--menu li:last-child:hover {
+  border-radius: 0 0 3px 3px;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li ~ li {
+  border-top: 0 solid #f00;
+}
+
+.header-primary__menu__item .adb-context_menu--menu a {
+  padding: 10px;
+  color: #303030;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  line-height: 1em;
+  font-size: 12.25px;
+}
+
+.header-primary__menu__item .adb-context_menu--menu a:hover {
+  text-decoration: none;
+  box-shadow: none;
+  position: relative;
+  background-color: #fff;
+  color: #f00;
+}
+
+.companies-dropdown {
+  position: relative;
+}
+
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+  display: block;
+}
+
+.footer-primary {
+  background-color: transparent;
+}
+
+.footer-primary__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 2em;
+  border-top: 1px solid #c4c4c4;
+}
+
+.footer-primary__container--item {
+  font-size: 11px;
+  color: #303030;
+}
+
+.footer-primary__container--item a {
+  color: #c90212;
+  text-decoration: underline;
+}
+
+.footer-primary__container--item a:hover {
+  text-decoration: none;
+}
+
+.footer-primary__container--item.copyright-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  color: #666;
+  margin: 9px 0;
+}
+
+.footer-primary__container--item.description-text {
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.footer-primary .adb-icon__appdirect {
+  font-size: 14px;
+}
+
+footer,
+.adb-page_footer {
+  margin-top: 0 !important;
+}
+
+.adb-page {
+  margin-bottom: 0 !important;
+  min-height: calc(100vh - 136px) !important;
+}
+
+.adb-page--footer_helper {
+  padding-bottom: 20px !important;
+}
+
+.adb-secondary_nav {
+  border: none;
+}
+
+.adb-secondary_nav .adb-search_field--input {
+  border: 1px solid #c90212;
+  border-right: 0;
+}
+
+.adb-secondary_nav .adb-search_field--button {
+  color: #fff;
+  border: 1px solid #fe0505;
+  border-radius: 0 24px 24px 0 !important;
+  background: #fe0505;
+  box-shadow: none;
+  text-shadow: none;
+  font-weight: 600;
+  padding: 3px 8px;
+}
+
+.adb-secondary_nav .adb-search_field--button:hover {
+  color: #fff;
+  background: #c90212;
+}
+
+.adb-secondary_nav .adb-input_row--item_content {
+  border-color: #fe0505;
+  border-radius: 0;
+}
+
+.adb-secondary_nav--item .adb-secondary_nav--link.active::before,
+.adb-secondary_nav--item .adb-secondary_nav--link.adb-is-selected::before,
+.adb-secondary_nav--item a.active::before,
+.adb-secondary_nav--item a.adb-is-selected::before,
+.adb-secondary_nav li .adb-secondary_nav--link.active::before,
+.adb-secondary_nav li .adb-secondary_nav--link.adb-is-selected::before,
+.adb-secondary_nav li a.active::before,
+.adb-secondary_nav li a.adb-is-selected::before {
+  background-color: #f00;
+}
+
+.adb-secondary_nav--items {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.adb-secondary_nav--search {
+  display: none;
+}
+
+#subnav-header a:focus,
+#subnav-header a:hover,
+#subnav-header a.active,
+#subnav-header a:active {
+  color: #575757;
+}
+
+#subnav-header a:active::before,
+#subnav-header a.active::before {
+  background-color: #f00;
+}

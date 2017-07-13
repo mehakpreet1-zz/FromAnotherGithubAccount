@@ -1,0 +1,43 @@
+// ----------------------------------
+// Customized secondary nav
+// ----------------------------------
+.adb-secondary_nav {
+	&--search {
+		width: 323px;
+	}
+
+	&--item,
+	li {
+		.adb-secondary_nav--link,
+		a {
+			&.active,
+			&.adb-is-selected {
+				&::before {
+					background-color: $secondary-nav-selected-item-border-color;
+				}
+			}
+		}
+	}
+}
+
+#subnav-header {
+	a {
+		&:focus,
+		&:hover,
+		&.active,
+		&:active {
+			color: $secondary-nav-selected-text-color;
+		}
+
+		&:active::before,
+		&.active::before {
+			background-color: $secondary-nav-selected-item-border-color;
+		}
+	}
+}
+
+.adb-secondary_nav {
+	& .adb-secondary_nav--search {
+		display: none;
+	}
+}

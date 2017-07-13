@@ -1,0 +1,68 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+// example
+$asset-logo: 'http://www.videotron.com/vcom/static/img/logo/head-videotron-logo-black.png';
+$svg-url: 'https://www.buckeyebroadband.com/skin/frontend/enterprise/buckeye/assets/release/svg-spritesheets/sprites-a770a6eb.svg';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$blue: #009abf;
+$blue-light-shade: #05a2f6;
+$blue-dark-shade: #002c6d;
+$blue-dark-shade1: #012151;
+$light-grey: #f2f6f7;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-bg: $white;
+$header-primary-border-color: $blue-dark-shade;
+$header-primary-bg-hover: $white;
+$header-primary-link-color: $blue-dark-shade;
+$header-primary-link-hover-color: $blue-light-shade;
+$header-primary-button-active-bg: $blue-dark-shade1;
+
+$dropdown-border-color: $blue-dark-shade;
+$dropdown-color: $white;
+$dropdown-bg: $blue-dark-shade1;
+$dropdown-hover-bg: $blue-dark-shade1;
+$dropdown-hover-color: $blue-light-shade;
+
+$footer-bg: $white;
+$footer-title-color: $blue-light-shade;
+$footer-title-hover-color: $blue-dark-shade;
+$footer-site-bg: $blue-dark-shade;
+$footer-site-color: $white;
+
+$secondary-header-border-color: $blue-dark-shade1;
+$secondary-header-search-bg: $blue-dark-shade;
+$secondary-header-search-color: $white;
+$secondary-header-search-hover-bg: $blue-light-shade;
+$secondary-header-search-hover-color: $white;
+$secondary-header-search-input-border: $blue-dark-shade;
+$secondary-header-search-input-hover-border: $blue-light-shade;
+$secondary-header-search-input-color: $blue-dark-shade;
+$secondary-header-active-color: $blue-light-shade;
+$subnav-header-bg: $white;
+$subnav-header-color: $blue-dark-shade;
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+$footer-height: 466px;

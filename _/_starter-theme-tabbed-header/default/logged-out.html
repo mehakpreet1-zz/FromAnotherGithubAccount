@@ -1,0 +1,51 @@
+<div class="header-top">
+	<ul class="header-top__menu adb-layout-default">
+		<li class="header-top__menu__item">
+			<a class="header-top__menu__item--link" href="#">Contact Us</a>
+		</li>
+		<li class="header-top__menu__item">
+			<a class="header-top__menu__item--link" href="#">About US</a>
+		</li>
+
+		<li class="header-top__menu__item">
+			<form class="custom-search" name="searchForm" id="idc" method="get" action="/listing">
+				<div class="custom-search--box">
+					<label>Search: </label>
+					<input type="text" maxlength="200" value="" name="q" placeholder="">
+				</div>
+				<button class="custom-search--button" type="submit" aria-label="Search">
+					<i class="adb-icon__search"></i>
+				</button>
+			</form>
+		</li>
+	</ul>
+</div>
+
+<nav class="header-primary">
+	<ul class="header-primary__top__links adb-layout-default">
+		<li class="header-primary__top__links__item">
+			<a href="#"> Personal </a>
+		</li>
+		<li class="header-primary__top__links__item ">
+			<a href="#" class="active"> Business </a>
+		</li>
+		<li class="header-primary__top__links__item">
+			<a href="#"> Corporate & Commercial</a>
+		</li>
+	</ul>
+
+	<ul class="header-primary__menu adb-layout-default">
+		<li class="header-primary__menu__item">
+			<a class="header-primary__menu__item--logo" href="{{HOME_HREF}}"></a>
+		</li>
+		<li class="header-primary__menu__item">
+			<a class="header-primary__menu__item--link marketplace--active" href="{{HOME_HREF}}" data-auto="home">{{Marketplace}}</a>
+		</li>
+		<ul class="header-primary__menu_right">
+			<li class="header-primary__menu__item">
+				<a class="header-primary__menu__item--link login-link login--active" href="{{LOGIN_HREF}}" data-auto="login"> <span class="login-icon"> </span> Log on </a>
+				<a class="header-primary__menu__item--link signup-link signup--active" href="{{SIGNUP_HREF}}" data-auto="signup">{{signup.button}}</a>
+			</li>
+		</ul>
+	</ul>
+</nav>

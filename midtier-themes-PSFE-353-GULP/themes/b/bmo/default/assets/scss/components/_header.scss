@@ -1,0 +1,196 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+@media only screen and (min-width: 80.0625em) {
+	.header-top .adb-layout-default {
+		max-width: 1167px !important;
+		width: 1167px !important;
+		padding-right: 20px;
+	}
+}
+
+.header-top {
+	background: $header-top-bg;
+	border-bottom: 1px solid $header-top-border-bottom-color;
+	height: $header-top-height;
+	color: $header-top-font-color;
+
+	&__menu {
+		display: flex;
+		height: $header-top-height;
+		justify-content: space-between;
+		list-style: none;
+
+		&__item {
+			display: flex;
+
+			&--left {
+				padding: 0 20px;
+				line-height: 3;
+				border-right: 0.5px solid $custom-hover-shade1;
+
+				&:nth-child(2) {
+					border-left: 0.5px solid $custom-hover-shade1;
+				}
+
+				&:first-child {
+					border-right: transparent;
+				}
+
+				&:hover {
+					background: $header-top-hover-color;
+				}
+
+				&--link {
+					@extend %nav-link-top;
+				}
+			}
+
+			&--right {
+				padding: 0 20px;
+				line-height: 3;
+
+				&--link {
+					color: $header-top-font-color;
+					font-size: $header-top-font-size;
+					font-family: $font-family;
+					-webkit-font-smoothing: subpixel-antialiased;
+
+					&:hover {
+						text-decoration: underline;
+						color: $header-top-font-color;
+					}
+				}
+
+				&:last-child {
+					border-right: transparent;
+				}
+			}
+		}
+	}
+
+	.business {
+		background: $ad-white;
+		color: $custom-blue;
+	}
+
+	.sign-in {
+		background: $custom-blue-shade2;
+	}
+
+	.contact {
+		padding-right: 0;
+	}
+}
+
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	height: $header-primary-height;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		margin-left: auto;
+
+		&__item {
+			display: flex;
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+			}
+
+			&_right {
+				border-right: 0.5px solid $custom-gray;
+				padding: 0 20px;
+				margin-left: auto;
+
+				&:last-child {
+					border-right: transparent;
+				}
+
+				&:first-child {
+					border-left: 0.5px solid $custom-gray;
+				}
+
+				&:hover {
+					background: $custom-gray;
+				}
+
+				&--links {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					line-height: 1;
+					font-family: $font-family;
+					text-align: center;
+					align-self: center;
+					align-items: center;
+					height: $header-primary-height;
+					color: $header-primary-font-color;
+					font-size: $header-primary-font-size;
+					-webkit-font-smoothing: antialiased;
+
+					&:hover {
+						color: $header-primary-font-color;
+						text-decoration: none;
+					}
+				}
+
+				.dropdown {
+					flex-direction: row;
+
+					&::after {
+						content: '\f078';
+						padding-left: 7px;
+						font-size: 10px;
+						font-family: FontAwesome;
+						color: $dropdown-item-color;
+					}
+				}
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

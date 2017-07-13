@@ -1,0 +1,94 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: "https://d3bql97l1ytoxn.cloudfront.net/channel_custom_style_resources/img8788959783956826708?50e913456b6986ac8d9668925348f3c3";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+
+$custom-gray-shade1: #484848;
+$custom-gray-shade2: #333333;
+$custom-gray-shade3: #7c7c7c;
+$custom-font-color-hover: #ffffff;
+$custom-footer-color: #777777;
+$custom-blue: #0079B6;
+$custom-hover-blue: #0083c5;
+$custom-border-color: #06b2e6;
+$custom-search-border-color: #d6d4d4;
+$custom-serach-hover-color: #6f6f6f;
+
+$primary: $ad-black;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $custom-font-color-hover;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 74px;
+$header-primary-logo-width: 275px;
+$header-primary-font-size: 18px;
+$header-primary-font-color: $custom-gray-shade1;
+$header-primary-font-color_hover: $ad-white;
+$header-primary-bg-color_hover: $custom-gray-shade2;
+$header-primary-color_active: $custom-gray-shade1;
+
+$dropdown-border-color: $ad-gray-shade5;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 0;
+$dropdown-item-divider: transparent;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $ad-black;
+$dropdown-bg: $ad-white;
+$dropdown-item-hover-bg: $header-primary-bg-color_hover;
+$dropdown-item-hover-color: $ad-white;
+
+$secondary-nav-search-button-color: $ad-white;
+$secondary-nav-search-button-color_hover: $custom-serach-hover-color;
+$secondary-nav-search-button-border-color: $custom-search-border-color;
+$secondary-nav-search-button-bg: $custom-gray-shade2;
+$secondary-nav-search-button-bg_hover: $custom-gray-shade2;
+
+$secondary-nav-selected-text-color: $ad-gray-shade3;
+$secondary-nav-selected-item-border-color: $ad-gray-shade3;
+
+$footer-height: 65px;
+$footer-primary-bg: $custom-gray-shade2;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $ad-white;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import "settings";
+
+// import computed values
+@import "components/INDEX";
+
+// import custom CSS

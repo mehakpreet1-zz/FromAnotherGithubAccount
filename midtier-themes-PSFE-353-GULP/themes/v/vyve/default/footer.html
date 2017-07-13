@@ -1,0 +1,96 @@
+<link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<div class="footer-social">
+    <h4>Stay Connected</h4>
+    <ul>
+        <li><a href="https://www.facebook.com/vyvebroadband" class="facebook" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/VyveBroadband" class="twitter" target="_blank">Twitter</a></li>
+        <li><a href="https://www.youtube.com/user/VyveBroadband" class="youtube" target="_blank">YouTube</a></li>
+        <li><a href="https://www.linkedin.com/company/vyve-broadband" class="linkedin" target="_blank">LinkedIn</a></li>
+    </ul>
+</div>
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <div class="footer-primary-links-container">
+            <ul>
+                <li>
+                    <a href="http://vyvebroadband.com/wp-content/uploads/Vyve-Website-Accessibility.pdf" target="_blank">Accessibility</a>
+                </li>
+                <li>&nbsp;|&nbsp;</li>
+                <li><a href="http://www.vyvebroadband.com/company/fcc-public-inspection-file/">Public Inspection File</a></li>
+                <li>&nbsp;|&nbsp;</li>
+                <li><a href="http://www.vyvebroadband.com/company/investor-relations/">Investor Relations</a></li>
+                <li>&nbsp;|&nbsp;</li>
+                <li><a href="http://www.vyvebroadband.com/company/press/">Press</a></li>
+                <li>&nbsp;|&nbsp;</li>
+                <li><a href="http://www.vyvebroadband.com/company/policies/">Terms, Conditions &amp; Policies</a></li>
+            </ul>
+        </div>
+        <div class="copyright">Copyright ©2017 Vyve Broadband. All rights reserved.</div>
+    </div>
+</div>
+
+<div class="footer-secondary">
+    <div class="footer-secondary-container adb-layout-default">
+        <div class="footer-column-1">
+            <h6>Get a free quote! Call
+                <a href="tel:+18553678983">1.855.FOR.VYVE</a>
+                or
+                <a href="http://www.vyvebroadband.com/company/request-a-call/" target="_blank">click here</a>.
+            </h6>
+        </div>
+        <div class="footer-column-2">
+            <ul>
+                <li><a href="http://www.vyvebroadband.com/company/help-center/">Help Center</a></li>
+                <li><a href="http://www.vyvebroadband.com/company/contact/">Get in Touch</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--Scripts for Header behaviour -->
+<script>
+    (function manageDropdown() {
+        // due to difference in company and other dropdowns in header had to change padding left instead of using adb-layout-default class
+        $('.companies-dropdown .adb-context_menu--menu').css('padding-left', $('.header-primary > .adb-layout-default').css('margin-left'));
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+            // used to display submenu horizontally in full width below the primary menu
+            var currentScrollPosition = $(document).scrollTop();
+            // 150 is primary header height
+            $(this).parent().find('.adb-context_menu--menu').css('top', (150 - currentScrollPosition) + 'px');
+            //adding adb-layout-default class to ul so that contents in submenu are alligned properly according to primary menu
+            $(this).parent().find('.adb-context_menu--menu ul').addClass('adb-layout-default');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+        // added hover event
+        $('.header-primary .header-primary__menu__item').hover(
+            function() {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+                $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+                // used to display submenu horizontally in full width below the primary menu 
+                var currentScrollPosition = $(document).scrollTop();
+                // 150 is primary header height
+                $(this).find('.adb-context_menu--menu').css('top', (150 - currentScrollPosition) + 'px');
+                //adding adb-layout-default class to ul so that contents in submenu are alligned properly according to primary menu
+                $(this).find('.adb-context_menu--menu ul').addClass('adb-layout-default');
+            }, function(e) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        );
+    })();
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

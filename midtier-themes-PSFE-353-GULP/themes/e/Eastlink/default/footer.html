@@ -1,0 +1,54 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+    <div class="footer-primary-main">
+        <div class="footer-primary-left">
+                <img src="https://business.eastlink.ca/wp-content/themes/eastlink-business/library/images/layout/header/header-logo-light.png">
+            <div class = "footer-primary-left-bottom">
+                <span class = "footer-primary-left-bottom-linkl">ⓒ Eastlink 2017</span>
+                <a href="" class = "footer-primary-left-bottom-linkr">Legal & Regulatory</a>
+            </div>
+        </div>
+        <div class="footer-primary-right">
+            <img src="https://business.eastlink.ca/wp-content/themes/eastlink-business/library/images/temp/partner-canadas-best-managed-companies.png">
+        </div>
+    </div>
+      
+    </div>
+</div>
+
+<!--Scripts for Header behaviour -->
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+        // To display dropdown menu on hover uncomment the following code
+        
+        $('.header-primary .header-primary__menu__item').hover(function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+        });
+        
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

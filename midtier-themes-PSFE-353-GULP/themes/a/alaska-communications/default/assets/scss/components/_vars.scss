@@ -1,0 +1,72 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+// example
+$asset-logo: 'http://www.alaskacommunications.com/assets/images/ac-logo-224x84.png';
+$footer-logo: 'http://www.alaskacommunications.com/assets/images/ac-logo-224x84.png';
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$gray: #eaeaea;
+$gray-shade: #b3b2b5;
+$gray-dark-shade: #666;
+$gray-shade1: #808084;
+$black: #000;
+$blue: #00a5c7;
+$blue-dark-shade: #002a5c;
+$blue-light-shade: #009ac9;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-bg: $white;
+$header-primary-border-color: $gray-shade;
+$header-primary-link-color: $gray-shade1;
+$header-primary-link-hover-color: $blue-light-shade;
+$header-top-color: $black;
+$header-top-link-color: $blue;
+
+$dropdown-border-color: $gray;
+$dropdown-color: $black;
+$dropdown-bg: $white;
+$dropdown-hover-bg: $blue;
+$dropdown-hover-color: $white;
+
+$footer-bg: $white;
+$footer-color: $blue;
+$footer-border-color: $gray-shade;
+$footer-secondary-color: $gray-dark-shade;
+
+$secondary-header-search-bg: $blue-light-shade;
+$secondary-header-search-color: $white;
+$secondary-header-search-input-border: $blue-light-shade;
+$secondary-header-border-color: $blue-light-shade;
+$secondary-header-active-color: $blue-light-shade;
+$subnav-header-color: $gray-shade1;
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+
+$font-family: 'Cabin', Arial, Sans-Serif;
+
+%active-state {
+	a {
+		color: $header-primary-link-hover-color;
+	}
+}
+
+$footer-height: 80px;

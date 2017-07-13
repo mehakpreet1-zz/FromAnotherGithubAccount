@@ -1,0 +1,97 @@
+// ------------------------------------------------------------------
+// DROPDOWN MENU(S)
+// ------------------------------------------------------------------
+// This replicates AD dropdown menus for the header
+// All dropdowns in the header with proper classes will be affected.
+// ------------------------------------------------------------------
+.header-primary__menu__item .adb-context_menu--menu {
+	background-color: $dropdown-bg;
+	border: $dropdown-border_width solid $dropdown-border-color;
+	border-radius: $dropdown-border-radius;
+	margin-top: 0;
+
+	li {
+		&:first-child {
+			a:hover,
+			&:hover {
+				border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+			}
+		}
+
+		&:last-child {
+			a:hover,
+			&:hover {
+				border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
+			}
+		}
+
+		~ li {
+			border-top: $dropdown-item-divider_width solid $dropdown-item-divider;
+		}
+	}
+
+	a {
+		padding: 10px;
+		color: $dropdown-item-color;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: block;
+		line-height: 1em;
+		font-size: $dropdown-item-font-size;
+
+		&:hover {
+			text-decoration: none;
+			box-shadow: none;
+			position: relative;
+			background-color: $dropdown-item-hover-bg;
+			color: $dropdown-item-hover-color;
+		}
+	}
+}
+
+.companies-dropdown {
+	position: relative;
+
+	> a {
+		@extend %nav-link;
+	}
+}
+
+// Show the dropdown containers when the menus are hovered
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+	display: block;
+	margin-top: 10px;
+	border: 1px solid #DFDFDF {
+		radius: 0px;
+	};
+}
+
+.header-primary__menu__item .adb-context_menu--menu a {
+	color: $custom-orange;
+	font-size: 14px;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li ~ li {
+	border-top: 0px;
+}
+
+.adb-secondary_nav {
+	i.adb-icon__search.adb-button--icon {
+		display: none;
+	}
+
+	.adb-search_field--button {
+		padding: 0px 14px !important;
+		font-size: 16px !important;
+	}
+
+	.adb-search_field--input {
+		padding-left: 15px !important;
+	}
+
+	::-webkit-input-placeholder {
+		color: #8a8a8a;
+	}
+}

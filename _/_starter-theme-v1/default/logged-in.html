@@ -1,0 +1,49 @@
+<!-- Optional top header / remove if not necessary -->
+<div class="header-top">
+    <div class="adb-layout-default">
+
+    </div>
+</div>
+
+<nav class="header-primary">
+    <ul class="header-primary__menu adb-layout-default">
+        <li class="header-primary__menu__item">
+            <a class="header-primary__menu__item--logo" href="{{HOME_HREF}}"></a>
+        </li>
+
+        <li class="header-primary__menu__item myapps--active"><a class="header-primary__menu__item--link" href="{{MYAPPS_HREF}}" data-auto="myApps">{{My.Apps}}</a></li>
+        <li class="header-primary__menu__item marketplace--active"><a class="header-primary__menu__item--link" href="{{HOME_HREF}}" data-auto="home">{{Marketplace}}</a></li>
+        <li class="header-primary__menu__item fRight">
+            <menu class="adb-context_menu" data-placement="right">
+                <a class="header-primary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="username">{{USER_NAME}}</a>
+                <div class="js-dropdown-container">
+                    <div class="adb-container adb-context_menu--menu">
+                        <ul class="adb-stack">
+                            <li><a href="{{PROFILE_HREF}}" data-auto="myProfile">{{My.Profile}}</a></li>
+                            <li><a href="{{COMPANY_HREF}}" data-auto="myCompany">{{My.Company}}</a></li>
+                            <li><a href="{{SETTINGS_HREF}}" data-auto="mySettings">{{my.settings}}</a></li>
+                            <li><a href="{{LOGOUT_HREF}}" data-auto="logout">{{logout}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </menu>
+        </li>
+        <li class="header-primary__menu__item js-manage-links">
+            <menu class="adb-context_menu" data-placement="right">
+                <a class="header-primary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="manage">{{Manage}}</a>
+                <div class="js-dropdown-container">
+                    <div class="adb-container adb-context_menu--menu">{{MANAGE_LINKS}}</div>
+                </div>
+            </menu>
+        </li>
+        <li class="header-primary__menu__item">{{COMPANIES_DROPDOWN}}</li>
+    </ul>
+</nav>
+
+<!-- Optional Sub Header / that is removed on Product pages (behaviour can be modified in CSS) -->
+<div class="header-secondary">
+    <div class="adb-layout-default">
+
+
+    </div>
+</div>

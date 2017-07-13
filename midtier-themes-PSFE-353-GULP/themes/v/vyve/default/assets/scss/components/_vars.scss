@@ -1,0 +1,76 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+// example
+$asset-logo: 'http://www.vyvebroadband.com/wp-content/themes/vyve-broadband-2015/images/vyve-broadband-logo-desktop.png';
+$asset-directory: '/vyve/default/assets/';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$gray: #eaeaea;
+$black: #000;
+$blue: #009abf;
+$gray-shade1: #404040;
+$black-shade1: #0a0a0a;
+$black-shade2: #484848;
+$black-shade3: #4e4e4e;
+$black-shade4: #222222;
+$yellow-shade: #ffe858;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-bg: $black;
+$header-primary-bg-gradient-black: $black-shade1;
+$header-primary-bg-gradient-grey: $gray-shade1;
+$header-primary-links-hover: $yellow-shade;
+$header-logo-url: 'http://www.vyvebroadband.com/wp-content/themes/vyve-broadband-2015/images/vyve-broadband-logo-desktop.png';
+$header-menu-item-light-shade: $black-shade3;
+$header-menu-item-dark-shade: $black-shade4;
+$link-color: $white;
+
+$dropdown-color: $white;
+$dropdown-bg: $black-shade2;
+$dropdown-hover-bg: $blue;
+$dropdown-hover-color: $white;
+$secondary-header-border: $black-shade2;
+
+$footer-bg: $black;
+$footer-secondary-bg: $black-shade2;
+$footer-color: $white;
+$footer-color-links: $yellow-shade;
+$footer-color-header: $black-shade2;
+$footer-social-bg: $yellow-shade;
+$social-facebook: 'http://www.vyvebroadband.com/wp-content/themes/vyve-broadband-2015/css/images/icon-facebook.png';
+$social-facebook-hover: 'http://www.vyvebroadband.com/wp-content/themes/vyve-broadband-2015/css/images/icon-facebook-ro.png';
+$social-twitter: 'http://www.vyvebroadband.com/wp-content/themes/vyve-broadband-2015/css/images/icon-twitter.png';
+$social-twitter-hover: 'http://www.vyvebroadband.com/wp-content/themes/vyve-broadband-2015/css/images/icon-twitter-ro.png';
+$social-youtube: 'http://www.vyvebroadband.com/wp-content/themes/vyve-broadband-2015/css/images/icon-youtube.png';
+$social-youtube-hover: 'http://www.vyvebroadband.com/wp-content/themes/vyve-broadband-2015/css/images/icon-youtube-ro.png';
+$social-linkedin: 'http://www.vyvebroadband.com/wp-content/themes/vyve-broadband-2015/css/images/icon-linkedin.png';
+$social-linkedin-hover: 'http://www.vyvebroadband.com/wp-content/themes/vyve-broadband-2015/css/images/icon-linkedin-ro.png';
+
+$body-font-color: $black;
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+$font-custom: 'Armata', Arial, Helvetica, sans-serif;
+$font-custom-montserrat: 'Montserrat', Arial, Helvetica, sans-serif;
+$header-height: 150px;
+$footer-height: 451px;

@@ -1,0 +1,163 @@
+.header-top {
+	background: $header-top-bg;
+	height: $header-top-height;
+
+	&__menu {
+		display: flex;
+		justify-content: flex-end;
+		height: $header-top-height;
+
+		&__item {
+			display: flex;
+			align-items: center;
+
+			a {
+				font-size: 12px;
+				color: $header-top-link-color;
+				padding: 10px;
+				text-decoration: underline;
+			}
+
+			&:first-child:after {
+				content: '|';
+			}
+
+			.custom-search {
+				display: flex;
+				align-items: center;
+				margin: 0 5px;
+
+				&--box {
+					display: flex;
+					align-items: center;
+					background: $header-top-search-box-bg;
+					font-size: 14px;
+					color: $header-top-search-box-label-color;
+					border-radius: 20px 0 0 20px;
+					font-weight: bold;
+					padding-left: 10px;
+
+					input {
+						background: transparent;
+						padding: 0;
+						height: 28px;
+						border: 0;
+						border-radius: 0;
+						margin-left: 15px;
+					}
+				}
+
+				&--button {
+					color: $header-top-search-button-color;
+					background: $header-top-search-button-bg;
+					height: 28px;
+					width: 35px;
+					padding: 5px;
+					border: 0;
+					border-radius: 0 20px 20px 0;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	font-family: custombodyfont;
+
+	&__menu {
+		background: $header-primary-bg;
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+
+			.header-primary__menu__item {
+				&:first-child {
+					border-left: 1px solid $header-primary-font-color;
+				}
+			}
+		}
+
+		&__item {
+			&:not(:last-child) {
+				border-right: 1px solid $header-primary-font-color;
+			}
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: 100% 100%;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: 0;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+
+	&__top__links {
+		display: flex;
+		padding-left: $header-primary-logo-width;
+		height: 30px;
+
+		&__item {
+			display: flex;
+			align-items: center;
+
+			a {
+				font-size: 12px;
+				background: $header-primary-top-links-item-bg;
+				color: $header-primary-top-links-item-color;
+				border-radius: 12px 12px 0 0;
+				padding: 4px 15px;
+				text-decoration: none;
+
+				&.active {
+					background: $header-primary-top-links-item-bg_active;
+					color: $header-primary-top-links-item-color_active;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		color: $header-primary-bg;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

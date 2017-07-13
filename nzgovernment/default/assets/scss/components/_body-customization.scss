@@ -1,0 +1,21 @@
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+
+.adb-inline_alert, .adb-button, input[type='button'], button, .adb-button_status {
+	border-radius: 0;
+}
+
+.adb-text, [type='number'], [type='tel'], [type='text'], [type='email'], [type='password'], [type='url'], textarea, [type='search'], .adb-search_field--input, [type='date'], .adb-date {
+	box-shadow: none;
+
+	&:focus {
+		box-shadow: none;
+	}
+}

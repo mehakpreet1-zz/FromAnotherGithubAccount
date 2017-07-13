@@ -1,0 +1,16 @@
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+
+.margin_checkout {
+	margin-top: 20px;
+}
+
+.adb-styled .adb-link__nav.adb-is-selected {
+	background: $body-customise-search;
+}

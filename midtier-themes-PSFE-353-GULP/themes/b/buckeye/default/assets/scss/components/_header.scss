@@ -1,0 +1,120 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+.header-primary {
+	background: $header-primary-bg;
+	font-size: 18px;
+	padding: 20px 0;
+	border-bottom: 10px solid $header-primary-border-color;
+
+	&__menu {
+		display: flex;
+		flex-direction: row;
+
+		&--nav {
+			&_left {
+				display: flex;
+
+				li:first-child {
+					background: none;
+				}
+
+				&--links {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-left: 15px;
+				}
+			}
+
+			&_right {
+				display: flex;
+				margin-left: auto;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		&__item {
+			display: flex;
+
+			&:hover {
+				color: $header-primary-link-hover-color;
+				text-decoration: none;
+			}
+
+			&--logo {
+				&:before {
+					display: inline-block;
+					content: ' ';
+					background: url($svg-url) 0 57.93103%;
+					width: 340px;
+					height: 68px;
+					background-size: 722px 640px;
+					vertical-align: middle;
+				}
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				color: $header-primary-link-color;
+				font-weight: 800;
+				padding: 10px;
+				font-size: 18px;
+
+				&:hover {
+					color: $header-primary-link-hover-color;
+					text-decoration: none;
+				}
+
+				&:after {
+					content:'';
+				}
+
+				&.adb-is-active {
+					background: $header-primary-button-active-bg;
+					color: $header-primary-link-hover-color;
+				}
+			}
+		}
+	}
+}
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+
+// scss placeholder for showing active tab
+%active-state {
+	a {
+		color: $header-primary-link-hover-color;
+	}
+}
+
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+body.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+body.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

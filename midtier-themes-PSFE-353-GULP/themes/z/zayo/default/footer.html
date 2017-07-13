@@ -1,0 +1,54 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <div class="footer-primary__container">
+            <span class="adb-page_footer--content_item">©2017 Zayo Group, LLC. All Rights Reserved</span>
+            <ul class="footer-primary__container__right__list">
+             <li  class="footer-primary__container__right__list__item"><a href="#">HOME</a></li>
+             <li class="footer-primary__container__right__list__item"><a href="#">Legal</a></li>
+             <li class="footer-primary__container__right__list__item"><a href="#">Policies</a></li>
+             <li class="footer-primary__container__right__list__item"><a href="#">Privacy</a></li>
+             <li class="footer-primary__container__right__list__item"><a href="#">Contact</a></li>
+        </ul>
+        </div>
+        
+    </div>
+</div>
+
+<!--Scripts for Header behaviour -->
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+        
+ 
+        $('.header-primary .header-primary__menu__item').hover(function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+        });
+
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

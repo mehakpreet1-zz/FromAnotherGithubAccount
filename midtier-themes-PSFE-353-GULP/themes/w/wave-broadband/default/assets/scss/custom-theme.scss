@@ -1,0 +1,63 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'https://business.wavebroadband.com/wp-content/uploads/2016/10/business-logo.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$primary: #0a3b61;
+$secondary: blue;
+$tertiary: gray;
+$emphasis: green;
+$blue-dark: #2b3b6b;
+$blue-light: #00bedf;
+$grey: #e7e7e7;
+$grey-dark: #9c9c9c;
+$black-shade: #303030;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: white;
+$header-primary-border-top-color: $grey;
+$header-primary-logo-height: 69px;
+$header-primary-logo-width: 190px;
+$header-primary-font-size: 18px;
+$header-primary-font-color: $primary;
+$header-primary-font-color_hover: $blue-light;
+$header-primary-font-family: sans-serif;
+
+$dropdown-border-color: $blue-dark;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $primary;
+$dropdown-bg: white;
+$dropdown-item-hover-bg: white;
+$dropdown-item-hover-color: $blue-light;
+
+$footer-primary-bg: transparent;
+$footer-primary-color: $grey-dark;
+$footer-primary-border-top: $header-primary-border-top-color;
+$footer-secondary-bg: blue;
+$footer-height: 51px;
+
+$secondary-header-bg: $primary;
+$secondary-header-search-bg: white;
+$secondary-header-search-color: $primary;
+$secondary-header-search-input-border: $primary;
+$secondary-header-color: white;
+$secondary-header-border-color: transparent;
+$secondary-header-active-color: white;
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

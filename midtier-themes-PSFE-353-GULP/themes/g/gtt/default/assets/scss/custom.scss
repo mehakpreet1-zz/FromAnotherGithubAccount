@@ -1,0 +1,39 @@
+@import 'components/_INDEX';
+
+// ------------------------------------------------------------
+// Use the BEM method for writing SCSS
+//
+// More info here
+// --------------
+// 1. https://css-tricks.com/bem-101/
+// 2. https://medium.com/objects-in-space/objects-in-space-f6f404727#.864tiw7qu
+// 3. http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+// ------------------------------------------------------------
+
+// NO CODE IN THIS FILE PLEASE
+.adb-search_field--button {
+	background-color: $search-input-btn !important;
+	text-shadow: none;
+	border: 1px solid $search-input-btn;
+	border-left: none;
+	box-shadow: none;
+	color: $white;
+
+	&:hover {
+		border: 1px solid $search-input-btn;
+		box-shadow: none;
+		border-left: transparent;
+		color: $white;
+	}
+}
+
+.adb-page {
+	// applying important as v1 and v2 pages have different css applied on id (#content) and class (adb-page)
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page_footer,
+footer {
+	margin-top: 0;
+}

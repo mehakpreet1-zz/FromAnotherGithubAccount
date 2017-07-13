@@ -1,0 +1,95 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	height: $header-primary-height;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+			margin-bottom: -3px;
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+
+				&--disp {
+					@extend %nav-link;
+
+					@extend %link--disp;
+
+					&:hover {
+						background: $header-primary-bg-color_hover !important;
+					}
+
+					&--mp {
+						@extend %nav-link;
+
+						@extend %link--disp--mp;
+
+						&:hover {
+							background: $header-primary-bg-color_hover !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.adb-context_menu--trigger {
+	@extend %adb-context_menu--trigger;
+}
+
+.adb-context_menu--trigger:hover {
+	background: $header-primary-bg-color_hover;
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

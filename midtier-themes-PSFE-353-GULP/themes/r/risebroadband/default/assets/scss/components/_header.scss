@@ -1,0 +1,65 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	border-top: 0;
+	height: $header-primary-height;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top -40px $header-primary-logo-margin-top 0px;
+				width: $header-primary-logo-width;
+			}
+
+			&--link {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

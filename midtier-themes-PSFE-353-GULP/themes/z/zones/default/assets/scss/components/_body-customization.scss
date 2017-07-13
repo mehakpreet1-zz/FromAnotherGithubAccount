@@ -1,0 +1,89 @@
+body {
+	font-family: $custom-font;
+}
+
+body[data-page='home'] .header__home {
+	background: #5EC0EA url(https://media.zones.com/images/static/ss-cloud-shop-cloud-hero.jpg) center top no-repeat;
+	height: 500px;
+	display: block;
+}
+
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+
+.header__home {
+	display: none;
+
+	.banner {
+		top: 280px;
+		margin-left: 64px;
+		width: 500px;
+		height: 100px;
+		display: block;
+		padding-top: 295px;
+
+		.span-upper-class {
+			background: url(http://media.zones.com/images/static/ZCM-logo.png) no-repeat;
+
+			/* background-size: 100% 100%; */
+			width: 292px;
+			height: 27px;
+			margin-bottom: 56px;
+		}
+	}
+
+	.span-lower-class {
+		// font-size: 36px;
+		// color: white;
+		// position: relative;
+		// top: 380px;
+		// margin-left: 120px;
+		// margin-top: 20px;
+		font-size: 60px;
+		color: $ad-white;
+	}
+}
+
+body[data-page='home'] #secondaryNav, .adb-secondary_nav, .adb-page--footer_helper {
+	margin-top: 90 !important;
+}
+
+.developer .adb-page--footer_helper,
+.channelPage .adb-page--footer_helper,
+.marketplacepage .adb-page--footer_helper,
+.accountpages .adb-page--footer_helper {
+	margin-top: 0 !important;
+}
+
+.logged-in .adb-secondary_nav,
+.developer .adb-secondary_nav,
+.marketplaceManage .adb-secondary_nav,
+.companyPage .adb-page--footer_helper,
+.settingsPage .adb-page--footer_helper {
+	margin-top: 90px !important;
+}
+
+#secondaryNav, #subnav-header, #login_page, .adb-secondary_nav {
+	margin-top: 90px;
+}
+
+#login_page, .adb-js-panel-target {
+	margin-top: 100px;
+}
+
+.myappsV2Page #main {
+	margin-top: 70px !important;
+}
+
+.buyFlow {
+	.header-primary__menu {
+		padding: 0 !important;
+	}
+}

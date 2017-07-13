@@ -1,0 +1,27 @@
+.footer-primary {
+	background: $footer-bg;
+	font-size: 13px;
+	height: $footer-height;
+	border-bottom: 2px solid $red;
+
+	.footer-row {
+		padding: 10px 0;
+		color: $footer-color;
+
+		a {
+			color: $footer-color;
+			transition: all linear 0.1s;
+			margin-right: 15px;
+			text-decoration: none;
+
+			&:hover {
+				color: $link-hover-color;
+			}
+		}
+	}
+}
+
+.adb-page_footer,
+footer {
+	margin-top: 0;
+}

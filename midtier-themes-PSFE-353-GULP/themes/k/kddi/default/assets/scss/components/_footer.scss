@@ -1,0 +1,83 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	border-top: 10px solid $footer-primary-border-top;
+	padding: 16px 0;
+	font-size: 12px;
+
+	&__container {
+		display: flex;
+		align-items: center;
+
+		&__top {
+			list-style-type: none;
+			display: flex;
+			border-bottom: 1px solid $header-border-color;
+			padding: 0 0 14px;
+		}
+
+		&__bottom {
+			list-style-type: none;
+			display: flex;
+			padding: 14px 0 0;
+		}
+
+		&--logo {
+			width: $footer-primary-logo-width;
+			height: $footer-primary-logo-height;
+			background: url($asset-logo) no-repeat;
+			background-size: contain;
+			align-self: center;
+		}
+
+		&--links {
+			display: flex;
+			flex-grow: 1;
+			flex-direction: column;
+			padding-left: 25px;
+			cursor: pointer;
+		}
+
+		&--linkage {
+			color: $header-link-color;
+
+			&:hover {
+				color: $header-hover-color;
+			}
+
+			&:visited {
+				color: $header-visited-color;
+
+				&:hover {
+					color: $header-hover-color;
+				}
+			}
+		}
+
+		&--list-item {
+			padding: 0px 15px 0 9px;
+			border-right: 0.5px solid $header-border-color;
+			line-height: 14px;
+			margin-right: 15px;
+			background: url($custom-arrow) no-repeat left center;
+
+			&:last-child {
+				border-right: transparent;
+			}
+		}
+
+		&--copyright {
+			text-align: right;
+			color: $ad-gray-shade5;
+		}
+	}
+
+	.adb-icon__appdirect {
+		font-size: 14px;
+	}
+}
+
+// To make footer sticky need to think about other way of doing this
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}

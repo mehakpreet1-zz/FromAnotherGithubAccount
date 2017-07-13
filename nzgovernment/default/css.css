@@ -1,0 +1,396 @@
+.header-primary__menu__item--link,
+.header-primary__menu__item .adb-context_menu--trigger,
+.companies-dropdown > a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 60px;
+}
+
+.header-primary__menu__item--link:focus,
+.header-primary__menu__item .adb-context_menu--trigger:focus,
+.companies-dropdown > a:focus,
+.header-primary__menu__item--link:hover,
+.header-primary__menu__item .adb-context_menu--trigger:hover,
+.companies-dropdown > a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.header-primary__menu__item--link::after,
+.header-primary__menu__item .adb-context_menu--trigger::after,
+.companies-dropdown > a::after {
+  content: ' ';
+}
+
+[data-page='home'] .marketplace--active,
+[data-page='listing'] .marketplace--active,
+[data-page='profile'] .marketplace--active,
+[data-page='home'] .product--active,
+[data-page='listing'] .product--active,
+[data-page='profile'] .product--active,
+.myappsV2Page .myapps--active,
+.loginPage .login--active,
+.signupPage .signup--active {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+[data-page='home'] .marketplace--active:hover,
+[data-page='listing'] .marketplace--active:hover,
+[data-page='profile'] .marketplace--active:hover,
+[data-page='home'] .product--active:hover,
+[data-page='listing'] .product--active:hover,
+[data-page='profile'] .product--active:hover,
+.myappsV2Page .myapps--active:hover,
+.loginPage .login--active:hover,
+.signupPage .signup--active:hover {
+  text-decoration: underline;
+}
+
+.header-primary {
+  background: #333333;
+  height: 98px;
+  font-family: "Verb Condensed", "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.header-primary__menu {
+  height: 98px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header-primary__menu_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.header-primary__menu_right .header-primary__menu__item {
+  margin-top: 10px;
+}
+
+.header-primary__menu__item .marketplace--active {
+  margin-left: 60px;
+}
+
+.header-primary__menu__item--logo {
+  background: url("https://d3bql97l1ytoxn.cloudfront.net/channel_custom_style_resources/img3192061759808154141?ad869fd83362108e16096f8277e76088") no-repeat;
+  background-size: contain;
+  display: block;
+  height: 57px;
+  margin: 26px 0 0;
+  width: 163px;
+}
+
+.header-primary .custom-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.header-primary .custom-search--box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fff;
+  font-size: 14px;
+  font-size-weight: bold;
+  width: 287px;
+}
+
+.header-primary .custom-search--box input {
+  background: transparent;
+  padding: 0;
+  height: 36px;
+  border: 0;
+  border-radius: 0;
+  margin-left: 15px;
+}
+
+.header-primary .custom-search--button {
+  color: #373737;
+  background: #fff;
+  height: 38px;
+  width: 37px;
+  padding: 5px;
+  border: 1px #333333 solid;
+  border-right: 1px solid #C0C0C0;
+  font-size: 15px;
+}
+
+.header-secondary {
+  background: #333333;
+  height: 65px;
+  font-family: "Verb Condensed", "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 15.54px;
+  font-size-weight: bold;
+}
+
+.header-secondary .logged-out-ul {
+  margin-left: -10px;
+}
+
+.header-secondary__menu {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  height: 65px !important;
+  margin-left: -42px;
+}
+
+.header-secondary__menu .one {
+  padding: 10px;
+  margin-left: -10px;
+}
+
+.header-secondary__menu .one:hover {
+  background-color: #5A3985;
+}
+
+.header-secondary__menu .two {
+  padding: 10px;
+}
+
+.header-secondary__menu .two:hover {
+  background-color: #396E85;
+}
+
+.header-secondary__menu .three {
+  padding: 10px;
+}
+
+.header-secondary__menu .three:hover {
+  background-color: #B61D39;
+}
+
+.header-secondary__menu .four {
+  padding: 10px;
+}
+
+.header-secondary__menu .four:hover {
+  background-color: #157550;
+}
+
+.header-secondary__menu .five {
+  padding: 10px;
+}
+
+.header-secondary__menu .five:hover {
+  background-color: #CD4C03;
+}
+
+.header-secondary__menu .six {
+  padding: 10px;
+}
+
+.header-secondary__menu .six:hover {
+  background-color: #2641B0;
+}
+
+.header-secondary__menu .seven {
+  padding: 21px;
+}
+
+.header-secondary__menu .seven:hover {
+  background-color: #BF312D;
+}
+
+.header-secondary__menu__item {
+  width: 161px;
+  text-align: center;
+}
+
+.header-secondary__menu__item a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.header-secondary__menu__item a:hover {
+  text-decoration: none;
+}
+
+.login-links-properties {
+  height: 45px;
+  width: 180px;
+}
+
+.login-links-properties a {
+  font-size: 16px;
+}
+
+.header-secondary__menu__item .adb-context_menu--menu {
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-radius: 0;
+  margin-top: 0;
+}
+
+.header-secondary__menu__item .adb-context_menu--menu li:first-child a:hover,
+.header-secondary__menu__item .adb-context_menu--menu li:first-child:hover {
+  border-radius: 0 0 0 0;
+}
+
+.header-secondary__menu__item .adb-context_menu--menu li:last-child a:hover,
+.header-secondary__menu__item .adb-context_menu--menu li:last-child:hover {
+  border-radius: 0 0 0 0;
+}
+
+.header-secondary__menu__item .adb-context_menu--menu li ~ li {
+  border-top: 0 solid #808080;
+}
+
+.header-secondary__menu__item .adb-context_menu--menu a {
+  padding: 10px;
+  color: #333333 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  line-height: 1em;
+  font-size: 14px;
+}
+
+.header-secondary__menu__item .adb-context_menu--menu a:hover {
+  text-decoration: underline;
+  box-shadow: none;
+  position: relative;
+  background-color: #fff;
+  color: #333333;
+}
+
+.companies-dropdown {
+  position: relative;
+}
+
+.companies-dropdown .adb-context_menu--menu {
+  margin-top: 32px;
+}
+
+.js-dropdown-container {
+  margin: 32px 0 0 181px;
+}
+
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+  display: block;
+}
+
+.footer-primary {
+  background-color: #333333;
+  border-top: 1px solid #c4c4c4;
+  padding: 1em 0 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-primary-right {
+  margin-left: auto;
+}
+
+.footer-primary .adb-layout-default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer,
+.adb-page_footer {
+  margin-top: 0 !important;
+}
+
+.adb-page {
+  margin-bottom: 0 !important;
+  min-height: calc(100vh - 65px) !important;
+}
+
+.adb-page--footer_helper {
+  padding-bottom: 20px !important;
+}
+
+.adb-inline_alert,
+.adb-button,
+input[type='button'],
+button,
+.adb-button_status {
+  border-radius: 0;
+}
+
+.adb-text,
+[type='number'],
+[type='tel'],
+[type='text'],
+[type='email'],
+[type='password'],
+[type='url'],
+textarea,
+[type='search'],
+.adb-search_field--input,
+[type='date'],
+.adb-date {
+  box-shadow: none;
+}
+
+.adb-text:focus,
+[type='number']:focus,
+[type='tel']:focus,
+[type='text']:focus,
+[type='email']:focus,
+[type='password']:focus,
+[type='url']:focus,
+textarea:focus,
+[type='search']:focus,
+.adb-search_field--input:focus,
+[type='date']:focus,
+.adb-date:focus {
+  box-shadow: none;
+}
+
+.adb-secondary_nav--search {
+  width: 323px;
+}
+
+.adb-secondary_nav--item .adb-secondary_nav--link.active::before,
+.adb-secondary_nav--item .adb-secondary_nav--link.adb-is-selected::before,
+.adb-secondary_nav--item a.active::before,
+.adb-secondary_nav--item a.adb-is-selected::before,
+.adb-secondary_nav li .adb-secondary_nav--link.active::before,
+.adb-secondary_nav li .adb-secondary_nav--link.adb-is-selected::before,
+.adb-secondary_nav li a.active::before,
+.adb-secondary_nav li a.adb-is-selected::before {
+  background-color: #333333;
+}
+
+#subnav-header a:focus,
+#subnav-header a:hover,
+#subnav-header a.active,
+#subnav-header a:active {
+  color: #575757;
+}
+
+#subnav-header a:active::before,
+#subnav-header a.active::before {
+  background-color: #333333;
+}
+
+.adb-secondary_nav .adb-secondary_nav--search {
+  display: none;
+}

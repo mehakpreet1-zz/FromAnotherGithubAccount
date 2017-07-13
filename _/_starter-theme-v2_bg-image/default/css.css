@@ -1,0 +1,215 @@
+.header-primary__menu__item--link,
+.header-primary__menu__item .adb-context_menu--trigger,
+.companies-dropdown > a {
+  color: #000;
+  font-size: 16px;
+  margin-left: 1.5em;
+}
+
+.header-primary__menu__item--link:focus,
+.header-primary__menu__item .adb-context_menu--trigger:focus,
+.companies-dropdown > a:focus,
+.header-primary__menu__item--link:hover,
+.header-primary__menu__item .adb-context_menu--trigger:hover,
+.companies-dropdown > a:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+[data-page='home'] .marketplace--active,
+[data-page='listing'] .marketplace--active,
+[data-page='profile'] .marketplace--active,
+.myappsV2Page .myapps--active,
+.loginPage .signin--active,
+.signupPage .signup--active {
+  color: #000;
+}
+
+.header-primary {
+  background: #f5f5f5;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 5px solid #000;
+  height: 90px;
+}
+
+.header-primary__menu {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header-primary__menu_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.header-primary__menu__item--logo {
+  background: url("http://www.videotron.com/vcom/static/img/logo/head-videotron-logo-black.png") no-repeat;
+  background-size: contain;
+  display: block;
+  height: 60px;
+  margin: 15px 0;
+  width: 100px;
+}
+
+.header-primary__menu__item .adb-context_menu--menu {
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-radius: 3px;
+  margin-top: 0;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li:first-child a:hover,
+.header-primary__menu__item .adb-context_menu--menu li:first-child:hover {
+  border-radius: 3px 3px 0 0;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li:last-child a:hover,
+.header-primary__menu__item .adb-context_menu--menu li:last-child:hover {
+  border-radius: 0 0 3px 3px;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li ~ li {
+  border-top: 1px solid #808080;
+}
+
+.header-primary__menu__item .adb-context_menu--menu a {
+  padding: 10px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  line-height: 1em;
+  font-size: 14px;
+}
+
+.header-primary__menu__item .adb-context_menu--menu a:hover {
+  text-decoration: none;
+  box-shadow: none;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+}
+
+.companies-dropdown {
+  position: relative;
+}
+
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+  display: block;
+}
+
+.footer-primary {
+  background-color: #fff;
+  border-top: 1px solid #c4c4c4;
+  padding: 1em 0 2em;
+}
+
+.footer-primary__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-primary a {
+  color: #9c9c9c;
+}
+
+.footer-primary a:hover {
+  text-decoration: none;
+}
+
+.footer-primary .adb-icon__appdirect {
+  font-size: 14px;
+}
+
+footer,
+.adb-page_footer {
+  margin-top: 0 !important;
+}
+
+html {
+  background: #585858 url("") repeat-x top center;
+}
+
+body {
+  width: calc(984px + 100px);
+  margin: 40px auto;
+  background: #fff;
+  height: auto;
+}
+
+@media only screen and (min-width: 1280px) {
+  body {
+    width: calc(1128px + 100px);
+  }
+}
+
+.adb-page {
+  margin-bottom: 0 !important;
+  min-height: calc(100vh - 65px) !important;
+}
+
+.adb-page--footer_helper {
+  padding-bottom: 20px !important;
+}
+
+.adb-secondary_nav .adb-search_field--input {
+  border: 1px solid #fdfdfd;
+  border-right: 0;
+}
+
+.adb-secondary_nav .adb-search_field--button {
+  color: #585858;
+  border: 1px solid #c4c4c4;
+  background: #f5f5f5;
+  border-radius: 0 3px 3px 0;
+  box-shadow: none;
+  text-shadow: none;
+  font-weight: 600;
+  padding: 3px 8px;
+}
+
+.adb-secondary_nav .adb-search_field--button:hover {
+  color: #585858;
+  background: #fdfdfd;
+}
+
+.adb-secondary_nav .adb-search_field .adb-input_row--item_content {
+  border-color: #c4c4c4;
+  border-border-radius: 0 3px 3px 0;
+}
+
+.adb-secondary_nav--item .adb-secondary_nav--link.active::before,
+.adb-secondary_nav--item .adb-secondary_nav--link.adb-is-selected::before,
+.adb-secondary_nav--item a.active::before,
+.adb-secondary_nav--item a.adb-is-selected::before,
+.adb-secondary_nav li .adb-secondary_nav--link.active::before,
+.adb-secondary_nav li .adb-secondary_nav--link.adb-is-selected::before,
+.adb-secondary_nav li a.active::before,
+.adb-secondary_nav li a.adb-is-selected::before {
+  background-color: #575757;
+}
+
+#subnav-header a:focus,
+#subnav-header a:hover,
+#subnav-header a.active,
+#subnav-header a:active {
+  color: #575757;
+}
+
+#subnav-header a:active::before,
+#subnav-header a.active::before {
+  background-color: #575757;
+}

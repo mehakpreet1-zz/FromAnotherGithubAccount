@@ -1,0 +1,61 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'http://www.business.mediacomcable.com/img/logo.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$black: #000;
+$red: #ff0000;
+$red-shade2: #cc1e20;
+$gray-shade1: #5a5a5a;
+$gray-shade2: #cbcbcb;
+$gred-shade3: #9c9c9c;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $white;
+$header-primary-border-color: $gray-shade2;
+$header-primary-logo-height: 72px;
+$header-primary-logo-width: 163px;
+$header-primary-font-size: 17px;
+$header-primary-font-color: $gray-shade1;
+$header-primary-font-color_hover: $red;
+$header-primary-color_active: $black;
+
+$dropdown-border-color: $gray-shade1;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 0px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $gray-shade1;
+$dropdown-bg: $white;
+$dropdown-item-hover-bg: $white;
+$dropdown-item-hover-color: $red;
+
+$secondary-nav-search-button-color: $white;
+$secondary-nav-search-button-color_hover: $secondary-nav-search-button-color;
+$secondary-nav-search-button-bg: $red;
+$secondary-nav-search-button-bg_hover: $red-shade2;
+
+$secondary-nav-selected-text-color: $black;
+$secondary-nav-selected-item-border-color: $red;
+
+$footer-height: 65px;
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $gray-shade2;
+$footer-link-color: $gred-shade3;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

@@ -1,0 +1,74 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <ul class="footer-primary__menu">
+        <li class="footer-primary__menu__item">
+           <a class="footer-primary__menu__item--link link1" href="http://www.dell.com/learn/solutions/online-privacy-my?s=corp">© 2017 Dell</a>   
+        </li>
+
+         <li class="footer-primary__menu__item">
+            <a class="footer-primary__menu__item--link link2" href="http://www.dell.com/learn/terms?s=corp">Legal & Regulatory</a>        
+        </li>
+
+        <li class="footer-primary__menu__item">
+            <a class="footer-primary__menu__item--link link3" href="http://www.dell.com/learn/site-terms-of-use?s=corp">Site Terms</a>     
+        </li>
+
+        <li class="footer-primary__menu__item">
+            <a class="footer-primary__menu__item--link link4" href="http://www.dell.com/learn/terms-of-sale?s=corp">Terms of Sale</a>     
+        </li>
+
+        <li class="footer-primary__menu__item">
+            <a class="footer-primary__menu__item--link link5" href="http://www.dell.com/support/incidents-online/email/unresolved">Unresolved Issues</a>
+        </li>
+
+        <li class="footer-primary__menu__item">
+            <a class="footer-primary__menu__item--link link6" href="https://ecomm.apj.dell.com/GSC/ListRemoval/Index">Unsubscribe</a>         
+        </li>
+
+        <li class="footer-primary__menu__item">
+            <a class="footer-primary__menu__item--link link7" href="http://www.dell.com/learn/policies-privacy?s=corp">Privacy Statement</a>         
+        </li>
+
+         <li class="footer-primary__menu__item">
+            <a class="footer-primary__menu__item--link link8" href="http://www.dell.com/content/public/xdbredirect.aspx?link=ap:topics:main:sitemap%3Fs%3Dgen">Site Map</a>         
+        </li>
+
+        <li class="footer-primary__menu__item">
+            <a class="footer-primary__menu__item--link link9" href="http://www.dell.com/learn/dell-environment-recycling?s=corp">Dell Recycling</a>         
+        </li>
+
+         <li class="footer-primary__menu__item">
+            <a class="footer-primary__menu__item--link link10" href="#">Feedback</a>         
+        </li>
+
+
+        </ul>
+    </div>
+</div>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

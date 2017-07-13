@@ -1,0 +1,236 @@
+.ad-component--link,
+.ad-component_link {
+  color: #000;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ad-component--link:focus,
+.ad-component_link:focus,
+.ad-component--link:hover,
+.ad-component_link:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+[data-page='home'] #shop[href='/home'],
+[data-page='listing'] #shop[href='/home'],
+[data-page='profile'] #shop[href='/home'],
+.myappsV2Page [href='/myapps'],
+.loginPage [href='/login'],
+.signupPage [href='/signup'] {
+  color: #000;
+}
+
+.header-primary {
+  background: #f5f5f5;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 5px solid #000;
+  height: 90px;
+}
+
+.header-primary__menu {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.header-primary__menu_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-primary__menu__item--logo {
+  background: url("https://www.videotron.com/vcom/static/img/logo/head-videotron-logo-black.png") no-repeat;
+  background-size: contain;
+  display: block;
+  height: 60px;
+  margin: 15px 0;
+  width: 100px;
+}
+
+.ad-component_list-item--myapps,
+.ad-component_list-item--home,
+.ad-component_list-item--login,
+.ad-component_list-item--signup,
+.ad-component_list-item--account,
+.ad-component_dropdown {
+  padding-left: 25px;
+}
+
+.ad-component_dropdown--trigger:after {
+  content: '\e007';
+  font-family: 'AppDirectIcons';
+}
+
+.manage-links .ad-component_list-item--account,
+.manage-links .ad-component_dropdown {
+  padding-left: 0;
+}
+
+.adb-primary_nav--item {
+  border: 0;
+}
+
+.ad-component_dropdown {
+  position: relative;
+}
+
+.ad-component_dropdown > .ad-component_list {
+  background: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #808080;
+  border-radius: 3px;
+  min-width: 150px;
+  position: absolute;
+  text-align: left;
+  z-index: 1090;
+}
+
+.ad-component_dropdown > .ad-component_list .ad-component_list-item {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #808080;
+}
+
+.ad-component_dropdown > .ad-component_list .ad-component_list-item:first-child {
+  border-top: 0;
+}
+
+.ad-component_dropdown > .ad-component_list .ad-component_list-item:first-child a:hover,
+.ad-component_dropdown > .ad-component_list .ad-component_list-item:first-child:hover {
+  border-radius: 3px 3px 0 0;
+}
+
+.ad-component_dropdown > .ad-component_list .ad-component_list-item:last-child a:hover,
+.ad-component_dropdown > .ad-component_list .ad-component_list-item:last-child:hover {
+  border-radius: 0 0 3px 3px;
+}
+
+.ad-component_dropdown > .ad-component_list .ad-component--link,
+.ad-component_dropdown > .ad-component_list .ad-component_link {
+  display: block;
+  padding: 10px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1em;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+.ad-component_dropdown > .ad-component_list .ad-component--link:hover,
+.ad-component_dropdown > .ad-component_list .ad-component_link:hover {
+  text-decoration: none;
+  box-shadow: none;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-primary {
+  background-color: transparent;
+  border-top: 1px solid #c4c4c4;
+  padding: 1em 0 2em;
+}
+
+.footer-primary__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-primary a {
+  color: #9c9c9c;
+}
+
+.footer-primary a:hover {
+  text-decoration: none;
+}
+
+.footer-primary .adb-icon__appdirect {
+  font-size: 14px;
+}
+
+footer,
+.adb-page_footer {
+  margin-top: 0 !important;
+}
+
+.adb-page {
+  margin-bottom: 0 !important;
+  min-height: calc(100vh - 65px) !important;
+}
+
+.adb-page--footer_helper {
+  padding-bottom: 20px !important;
+}
+
+.adb-secondary_nav .adb-search_field--input {
+  border-weight: 1px;
+  border-style: solid;
+  border-color: #fdfdfd;
+  border-right: 0;
+}
+
+.adb-secondary_nav .adb-search_field--button {
+  color: #585858;
+  background: #f5f5f5;
+  box-shadow: none;
+  text-shadow: none;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-weight: 1px;
+  border-style: solid;
+  border-color: #c4c4c4;
+  border-radius: 0 3px 3px 0 !important;
+}
+
+.adb-secondary_nav .adb-search_field--button:hover {
+  color: #585858;
+  background: #fdfdfd;
+}
+
+.adb-secondary_nav .adb-search_field .adb-input_row--item_content {
+  border-color: #c4c4c4;
+  border-radius: 3px 0 0 3px;
+}
+
+.adb-secondary_nav--item .adb-secondary_nav--link.active::before,
+.adb-secondary_nav--item .adb-secondary_nav--link.adb-is-selected::before,
+.adb-secondary_nav--item a.active::before,
+.adb-secondary_nav--item a.adb-is-selected::before,
+.adb-secondary_nav li .adb-secondary_nav--link.active::before,
+.adb-secondary_nav li .adb-secondary_nav--link.adb-is-selected::before,
+.adb-secondary_nav li a.active::before,
+.adb-secondary_nav li a.adb-is-selected::before {
+  background-color: #575757;
+}
+
+#subnav-header a:focus,
+#subnav-header a:hover,
+#subnav-header a.active,
+#subnav-header a:active {
+  color: #575757;
+}
+
+#subnav-header a:active::before,
+#subnav-header a.active::before {
+  background-color: #575757;
+}

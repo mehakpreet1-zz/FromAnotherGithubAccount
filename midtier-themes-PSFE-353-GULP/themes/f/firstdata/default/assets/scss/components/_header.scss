@@ -1,0 +1,268 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	height: $header-primary-height;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			width: 321px;
+			text-align: center;
+			padding-left: 112px;
+			margin: auto;
+
+			.a {
+				width: 300px;
+				color: #003857;
+			}
+		}
+
+		&__item {
+			align-items: center;
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+			}
+
+			&--link {
+				margin-left: 3.25em;
+
+				&_right {
+					width: 59px;
+					height: 84px;
+					border-left: 1px solid #d8d8d8;
+					border-right: 1px solid #d8d8d8;
+
+					&.search {
+						background: url(https://www.firstdata.com/etc/designs/cs/firstdatacom-responsive/clientlib-site/img/nav/search-icon.png) no-repeat scroll center center #fff;
+					}
+
+					&.global {
+						cursor: pointer;
+						border-right: 1px solid #d8d8d8;
+						background: url(https://www.firstdata.com/etc/designs/cs/firstdatacom-responsive/clientlib-site/img/nav/globe-icon.png) no-repeat scroll center center #fff;
+
+						&:hover {
+							background-color: darkgray;
+							background: url(https://www.firstdata.com/etc/designs/cs/firstdatacom-responsive/clientlib-site/img/nav/globe-icon-hover.png) no-repeat scroll center center #fff;
+						}
+					}
+				}
+
+				&_contact_us {
+					color: #fff;
+					height: 84px;
+					text-align: center;
+					margin-bottom: 0px;
+					background: no-repeat scroll center center #fb4f14;
+					border-right: 0;
+					text-transform: uppercase;
+					font: 15px/81px "SimpleSansMedium", Arial, sans-serif;
+					font-size: 14px;
+					right: 0;
+					width: 171px;
+					cursor: pointer;
+
+					&:hover {
+						background: no-repeat scroll center center #fc7243 !important;
+					}
+				}
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.header-primary-bottom {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	border-top: 1px solid $header-primary-border-top-color;
+	height: 40px;
+	display: flex;
+	margin: auto;
+	z-index: 1000;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		height: 39px;
+		width: 580px;
+		padding-left: 22px;
+
+		&_right {
+			display: flex;
+			align-items: center;
+			width: 308px;
+			justify-content: flex-end;
+			padding-left: 50px;
+
+			&__item {
+				padding-right: 20px;
+
+				&--link,
+				.adb-context_menu--trigger {
+					@extend %nav-link;
+				}
+			}
+		}
+
+		&__item_start {
+			height: 30px;
+			scroll: center;
+			padding-top: 11px;
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link-bottom;
+			}
+		}
+
+		&__item {
+			background: url(https://www.firstdata.com/etc/designs/cs/firstdatacom-responsive/clientlib-site/img/breadcrumb/arrow.svg) no-repeat #fff;
+			height: 30px;
+			scroll: center;
+			padding-top: 11px;
+			padding-left: 20px;
+			padding-right: 20px;
+
+			&--link-active {
+				color: #00a9e0;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #003857;
+				text-decoration: none;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link-bottom;
+			}
+		}
+	}
+}
+
+.header-primary-bottom-login {
+	background: $header-primary-bg;
+	border-top: 1px solid $header-primary-border-top-color;
+	height: 39px;
+	display: flex;
+	margin: auto;
+	z-index: 1000;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		height: 38px;
+		width: 1140px;
+
+		&_right {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			margin-left: auto;
+			align-items: center;
+			padding-right: 3px;
+
+			&__item {
+				padding-left: 20px;
+
+				&--link,
+				.adb-context_menu--trigger {
+					@extend %nav-link;
+				}
+			}
+		}
+
+		&__item_start {
+			height: 30px;
+			padding-top: 11px;
+			padding-right: 14px;
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link-bottom;
+			}
+		}
+
+		&__item {
+			background: url(https://www.firstdata.com/etc/designs/cs/firstdatacom-responsive/clientlib-site/img/breadcrumb/arrow.svg) no-repeat #fff;
+			height: 29px;
+			scroll: center;
+			padding-top: 11px;
+			padding-left: 20px;
+			padding-right: 20px;
+
+			&--link-active {
+				color: #00a9e0;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #003857;
+				text-decoration: none;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link-bottom;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

@@ -1,0 +1,72 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: 'https://www.cspire.com/resources/images/nav-2016/csbs-logo.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$gray: #eaeaea;
+$dark-gray: #ccc;
+$black: #000;
+$purple: #78359f;
+$blue: #009abf;
+$dropdown-gray: #61788e;
+$color-active: #3d7cc2;
+$header-top-bg: #003C80;
+$header-top-blue-link: #4087c4;
+$header-top-link-border: #b8b8b8;
+$secondary-footer-bg: #323e4e;
+$header-link: #888;
+$header-link-hover: #21c4f3;
+$header-link-hover-bg: #002146;
+$search-input-btn: #1c4075;
+$search-input-btn-border: #cbcbcb;
+$footer-height: 50;
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+
+$dropdown-border-color: $gray;
+$dropdown-color: $white;
+$dropdown-bg: $dropdown-gray;
+$dropdown-hover-bg: #fAfAfA;
+$dropdown-hover-color: $white;
+
+$phone-color: #373737;
+$blue-btn-bg: #3b81c2;
+$link-color: #404d74;
+
+$footer-pipe-image: 'http://www.viaero.com/Sitefinity/WebsiteTemplates/ViaeroBase/App_Themes/ViaeroBase/Images/i/support-seprator.png';
+$footer-bg: $gray;
+$foote-secondary-bg: $secondary-footer-bg;
+$footer-text-color: #4d4d4d;
+$footer-text-hover: #6ea2b4;
+$footer-border-top: #d1d2d4;
+$footer-text-color: #333333;
+$footer-text-color-second: #808080;
+$container-bg: #b3b3b3;
+
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+$nav-item-padding: 12px 10px; // example only
+$custom-font: 'ProximaNovaSoft-Regular', Arial, sans-serif;
+$content-blank: ' ';

@@ -1,0 +1,112 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+.header-primary {
+	background: $header-primary-bg;
+	font-size: 18px;
+	border-bottom: 1px solid $header-primary-border-color;
+	font-family: $font-family;
+	border-top: 3px solid $header-primary-border-color;
+
+	&__menu {
+		display: flex;
+		flex-direction: row;
+
+		&--nav {
+			&_left {
+				display: flex;
+
+				li:first-child {
+					background: none;
+				}
+
+				&--links {
+					display: flex;
+					align-items: center;
+				}
+			}
+
+			&_right {
+				display: flex;
+				margin-left: auto;
+				flex-direction: row;
+				align-items: center;
+			}
+		}
+
+		&__item {
+			display: flex;
+			align-items: flex-end;
+
+			&:hover {
+				color: $header-primary-link-hover-color;
+				text-decoration: none;
+			}
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				width: 311px;
+				height: 81px;
+				background-size: 311px 81px;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				display: flex;
+				color: $header-primary-link-color;
+				text-transform: uppercase;
+				font: {
+					size: 16px;
+					weight: 300;
+				}
+				padding: 15px;
+
+				&:hover {
+					color: $header-primary-link-hover-color;
+					text-decoration: none;
+				}
+
+				&:after {
+					content:'';
+				}
+
+				&.adb-is-active {
+					color: $header-primary-link-hover-color;
+				}
+			}
+		}
+	}
+}
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+
+// scss placeholder for showing active tab
+
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+body.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+body.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

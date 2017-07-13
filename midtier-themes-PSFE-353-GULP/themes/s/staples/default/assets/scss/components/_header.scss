@@ -1,0 +1,223 @@
+.header-top {
+	display: flex;
+	justify-content: center;
+
+	&-subnav {
+		background: url($asset-header-background) no-repeat;
+		width: 1004px;
+		height: 50px;
+	}
+}
+
+.header-primary {
+	background: $header-primary-bg;
+	-webkit-font-smoothing: antialiased;
+	height: 33px;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		height: 100%;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+			height: 100%;
+		}
+
+		&__item {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			margin-left: 1.5em;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&--logo {
+				background: url($asset) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+				height: 100%;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+
+				&__first {
+					margin-left: 3px !important;
+				}
+			}
+		}
+	}
+}
+
+.home {
+	margin-top: 10px;
+}
+
+.home-icon {
+	background: url($asset) no-repeat;
+	background-position: -200px -391px;
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+}
+
+.stp--icon {
+	display: inline-block;
+	zoom: 1;
+}
+
+.header-secondary {
+	height: 90px;
+	-webkit-font-smoothing: antialiased;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		z-index: 9995;
+		box-shadow: 0 3.5px 5px -0.5px;
+		font-size: 100%;
+
+		.logo-container {
+			&:hover {
+				background: transparent;
+			}
+		}
+
+		&__item {
+			&__details {
+				text-align: center;
+				font-family: 'HelveticaNeue-Medium','Helvetica Neue',Helvetica,Arial,sans-serif;
+				height: 60px;
+				font-size: 12px;
+				cursor: pointer;
+				padding: 10px 15px;
+			}
+
+			&:hover {
+				background-color: $header-secondary-menu-item;
+			}
+
+			&__logo {
+				background-image: url($asset);
+				background-position: -136px -228px;
+				width: 130px;
+				height: 27px;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link-secondary;
+			}
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.shop-by-category-icon {
+	background-image: url($asset);
+	background-position: -353px -300px;
+	width: 30px;
+	height: 25px;
+}
+
+.shop-services-icon {
+	background-image: url($asset);
+	background-position: -444px -210px;
+	width: 25px;
+	height: 25px;
+}
+
+.shop-deals-icon {
+	background-image: url($asset);
+	background-position: -444px -260px;
+	width: 25px;
+	height: 25px;
+}
+
+.ink-and-toner-finder-icon {
+	background-image: url($asset);
+	background-position: -444px -335px;
+	width: 25px;
+	height: 25px;
+}
+
+.your-store-icon {
+	background-image: url($asset);
+	background-position: -444px -60px;
+	width: 25px;
+	height: 25px;
+}
+
+.easy-reorder-icon {
+	background-image: url($asset);
+	background-position: -444px -235px;
+	width: 25px;
+	height: 25px;
+}
+
+.my-account-icon {
+	background-image: url($asset);
+	background-position: -304px -228px;
+	width: 35px;
+	height: 25px;
+}
+
+.stp--icon-cart {
+	background-image: url($asset);
+	background-position: 0px -391px;
+	width: 30px;
+	height: 25px;
+}
+
+.item-title {
+	width: 95px;
+	display: block;
+	text-transform: uppercase;
+	margin-top: 5px;
+	line-height: 1em;
+	font-family: 'HelveticaNeue-Medium','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.cart {
+	background-color: #ffcc00;
+}
+
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

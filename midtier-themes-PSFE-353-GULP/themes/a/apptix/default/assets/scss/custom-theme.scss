@@ -1,0 +1,93 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: "http://www.apptix.com/CMSTemplates/Apptix/images/design/logo.png";
+$asset-imagebg-header: "http://www.apptix.com/CMSTemplates/Apptix/images/design/backgrounds/header.jpg";
+$asset-imagebg-footer: "http://www.apptix.com/CMSTemplates/Apptix/images/design/backgrounds/footer.jpg";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+
+$primary: $ad-black;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+$custom-greenishblue: #568da7;
+$custom-greenshade1: #019a01;
+$custom-navyblue: #152d72;
+$custom-navyblueshade: #071e62;
+$custom-navyblueshade1: #072069;
+$custom-orange: #d95109;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $ad-white-shade2;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 114px;
+$header-primary-logo-width: 210px;
+$header-primary-font-size: 18px;
+$header-primary-font-color: $custom-navyblue;
+$header-primary-font-color_hover: $ad-gray-shade5;
+$header-primary-color_active: $custom-orange;
+$headerbg-url: $asset-imagebg-header;
+
+$dropdown-border-color: $ad-gray-shade5;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $custom-greenishblue;
+$dropdown-bg: $ad-white;
+$dropdown-item-hover-bg: $ad-white;
+$dropdown-item-hover-color: $custom-greenshade1;
+
+$secondary-nav-search-button-color: $ad-white;
+$secondary-nav-search-button-color_hover: $ad-white;
+$secondary-nav-search-button-border-color: $ad-gray-shade4;
+$secondary-nav-search-button-bg: $custom-navyblueshade;
+$secondary-nav-search-button-bg_hover: $custom-navyblueshade;
+
+$secondary-nav-selected-text-color: $ad-gray-shade3;
+$secondary-nav-selected-item-border-color: $custom-navyblueshade1;
+$secondary-nav-link-color: $custom-navyblueshade1;
+$footer-height: 65px;
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $ad-white;
+$footerbg-url: $asset-imagebg-footer;
+$buttons-text-color: $ad-white;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import "settings";
+
+// import computed values
+@import "components/INDEX";
+
+// import custom CSS

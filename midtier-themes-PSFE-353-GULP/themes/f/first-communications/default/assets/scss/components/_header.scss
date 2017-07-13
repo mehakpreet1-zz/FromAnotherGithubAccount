@@ -1,0 +1,169 @@
+// ------------------------------------------------------------
+// Custom Header Top
+// ------------------------------------------------------------
+.header-top {
+	background-color: $header-top-bgcolor;
+	margin-bottom: 5px;
+
+	&__content {
+		background: $header-top-bgcolor;
+		height: 40px;
+	}
+
+	&__phone {
+		font-size: 14px;
+		font-weight: 700;
+		float: right;
+		color: $phone-color;
+		padding-top: 8px;
+		padding-left: 20px;
+		margin-left: 0;
+	}
+
+	&__social-icons {
+		float: right;
+		padding-top: 3px;
+		margin-left: 30px;
+	}
+}
+
+
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $header-primary-bg;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		width: 100%;
+
+		&--nav {
+			align-items: center;
+			display: flex;
+			justify-content: flex-end;
+			margin-left: auto;
+		}
+
+		&__marketplace {
+			margin-left: 20px;
+		}
+
+		&__custom_button {
+			a {
+				margin-top: -5px;
+				background-color: #004684;
+				width: 110px;
+				font-weight: normal;
+				font-family: "Lato" !important;
+				font-size: 12px;
+				text-transform: uppercase;
+				height: 8px;
+				color: #FFF;
+				border-radius: 3px;
+				padding: 7px 8px;
+				text-align: center;
+				margin-top: 40px;
+				margin-left: 20px;
+				&:hover {
+					background-color: $orange;
+					color: $white;
+					-webkit-transition: 0s ease all;
+					transition: 0s ease all;
+				};
+			}
+		}
+
+		&__item {
+			list-style: none;
+			a {
+				position: relative;
+				font-family: "PT Sans";
+				&:after {
+					width: 20px;
+					content:'  ';
+				};
+
+				&:before {
+					display: block;
+					position: absolute;
+					width: 0%;
+					content: ' ';
+					top: -42px;
+					-webkit-transition: transform 250ms ease-in-out;
+					-moz-transition: transform 250ms ease-in-out;
+					-o-transition: transform 250ms ease-in-out;
+					transform: scaleX(0);
+					transition: transform 250ms ease-in-out;
+				}
+			}
+
+			&:hover a:before {
+				border-top: 2px solid $dark-blue;
+				width: 140%;
+				right: -16%;
+				transform: scaleX(1);
+			}
+
+			.adb-container {
+				border: none;
+				border-radius: 0px !important;
+			}
+
+			.companies-dropdown ul {
+				border: none;
+				border-radius: 0px !important;
+			}
+
+			.companies-dropdown > a,
+			&--link {
+				margin-left: 10px;
+				font-size: 11px;
+				text-transform: uppercase;
+				color: $main-nav-a-color;
+				transition: 0.25s ease all;
+				
+				&.active,
+				&:hover {
+					color: $main-nav-a-color-hover;
+					text-decoration: none;
+				}
+			}
+			
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: inline-block;
+				width: 300px;
+				height: 87px;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+		a:before {
+			border-top: 2px solid $dark-blue;
+			width: 140%;
+			right: -16%;
+		}
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+		a:before {
+			border-top: 2px solid $dark-blue;
+			width: 140%;
+			right: -16%;
+		}
+	}
+}

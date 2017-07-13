@@ -1,0 +1,113 @@
+.custom-footer {
+	background: #eaeaea;
+	color: #4E4E4E;
+	font-size: 12px;
+	padding: 50px 0 85px;
+
+	// LAYOUT ------------------
+	&__container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+
+		&__column {
+			width: 300px;
+		}
+	}
+	// LAYOUT ------------------
+
+	&__logo {
+		background: url($footer-logo) no-repeat top left;
+		background-size: 100% auto;
+		display: block;
+		margin-top: -18px;
+		width: 100%;
+		max-width: 175px;
+		min-height: 50px;
+	}
+
+	&__column-header {
+		font-weight: 700;
+		margin-bottom: 15px;
+		color: #4E4E4E;
+		text-align: left;
+	}
+
+	&__link {
+		margin-top: 0;
+
+		&:hover { color: #3E53A4; }
+	}
+
+	&__social {
+
+		&__item {
+			display: inline-block;
+			float: left;
+			height: 27px;
+			margin-right: 10px;
+			width: 27px;
+
+			&.facebook { background: url($sprite) -300px -94px; }
+			&.twitter { background: url($sprite) -331px -94px; }
+			&.linkedin { background: url($sprite) -362px -94px; }
+			&.youtube { background: url($sprite) -424px -94px; }
+
+			a {
+				display: inline-block;
+				height: 27px;
+				width: 27px;
+			}
+		}
+	}
+
+	&__copyright {
+		clear: left;
+		line-height: 1.5em;
+		padding-top: 16px;
+	}
+}
+
+.contact-bar {
+	background: #0c76ba;
+	border-top: 1px solid #fff;
+	bottom: 0;
+	color: #fff;
+	display: none;
+	margin: 0 auto -30px;
+	padding: 15px 0 45px;
+	position: fixed;
+	text-align: center;
+	transform: translate(0, 5000px);
+	width: 100%;
+	z-index: 100;
+
+	&__email--icon {
+		background: url($sprite) no-repeat -393px -64px;
+		display: inline-block;
+		height: 26px;
+		margin-right: 36px;
+		vertical-align: middle;
+		width: 26px;
+	}
+
+	&__telephone {
+		font-size: 16px;
+		vertical-align: middle;
+
+		&--icon {
+			background: url($sprite) no-repeat -712px -56px;
+			display: inline-block;
+			height: 26px;
+			margin-right: 12px;
+			vertical-align: middle;
+			width: 26px;
+		}
+	}
+}
+
+.animated-bounce {
+	display: block;
+	transform: translate(0, 0);
+	transition: all ease 5000ms;
+}

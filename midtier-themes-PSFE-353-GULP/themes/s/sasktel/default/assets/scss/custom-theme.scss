@@ -1,0 +1,90 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-location: 'https://d3bql97l1ytoxn.cloudfront.net/channel_custom_style_resources/img';
+$asset-logo: $asset-location + '5577331750542840164?eba09ce70309adf1ccc26cd93334bebd';
+$asset-footer-logo: $asset-location + '9095814949423663443?8ef36b7a6e6fa3e3f017cfd4eda39152';
+$asset-youtube: $asset-location + '2148610786640608329?aa010bc660e30a09bd0d2c2ac16cf585';
+
+// CUSTOM FONTS
+// -----------------------------------------------------------------
+//      fonts are prvoded by Typekit
+//      Necessary code is injected into /channel/ae3731
+// -----------------------------------------------------------------
+$custom-font: 'museo-sans', sans-serif;
+$header-top-font: bold 16px $custom-font;
+$header-primary-font: 300 16px $custom-font;
+$footer-primary-copyright-font: 300 12px $custom-font;
+$footer-primary-links-font: 500 12px $custom-font;
+$header-font: $custom-font;
+
+* { // Default font for whole marketplace. Modifications to cascade below.
+    font-family: $custom-font;
+}
+
+h1, h2, h3, h4, h5, h6,
+.listing-row-content-title {
+    font-family: $header-font;
+    font-weight: 100;
+}
+
+
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$primary: #0067c6;
+$primary-dark: #00488c;
+$secondary: #00f;
+$tertiary: #808080;
+$emphasis: #008000;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-top-bg: #333;
+$header-top-border-bottom-color: #fff;
+$header-top-height: 30px;
+$header-top-font-size: 12px;
+$header-top-font-color: #fff;
+$header-top-font-color-hover: #fff;
+
+$header-primary-bg: #fff;
+$header-primary-logo-height: 60px;
+$header-primary-logo-width: 200px;
+$header-primary-font-size: 16px;
+$header-primary-font-color: $primary;
+$header-primary-font-color-hover: $primary;
+$header-primary-line-height: 70px;
+
+$dropdown-bg: #ECF5FB;
+$dropdown-border-color: transparent;
+$dropdown-border-width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider-width: 1px;
+$dropdown-item-color: #0056a7;
+$dropdown-item-hover-bg: transparent;
+$dropdown-item-hover-color: $dropdown-item-color;
+$dropdown-item-font-size: 14px;
+
+$secondary-nav-color: $primary;
+$secondary-nav-color-hover: $primary-dark; // Primary button hover bg
+
+$active-link-border-bottom-color: #000;
+
+$footer-primary-bg: #333;
+$footer-primary-height: 60px;
+$footer-primary-border-top: #eaeaea;
+$footer-secondary-bg: #00f;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

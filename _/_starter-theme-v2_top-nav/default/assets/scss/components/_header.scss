@@ -1,0 +1,97 @@
+// ------------------------------------------------------------
+// Custom Header Top
+// ------------------------------------------------------------
+.header-top {
+	background: $header-top-bg;
+	border-bottom: 1px solid $header-top-border-bottom-color;
+	height: $header-top-height;
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		height: $header-top-height;
+		justify-content: flex-end;
+		list-style: none;
+
+		&__item {
+
+			&--link {
+				@extend %nav-link-top;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid #eaeaea;
+	height: $header-primary-height;
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+			}
+
+			&--link {
+				@extend %nav-link-primary;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+
+	.marketplace--active {
+
+		@extend %active-state-primary;
+	}
+}
+
+.myappsV2Page {
+
+	.myapps--active {
+
+		@extend %active-state-primary;
+	}
+}
+
+.loginPage {
+
+	.login--active {
+
+		@extend %active-state-top;
+	}
+}
+
+.signupPage {
+
+	.signup--active {
+
+		@extend %active-state-top;
+	}
+}

@@ -1,0 +1,63 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'https://d3bql97l1ytoxn.cloudfront.net/channel_custom_style_resources/img4685663521954421702?809a5d659438d53aae0094e1df844ae6';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$primary: #6799C8;
+$secondary: blue;
+$tertiary: gray;
+$emphasis: green;
+$blue-dark: #00a1df;
+$blue-light: #5787b4;
+$blue-lighter: #72b2c9;
+$grey: #eaeaea;
+$grey-dark: #9c9c9c;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: white;
+$header-primary-border-top-color: $grey;
+$header-primary-logo-height: 60px;
+$header-primary-logo-width: 160px;
+$header-primary-font-size: 16px;
+$header-primary-font-color: black;
+$header-primary-font-color_hover: $primary;
+$header-primary-font-family: sans-serif;
+
+$dropdown-border-color: $grey;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 0;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: black;
+$dropdown-bg: white;
+$dropdown-item-hover-bg: $primary;
+$dropdown-item-hover-color: white;
+$dropdown-top-border: $blue-lighter;
+
+$footer-primary-bg: transparent;
+$footer-primary-color: $grey-dark;
+$footer-primary-border-top: $header-primary-border-top-color;
+$footer-secondary-bg: blue;
+$footer-height: 51px;
+
+$secondary-header-search-bg: $primary;
+$secondary-header-search-color: white;
+$secondary-header-search-input-border: $primary;
+$secondary-header-color: $grey-dark;
+$secondary-header-border-color: $primary;
+$secondary-header-active-color: $primary;
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

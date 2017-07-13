@@ -1,0 +1,76 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: 'https://d3bql97l1ytoxn.cloudfront.net/channel_custom_style_resources/img5197506444512666319?53b7e693bbcd7a189f066bf5e0c64dfa';
+$asset-header-primary-bg-image: 'https://gvtc.com/Sitefinity/WebsiteTemplates/GVTC-ZAG/App_Themes/default/images/bg-header.gif';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$black: #000;
+$gray-shed1: #dadada;
+$gray-shed2: #d3d3d3;
+$gray-shed4: #eaeaea;
+$gray-shed4: #cecece;
+$gray-shed5: #6a6a6a;
+$gray-shed6: #231f20;
+$purple-shed1: #934f86;
+$purple-shed2: #3e1739;
+$purple-shed3: #805475;
+$purple-shed4: #8d0676;
+$blue: #0084d3;
+$dark-blue: #003a5d;
+
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-bg: $purple-shed3;
+$header-primary-color: $purple-shed4;
+$header-primary-link-color: $gray-shed5;
+$header-primary-menu-item-bg: linear-gradient(to bottom, $white 0%, $gray-shed4 100%);
+$header-primary-menu-border-color: $gray-shed1;
+$header-primary-menu-item-hover-bg: $white;
+$header-primary-menu-item-shadow-color: $white;
+
+
+
+$header-top-bg: linear-gradient(to bottom, $purple-shed1 0%, $purple-shed2 100%);
+$header-top-color: $white;
+$header-top-social-icon-hover-color: $blue;
+
+$primary-button-bg: $purple-shed4;
+$primary-button-color: $white;
+
+$dropdown-border-color: $gray-shed4;
+$dropdown-color: $purple-shed4;
+$dropdown-bg: $white;
+$dropdown-hover-bg: $gray-shed4;
+$dropdown-hover-color: $purple-shed4;
+
+$footer-bg: $gray-shed4;
+$footer-nav-header-color: $dark-blue;
+$footer-nav-link-color: $gray-shed6;
+$footer-nav-border-color: $gray-shed2;
+$footer-second-level-color: $gray-shed5;
+$footer-social-icon-color: $purple-shed4;
+$footer-social-icon-hover-color: $blue;
+
+
+$font-sans-serif: sans-serif;
+$font-cabin-bold: 'cabin-bold';
+$font-cabin-bold: 'cabin-roman';
+$font-cabin-light: 'cabin-light';
+
+$footer-height: 174px;

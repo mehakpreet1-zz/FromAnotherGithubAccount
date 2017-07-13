@@ -1,0 +1,50 @@
+<div class="footer-primary">
+<div class="adb-layout-default">
+    <div class="footer-primary-left">
+        <a href="http://www.dia.govt.nz">
+            <img src="https://www.ict.govt.nz/themes/ict/images/dia.png" alt="Internal Affairs Te Tari Taiwhenua">
+            </a>
+        </div>
+
+        <div class="footer-primary-right">
+            <a href="http://newzealand.govt.nz">
+            <img src="https://www.ict.govt.nz/themes/ict/images/nzgov.png" alt="Internal Affairs Te Tari Taiwhenua">
+            </a>
+        </div>
+        </div>
+</div>
+
+<!--Scripts for Header behaviour -->
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-secondary .adb-context_menu--trigger', function() {
+            $('.header-secondary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-psecondary .adb-context_menu, .header-secondary .adb-context_menu--trigger')) {
+                $('.header-secondary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+ 
+        $('.header-secondary .header-secondary__menu__item').hover(function() {
+            $('.header-secondary .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-secondary .adb-is-active').removeClass('adb-is-active');
+        });
+        
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-secondary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

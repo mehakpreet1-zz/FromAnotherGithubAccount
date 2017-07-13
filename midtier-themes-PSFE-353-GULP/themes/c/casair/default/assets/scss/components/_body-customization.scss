@@ -1,0 +1,30 @@
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+
+#secondaryNav {
+	.adb-secondary_nav--link.adb-is-selected:before {
+		background-color: $ad-green;
+	}
+
+	.adb-secondary_nav .adb-search_field .adb-input_row--item_content {
+		border: {
+			color: $ad-green;
+			radius: 0px;
+		}
+
+	}
+
+	.adb-search_field--button {
+		background: $ad-green;
+		box-shadow: none;
+		text-shadow: none;
+		color: $ad-white;
+	}
+}

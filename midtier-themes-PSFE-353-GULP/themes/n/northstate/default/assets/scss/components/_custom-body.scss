@@ -1,0 +1,14 @@
+.adb-secondary_nav--link.adb-is-selected:before {
+	background-color: transparent;
+}
+
+#secondaryNav {
+	.adb-secondary_nav--link {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.adb-secondary_nav--item {
+		margin-right: 0px;
+	}
+}

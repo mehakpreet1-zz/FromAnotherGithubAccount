@@ -1,0 +1,36 @@
+.header-primary__menu__item .adb-context_menu--menu {
+	background-color: $dropdown-bg;
+	margin-top: 0;
+
+	a {
+		padding: 10px;
+		color: $dropdown-item-color;
+		overflow: hidden;
+		display: block;
+		line-height: 1em;
+		font-size: $dropdown-item-font-size;
+		white-space: normal;
+		font-weight: 500;
+	}
+}
+
+.adb-container {
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.companies-dropdown {
+	position: relative;
+
+	> a {
+		@extend %nav-link;
+	}
+}
+
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+	display: block;
+}

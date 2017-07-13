@@ -1,0 +1,119 @@
+// ------------------------------------------------------------
+// Custom Primary (Top Nav)
+// ------------------------------------------------------------
+.custom-primary {
+	background-image: linear-gradient(to right, #3E53A4 0%, #0c76ba 100%);
+	height: 75px;
+
+	&__logo {
+		background: url($sprite) no-repeat -803px 1px;
+		display: inline-block;
+		height: 50px;
+		margin-top: 14px;
+		width: 200px;
+	}
+
+	&__menu {
+		display: inline-block;
+		float: right;
+		font-size: 13px;
+
+		&__item {
+			display: inline-block;
+			float: left;
+			padding: 28px 0 28px 20px;
+
+			// Style the text of the primary nav items
+			&__link {
+				font-size: 1em;
+				color: #FFF;
+				text-transform: uppercase;
+
+				&:hover {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Secondary (Optional Secondary Header)
+// ------------------------------------------------------------
+.custom-secondary {
+	margin: 28px 0;
+	&__menu {
+		background: #eaeaea;
+		border-radius: 10px;
+		height: 100px;
+		padding: 12px 18px;
+
+		&__item {
+			border-left: 1px solid #d2d2d2;
+			border-right: 1px solid #d2d2d2;
+			display: inline-block;
+			float: left;
+			height :124px;
+			line-height: 52px;
+			margin-left: -1px;
+			margin-top: -12px;
+
+			&__link {
+				display: block;
+				height: 100%;
+				padding: 0 40px;
+
+				> i {
+					display: block;
+					font-size: 48px;
+					text-align: center;
+				}
+
+				&:hover {
+					background-color: #f5f5f5;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+// ------------------------------------------------------------
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+
+	}
+}
+
+body.loginPage {
+	.login--active {
+
+	}
+}
+
+body.signupPage {
+	.signup--active {
+
+	}
+}
+
+// Match the product banner to the Company Color
+body[data-page="profile"] .adb-profile_header--content {
+	background: linear-gradient(135deg, #83288C, #83288C 60%, #CF3472) !important;
+}
+
+// Hide the Secondary Header on Product pages
+//body[data-page="profile"] .custom-secondary {
+//  display: none;
+//}

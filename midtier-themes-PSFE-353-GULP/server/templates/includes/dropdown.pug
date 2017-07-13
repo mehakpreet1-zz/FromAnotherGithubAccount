@@ -1,0 +1,7 @@
+mixin dropdown(type, display)
+	select(onchange='changeDisplay(value, "'+language+'", "'+status+'", "'+display+'")')
+		each val in type
+			if val==directory || val==company || val==language || val==status
+				option(value=val, selected) #{val}
+			else
+				option(value=val) #{val}

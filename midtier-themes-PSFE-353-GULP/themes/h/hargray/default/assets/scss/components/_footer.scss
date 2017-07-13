@@ -1,0 +1,17 @@
+.footer-primary {
+	.adb-layout-default {
+		border-top: solid 1px $footer-border-color;
+		padding-top: 22px;
+		margin-top: 0;
+	}
+
+	.adb-icon__appdirect {
+		font-size: 14px;
+		margin-right: 10px;
+	}
+}
+
+footer,
+adb-page_footer {
+	margin-top: 0 !important;
+}

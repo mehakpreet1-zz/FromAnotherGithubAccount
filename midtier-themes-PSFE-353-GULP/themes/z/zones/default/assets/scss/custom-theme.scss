@@ -1,0 +1,102 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+$assets: "https://media.zones.com/images/new/";
+$asset-footer-logo: $assets + "footer-top.png";
+$asset-logo: $assets + "zones-logo.png";
+$asset-social-icons: $assets + "sprite.png";
+$asset-career-logo: $assets + "zones-careers.png";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+$ad-white-shade4: #f8f8f8;
+$ad-white-shade5: #f0f0f0;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+$ad-gray-shade6: #555;
+
+$custom-blue-shade1: #005596;
+$custom-blue-shade2: #237ED7;
+$custom-orange: #F27C34;
+$custom-gray: #666;
+$custom-font: "Open Sans", sans-serif;
+$custom-search-bg-hover-color: #19BF10;
+$custom-search-bg-color: #048F00;
+
+$primary: $custom-blue-shade1;
+$secondary: $custom-orange;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $ad-white;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 60px;
+$header-primary-logo-width: 100px;
+$header-primary-font-size: 16px;
+$header-primary-font-color: $primary;
+$header-primary-font-color_hover: $secondary;
+$header-primary-color_active: $secondary;
+
+$header-secondary-height: 40px;
+$header-secondary-bg: $ad-white-shade4;
+
+$dropdown-border-color: $ad-gray-shade5;
+$dropdown-border_width: 0;
+$dropdown-border-radius: 0;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 0;
+$dropdown-item-color: $custom-blue-shade2;
+$dropdown-bg: $ad-white-shade4;
+$dropdown-item-hover-bg: $ad-white-shade4;
+$dropdown-item-hover-color: $custom-gray;
+
+$secondary-nav-search-button-color: $ad-white;
+$secondary-nav-search-button-color_hover: $ad-white;
+$secondary-nav-search-button-border-color: $primary;
+$secondary-nav-search-input-border-color: $primary;
+$secondary-nav-search-button-bg: $primary;
+$secondary-nav-search-button-bg_hover: $custom-blue-shade2;
+
+$secondary-nav-selected-text-color: $secondary;
+$secondary-nav-selected-item-border-color: $secondary;
+
+$footer-height: 410px;
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $ad-gray-shade1;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import "settings";
+
+// import computed values
+@import "components/INDEX";
+
+// import custom CSS

@@ -1,0 +1,44 @@
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+
+.adb-button--icon {
+	font-size: 9.8px;
+	margin-right: 4px;
+}
+
+.adb-profile_header {
+	.adb-tertiary_nav--items {
+		a {
+			color: $header-primary-font-color;
+
+			&:before {
+				background-color: $header-primary-color_active;
+			}
+
+			&:hover {
+				color: $header-primary-color_active;
+			}
+		}
+
+		.adb-is-selected {
+			a {
+				color: $header-primary-font-color_active;
+			}
+		}
+	}
+}
+
+.status-tops .icon {
+	padding-top: 2.45px;
+}
+
+.status-tops .dropdown-action a {
+	padding-top: 1px;
+}

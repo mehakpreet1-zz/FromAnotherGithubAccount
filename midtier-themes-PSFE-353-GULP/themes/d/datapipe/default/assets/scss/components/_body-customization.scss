@@ -1,0 +1,13 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}

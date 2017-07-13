@@ -1,0 +1,85 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+// @font-face {
+// 	font-family: icomoon;
+// 	src: url(https://d9c9f470b8a00709187be2981058d308.svg);
+// 	src: url(https://www.metropcs.com/752556276161c1fa39e4034915a6f65c.eot) format('embedded-opentype'), url(https://www.metropcs.com/d9c9f470b8a00709187be2981058d308.svg) format('svg'), url(https://www.metropcs.com/2f1c8764b6f9e9cd1d3b6653c860d9de.ttf) format('truetype'), url(https://www.metropcs.com/8ec9da485d26a8f7738422bc0798d607.svg) format('svg');
+// 	font-weight: 400;
+// 	font-style: normal;
+// }
+
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-top-color;
+	height: auto;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+			text-align: center;
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: 0 30px;
+				margin-left: 1px !important;
+				width: $header-primary-logo-width;
+				padding: 0;
+				border-bottom: 5px solid transparent !important;
+				background-position-y: 20px;
+
+				&:hover {
+					border-bottom: 5px solid transparent !important;
+				}
+			}
+
+			&--link {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.signin--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

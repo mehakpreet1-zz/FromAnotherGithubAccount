@@ -1,0 +1,58 @@
+
+<nav class="header-primary">
+    <ul class="header-primary__menu adb-layout-default">
+        <li class="header-primary__menu__item">
+            <a class="header-primary__menu__item--logo" href="{{HOME_HREF}}"></a>
+        </li>
+        <ul class="header-primary__menu_right">
+        <li class="header-primary__menu__item">
+            <a class="header-primary__menu__item--link href="https://www.ict.govt.nz/footer/contact-us/">Contact us</a>
+        </li>
+        <li class="header-primary__menu__search">
+            <form class="custom-search" name="searchForm" id="idc" method="get" action="/listing">
+                <div class="custom-search--box">
+                    <input type="text" maxlength="200" value="" name="q" placeholder="Search">
+                </div>
+                <button class="custom-search--button" type="submit" aria-label="Search">
+                    <i class="adb-icon__search"></i>
+                </button>
+            </form>
+        </li>
+        </ul>
+    </ul>
+</nav>
+<nav class="header-secondary">
+<nav class="adb-layout-default">
+    <ul class="header-secondary__menu">
+    	<li class="header-secondary__menu__item login-links-properties one">
+    		<a class="header-secondary__menu__item--link marketplace--active" href="{{HOME_HREF}}" data-auto="home">{{Marketplace}}</a>
+    	<li class="header-secondary__menu__item two login-links-properties">
+    		<a class="header-secondary__menu__item--link myapps--active" href="{{MYAPPS_HREF}}" data-auto="myApps">{{My.Apps}}</a>
+    	</li>
+    	<li class="header-secondary__menu__item three js-companies-link login-links-properties">{{COMPANIES_DROPDOWN}}</li>
+			<li class="header-secondary__menu__item four js-manage-links login-links-properties">
+				<menu class="adb-context_menu" data-placement="right">
+					<a class="header-secondary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="manage">{{Manage}}</a>
+					<div class="js-dropdown-container">
+						<div class="adb-container adb-context_menu--menu">{{MANAGE_LINKS}}</div>
+					</div>
+				</menu>
+			</li>
+			<li class="header-secondary__menu__item five login-links-properties">
+				<menu class="adb-context_menu" data-placement="right">
+					<a class="header-secondary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="username">{{USER_NAME}}</a>
+					<div class="js-dropdown-container">
+						<div class="adb-container adb-context_menu--menu">
+							<ul>
+								<li><a href="{{PROFILE_HREF}}" data-auto="myProfile">{{My.Profile}}</a></li>
+								<li><a href="{{COMPANY_HREF}}" data-auto="myCompany">{{My.Company}}</a></li>
+								<li><a href="{{SETTINGS_HREF}}" data-auto="mySettings">{{my.settings}}</a></li>
+								<li><a href="{{LOGOUT_HREF}}" data-auto="logout">{{logout}}</a></li>
+							</ul>
+						</div>
+					</div>
+				</menu>
+			</li>
+			</ul>
+    </nav>
+</nav>

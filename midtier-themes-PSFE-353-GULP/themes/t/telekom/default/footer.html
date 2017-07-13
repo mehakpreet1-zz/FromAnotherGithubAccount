@@ -1,0 +1,66 @@
+<nav class="footer-primary">
+    <div class="adb-layout-default">
+        <ul class="footer-primary__menu adb-layout-default">
+            <li class="footer-primary__menu__item">
+                © Telekom Deutschland GmbH 2015
+            </li>
+            <ul class="footer-primary__menu_right">
+                <li class="footer-primary__menu__item">
+                    <a class="footer-primary__menu__item--link" href="{{HOME_HREF}}" data-auto="home">Contact</a>
+                </li>
+                <li class="footer-primary__menu__item">
+                    <a class="footer-primary__menu__item--link" href="{{HOME_HREF}}" data-auto="home">Privacy policy</a>
+                </li>
+                <li class="footer-primary__menu__item">
+                    <a class="footer-primary__menu__item--link" href="{{HOME_HREF}}" data-auto="home">Imprint</a>
+                </li>
+                 <li class="footer-primary__menu__item lang">
+                     <div class="adb-page_footer--content_item footer-language-toggle">
+                        <div class="adb-dropdown adb-dropdown__secret adb-dropdown__small">
+                            <span class="adb-js-dropdown-placeholder">English (United States)</span>
+                            <select class="adb-js-dropdown-select user-success" name="body:footer:languageToggle:locales" id="id7" title="">
+                                <option selected="selected" value="0">English (United States)</option>
+                                <option value="1">Deutsch (Deutschland)</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+        $(document).on('click', '.header-secondary .adb-context_menu--trigger', function() {
+            $('.header-secondary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-secondary .adb-context_menu, .header-secondary .adb-context_menu--trigger')) {
+                $('.header-secondary .adb-is-active').removeClass('adb-is-active');
+            }
+        }); 
+   })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

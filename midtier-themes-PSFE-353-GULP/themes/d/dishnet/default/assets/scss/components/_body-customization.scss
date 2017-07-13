@@ -1,0 +1,14 @@
+// Add custom fonts here if any. Also change fonts in design proerties as well
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}

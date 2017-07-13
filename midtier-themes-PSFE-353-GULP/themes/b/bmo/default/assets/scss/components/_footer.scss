@@ -1,0 +1,160 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	border-top: 1px solid $footer-primary-border-top;
+	padding: 1em 0 2em;
+	height: $footer-height;
+	color: $ad-white;
+	font-family: $font-family;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		padding-top: 16px;
+
+		&__top {
+			display: flex;
+			justify-content: space-between;
+
+			&--left {
+				color: $footer-links-color;
+
+				&:hover {
+					color: $footer-links-color;
+					text-decoration: underline;
+				}
+			}
+
+			&--right {
+				margin-left: auto;
+				text-decoration: none;
+				list-style-type: none;
+				display: flex;
+
+				&--list {
+					padding: 0 16px;
+				}
+			}
+
+			.fb-icon {
+				color: $footer-links-color;
+				margin-left: -20px;
+				border: 1px solid #fff;
+				border-radius: 25px;
+				padding: 6px 9px 6px 10px;
+
+				&:hover {
+					background: $ad-white;
+					color: $primary;
+				}
+			}
+
+			.twitter-icon {
+				color: $footer-links-color;
+				margin-left: -20px;
+				border: 1px solid #fff;
+				border-radius: 25px;
+				padding: 6px 6px 6px 8px;
+
+				&:hover {
+					background: $ad-white;
+					color: $primary;
+				}
+			}
+
+			.youtube-list {
+				padding-left: 0px;
+				padding-top: 2px;
+			}
+
+			.youtube-link {
+				border: 1px solid $ad-white;
+				border-radius: 25px;
+				padding: 3px 10px 7px 8px;
+
+				&:hover {
+					background: $ad-white;
+
+					i {
+						color: $primary;
+					}
+				}
+			}
+
+			.youtube-icon {
+				color: $footer-links-color;
+				font-size: 9px;
+
+				&:hover {
+					background: $ad-white;
+					color: $primary;
+				}
+			}
+
+			.rss-icon {
+				color: $footer-links-color;
+				margin-left: -20px;
+				border: 1px solid #fff;
+				border-radius: 25px;
+				padding: 6px 7px 6px 9px;
+
+				&:hover {
+					background: $ad-white;
+					color: $primary;
+				}
+			}
+
+			.linkedin-icon {
+				color: $footer-links-color;
+				margin-left: -20px;
+				border: 1px solid #fff;
+				border-radius: 25px;
+				padding: 6px 6px 7px 9px;
+
+				&:hover {
+					background: $ad-white;
+					color: $primary;
+				}
+			}
+		}
+
+		.size {
+			font-size: 1.333em;
+		}
+
+		&__bottom {
+			margin-top: 50px;
+			display: flex;
+			-webkit-font-smoothing: antialiased;
+			font-size: $footer-bottom-font-size;
+
+			&--item {
+				border-right: 0.5px solid $custom-hover-shade1;
+				padding: 0 8px;
+
+				&:first-child {
+					padding-left: 0;
+				}
+			}
+
+			&--links {
+				color: $footer-links-color;
+
+				&:hover {
+					color: $footer-links-color;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.adb-icon__appdirect {
+	font-size: 14px;
+}
+
+// To make footer sticky need to think about other way of doing this
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}

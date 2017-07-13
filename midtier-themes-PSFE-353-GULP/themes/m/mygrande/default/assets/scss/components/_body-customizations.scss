@@ -1,0 +1,85 @@
+// Customize the secondary nav (body)
+// ----------------------------------
+.adb-secondary_nav {
+	.adb-secondary_nav--item,
+	li {
+		.adb-secondary_nav--link,
+		a {
+			&:hover {
+				color: $menu-link-color;
+			}
+
+			&.adb-is-selected,
+			&.active {
+				color: $menu-link-color;
+
+				&:before {
+					background-color: $orange;
+				}
+			}
+		}
+	}
+}
+
+#subnav-header {
+	a {
+		&:focus,
+		&:hover {
+			color: $menu-link-color;
+		}
+
+		&.active {
+			color: $menu-link-color;
+
+			&:before {
+				background-color: $orange;
+			}
+		}
+	}
+}
+
+#secondaryNav {
+	.adb-search_field--button {
+		background-color: $primary-color;
+		text-shadow: none;
+		box-shadow: none;
+		color: $white;
+
+		&:hover {
+			background-color: $primary-color-hover;
+			text-shadow: none;
+			box-shadow: none;
+		}
+	}
+}
+
+a,
+button {
+	transition: all 0.3s;
+}
+
+.adb-button__primary {
+	border: {
+		bottom: 1px solid #000 !important;
+		radius: 0px !important;
+	}
+ 	box-shadow: none !important;
+
+	&:hover, &:active {
+		border: {
+			bottom: 1px solid #000 !important;
+			radius: 0px !important;
+		}
+		box-shadow: none !important;
+	}
+}
+
+.adb-button__neutral {
+	border-radius: 0px;
+}
+
+.adb-styled .adb-link__nav.adb-is-selected {
+	box-shadow: 0 0 0 1px $primary-color;
+	border-top-color: $primary-color;
+	background-color: $primary-color;
+}

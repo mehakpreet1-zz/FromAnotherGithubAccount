@@ -1,0 +1,145 @@
+.header-fixed {
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	top: 0;
+	margin: 0;
+}
+
+.header-top {
+	background: $primary;
+	height: 29px;
+	width: 100%;
+	color: #fff;
+
+	// top: 0;
+	// margin: 0;
+	// position: fixed;
+	// width: 100%;
+	// z-index: 9999;
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		list-style: none;
+
+		&__item {
+			margin: 5px 35px 0 0;
+			font-size: 12px;
+
+			a {
+				color: $ad-white;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				font-size: 12px;
+				color: $ad-white !important;
+				align-items: baseline !important;
+				text-decoration: none;
+
+				&:hover {
+					color: #ddd !important;
+				}
+
+				.adb-context_menu {
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	border-top: 0;
+	height: $header-primary-height;
+	color: $header-primary-font-color;
+
+	// margin: 0;
+	// position: fixed;
+	// width: 100%;
+	// z-index: 9999;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		padding: 0 32px 0 32px;
+
+		&__login {
+			padding: 0 10px 0 32px;
+		}
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: 0;
+				width: $header-primary-logo-width;
+				background-position-y: 19px;
+			}
+
+			&--logo:hover {
+				background-color: white;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}
+
+// .adb-styled {
+// 	margin-top: 20px;
+// }
+
+// 	.adb-context_menu {
+// 		height: 100%;
+// 	}
+//}

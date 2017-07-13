@@ -1,0 +1,10 @@
+mixin menubutton(label, status)
+
+	if status == label
+		button.adb-toggle_buttons--button.activebutton(
+		onclick='window.open("/themes'+url+label+'", "_self")'
+		) #{label}
+	else
+		button.adb-toggle_buttons--button(
+		onclick='window.open("/themes'+url+label+'", "_self")'
+		) #{label}

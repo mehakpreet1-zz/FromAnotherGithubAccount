@@ -1,0 +1,57 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <div class="footer-primary__container">
+        <ul class="footer-primary__container__leftlist">
+        <li class="footer-primary__container__leftlist__item"><a href="https://www.facebook.com/MSSocius/"><i class="fa fa-facebook " aria-hidden="true" ></i></a></li>
+        <li class="footer-primary__container__leftlist__item"><a href="https://twitter.com/mssocius"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="footer-primary__container__leftlist__item"><a href="https://www.linkedin.com/company/socius"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li class="footer-primary__container__leftlist__item"><a href="https://www.youtube.com/user/SociusCorp/videos"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+        <ul class="footer-primary__container__rightlist">
+        <ul class="footer-primary__container__rightlist__rightlistinside">
+        <li class="header-primary__menu__item"><a class="header-primary__menu__item--logo" href="{{HOME_HREF}}"></a></li>
+        <div class="footer-primary__container__rightlist__rightdownlist">
+        © 2016 Socius1, LLC. All rights reserved.</div>
+        </div>
+        </ul>
+        </ul>
+        
+    </div>
+</div>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<script src="https://use.fontawesome.com/333c3ad77a.js"></script>
+<!--Scripts for Header behaviour -->
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+        
+        $('.header-primary .header-primary__menu__item').hover(function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+        });
+        
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

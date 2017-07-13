@@ -1,0 +1,64 @@
+<div class="footer-primary">
+    <div class="adb-layout-default contain">
+        <div class="footer-primary__container">
+           <ul class="footer-primary__container__left__top">
+                 <li> <a class="adb-page_footer--content_item" href="https://www.digitalmarketplace.service.gov.uk/terms-and-conditions">{{Terms and conditions}}</a></li>
+                 <li><a class="adb-page_footer--content_item" href="https://www.digitalmarketplace.service.gov.uk/cookies">{{Cookies}}</a></li>
+                 <li> <a class="adb-page_footer--content_item" href="https://www.gov.uk/government/organisations/government-digital-service">{{Built by the Government Digital Service}}</a></li>
+            </ul class="footer-primary__container__left__bottom">
+
+            <ul class="footer-primary__container__right">
+                <li class="footer-primary__container__right__logo__footer"></li>
+                <li class="footer-primary__container__right-link">
+                <span>
+                 All content is available under the
+            <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"> Open Government Licence v3.0,</a>
+                except where otherwise stated
+                </span>
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="copyright">
+         <span>© Crown copyright</span>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary-login .adb-context_menu--trigger', function() {
+            $('.header-primary-login .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary-login .adb-context_menu, .header-primary-login .adb-context_menu--trigger')) {
+                $('.header-primary-login .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+        
+        $('.header-primary-login .header-primary-login__menu__right__item').hover(function() {
+            $('.header-primary-login .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-primary-login .adb-is-active').removeClass('adb-is-active');
+        });
+    
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary-login__menu__right .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

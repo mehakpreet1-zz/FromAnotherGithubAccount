@@ -1,0 +1,71 @@
+{
+  "name": "customizer-themes",
+  "version": "1.0.0",
+  "description": "Live Reload Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "gulp --theme $THEME",
+    "lint": "eslint src gulpfile.js",
+    "generate": "node ./generators/theme-generator"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daviddube/customizer-themes.git"
+  },
+  "keywords": [
+    "customizer-themes",
+    "live",
+    "reload",
+    "server"
+  ],
+  "author": "David Dube",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Daviddube/customizer-themes/issues"
+  },
+  "homepage": "https://github.com/Daviddube/customizer-themes#readme",
+  "dependencies": {
+    "ad-theme-compiler": "git@github.com:AppDirect/ad-theme-compiler.git",
+    "ad-theme-customizer-client": "^1.1.0",
+    "babel-eslint": "^6.0.4",
+    "bluebird": "^3.3.5",
+    "bootstrap-sass": "^3.3.6",
+    "chai": "^3.5.0",
+    "connect-livereload": "^0.5.4",
+    "eslint": "^2.10.1",
+    "eslint-config-appdirect": "^2.0.2",
+    "express": "^4.13.4",
+    "fs-extra": "^0.30.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-flatmap": "^1.0.0",
+    "gulp-live-server": "0.0.29",
+    "gulp-sass": "^2.3.1",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^4.0.0",
+    "jade": "^1.11.0",
+    "jquery": "^2.2.3",
+    "junk": "^2.1.0",
+    "mocha": "^2.4.5",
+    "morgan": "^1.7.0",
+    "node-sass": "3.4.2",
+    "pug": "^2.0.0-beta11",
+    "request": "^2.72.0",
+    "request-promise": "^4.1.1",
+    "uif-sass": "latest",
+    "underscore": "^1.8.3"
+  },
+  "peerDependencies": {
+    "gulp-cli": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp-htmllint": "0.0.12",
+    "minimist": "^1.2.0"
+  }
+}

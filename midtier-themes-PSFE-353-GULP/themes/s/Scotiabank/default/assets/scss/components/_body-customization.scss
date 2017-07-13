@@ -1,0 +1,227 @@
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+	font-family: Arial;
+	background: none !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 0px !important;
+}
+
+body {
+	background-color: $custom-white;
+	font-family: Arial;
+}
+
+[data-page="home"] {
+	#main {
+		background-color: $custom-white;
+
+		.adb-layout-default {
+			background-color: $ad-white;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+	#main {
+		.adb-layout-default {
+			box-shadow: 0 0 3px $ad-gray-shade5;
+		}
+	}
+
+	ul.adb-secondary_nav--items.adb-layout-default {
+		box-shadow: 0px 1px 1px 1px rgba(128, 128, 128, 0.54);
+	}
+
+	@media only screen and (min-width: 1280px) {
+		.adb-layout-default {
+			width: 1168px;
+		}
+	}
+
+	@media only screen and (min-width: 1024px) {
+		.adb-layout-default {
+			width: calc(1128px + calc(20px * 2));
+		}
+	}
+}
+
+[data-page="listing"] {
+	.adb-layout-row {
+		padding: 24px 20px;
+		background-color: $ad-white;
+		margin-top: 0;
+	}
+
+	#main {
+		.adb-layout-default {
+			box-shadow: 0 0 3px $ad-gray-shade5;
+		}
+	}
+
+	ul.adb-secondary_nav--items.adb-layout-default {
+		box-shadow: 0px 1px 1px 1px rgba(128, 128, 128, 0.54);
+	}
+
+	@media only screen and (min-width: 1024px) {
+		.adb-layout-default {
+			width: calc(1128px + calc(20px * 2));
+		}
+	}
+}
+
+[data-page="profile"],
+[data-page="bundle"] {
+	.adb-profile_header {
+		&__product {
+			margin: 0 auto;
+		}
+
+		&--content {
+			padding-top: 0px !important;
+			padding-bottom: 0px !important;
+			background-color: $custom-white !important;
+			background-image: none !important;
+			box-shadow: none !important;
+			border-top: none !important;
+
+			.adb-layout-default {
+				background-color: $custom-black !important;
+				padding: 20px;
+			}
+		}
+
+		&--navigation {
+			background-color: $custom-white !important;
+			box-shadow: none !important;
+			border-bottom: none !important;
+		}
+	}
+
+	#main {
+		.adb-layout-default {
+			box-shadow: 0 0 3px $ad-gray-shade5;
+			background-color: $ad-white;
+			padding-left: 20px;
+		}
+	}
+
+	ul.adb-secondary_nav--items.adb-layout-default {
+		box-shadow: 0px 1px 1px 1px rgba(128, 128, 128, 0.54);
+	}
+
+	.adb-profile_header__product.adb-is-fixed .adb-profile_header--navigation_content {
+		border-bottom: 1px solid $custom-grey-shade9 !important;
+	}
+
+	.adb-tertiary_nav--items {
+		background-color: $ad-white;
+	}
+
+	.adb-tertiary_nav--item {
+		&.adb-is-selected {
+			a {
+				color: $custom-red;
+
+				&:before {
+					background-color: $custom-red;
+				}
+			}
+		}
+
+		&:hover {
+			a {
+				color: $custom-red;
+
+				&:before {
+					background-color: $custom-red;
+				}
+			}
+		}
+	}
+
+	.adb-tertiary_nav--link {
+		&:hover {
+			color: $custom-red;
+		}
+	}
+
+	.adb-layout-content--centered-content {
+		background-color: $ad-white;
+		padding: 24px 20px;
+		margin: 0 auto;
+	}
+
+	@media only screen and (min-width: 1024px) {
+		.adb-layout-default {
+			width: calc(1128px + calc(20px * 2));
+		}
+	}
+
+	@media only screen and (min-width: 1280px) {
+		.adb-layout-default {
+			width: calc(1128px + calc(20px * 2)) !important;
+		}
+	}
+}
+
+// my profile page
+.adb-page_header {
+	background-color: $custom-white;
+}
+
+.adb-page--footer_helper {
+	padding-top: 0 !important;
+	background-color: $custom-white;
+}
+
+#mainRegion {
+	background-color: $ad-white;
+	box-shadow: none;
+}
+
+@media only screen and (min-width: 1024px) {
+	.adb-layout-default, .wrapper, #footer .wrapper {
+		width: 1168px;
+	}
+}
+
+// my company page
+.adb-page--content {
+	background-color: $ad-white;
+	padding: 24px 20px;
+}
+
+// assign apps
+.wrapper {
+	background-color: $ad-white;
+	box-shadow: 0px 1px 1px 1px rgba(128, 128, 128, 0.54);
+}
+
+.header-main {
+	box-shadow: 0 0 3px $ad-gray-shade5;
+}
+
+#main {
+	.adb-page--content {
+		box-shadow: 0px 1px 1px 1px rgba(128, 128, 128, 0.54);
+	}
+
+	.adb-subscriptions {
+		box-shadow: none !important;
+	}
+
+	.js-region-addons {
+		box-shadow: none !important;
+	}
+}
+
+.buttons {
+	button {
+		padding: 5px;
+		border: 1px solid $custom-grey-shade5;
+	}
+}

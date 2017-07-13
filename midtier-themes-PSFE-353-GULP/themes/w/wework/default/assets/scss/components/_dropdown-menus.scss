@@ -1,0 +1,66 @@
+.header-primary__menu__item .adb-context_menu--menu {
+	background-color: $dropdown-bg;
+	border: 1px $dropdown-border_width solid $dropdown-border-color;
+	border-radius: $dropdown-border-radius;
+	margin-top: 28px;
+
+	li {
+		&:first-child {
+			a:hover,
+			&:hover {
+				border-radius: $dropdown-border-radius $dropdown-border-radius 0 0;
+			}
+		}
+
+		&:last-child {
+			a:hover,
+			&:hover {
+				border-radius: 0 0 $dropdown-border-radius $dropdown-border-radius;
+			}
+		}
+
+		~ li {
+			border-top: $dropdown-item-divider_width solid $dropdown-item-divider;
+		}
+	}
+
+	a {
+		padding: 10px;
+		color: $dropdown-item-color;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: block;
+		line-height: 1em;
+		font-size: $dropdown-item-font-size;
+
+		&:hover {
+			text-decoration: underline;
+			box-shadow: none;
+			position: relative;
+			background-color: $dropdown-item-hover-bg;
+			color: $dropdown-item-hover-color;
+		}
+	}
+}
+
+.companies-dropdown {
+	position: relative;
+	display: flex;
+
+	> a {
+		@extend %nav-link;
+	}
+
+	&:after {
+		content: "\e007";
+		font-family: 'AppDirectIcons';
+		color: $custom-gray-shade2;
+		font-size: 16px;
+	}
+}
+
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+	display: block;
+}

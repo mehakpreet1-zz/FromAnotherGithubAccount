@@ -1,0 +1,87 @@
+.toolingContainer {
+    background: #eaeaea;
+    display: flex;
+    padding: 12px 0;
+}
+
+.toolingContainer .adb-toggle_buttons {
+    padding: 0 12px;
+}
+
+.toolingContainer select {
+    margin-right: 12px;
+}
+
+.headers h1,
+.headers h2,
+.headers h3,
+.headers h4,
+.headers h5,
+.headers h6 {
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+}
+
+h2.section-title,
+h4.element-title {
+    border-bottom: none;
+    border-top: none;
+    margin: 20px 0 12px;
+}
+
+h4.element-title {
+    margin: 12px 0 8px;
+}
+
+.elements-container,
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    clear: both;
+    margin-bottom: 32px;
+}
+
+.elements-container {
+    align-items: baseline;
+}
+
+.buttons-container button {
+    margin-bottom: 12px;
+    margin-right: 12px;
+}
+
+.buttons-container button:last-child {
+    margin-right: 0;
+}
+
+.buttons-container button.adb-toggle_buttons--button.adb-button__square_small {
+    margin-right: 0;
+}
+
+.elements-container .element {
+    margin-right: 48px;
+    width: 200px;
+}
+
+.elements-container .element:last-child {
+    margin-right: 0;
+}
+
+.adb-layout-subscription {
+    float: none;
+}
+
+.tip {
+    color: darkgrey;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5em;
+    margin: -18px 0 24px;
+}
+
+button.activebutton {
+    background: #ccc;
+    text-shadow: none;
+    box-shadow: none;
+}

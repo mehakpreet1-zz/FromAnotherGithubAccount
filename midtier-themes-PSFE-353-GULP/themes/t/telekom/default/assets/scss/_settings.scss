@@ -1,0 +1,36 @@
+$header-primary-logo-margin-top: $header-primary-logo-height / 4;
+$header-primary-height: $header-primary-logo-height + 2 * $header-primary-logo-margin-top;
+$header-primary-font-color_active: $header-primary-font-color_hover;
+$dropdown-item-font-size: $header-primary-font-size * 0.875;
+
+%nav-link {
+	color: $header-primary-font-color;
+	font-size: $header-primary-font-size;
+
+	&:focus,
+	&:hover {
+		color: $header-primary-font-color_hover;
+		text-decoration: none;
+	}
+}
+
+%nav-link-secondary {
+	color: $header-secondary-font-color !important;
+	font-size: $header-secondary-font-size;
+	text-decoration: none;
+
+	&:focus,
+	&:hover {
+		color: $header-secondary-font-color_hover;
+		text-decoration: none;
+	}
+}
+
+%active-state-primary {
+	color: $active-state-primary-font-color;
+	font-weight: bold;
+}
+
+%active-state {
+	color: $active-state-font-color;
+}

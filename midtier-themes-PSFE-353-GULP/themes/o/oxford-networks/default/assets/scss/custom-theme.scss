@@ -1,0 +1,86 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: "https://oxfordnetworks.com/wp-content/uploads/2015/10/oxford-networks-logo.png";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+$custom-dropdown-bg: #2c2c2c;
+$custom-item-border: #83839e;
+$custom-white: #f8f8f8;
+$custom-search-hover-color: #9297c9;
+
+$primary: #555eab;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $ad-white;
+$header-primary-border-top-color: $ad-gray-shade5;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 80px;
+$header-primary-logo-width: 160px;
+$header-primary-font-size: 16px;
+$header-primary-font-color: $ad-black;
+$header-primary-font-color_hover: $primary;
+$header-primary-color_active: $primary;
+
+$dropdown-border-color: $ad-black;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 0;
+$dropdown-item-divider: 0;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $ad-white;
+$dropdown-bg: $custom-dropdown-bg;
+$dropdown-item-hover-bg: $custom-dropdown-bg;
+$dropdown-item-hover-color: $ad-gray-shade5;
+
+$secondary-nav-search-button-color: $ad-white;
+$secondary-nav-search-button-color_hover: $ad-white;
+$secondary-nav-search-button-border-color: $primary;
+$secondary-nav-search-button-bg: $primary;
+$secondary-nav-search-button-bg_hover: $custom-search-hover-color;
+
+$secondary-nav-selected-text-color: $primary;
+$secondary-nav-selected-item-border-color: $primary;
+
+$footer-height: 51px;
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $ad-gray-shade1;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import "settings";
+
+// import computed values
+@import "components/INDEX";
+
+// import custom CSS

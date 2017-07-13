@@ -1,0 +1,103 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: "https://primus.ca/business/skin/frontend/rwd/pmus/images/logo.jpg";
+$home-icon: "https://primus.ca/business/skin/frontend/rwd/pmus/images/img_icon_home.png";
+$icon-image: "https://primus.ca/business/skin/frontend/rwd/pmus/images/img_icon_header.png";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+
+$custom-blue: #00addc;
+$custom-blue-shade1: #425563;
+$custom-gray: #425563;
+$custom-orange: #ed8b00;
+$custom-purple: #9b26b6;
+$custom-gray-shade1: #425563;
+$custom-gray-shade: #959595;
+$custom-body-color: #e6e6e6;
+
+$primary: $custom-blue;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+// 
+//
+$header-top-bg: $primary;
+$header-top-border-bottom-color: $ad-white;
+$header-top-height: 32px;
+$header-top-font-size: 14px;
+$header-top-font-color: #808080;
+$header-top-font-color-hover: $ad-white;
+
+$header-primary-bg: $ad-white;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 43px;
+$header-primary-logo-width: 129px;
+$header-primary-font-size: 16px;
+$header-primary-font-color: $custom-gray;
+$header-primary-font-color_hover: $primary;
+$header-primary-color_active: $ad-black;
+
+$dropdown-border-color: $ad-gray-shade1;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 0;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 0;
+$dropdown-item-color: $custom-gray-shade;
+$dropdown-bg: $ad-white;
+$dropdown-item-hover-bg: $ad-white;
+$dropdown-item-hover-color: $primary;
+
+$secondary-nav-search-button-color: $ad-white;
+$secondary-nav-search-button-color_hover: $ad-white;
+$secondary-nav-search-button-border-color: $primary;
+$secondary-nav-search-button-bg: $primary;
+
+$secondary-nav-search-button-bg_hover: $primary;
+
+$secondary-nav-selected-text-color: $primary;
+$secondary-nav-selected-item-border-color: $primary;
+
+$footer-height: 40px;
+$footer-primary-bg: $custom-blue-shade1;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $ad-gray-shade1;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import "settings";
+
+// import computed values
+@import "components/INDEX";
+
+// import custom CSS

@@ -1,0 +1,129 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
+	height: $header-primary-height;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
+	margin: 0;
+
+	&.logged-in {
+		background: rgba(8,70,168,0.9);
+		height: 70px;
+	}
+
+	&__menu {
+
+		&__blocks {
+			display: flex;
+			width: 33.33%;
+			height: 5em;
+			align-content: center;
+			justify-content: center;
+
+			&.end {
+				justify-content: flex-end;
+			}
+
+			&.start {
+				justify-content: flex-start;
+			}
+
+			&_right {
+				align-self: center;
+				display: flex;
+
+				&__item {
+					&:first-child {
+						a {
+							margin-left: 0;
+						}
+					}
+
+					&--link {
+						background: #0b6efd;
+						border: 1px solid #fff;
+						padding: .5em 1.1em;
+						-webkit-transition: all .4s ease;
+						transition: all .4s ease;
+						border-radius: .313em;
+						font-size: 16px;
+						margin-left: 10px;
+					}
+				}
+			}
+
+			a {
+				color: #fff;
+				font-size: 16px;
+				align-self: center;
+				text-decoration: none;
+				font-family: $custom-font;
+			}
+
+			img {
+				visibility: visible; 
+				height: 1.4375em; 
+				opacity: 1;
+				margin: 26px auto 0;
+			}
+		}
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

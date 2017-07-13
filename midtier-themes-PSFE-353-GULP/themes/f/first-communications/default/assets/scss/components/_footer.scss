@@ -1,0 +1,95 @@
+.footer-primary {
+	margin: 0 auto;
+	background-color: $light-gray;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 12px;
+	padding: 20px 0;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+
+		&__column {
+			border-right: solid thin #888;
+			padding: 0 30px;
+			width: 220px;
+
+			&:first-child {
+				width: 250px;
+				flex-shrink: 0;
+			}
+
+			&:last-child {  border: none; }
+
+			&__inner {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+
+	&--logo {
+		background: url($asset-logo) no-repeat;
+		background-size: contain;
+		height: 50px;
+		width: 200px;
+
+	}
+
+	&__list {
+		padding-bottom: 10px;
+
+		&--title {
+			color: $footer-title-color;
+			font-family: "PT Sans", Arial, sans-serif;
+			font-size: 14px;
+			margin-bottom: 16px;
+			text-transform: uppercase;
+		}
+
+		&--link {
+			color: $white;
+			text-decoration: none;
+
+			&:hover {
+				color: $orange;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__contact {
+		flex-shrink: 0;
+		width: 240px;
+
+		&--title {
+			margin-bottom: 24px;
+		}
+
+		&--info {
+			color: $footer-title-color;
+			line-height: 8px;
+			margin: 12px 0;
+
+			span {
+				color: $white;
+			}
+
+		}
+
+		&--link {
+			color: $orange;
+		}
+	}
+}
+
+.footer-secondary {
+	background: $black;
+	height: 30px;
+
+	&__copy {
+		color: $gray;
+		padding: 5px 0;
+		text-align: center;
+	}
+}

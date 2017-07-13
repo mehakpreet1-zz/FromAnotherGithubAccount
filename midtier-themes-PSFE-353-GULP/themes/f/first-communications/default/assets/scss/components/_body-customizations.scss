@@ -1,0 +1,26 @@
+// Customize the secondary nav (body)
+// ----------------------------------
+.adb-secondary_nav {
+	&--link{
+		&.adb-is-selected{
+			&:before {
+				background-color: $orange;
+			}
+		}
+	}
+	border-bottom: 1px solid $blue-575757;
+	
+	.adb-search_field--button {
+		background: $blue-52baff;
+		box-shadow: none;
+		border: none;
+		color: $white;
+		text-shadow: none;
+		font-weight: 600;
+		padding: 4.5px 8px;
+	}
+	
+	.adb-search_field--input {
+		
+	}
+}

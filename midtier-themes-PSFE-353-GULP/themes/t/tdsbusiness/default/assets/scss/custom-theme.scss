@@ -1,0 +1,54 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'https://tdsbusiness.com/content/dam/tdstelecom/images/logos/tds-logo.svg';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$primary: black;
+$secondary: blue;
+$tertiary: gray;
+$emphasis: green;
+$white: #fff;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $white;
+$header-primary-border-top-color: $primary;
+$header-primary-border-top-color: #555555;
+$header-primary-logo-height: 40px;
+$header-primary-logo-width: 98px;
+$header-primary-font-size: 14px;
+$header-primary-font-weight: 400;
+$header-primary-font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+$header-primary-font-color: #19388a;
+$header-primary-font-color_hover: #25acf2;
+
+$dropdown-border-color: gray;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: black;
+$dropdown-bg: $white;
+$dropdown-item-hover-bg: #19388a;
+$dropdown-item-hover-color: $white;
+
+$search-input-btn: #19388a;
+
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $header-primary-border-top-color;
+$footer-secondary-bg: blue;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

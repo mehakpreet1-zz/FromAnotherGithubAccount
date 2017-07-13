@@ -1,0 +1,110 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <div class="footer-primary__container">
+
+			<div class="footer-column">
+				<span class="title">Industries</span>
+				<ul>
+					<li><a href="http://www.sgsgroup.us.com/en/Agriculture-Food.aspx">Agriculture &amp; Food</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Automotive.aspx">Automotive</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Aviation.aspx">Aviation</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Chemical.aspx">Chemical</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Construction.aspx">Construction</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Consumer-Goods-Retail.aspx">Consumer Goods &amp; Retail</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Energy.aspx">Energy</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Finance.aspx">Finance</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Industrial-Manufacturing.aspx">Industrial Manufacturing</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Life-Sciences.aspx">Life Sciences</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Logistics.aspx">Logistics</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Mining.aspx">Mining</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Oil-Gas.aspx">Oil &amp; Gas</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Public-Sector.aspx">Public Sector</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-column">
+				<span class="title">Themes</span>
+				<ul>
+					<li><a href="http://www.sgsgroup.us.com/en/Arts-and-Culture.aspx">Arts &amp; Culture</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Environment.aspx">Environment</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Health-Safety.aspx">Health &amp; Safety</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Risk-Management.aspx">Risk Management</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Sustainability.aspx">Sustainability</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Trade.aspx">Trade</a></li>
+					<li><a href="http://www.sgsgroup.us.com/en/Training-Services.aspx">Training Services</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-column">
+				<span class="title">Connect With Us</span>
+				<ul class="footer-social">
+					<li>
+						<a href="https://www.linkedin.com/company/sgs" target="_blank" title="LinkedIn" class="linkedin">LinkedIn</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/SGS_SA" target="_blank" title="Twitter" class="twitter">Twitter</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/SocieteGeneraledeSurveillance" target="_blank" title="Facebook" class="facebook">Facebook</a>
+					</li>
+					<li>
+						<a href="http://www.slideshare.net/SGSgroup" target="_blank" title="SlideShare" class="slideshare">
+						SlideShare</a>
+					</li>
+					<li>
+						<a href="http://www.youtube.com/user/sgseditor" target="_blank" title="YouTube" class="youtube">YouTube</a>
+					</li>
+				</ul>
+			</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="footer-secondary">
+	<div class="adb-layout-default">
+		<ul>
+			<li>
+				&copy;2017 SGS SA
+			</li>
+			<li>
+				<div class="footer-right">
+					<a href="http://www.sgsgroup.us.com/en/Terms-and-Conditions.aspx" title="Terms and Conditions">Terms and Conditions</a>
+					<a href="http://www.sgsgroup.us.com/en/Terms-of-Access.aspx" title="Terms of Access">Terms of Access</a>
+					<a href="http://www.sgsgroup.us.com/en/Privacy-Policy.aspx" title="Privacy Policy">Privacy Policy</a>
+					<a href="http://www.sgsgroup.us.com/en/Cookie-Policy.aspx" title="Cookie Policy">Cookie Policy</a>
+					<a href="http://www.sgsgroup.us.com/en/Office-Directory.aspx" title="Office Directory">Office Directory</a>
+					<a href="http://www.sgsgroup.us.com/en/Sitemap.aspx" title="Site Map">Site Map</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!--Scripts for Header behaviour -->
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

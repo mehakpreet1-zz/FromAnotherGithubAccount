@@ -1,0 +1,311 @@
+.header-primary-top {
+	background: $header-primary-top-bg;
+	height: $header-primary-top-height;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		padding: 4px 0px;
+		height: 100% !important;
+
+		#text {
+			padding: 0 5px;
+		}
+
+		&__right {
+			margin-left: auto;
+
+			&__item {
+				&--link {
+					color: $header-primary-top-color-normal !important;
+
+					&:hover {
+						color: $header-primary-top-color;
+
+						text: {
+							decoration: underline;
+							decoration-color: $header-primary-top-color;
+						};
+					}
+				}
+			}
+		}
+
+		&__item {
+			.link1, .link2 {
+				color: $header-primary-top-color;
+
+				&:hover {
+					text: {
+						decoration: underline;
+						decoration-color: $header-primary-top-color;
+					};
+				}
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+
+				margin-left: 0 !important;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.header-primary {
+	background: $header-primary-bg;
+	height: $header-primary-height;
+
+	&__menu {
+		.adb-container, #switchCompany .dropdown {
+			border: transparent !important;
+		}
+
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&__right {
+			display: flex;
+			margin-left: auto;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+
+			&__item {
+				&--cart {
+					background: url($asset-icon) no-repeat;
+					display: block;
+					height: 30px;
+					width: 43px;
+					background-position: -116px -1px;
+
+					margin: {
+						left: auto;
+						bottom: 10px;
+					};
+				}
+			}
+		}
+
+		&__item {
+			display: flex;
+			justify-content: center;
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+
+				height: 70px;
+				margin-left: 30px;
+				font-weight: normal;
+				color: $ad-white;
+
+				&:hover {
+					color: $header-primary-color;
+				}
+
+				&:active, &:focus {
+					color: $ad-white !important;
+					text-decoration: none !important;
+				}
+			}
+
+			.links {
+				padding-top: 0 !important;
+			}
+		}
+	}
+
+	.manage-links {
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.header-primary-bottom {
+	background: $header-primary-bottom-bg;
+	height: $header-primary-bottom-height;
+
+	&__down {
+		display: flex;
+
+		&--icon {
+			color: $custom-gray-shade1 !important;
+			font-size: 12px !important;
+			display: flex;
+			height: 100%;
+
+			&:hover {
+				color: $custom-gray-shade1 !important;
+				text-decoration: none !important;
+			}
+		}
+
+		.work-icon {
+			background: url($work-icon) no-repeat;
+			height: 13px;
+			width: 0px;
+
+			margin: {
+				left: -3px;
+				top: 2px;
+			};
+			padding-top: 2px;
+			background-position: -19px -129px;
+		}
+
+		.arrow-icon {
+			background: url($arrow-icon) no-repeat;
+			height: 12px;
+			width: 6px;
+			margin-right: 2px;
+			margin-top: 4px;
+			background-position: -96px -130px;
+			display: inline-block;
+			padding-left: 2px !important;
+		}
+	}
+
+	&__menu {
+		align-items: center !important;
+		display: flex !important;
+		list-style: none !important;
+		padding: 10px 0 !important;
+		height: 40px;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+			margin-right: 30px;
+
+			.sale-icon {
+				@extend %icon;
+
+				background-position: 0 -141px;
+			}
+
+			.tech-icon {
+				@extend %icon;
+
+				background-position: -1px -673px;
+			}
+
+			.status-icon {
+				@extend %icon;
+
+				background-position: -1px -274px;
+			}
+
+			.partner-icon {
+				@extend %icon;
+
+				background-position: -1px -407px;
+			}
+
+			.feedback-icon {
+				background: url($feedback-icon) no-repeat;
+				display: inline block;
+				height: 25px;
+				padding: 0 0 0 30px;
+				background-position: 0 -4px;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+
+				color: $custom-blue;
+				font-size: 13px;
+				margin-left: 0 !important;
+				height: 40px !important;
+
+				&:hover {
+					color: $custom-blue;
+					text-decoration: underline;
+				}
+
+				.text {
+					padding-bottom: 8px;
+				}
+			}
+		}
+	}
+}
+
+.icon {
+	background: url($icon) no-repeat;
+	display: inline block;
+	height: 25px;
+	padding: 0 0 0 28px;
+}
+
+.active-arrow {
+	background: url($active-arrow) no-repeat;
+	background-position: -88px -36px !important;
+	position: absolute;
+	width: 0px;
+	height: 11px;
+	margin-left: 17px;
+	margin-top: 57px;
+}
+
+#main {
+	.adb-container_content {
+		background-color: $ad-white-shade2;
+	}
+}
+
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+
+		color: $ad-white !important;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+
+		&:active, &:visited {
+			color: $ad-white;
+		}
+
+		&:hover {
+			color: $header-primary-color;
+		}
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

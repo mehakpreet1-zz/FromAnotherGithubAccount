@@ -1,0 +1,67 @@
+// Customize the secondary nav (body)
+// ----------------------------------
+
+.adb-secondary_nav {
+	.adb-search_field {
+		&--button {
+			background: $secondary-header-search-bg;
+			box-shadow: none;
+			color: $secondary-header-search-color;
+			text-shadow: none;
+			padding: 5px 8px;
+			border-left: transparent;
+		}
+
+		.adb-input_row--item_content {
+			border-color: $secondary-header-search-input-border;
+		}
+	}
+
+	&--item,
+	li {
+		color: $secondary-header-color;
+
+		.adb-secondary_nav--link,
+		a {
+			color: $secondary-header-color;
+
+			&.active,
+			&.adb-is-selected {
+				&:before {
+					background-color: $secondary-header-border-color;
+				}
+			}
+		}
+	}
+}
+
+#subnav-header {
+	a {
+		color: $secondary-header-color;
+
+		&.active,
+		&:active,
+		&:focus,
+		&:hover {
+			color: $secondary-header-active-color;
+		}
+
+		&.active:before,
+		&:active:before {
+			background-color: $secondary-header-border-color;
+		}
+	}
+}
+
+// footer sticky css
+
+.adb-page {
+	// applying important as v1 and v2 pages have different css applied on id (#content) and class (adb-page)
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page_footer,
+footer {
+	margin-top: 0;
+}

@@ -1,0 +1,119 @@
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	border-top: 0 solid $header-primary-border-top-color;
+	height: $header-primary-height;
+	font-weight: 400;
+	font-family: "customheaderfont";
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		padding-top: 3px;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+			margin-left: 2.5em;
+			margin-top: 8px;
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: 100% 100%;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: 23px 0 39px;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+
+				&--log {
+					@extend %nav-log;
+				}
+			}
+		}
+
+		.enterprise {
+			border-bottom: 2px solid $custom-gray-shade1;
+			padding-bottom: 2px;
+		}
+
+		.border-login {
+			border: 2px solid $custom-gray-shade2;
+			padding: .75rem 1.125rem .625rem;
+
+			&:hover {
+				background: $custom-gray-shade2;
+				color: $custom-yellow;
+			}
+		}
+
+		.call-icon {
+			&:before {
+				content: '\260E\FE0E';
+				display: inline-block;
+				margin-right: .5em;
+			}
+		}
+
+		.arrow-icon {
+			&:after {
+				content: "\e007";
+				font-family: 'AppDirectIcons';
+				vertical-align: top;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.fixed-height {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75px;
+	z-index: 999;
+	margin-top: -13px;
+	padding-bottom: 16px;
+	transition: padding-top 0.2s cubic-bezier(0.694, 0.0482, 0.335, 1), padding-bottom 0.2s cubic-bezier(0.694, 0.0482, 0.335, 1);
+
+	.header-primary__menu__item .adb-context_menu--menu {
+		margin-top: 10px;
+	}
+}
+
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

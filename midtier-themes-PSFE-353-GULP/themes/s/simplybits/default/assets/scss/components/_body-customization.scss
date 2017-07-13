@@ -1,0 +1,14 @@
+// To avoid extra blank space in content area for pages having less content
+
+body, a, p, .listing-row-content-title {
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}

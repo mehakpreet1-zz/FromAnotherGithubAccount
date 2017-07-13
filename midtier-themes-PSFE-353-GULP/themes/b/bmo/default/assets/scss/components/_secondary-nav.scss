@@ -1,0 +1,77 @@
+// ----------------------------------
+// Customized secondary nav
+// ----------------------------------
+.adb-secondary_nav {
+	.adb-search_field {
+		&--input {
+			border: 1px solid $secondary-nav-search-button-bg_hover;
+			border-right: 0;
+		}
+
+		&--button {
+			color: $secondary-nav-search-button-color;
+			border: 1px solid $secondary-nav-search-button-border-color;
+			background: $secondary-nav-search-button-bg;
+			-webkit-font-smoothing: antialiased;
+			border-radius: 0px 3px 3px 0px;
+			box-shadow: none;
+			text-shadow: none;
+			font-weight: 400;
+			padding: 3px 8px;
+			font-family: $font-family;
+
+			&:hover {
+				color: $secondary-nav-search-button-color_hover;
+				background: $secondary-nav-search-button-bg_hover;
+			}
+		}
+
+		.adb-input_row--item_content {
+			border: {
+				color: $secondary-nav-search-button-border-color;
+				border-radius: 0px 3px 3px 0px;
+			};
+		}
+	}
+
+	border-bottom-color: $header-primary-border-bottom-color;
+
+	&--items {
+		border-bottom-color: $header-primary-border-bottom-color;
+	}
+
+	&--item,
+	li {
+		font-family: $font-family;
+		color: $header-primary-font-color;
+
+		.adb-secondary_nav--link,
+		a {
+			&.active,
+			&.adb-is-selected {
+				color: $primary;
+				font-family: $font-family;
+
+				&::before {
+					background-color: $secondary-nav-selected-item-border-color;
+				}
+			}
+		}
+	}
+}
+
+#subnav-header {
+	a {
+		&:focus,
+		&:hover,
+		&.active,
+		&:active {
+			color: $secondary-nav-selected-text-color;
+		}
+
+		&:active::before,
+		&.active::before {
+			background-color: $secondary-nav-selected-item-border-color;
+		}
+	}
+}

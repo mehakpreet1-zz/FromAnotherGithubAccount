@@ -1,0 +1,26 @@
+$header-primary-logo-margin-top: 22px;
+$header-primary-top-height: 38px;
+$header-primary-middle-height: 92px;
+$header-primary-bottom-height: 50px;
+$header-primary-bottom-first-height: 45px;
+
+$header-primary-font-color_active: $header-primary-font-color_hover;
+$dropdown-item-font-size: 14px;
+
+%nav-link {
+	color: $header-primary-font-color;
+	font-size: $header-primary-font-size;
+	margin-left: 1.5em;
+	display: flex;
+	align-items: center;
+
+	&:focus,
+	&:hover {
+		color: $header-primary-font-color_hover;
+		text-decoration: none;
+	}
+}
+
+%active-state {
+	color: $header-primary-color_active;
+}

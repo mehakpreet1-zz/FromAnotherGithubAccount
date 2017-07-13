@@ -1,0 +1,15 @@
+{
+  "en-US" : {
+    "dustin.website" : "www.dustin.se",
+    "FAQ" : "Hjælpecenter",
+    "FAQ.href" : "https://appmarket.dustin.se/help?2075739064",
+    "privacy.policy" : "Privatlivspolitik",
+    "privacy.policy.href" : "https://www.dustin.se/service/integritetspolicy-appdirect/",
+    "terms.conditions" : "Vilkår og betingelser",
+    "terms.conditions.href" : "https://www.dustin.se/service/allmanna-villkor-appdirect/",
+    "support.center" : "Feedback",
+    "support.center.href" : "https://www.dustin.se/service",
+    "contact" : "Kontaktinformationer",
+    "contact.href" : "mailto:servicedesk@dustin.eu"
+  }
+}

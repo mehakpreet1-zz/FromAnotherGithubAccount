@@ -1,0 +1,13 @@
+body {
+	font-family: $font-custom;
+	vertical-align: baseline;
+}
+
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - 90px) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}

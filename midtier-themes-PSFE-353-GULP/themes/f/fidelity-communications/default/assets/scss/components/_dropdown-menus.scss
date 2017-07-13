@@ -1,0 +1,71 @@
+// ------------------------------------------------------------------
+// DROPDOWN MENU(S)
+// ------------------------------------------------------------------
+// This replicates AD dropdown menus for the header
+// All dropdowns in the header with proper classes will be affected.
+// ------------------------------------------------------------------
+
+.header-primary__menu__item .adb-context_menu--menu {
+	background-color: $dropdown-bg;
+	margin-top: 0;
+	border-top: 1px solid $dropdown-hover-bg;
+	border-bottom: 1px solid $dropdown-hover-bg;
+	border-radius: 0;
+
+	li {
+		&:first-child {
+			a:hover,
+			&:hover {
+				border-radius: 3px 3px 0 0;
+			}
+		}
+
+		&:last-child {
+			a:hover,
+			&:hover {
+				border-radius: 0 0 3px 3px;
+			}
+		}
+	}
+
+	a {
+		padding: 10px;
+		color: $dropdown-color;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: block;
+		line-height: 1em;
+		font-size: 14px;
+
+		&:hover {
+			text-decoration: none;
+			box-shadow: none;
+			position: relative;
+			background-color: $dropdown-hover-bg;
+			color: $dropdown-hover-color;
+		}
+	}
+}
+
+.companies-dropdown {
+	position: relative;
+
+	.adb-context_menu--menu {
+		border-top: 1px solid $dropdown-hover-bg;
+		border-bottom: 1px solid $dropdown-hover-bg;
+		border-radius: 0;
+	}
+}
+
+.companies-dropdown li ~ li,
+.manage-links li ~ li,
+.profile-links li {
+	border-top: 1px solid $dropdown-border-color;
+}
+
+// Show the dropdown containers when the menus are hovered
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+	display: block;
+}

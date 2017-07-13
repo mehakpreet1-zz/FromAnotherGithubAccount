@@ -1,0 +1,59 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: "https://corp.sover.net/site/images/pagelements/sovernetlogo.png";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$gray-shed1: #eaeaea;
+$gray-shed2: #e7e7e7;
+$gray-shed3: #6d6e71;
+$gray-shed4: #cbcbcb;
+
+$black: #000;
+$purple: #78359f;
+$blue: #009abf;
+
+$red-shed1: #d21532;
+$red-shed2: #e52048;
+$red-shed3: #d20d23;
+
+$green-shed1: #5ca038;
+$green-shed2: #007435;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-height: 100px;
+$footer-height: 68px;
+
+$header-primary-color: $gray-shed3;
+$header-primary-hover-color: $green-shed1;
+$header-primary-active-color: $green-shed2;
+$header-primary-border-color: $gray-shed4;
+
+$primary-button-color: $white;
+$primary-button-bg: $green-shed1;
+$primary-button-hover-bg: $green-shed2;
+
+$dropdown-border-color: $gray-shed2;
+$dropdown-color: $gray-shed3;
+$dropdown-bg: $white;
+$dropdown-hover-color: $green-shed1;
+
+$secondary-nav-selected-text-color: $green-shed2;
+$secondary-nav-selected-item-border-color: $green-shed2;
+
+$footer-border-color: $gray-shed1;

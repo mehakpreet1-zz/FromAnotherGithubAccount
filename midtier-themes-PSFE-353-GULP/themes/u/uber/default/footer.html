@@ -1,0 +1,73 @@
+<div class="footer-primary">
+   <div class="adb-layout-default">
+       <div class="footer-primary__container">
+           <ul>
+               <li class="footer-primary__container--right">© 2017 Uber Technologies Inc.</li>
+           </ul>
+
+           <ul  >
+               <li ><a href="https://www.uber.com/en-IN/legal/privacy/users/en/"> Privacy</a></li>
+               <li ><a href="https://accessibility.uber.com/">Accessibility</a></li>
+           </ul>
+
+           <ul class="footer-primary__container--left">
+               <li> <a href="https://www.uber.com/en-IN/legal/terms/in/"> Terms</a> </li>
+           </ul>
+       </div>
+   </div>
+</div>
+
+<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+<!--Scripts for Header behaviour -->
+
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+        // To display dropdown menu on hover uncomment the following code
+        
+        $('.header-primary .header-primary__menu__item').hover(function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+        });
+        
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+
+    (function addCustomMargin() {
+       var loc = window.location.pathname;
+       if (loc.indexOf('profile') > -1) {
+           var main = document.getElementById('main');
+           main.style.paddingTop = "5px";
+       }
+    })();
+
+    (function addCustomMarginToNav() {
+       if($('#secondaryNav').prev('.secondary-nav').length > 0){
+          $('#secondaryNav').attr('style', 'margin-top: 110px !important;');
+          $('#main').attr('style', 'margin-top: 160px !important;');
+       }
+    })();
+   
+</script>

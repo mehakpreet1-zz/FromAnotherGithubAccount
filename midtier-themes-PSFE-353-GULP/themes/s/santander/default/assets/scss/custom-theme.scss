@@ -1,0 +1,114 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'http://www.santander.co.uk/csdlvlr/BlobServer?blobtable=MungoBlobs&blobkey=id&blobcol=urldata&blobheader=image%2Fgif&blobheadervalue1=inline%3Bfilename%3Dlogo_SAN.gif&blobwhere=1314012717106&blobheadervalue2=911289237421288&blobheadername1=Content-Disposition&blobheadername2=portal';
+$login-button-icon: 'http://www.santander.co.uk/Theme_WCSantanderUK-theme/img/home_sprite.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$custom-black-shade1: #303030;
+
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$custom-red-shade1: #f00;
+$custom-red-shade2: #fe0505;
+$custom-red-shade3: #c90212;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+$ad-gray-shade6: #cbcbcb;
+
+$custom-gray-shade1: #e6e6e6;
+$custom-gray-shade2: #e5e5e5;
+$custom-gray-shade3: #5e606b;
+$custom-gray-shade4: #3d3e3e;
+$custom-gray-shade5: #666;
+$custom-gray-shade6: #dadada;
+
+$primary: $ad-black;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-top-height: 44px;
+$header-top-bg: transparent;
+$header-top-link-color: $custom-gray-shade5;
+
+$header-top-search-button-color: $ad-white;
+$header-top-search-button-color_hover: $ad-white;
+$header-top-search-button-border-color: $custom-red-shade2;
+$header-top-search-box-bg: $custom-gray-shade6;
+$header-top-search-box-label-color: $ad-black;
+$header-top-search-button-bg: $custom-red-shade2;
+$header-top-search-button-bg_hover: $custom-red-shade3;
+
+$header-primary-bg: $custom-red-shade1;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 68px;
+$header-primary-logo-width: 187px;
+$header-primary-font-size: 14px;
+$header-primary-font-color: $ad-white;
+$header-primary-font-color_hover: $ad-black;
+$header-primary-color_active: $ad-white;
+$header-primary-menu-item-bg_hover: $custom-gray-shade1;
+
+$header-primary-top-links-item-bg: $custom-gray-shade2;
+$header-primary-top-links-item-bg_active: $custom-gray-shade3;
+$header-primary-top-links-item-color: $custom-gray-shade4;
+$header-primary-top-links-item-color_active: $ad-white;
+
+$dropdown-border-color: $custom-red-shade1;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 0;
+$dropdown-item-color: $custom-black-shade1;
+$dropdown-bg: $custom-gray-shade1;
+$dropdown-item-hover-bg: $ad-white;
+$dropdown-item-hover-color: $custom-red-shade1;
+
+$secondary-nav-search-button-color: $ad-white;
+$secondary-nav-search-button-color_hover: $ad-white;
+$secondary-nav-search-button-border-color: $custom-red-shade2;
+$secondary-nav-search-button-bg: $custom-red-shade2;
+$secondary-nav-search-button-bg_hover: $custom-red-shade3;
+
+$secondary-nav-selected-text-color: $ad-gray-shade3;
+$secondary-nav-selected-item-border-color: $custom-red-shade1;
+
+$secondary-nav-border-color: $ad-gray-shade6;
+
+$footer-height: 136px;
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-links-color: $custom-red-shade3;
+$footer-primary-font-color: $custom-black-shade1;
+$footer-primary-copyright-font-color: $custom-gray-shade5;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

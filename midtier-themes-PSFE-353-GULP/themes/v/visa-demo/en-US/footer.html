@@ -1,0 +1,44 @@
+<div class="custom-footer">
+    <div class="adb-layout-default">
+        <div class="col-1">
+            <div class="legacy-links">
+                <h4>Other Developer Offerings:</h4>
+                <ul>
+                    <li><a target="_blank" href="https://developer.visa.com/vop">Visa Offers Platform</a></li>
+                    <li><a target="_blank" href="https://developer.visa.com/paywavemobile">Visa Paywave</a></li>
+                    <li><a target="_blank" href="https://developer.visa.com/vacp">Visa Accelerated Connection Program</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <a target="_blank" href="http://www.visa.com/developer"><img src="https://developer.visa.com/images/logo-footer.gif" width="164px" alt="Visa"></a>
+            </div>
+            <div class="footer-copy">
+                <p>Copyright 2015-2016 Visa. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="col-1">
+            <ul>
+                <li><i class="fa fa-question-circle"></i>&nbsp; Need help or have feedback? <a href="#" id="open-support-modal">Contact us.</a></li>
+            </ul>
+        </div>
+        <div class="col-1">
+            <ul>
+                <li class=""><a href="http://www.visa.com/globalgateway/gg_selectcountry.jsp" target="_blank">Visa global sites</a></li>
+                <li class=""><a target="_blank" href="https://developer.visa.com/privacy">Privacy Policy</a></li>
+                <li class=""><a target="_blank" href="https://developer.visa.com/terms">Terms of Use</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type=text/javascript>
+    //Dropdown menus from primary nav
+    $(document).on('click', '.custom-primary .adb-context_menu--trigger', function(e) {
+        $('.custom-primary .adb-is-active').removeClass('adb-is-active');
+        $(this).toggleClass('adb-is-active');
+    });
+    $(document).on('click', function(e) {
+        if (!$(e.target).is('.custom-primary .adb-context_menu, .custom-primary .adb-context_menu--trigger')) {
+            $('.custom-primary .adb-is-active').removeClass('adb-is-active');
+        }
+    });
+</script>

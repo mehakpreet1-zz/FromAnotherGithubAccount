@@ -1,0 +1,121 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+.header-primary {
+	background: $header-primary-bg;
+	font-size: 18px;
+	border-bottom: 6px solid $header-primary-border-color;
+	font-family: $font-family;
+	background-image: url($header-background-image);
+
+	&__menu {
+		display: flex;
+		flex-direction: row;
+
+		&--nav {
+			&_left {
+				display: flex;
+
+				li:first-child {
+					background: none;
+				}
+
+				&--links {
+					display: flex;
+					align-items: center;
+					margin-left: 15px;
+				}
+			}
+
+			&_right {
+				display: flex;
+				margin-left: auto;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		&__item {
+			display: flex;
+			align-items: center;
+			padding: 20px 0;
+
+			&:hover {
+				color: $header-primary-link-hover-color;
+				text-decoration: none;
+			}
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				width: 175px;
+				height: 70px;
+				background-size: 175px 70px;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				display: flex;
+				color: $header-primary-link-color;
+				text-transform: uppercase;
+				padding: 20px;
+				font: {
+					size: 16px;
+					weight: 300;
+				}
+
+				&:hover {
+					color: $header-primary-link-hover-color;
+					text-decoration: none;
+				}
+
+				&:after {
+					content:'';
+				}
+
+				&.adb-is-active {
+					background: $header-primary-button-active-bg;
+					color: $header-primary-button-active-color;
+				}
+			}
+
+			.adb-context_menu--trigger:hover {
+				background: $header-primary-button-active-bg;
+				color: $header-primary-button-active-color;
+			}
+		}
+	}
+}
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+
+// scss placeholder for showing active tab
+
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+body.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+body.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

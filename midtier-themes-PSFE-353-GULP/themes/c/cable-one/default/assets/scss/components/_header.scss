@@ -1,0 +1,97 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	height: $header-primary-height;
+	border-top: 3px solid $header-primary-top-border-color;
+	border-bottom: 1px solid $header-primary-bottom-border-color;
+
+	&__menu {
+		display: flex;
+		list-style: none;
+		align-items: center;
+		height: $header-primary-height;
+
+		&__item {
+			color: $header-primary-color;
+			text-transform: capitalize;
+
+			&--link,
+			.adb-context_menu--trigger {
+				display: flex;
+				align-items: center;
+				color: $header-primary-color;
+				font-size: 22px;
+				padding: 26px 15px;
+
+				&:hover {
+					color: $header-primary-hover-color;
+					background: transparent;
+					text-decoration: none;
+				}
+
+				&:after {
+					content: "";
+				}
+			}
+
+			&--logo {
+				display: block;
+				background: url($asset-logo) no-repeat;
+				background-size: 100% 100%;
+				padding: 0;
+				height: 42px;
+				width: 170px;
+				margin-right: 10px;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.fRight {
+			display: flex;
+			align-items: center;
+			margin: auto 0 auto auto;
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+		.header-primary__menu__item--link {
+			color: $header-primary-top-border-color;
+		}
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+		.header-primary__menu__item--link {
+			color: $header-primary-top-border-color;
+		}
+	}
+}
+
+body.loginPage {
+	.login--active {
+		.header-primary__menu__item--link {
+			color: $header-primary-top-border-color;
+		}
+	}
+}
+
+body.signupPage {
+	.signup--active {
+		.header-primary__menu__item--link {
+			color: $header-primary-top-border-color;
+		}
+	}
+}

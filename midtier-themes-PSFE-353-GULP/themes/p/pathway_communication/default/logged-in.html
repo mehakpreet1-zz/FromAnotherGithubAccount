@@ -1,0 +1,40 @@
+<nav class="header-primary">
+	<ul class="header-primary__menu adb-layout-default">
+		<li class="header-primary__menu__item">
+			<a class="header-primary__menu__item--logo" href="{{HOME_HREF}}"></a>
+		</li>
+		<li class="header-primary__menu__item">
+			<a class="header-primary__menu__item--link--disp--mp marketplace--active" href="{{HOME_HREF}}" data-auto="home">{{Marketplace}}</a>
+		</li>
+
+		<ul class="header-primary__menu_right">
+			<li class="header-primary__menu__item">
+				<a class="header-primary__menu__item--link--disp myapps--active" href="{{MYAPPS_HREF}}" data-auto="myApps">{{My.Apps}}</a>	
+			</li>
+			<li class="header-primary__menu__item js-companies-link">{{COMPANIES_DROPDOWN}}</li>
+			<li class="header-primary__menu__item js-manage-links">
+				<menu class="adb-context_menu" data-placement="right">
+					<a class="header-primary__menu__item--link--disp js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="manage">{{Manage}}</a>
+					<div class="js-dropdown-container">
+						<div class="adb-container adb-context_menu--menu">{{MANAGE_LINKS}}</div>
+					</div>
+				</menu>
+			</li>
+			<li class="header-primary__menu__item">
+				<menu class="adb-context_menu" data-placement="right">
+					<a class="header-primary__menu__item--link--disp js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="username">{{USER_NAME}}</a>
+					<div class="js-dropdown-container">
+						<div class="adb-container adb-context_menu--menu">
+							<ul>
+								<li><a href="{{PROFILE_HREF}}" data-auto="myProfile">{{My.Profile}}</a></li>
+								<li><a href="{{COMPANY_HREF}}" data-auto="myCompany">{{My.Company}}</a></li>
+								<li><a href="{{SETTINGS_HREF}}" data-auto="mySettings">{{my.settings}}</a></li>
+								<li><a href="{{LOGOUT_HREF}}" data-auto="logout">{{logout}}</a></li>
+							</ul>
+						</div>
+					</div>
+				</menu>
+			</li>
+		</ul>
+	</ul>
+</nav>

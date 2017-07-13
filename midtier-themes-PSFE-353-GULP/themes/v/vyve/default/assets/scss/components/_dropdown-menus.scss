@@ -1,0 +1,61 @@
+// ------------------------------------------------------------------
+// DROPDOWN MENU(S)
+// ------------------------------------------------------------------
+// This replicates AD dropdown menus for the header
+// All dropdowns in the header with proper classes will be affected.
+// ------------------------------------------------------------------
+
+.header-primary__menu__item .adb-context_menu--menu {
+	background-color: $dropdown-bg;
+	border: none;
+	border-radius: 0;
+	margin-top: 0px;
+	position: fixed;
+	top: $header-height;
+	width: 100%;
+
+	ul {
+		display: flex;
+	}
+
+	li {
+		height: 60px;
+		line-height: 60px;
+		color: $dropdown-color;
+		display: block;
+		float: left;
+		font: 14px/150px $font-custom;
+		margin: 0 10px;
+		padding: 0 30px;
+
+		&:first-child {
+			padding-left: 0;
+			margin-left: 0;
+
+			a {
+				padding-left: 0px;
+			}
+		}
+	}
+
+	a {
+		padding: 10px;
+		color: $dropdown-color;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: block;
+		line-height: 40px;
+		font-size: 14px;
+	}
+}
+
+.companies-dropdown {
+	position: relative;
+}
+// Show the dropdown containers when the menus are hovered
+
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+	display: block;
+}

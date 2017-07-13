@@ -1,0 +1,77 @@
+// ------------------------------------------------------------
+// Manage the Dropdown Menus (required for javascript)
+// ------------------------------------------------------------
+.companies-dropdown {
+	position: relative;
+
+	> a {
+		display: block;
+		font-size: 16px;
+		color: inherit;
+		padding: 10px 20px;
+		line-height: 39px;
+		text-decoration: none;
+		transition-property: color, background;
+		transition-duration: 0.1s;
+		transition-timing-function: linear;
+
+		&:hover,
+		&:focus {
+			background: #0c76ba;
+			color: white;
+		}
+	}
+
+	// Style the companies and manage links dropdown menus
+	.adb-context_menu--menu {
+		border: 1px solid #cbcbcb;
+		background-color: white;
+		border-radius: 3px;
+	}
+}
+
+// Style the companies and manage links dropdown menus links
+.companies-dropdown .adb-context_menu--menu,
+.manage-links {
+
+	li {
+
+		&:first-child a:hover {
+			border-radius: 3px 3px 0 0;
+		}
+		&:last-child a:hover {
+			border-radius: 0 0 3px 3px;
+		}
+
+		a {
+			padding: 10px;
+			color: #575757;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			display: block;
+			line-height: 1em;
+			font-size: 14px;
+
+			// Style the companies and manage links dropdown menus links hover state
+			&:hover {
+				text-decoration: none;
+				box-shadow: 0 0 0 1px #0c76ba;
+				position: relative;
+				background-color: #0c76ba;
+				color: white;
+			}
+		}
+	}
+}
+
+.companies-dropdown li ~ li,
+.manage-links li ~ li {
+	border-top: 1px solid #eaeaea;
+}
+
+// Show the dropdown containers when the menus are hovered
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu  {
+	display: block;
+}

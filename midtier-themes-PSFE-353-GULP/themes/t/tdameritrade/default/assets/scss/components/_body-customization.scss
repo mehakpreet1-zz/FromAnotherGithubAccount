@@ -1,0 +1,108 @@
+// To avoid extra blank space in content area for pages having less content
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+
+.adb-tertiary_nav--link {
+	color: $tertiary-nav-link-color;
+	background-color: transparent;
+
+	&:before {
+		background-color: $tertiary-color !important;
+	}
+}
+
+.adb-tertiary_nav {
+	a {
+		&:hover {
+			color: $tertiary-color !important;
+		}
+
+		&:active {
+			color: $tertiary-color !important;
+		}
+	}
+}
+
+.adb-input_row--item_content.adb-search_field--button.adb-button__small {
+	width: 28px;
+	overflow: hidden;
+	border-radius: 0;
+	border-left: none;
+	color: $adb-input-search-color;
+	background: $adb-input-search-color-bg;
+
+	&:hover {
+		color: $adb-input-search-color;
+		background: $adb-input-search-color-bg;
+	}
+}
+
+.adb-profile_header__product .adb-profile_header--content {
+	border-top: none;
+}
+
+.adb-search_field--input {
+	background-color: $adb-search-field !important;
+}
+
+.adb-secondary_nav .adb-search_field .adb-input_row--item_content {
+	border-color: $adb-search-field !important;
+}
+
+.adb-input_row--item_content.adb-search_field--input.adb-text__small {
+	color: $search-input-placeholder !important;
+}
+
+.adb-input_row--item.adb-input_row--primary {
+	::-webkit-input-placeholder {
+		color: $search-input-placeholder;
+		font-size: 11px;
+	}
+}
+
+.adb-secondary_nav {
+	width: 1128px;
+	margin: 0 auto;
+}
+
+.adb-profile_header--content {
+	width: 1128px;
+	margin: 0 auto;
+}
+
+.js-profile-header.adb-profile_header.adb-profile_header__product {
+	.adb-profile_header--card.adb-layout-content.adb-layout-column__first.adb-card.js-preview-edit-logo {
+		padding-left: 10px;
+	}
+
+	.adb-profile_header--controls.adb-layout-sidebar {
+		padding-right: 10px;
+	}
+}
+
+.adb-id_group {
+	margin-left: 10px;
+}
+
+.adb-toolbar--item.adb-button__large {
+	margin-right: 10px;
+}
+
+.adb-search_field--input {
+	box-shadow: none !important;
+}
+
+.adb-profile_header__product.adb-is-fixed .adb-profile_header--navigation {
+	width: 1128px;
+	margin: 0 auto;
+}

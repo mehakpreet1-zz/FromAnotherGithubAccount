@@ -1,0 +1,46 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <div class="footer-primary__container">
+            <ul>
+                <li>
+                    This Web site is intended for use by US residents only.
+            <a href="#"> See International Sites.</a> <a href="#">See our delivery policy for full details.</a><a href="#"> Copyright 1998-2016,</a>  Staples, Inc., All Rights Reserved.
+                </li>
+                <li class="test">
+                    <a href="www.staples.com/office/supplies/sitemap-html" >Site Map</a>
+                    
+                    <a href="www.staples.com/sbd/content/help-center/policies-and-legal.html#10008_2" class="seprator">Privacy Policy</a>
+                    
+                    <a href="www.staples.comhttp://info.evidon.com/pub_info/254?v=1" class="seprator"> 
+                        <span class=" stp--icon play"></span>AdChoices</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

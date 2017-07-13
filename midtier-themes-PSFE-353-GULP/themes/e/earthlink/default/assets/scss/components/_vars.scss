@@ -1,0 +1,66 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: 'https://www.earthlink.com/~/media/a1e82633887245df96213aeff49797c9.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$gray: #eaeaea;
+$black: #000;
+$light-grey: #64666b;
+$dark-grey: #686868;
+$orange: #f68d1f;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-bg: $white;
+$header-primary-border-color: $light-grey;
+$header-primary-bg-hover: $white;
+$header-primary-link-color: $dark-grey;
+$header-primary-link-hover-color: $orange;
+
+$dropdown-border-color: $gray;
+$dropdown-color: $black;
+$dropdown-bg: $white;
+$dropdown-hover-bg: $white;
+$dropdown-hover-color: $orange;
+
+$footer-border-color: $gray;
+
+$secondary-header-search-bg: $black;
+$secondary-header-search-color: $white;
+$secondary-header-search-input-border: $black;
+$secondary-header-border-color: $orange;
+$secondary-header-active-color: $orange;
+$subnav-header-color: $dark-grey;
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+$font-family: 'Montserrat', sans-serif;
+
+%active-state {
+	a {
+		color: $header-primary-link-hover-color;
+	}
+}
+
+$footer-height: 70px;

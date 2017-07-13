@@ -1,0 +1,202 @@
+body {
+	font-family: $custom-font;
+}
+
+.adb-styled .adb-link__nav.adb-is-selected {
+	background-color: $custom-search-green-hover;
+}
+
+.adb-link__nav.adb-is-selected {
+	background-color: $custom-search-green-hover;
+}
+
+body[data-page='home'] .secondary-nav .adb-secondary_nav, .logged-in #secondaryNav {
+	margin-top: 70px !important;
+}
+
+.secondary-nav {
+	margin-top: 70px !important;
+}
+
+.developer .adb-page--footer_helper,
+.channelPage .adb-page--footer_helper,
+.marketplacepage .adb-page--footer_helper,
+.adb-page--footer_helper {
+	margin-top: 0 !important;
+}
+
+.accountpages .adb-page--footer_helper {
+	margin-top: 20px !important;
+}
+
+.adb-secondary_nav, #secondaryNav {
+	margin-top: 0;
+}
+
+#main {
+	margin-top: 120px !important;
+}
+
+#login_page {
+	margin-top: 100px;
+}
+
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+
+	/////
+}
+
+.myappsV2Page #main {
+	margin-top: 70px !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 40px !important;
+}
+
+.adb-local_alert--buttons {
+	background-color: $custom-search-green-hover;
+}
+
+.adb-local_alert--buttons {
+	background-color: transparent;
+
+	button {
+		padding: 7px;
+		border-radius: 3px;
+		border: 1px solid $custom-alert-buttons-grey;
+	}
+}
+
+.adb-tabs--items {
+	color: $ad-black;
+}
+
+.adb-container_content {
+	color: $ad-black;
+}
+
+@media only screen and (min-width: 1450px) {
+	#mainRegion {
+		width: 1450px;
+		margin: 0 auto;
+		background: $ad-white;
+	}
+
+	.header-primary {
+		width: 1450px;
+	}
+
+	.adb-secondary_nav {
+		width: 1450px;
+	}
+
+	#main {
+		margin-top: 110px !important;
+		padding-top: 10px;
+	}
+
+	body {
+		background: $custom-media-screen-body-color;
+	}
+
+	#footer {
+		width: 1450px;
+		margin: 0 auto;
+	}
+
+	.secondary-nav {
+		width: 1450px;
+		margin: 0 auto;
+	}
+
+	.secondary-nav__menu__item--link {
+		padding: 0 24px 0 0;
+	}
+
+	.myappsV2Page {
+		#content {
+			width: 1450px;
+			margin: 0 auto;
+
+			#main {
+				margin-top: 70px !important;
+
+				#mainRegion {
+					width: 1128px;
+				}
+			}
+		}
+	}
+
+	body[data-page='home'] #mainRegion {
+		margin-top: -20px;
+		padding-top: 20px;
+
+		#main {
+			margin-top: 110px !important;
+			padding-top: 15px;
+		}
+	}
+
+	.loginPage, .signupPage {
+		#content {
+			width: 1450px;
+			margin: 0 auto;
+		}
+	}
+
+	.footer-primary {
+		width: 1450px;
+		margin: 0 auto;
+	}
+
+	.accountpages, .developer, .companyPage, .settingsPage, .user-is-chan-admin {
+		#content {
+			width: 1450px;
+			margin: 0 auto;
+			margin-top: -40px !important;
+			padding-top: 40px !important;
+
+			#mainRegion {
+				width: 1128px;
+			}
+
+			#subnav-header {
+				width: 1450px;
+			}
+		}
+	}
+
+	.channelPage {
+		#content {
+			width: 1450px;
+			margin: 0 auto;
+
+			#mainRegion {
+				width: 840px;
+			}
+
+			#subnav-header {
+				width: 1450px;
+			}
+		}
+	}
+
+	.adb-profile_header__product.adb-is-fixed {
+		width: 1450px;
+	}
+
+	body[data-page='listing'] #mainRegion {
+		margin-top: -20px;
+		padding-top: 20px;
+	}
+
+	body[data-page='profile'] #mainRegion {
+		margin-top: -20px;
+		padding-top: 20px;
+	}
+}

@@ -1,0 +1,98 @@
+// ------------------------------------------------------------
+// Custom Header Top
+// ------------------------------------------------------------
+.header-top {
+	background: $white;
+	height: 10px;
+}
+
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $header-primary-bg;
+	height: 75px;
+	border-bottom: 1px solid $dark-gray;
+
+ 	&__menu {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+
+		&__logo {
+			margin-left: 0 !important;
+		}
+
+		&__nav {
+			display: flex;
+			margin-top: -8px;
+			align-items: center;
+			justify-content: flex-end;
+		}
+
+		&__right {
+			margin-left: auto;
+		}
+
+		&__item {
+			margin-left: 20px;
+
+			a {
+				display: inline-block;
+				color: $header-link-color;
+				font: {
+					family: $font-family;
+					size: .95em;
+					weight: 300;
+				};
+
+				&:hover {
+					text-decoration: underline;
+
+					&::after  {
+						text-decoration: none !important;
+					}
+				}
+
+			}
+
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Header Secondary
+// ------------------------------------------------------------
+.header-secondary {
+	
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+		
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+		
+	}
+}
+
+body.loginPage {
+	.login--active {
+		
+	}
+}
+
+body.signupPage {
+	.signup--active {
+		
+	}
+}

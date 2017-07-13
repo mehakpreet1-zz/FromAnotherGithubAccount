@@ -1,0 +1,165 @@
+.header-top__menu__item--link,
+.companies-dropdown > a {
+  color: #808080;
+  font-size: 12px;
+  margin-left: 1.5em;
+}
+
+.header-top__menu__item--link:focus,
+.companies-dropdown > a:focus,
+.header-top__menu__item--link:hover,
+.companies-dropdown > a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-primary__menu__item--link {
+  color: #000;
+  font-size: 16px;
+  margin-left: 1.5em;
+}
+
+.header-primary__menu__item--link:focus,
+.header-primary__menu__item--link:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+.loginPage .login--active,
+.signupPage .signup--active {
+  color: #fff;
+}
+
+[data-page='home'] .marketplace--active,
+[data-page='listing'] .marketplace--active,
+[data-page='profile'] .marketplace--active,
+.myappsV2Page .myapps--active {
+  color: #808080;
+}
+
+.header-top {
+  background: #000;
+  border-bottom: 1px solid #fff;
+  height: 40px;
+}
+
+.header-top__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 40px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.header-primary {
+  background: #f5f5f5;
+  border-bottom: 1px solid #eaeaea;
+  height: 90px;
+}
+
+.header-primary__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+
+.header-primary__menu_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.header-primary__menu__item--logo {
+  background: url("http://www.videotron.com/vcom/static/img/logo/head-videotron-logo-black.png") no-repeat;
+  background-size: contain;
+  display: block;
+  height: 60px;
+  margin: 15px 0;
+  width: 100px;
+}
+
+.header-top__menu__item .adb-context_menu--menu {
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-radius: 3px;
+}
+
+.header-top__menu__item .adb-context_menu--menu li:first-child:hover,
+.header-top__menu__item .adb-context_menu--menu li:first-child a:hover {
+  border-radius: 3px 3px 0 0;
+}
+
+.header-top__menu__item .adb-context_menu--menu li:last-child:hover,
+.header-top__menu__item .adb-context_menu--menu li:last-child a:hover {
+  border-radius: 0 0 3px 3px;
+}
+
+.header-top__menu__item .adb-context_menu--menu li ~ li {
+  border-top: 1px solid #808080;
+}
+
+.header-top__menu__item .adb-context_menu--menu a {
+  padding: 10px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  line-height: 1em;
+  font-size: 10.5px;
+}
+
+.header-top__menu__item .adb-context_menu--menu a:hover {
+  text-decoration: none;
+  box-shadow: none;
+  position: relative;
+  background-color: #000;
+  color: #fff;
+}
+
+.companies-dropdown {
+  position: relative;
+}
+
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+  display: block;
+}
+
+.footer-primary {
+  background-color: transparent;
+  border-top: 1px solid #eaeaea;
+  padding-top: 1em;
+}
+
+.footer-primary__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-primary a {
+  color: #9c9c9c;
+}
+
+.footer-primary a:hover {
+  text-decoration: none;
+}
+
+.footer-primary .adb-icon__appdirect {
+  font-size: 14px;
+}

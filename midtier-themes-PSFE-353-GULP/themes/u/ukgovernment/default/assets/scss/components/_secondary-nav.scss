@@ -1,0 +1,120 @@
+.adb-secondary_nav {
+	background-color: $primary;
+	color: $ad-white;
+	border-bottom: none;
+
+	&--content {
+		font-size: 14px;
+	}
+
+	&--link {
+		font-size: 14px;
+	}
+
+	.adb-is-selected {
+		color: $ad-white;
+
+		&:before {
+			bottom: 3px;
+			background-color: $ad-white !important;
+		}
+	}
+
+	.adb-search_field {
+		&--input {
+			border: none;
+			border-right: 0;
+			border-radius: 0;
+		}
+
+		&--button {
+			color: $secondary-nav-search-button-color;
+			background: $secondary-nav-search-button-bg;
+			box-shadow: none;
+			text-shadow: none;
+			width: 31px;
+			overflow: hidden;
+			border-radius: 0;
+
+			&:hover {
+				color: $secondary-nav-search-button-color_hover;
+				background: $secondary-nav-search-button-bg_hover;
+			}
+		}
+
+		.adb-input_row--item_content {
+			border: {
+				color: $secondary-nav-search-button-border-color;
+				border-radius: 0px 3px 3px 0px;
+			};
+		}
+	}
+
+	&--items {
+		color: $ad-white;
+	}
+
+	&--item__heading {
+		&:before {
+			border-left-color: $custom_blue;
+		}
+	}
+
+	&--item,
+	li {
+		.adb-secondary_nav--link,
+		a {
+			&.active,
+			&.adb-is-selected {
+				&::before {
+					background-color: $secondary-nav-selected-item-border-color;
+				}
+			}
+		}
+	}
+}
+
+.adb-button--icon {
+	font-size: 15px;
+}
+
+.adb-input_row--item:first-child .adb-input_row--item_content {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.adb-input_row--item:last-child .adb-input_row--item_content {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.adb-secondary_nav--link.active:before, #subnav-header a.active:before, #subnav-header a.adb-is-selected:before {
+	bottom: 6px;
+	background-color: $ad-white !important;
+}
+
+#subnav-header {
+	background-color: $primary;
+	color: $ad-white;
+	border-bottom: none;
+
+	& ul {
+		color: $ad-white;
+	}
+
+	a {
+		font-size: 14px;
+
+		&:focus,
+		&:hover,
+		&.active,
+		&:active {
+			color: $secondary-nav-selected-text-color;
+		}
+
+		&:active::before,
+		&.active::before {
+			background-color: $secondary-nav-selected-item-border-color;
+		}
+	}
+}

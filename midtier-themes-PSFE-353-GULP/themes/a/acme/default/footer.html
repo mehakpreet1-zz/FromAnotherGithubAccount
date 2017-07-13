@@ -1,0 +1,27 @@
+<div class="adb-page_footer--content adb-layout-default">
+  <span class="adb-page_footer--content_item">{{Powered.by.AppDirect}} ©2009-2016</span>
+  <div class="adb-page_footer--content_item">
+    {{LANGUAGE_SELECT}}
+  </div>
+  <nav class="adb-footer_nav adb-page_footer--content_item">
+    <ul classname="adb-footer_nav--items">
+      <li class="adb-footer_nav--item"><a class="adb-footer_nav--link" href="http://support.appdirect.com">{{help.center}}</a></li>
+      <li class="adb-footer_nav--item"><a class="adb-footer_nav--link" href="mailto:support@appdirect.com">{{Contact}}</a></li>
+    </ul>
+  </nav>
+  <span class="adb-page_footer--content_item">{{Call.us.toll.free}} (877) 404-APPS</span>
+</div>
+<script type=text/javascript>
+  //Dropdown menus from primary nav
+  $(document).on('click', '.custom-primary .adb-context_menu--trigger', function(e) {
+    $('.custom-primary .adb-is-active').removeClass('adb-is-active');
+    $(this).toggleClass('adb-is-active');
+  });
+
+  $(document).on('click', function(e) {
+    if (!$(e.target).is('.custom-primary .adb-context_menu, .custom-primary .adb-context_menu--trigger')) {
+      $('.custom-primary .adb-is-active').removeClass('adb-is-active');
+    }
+  });
+</script>
+

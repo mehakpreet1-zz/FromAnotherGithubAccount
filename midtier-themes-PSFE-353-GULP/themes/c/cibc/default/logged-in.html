@@ -1,0 +1,72 @@
+<div class="header-top">
+	<ul class="header-top__menu adb-layout-default">
+		<li class="header-top__menu__item">
+			<a class="header-top__menu__item--link" href="https://www.cibc.com/en">Personal</a>
+		</li>
+		<li class="header-top__menu__item">
+			<a class="header-top__menu__item--link small-business" href="https://www.cibc.com/en/small-business.html">Small Business</a>
+		</li>
+		<li class="header-top__menu__item">
+			<a class="header-top__menu__item--link" href="https://www.cibc.com/en/commercial-corporate.html">		Commercial and Corporate</a>
+		</li>
+		<li class="header-top__menu__item">
+			<a class="header-top__menu__item--link" href="https://www.cibc.com/en/about-cibc.html">About CIBC</a>
+		</li>
+		<li class="header-top__menu__item">
+			<a class="header-top__menu__item--link" href="https://www.cibc.com/en/cibc-websites.html">CIBC Websites</a>
+		</li>
+
+		<ul class="header-top__menu_right">
+			<li class="header-top__menu__item">
+				<a class="header-top__menu__item--link" href="https://www.cibc.com/en/special-offers.html">
+				<span class="special-offer-icon"> </span> Special Offers</a>
+			</li>
+			<li class="header-top__menu__item">
+				<a class="header-top__menu__item--link" href="#">
+				<span class="multi-language-icon"> </span> English</a>
+			</li>
+
+		</ul>
+	</ul>
+</div>
+
+<nav class="header-primary">
+	<ul class="header-primary__menu adb-layout-default">
+		<li class="header-primary__menu__item">
+			<a class="header-primary__menu__item--logo" href="{{HOME_HREF}}"></a>
+		</li>
+		<li class="header-primary__menu__item">
+			<a class="header-primary__menu__item--link marketplace--active" href="{{HOME_HREF}}" data-auto="home">{{Marketplace}}</a>
+		</li>
+
+		<ul class="header-primary__menu_right">
+			<li class="header-primary__menu__item">
+				<a class="header-primary__menu__item--link myapps--active" href="{{MYAPPS_HREF}}" data-auto="myApps">{{My.Apps}}</a>
+			</li>
+			<li class="header-primary__menu__item js-companies-link">{{COMPANIES_DROPDOWN}}</li>
+			<li class="header-primary__menu__item js-manage-links">
+				<menu class="adb-context_menu" data-placement="right">
+					<a class="header-primary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="manage">{{Manage}}</a>
+					<div class="js-dropdown-container">
+						<div class="adb-container adb-context_menu--menu">{{MANAGE_LINKS}}</div>
+					</div>
+				</menu>
+			</li>
+			<li class="header-primary__menu__item">
+				<menu class="adb-context_menu" data-placement="right">
+					<a class="header-primary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="username">{{USER_NAME}}</a>
+					<div class="js-dropdown-container">
+						<div class="adb-container adb-context_menu--menu">
+							<ul>
+								<li><a href="{{PROFILE_HREF}}" data-auto="myProfile">{{My.Profile}}</a></li>
+								<li><a href="{{COMPANY_HREF}}" data-auto="myCompany">{{My.Company}}</a></li>
+								<li><a href="{{SETTINGS_HREF}}" data-auto="mySettings">{{my.settings}}</a></li>
+								<li><a href="{{LOGOUT_HREF}}" data-auto="logout">{{logout}}</a></li>
+							</ul>
+						</div>
+					</div>
+				</menu>
+			</li>
+		</ul>
+	</ul>
+</nav>

@@ -1,0 +1,245 @@
+$body-padding: 15px;
+
+.adb-layout-default {
+	width: calc(984px + #{$body-padding * 2});
+}
+
+@media only screen and (min-width: 1024px) {
+	.adb-layout-default {
+		width: calc(994px + #{$body-padding * 2});
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.adb-layout-default {
+		width: calc(1138px + #{$body-padding * 2});
+	}
+}
+
+// To avoid extra blank space in content area for pages having less content
+html {
+	background-color: $custom-header-top-bg-color;
+}
+
+#main {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#header {
+	margin-top: 0;
+	z-index: 999;
+	position: relative;
+	background-color: $custom-header-top-bg-color;
+}
+
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.accountpages #footer {
+	padding-top: 0 !important;
+}
+
+// developer page
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+	background-color: $custom-header-top-bg-color;
+}
+
+.adb-styled.adb-layout-default {
+	background-color: $custom-adb-layout-default-bg-color;
+}
+
+.adb-layout-default {
+	background-color: $custom-header-top-bg-color;
+}
+
+.accountpages,
+.myappsV2Page {
+	.adb-layout-default {
+		background-color: $custom-adb-layout-default-bg-color;
+	}
+
+	.header-top__menu {
+		background-color: $custom-header-top-bg-color !important;
+	}
+}
+
+.adb-layout-row {
+	margin: 0 auto;
+	padding: 24px calc(30px/2);
+}
+
+.adb-profile_header--content {
+	margin: 0 142px;
+	padding: 24px 10px;
+}
+
+.adb-profie_header {
+	margin-bottom: 0;
+}
+
+.adb-profile_header--navigation {
+	box-shadow: none !important;
+	border-bottom: none !important;
+	background-color: transparent !important;
+}
+
+.adb-tertiary_nav--items {
+	background-color: $custom-adb-layout-default-bg-color;
+	border-bottom: 1px solid $custom-secondary-nav-border-color !important;
+}
+
+.adb-layout-row {
+	background-color: $custom-adb-layout-default-bg-color;
+}
+
+.adb-profile_header {
+	margin-bottom: 0;
+}
+
+.adb-layout-content--section {
+	padding-top: 24px !important;
+}
+
+[data-page='profile'] {
+	.adb-profile_header--content {
+		& .adb-layout-default {
+			background-color: transparent;
+		}
+	}
+}
+
+.myappsV2Page,
+.accountpages,
+.settingsPage,
+.companyPage,
+.logged-in {
+	#content {
+		background: transparent;
+	}
+}
+
+.myappsV2Page #main {
+	padding-top: 0;
+}
+
+.accountpages #subnav-header, .developer #subnav-header, .accountpages #subnav-header, .marketplaceManage #subnav-header, .superuser #subnav-header {
+	background-color: $custom-header-top-bg-color;
+	border-bottom: 1px solid transparent;
+}
+
+#subnav-header .wrapper {
+	padding: 0 15px;
+	background-color: $custom-adb-layout-default-bg-color;
+	border-bottom: 1px solid $custom-secondary-nav-border-color;
+}
+
+.accountpages,
+.myappsV2Page {
+	.adb-page--content {
+		padding: 24px 15px 24px 15px;
+	}
+
+	.adb-profile_header--content.adb-layout-default {
+		padding: 20px 0;
+	}
+
+	.adb-layout-row.adb-layout-default.userdetail-content {
+		padding: 0 0 24px 0;
+	}
+}
+
+.manageApps.accountpages,
+.manageUsers.accountpages {
+	.adb-page--content {
+		padding: 0;
+
+		.adb-layout-default {
+			padding: 24px 20px;
+		}
+	}
+}
+
+.companyPage,
+.settingsPage,
+.channelPage,
+.developer {
+	.adb-layout-default.adb-page--content {
+		padding: 24px 15px 24px 15px;
+		background: $custom-adb-layout-default-bg-color;
+	}
+}
+
+[data-page='profile'] {
+	.adb-profile_header--content {
+		margin: 0;
+		background: transparent;
+		box-shadow: none;
+		border-top: 0;
+		padding: 0 !important;
+
+		& .adb-layout-default {
+			background-color: $ad-gray-shade3;
+			padding: 20px;
+			border-top: 1px solid $custom-secondary-nav-border-color;
+		}
+	}
+
+	.adb-layout-default.adb-subscriptions {
+		background: transparent;
+	}
+}
+
+.developer #content {
+	background: transparent;
+}
+
+.accountpages,
+.developer,
+.channelPage {
+	.adb-secondary_nav--items {
+		border-bottom: 0;
+	}
+}
+
+.channelPage {
+	.adb-secondary_nav#subnav-header {
+		border-bottom: 0;
+		background-color: transparent;
+	}
+}
+
+.loginPage {
+	#content {
+		background-color: transparent;
+	}
+
+	.adb-layout-default.adb-page--content {
+		padding-top: 24px;
+	}
+}
+
+[data-page='bundle'] {
+	.adb-profile_header--content {
+		margin: 0 auto;
+
+		& .adb-layout-default {
+			background-color: transparent;
+		}
+	}
+
+	@media only screen and (min-width: 1024px) {
+		.adb-profile_header--content {
+			width: calc(994px + #{$body-padding * 2});
+		}
+	}
+
+	@media only screen and (min-width: 1280px) {
+		.adb-profile_header--content {
+			width: calc(1138px + #{$body-padding * 2});
+		}
+	}
+}

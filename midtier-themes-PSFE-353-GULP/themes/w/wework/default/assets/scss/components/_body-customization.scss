@@ -1,0 +1,21 @@
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+
+#login_page.adb-rwd {
+	margin: 0 auto;
+}
+
+body {
+	font-family: "custombodyfont";
+}
+
+h1, h2, h3, h4, h5, th {
+	letter-spacing: 0.5px;
+	font-family: "custombodyfont" !important;
+}

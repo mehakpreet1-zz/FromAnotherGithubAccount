@@ -1,0 +1,15 @@
+#secondaryNav
+    nav.adb-secondary_nav
+        ul.adb-secondary_nav--items.adb-layout-default.js-navigation-container
+          li.adb-secondary_nav--item
+            a.adb-secondary_nav--link.adb-is-selected(href='/home') Featured Applications
+          li.adb-secondary_nav--item
+            a.adb-secondary_nav--link(href='/listing') All Applications
+          li.adb-secondary_nav--item.adb-secondary_nav--search.adb-secondary_nav--item__right.adb-layout-nav_search
+            .adb-search_field.adb-input_row.adb-input_row__search.adb-input_row__full_width
+              .adb-input_row--item.adb-input_row--primary
+                input.adb-input_row--item_content.adb-search_field--input.adb-text__small(placeholder='Find Applications', type='search')
+              .adb-input_row--item.js-search-button-container
+                button.adb-input_row--item_content.adb-search_field--button.adb-button__small(type='button')
+                  i.adb-icon__search.adb-button--icon
+                  | 		Search

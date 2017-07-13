@@ -1,0 +1,52 @@
+<div class="custom-masthead">
+  <nav class="adb-layout-default">
+    <a href="/home" class="custom-brand">Rogers</a>
+    <span class="cam-header">Rogers Business App Market</span>
+
+    <nav class="custom-primary">
+      <ul>
+        <li class="primary-marketplace"><a href="/home">Marketplace</a></li>
+        <li class="primary-myapps"><a href="/myapps">MyApps</a></li>
+        <li class="primary-manage">
+          <menu class="adb-context_menu" data-placement="right">
+            <a class="--link menu-trigger adb-context_menu--trigger" href="javascript:;">Manage</a>
+            <div class="dropdown-container">
+              <div class="adb-container adb-context_menu--menu">
+                <ul class="manage-links"><li><a href="/superuser/dashboard">appdirectadmin</a></li><li><a href="/account/home">Account</a></li></ul>
+              </div>
+            </div>
+          </menu>
+        </li>
+        <li><script type="text/javascript">
+  function changeCompanyContext(userId, companyId) {
+    $.ajax({
+      url: '/api/account/v2/users/' + userId + '/memberships/' + companyId + '/current',
+      type: 'put'
+    }).then(function () {
+      window.location = '/home';
+    });
+  }
+</script><div class="companies-dropdown">
+<a class="adb-context_menu--trigger">Company One</a>
+<ul class="adb-context_menu--menu">
+  
+  <li><a onClick="changeCompanyContext('testUserID', '1')">Company One</a></li>
+
+  <li><a onClick="changeCompanyContext('testUserID', '22')">Company Twenty Two</a></li>
+
+</ul>
+</div></li>
+       </ul>
+    </nav>
+
+    <menu class="user-menu dropdown-component">
+      <a class="dropdown-component--trigger" href="javascript:;"><i class="rui-icon-user"></i> test.email@appdirect.com <i class="rui-icon-arrow-down"></i></a>
+      <div class="dropdown-component-container">
+        <ul>
+          <li><a href="https://ciam.rogers.com/ciam/auth/profilemanagement/GetManageMyProfile">Manage Settings</a></li>
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </div>
+    </menu>
+  </nav>
+</div>

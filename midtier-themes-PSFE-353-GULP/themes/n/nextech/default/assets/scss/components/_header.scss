@@ -1,0 +1,167 @@
+// ------------------------------------------------------------
+// Custom Header Top
+// ------------------------------------------------------------
+
+.header-top {
+	color: $header-top-color;
+	font-size: 15px;
+	height: 33px;
+	line-height: 33px;
+
+	&_contact {
+		display: flex;
+		margin: 0 auto;
+
+		&_call {
+			display: inline-block;
+			flex: 1 0 auto;
+			text-align: left;
+		}
+
+		&_icons {
+			align-items: center;
+			color: $dark-gray;
+			display: flex;
+			flex: 1 0 auto;
+			justify-content: flex-end;
+			margin-left: auto;
+
+			a {
+				color: $header-top-color;
+				font-size: 13px;
+				margin-left: 5px;
+
+				&:hover {
+					color: $link-hover-color;
+				}
+			}
+
+			.header-top_contact_icon {
+				height: 24px;
+				margin: 0 2px 4px 0;
+				vertical-align: middle;
+				width: 24px;
+			}
+
+			.contact-divider {
+				background-color: $header-top-color;
+				height: 24px;
+				margin-left: 10px;
+				margin-right: 5px;
+				width: 1px;
+			}
+		}
+	}
+}
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+.header-primary {
+	background: $header-primary-bg;
+	border-top: 3px solid $header-primary-border-color;
+	box-shadow: 0 2px 0 $header-primary-box-shadow-color inset;
+	font-size: 12px;
+	height: 102px;
+	width: 100%;
+	z-index: 100;
+
+	&.fixed {
+		left: 0;
+		position: fixed;
+		top: 0;
+	}
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+
+		.fRight {
+			align-items: center;
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+			color: $header-primary-color;
+			margin: 5px;
+			text-transform: uppercase;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: 100% 100%;
+				display: block;
+				height: 65px;
+				margin-left: -17px;
+				padding-top: 5px;
+				width: 165px;
+			}
+
+			a {
+				border: 1px solid transparent;
+				color: $header-primary-color;
+				display: block;
+				letter-spacing: 2px;
+				line-height: 12px;
+				padding: 12px;
+				text-shadow: rgba(0, 0, 0, 0.498039) 1px 1px 1px;
+				vertical-align: middle;
+				white-space: nowrap;
+
+				&:after {
+					content: "";
+				}
+
+				&:not(.header-primary__menu__item--logo) {
+					&.adb-is-active,
+					&:hover {
+						background-color: $dropdown-bg;
+						text-decoration: none;
+						z-index: 1;
+					}
+				}
+			}
+		}
+	}
+
+	.adb-context_menu--menu {
+		min-width: 135px;
+		padding: 10px 48px 10px 24px;
+	}
+}
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+		border: 1px solid $header-primary-color;
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+		border: 1px solid $header-primary-color;
+	}
+}
+
+body.loginPage {
+	.login--active {
+		border: 1px solid $header-primary-color;
+	}
+}
+
+body.signupPage {
+	.signup--active {
+		border: 1px solid $header-primary-color;
+	}
+}

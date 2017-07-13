@@ -1,0 +1,89 @@
+// ------------------------------------------------------------
+// Custom Header Top
+// ------------------------------------------------------------
+.header-top {
+	background-color: $header-top-bg-color;
+	border-bottom: 1px solid $header-top-bg-color;
+	height: 30px;
+
+	&-container {
+		display: flex;
+	}
+
+	&__items {
+		width:50%;
+		display: flex;
+
+		&.pull-left{
+			justify-content: flex-end;
+		}
+
+		&--item {
+			margin-top: 3px;
+
+			a {
+				color: $header-top-link-color;
+				font-size: 12px;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $white;
+	height: 90px;
+	border-bottom: 1px solid $header-top-border-color;
+	border-top: 1px solid $header-top-border-color;
+
+	&-container {
+		display: flex;
+	}
+
+	&__menu {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		width: 50%;
+
+		&.pull-left{
+			justify-content: flex-end;
+		}
+
+		&__item {
+			align-self: center;
+			margin-left: 30px;
+
+			&:first-of-type {
+				margin-left: 0px;
+			}
+
+			&--logo {
+				background: {
+					image : $sprite-img;
+					position: -18px -109px;
+				}
+				width: 164px;
+				height: 45px;
+				display: block;
+				margin: 20px 0 11px;
+			}
+
+			&--link {
+				font-size: 18px;
+				color: $black;
+
+				&:hover {
+					color: $header-link-hover-color;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

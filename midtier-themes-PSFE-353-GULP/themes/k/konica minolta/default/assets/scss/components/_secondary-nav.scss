@@ -1,0 +1,89 @@
+// ----------------------------------
+// Customized secondary nav
+// ----------------------------------
+.adb-secondary_nav {
+	background-color: $secondary-nav-bg-color !important;
+	border-bottom: 1px solid $secondary-nav-link-color !important;
+
+	.adb-search_field {
+		&--input {
+			border: 1px solid $secondary-nav-search-button-bg_hover;
+			border-right: 0;
+		}
+
+		&--button {
+			color: $secondary-nav-search-button-color;
+			border: 1px solid $secondary-nav-search-button-border-color;
+			background: $secondary-nav-search-button-bg;
+			border-radius: 0px 3px 3px 0px;
+			box-shadow: none;
+			text-shadow: none;
+			font-weight: 600;
+			padding: 3px 8px;
+
+			&:hover {
+				color: $secondary-nav-search-button-color_hover;
+				background: $secondary-nav-search-button-bg_hover;
+			}
+		}
+
+		.adb-input_row--item_content {
+			border: {
+				color: $secondary-nav-search-button-border-color;
+				border-radius: 0px 3px 3px 0px;
+			};
+		}
+	}
+
+	&--item,
+	li {
+		.adb-secondary_nav--link,
+		a {
+			color: $secondary-nav-link-color !important;
+			font-weight: 300 !important;
+
+			&:hover {
+				color: $secondary-nav-link-color-hover !important;
+			}
+
+			&.active,
+			&.adb-is-selected {
+				color: $secondary-nav-link-color-hover !important;
+				font-weight: 600 !important;
+
+				&::before {
+					background-color: $secondary-nav-selected-item-border-color;
+				}
+			}
+		}
+
+		&__heading:before {
+			border-left-color: $secondary-nav-bg-color !important;
+		}
+	}
+
+	&--content {
+		color: $secondary-nav-link-color;
+	}
+}
+
+#subnav-header {
+	a {
+		&:focus,
+		&:hover,
+		&.active,
+		&:active {
+			color: $secondary-nav-selected-text-color;
+		}
+
+		&:active::before,
+		&.active::before {
+			background-color: $secondary-nav-selected-item-border-color;
+		}
+	}
+}
+
+.adb-input_row--item:first-child .adb-input_row--item_content {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}

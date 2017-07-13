@@ -1,0 +1,138 @@
+.footer-primary {
+	background: $menu-link-color;
+	font-family: "Open Sans";
+	padding-top: 20px;
+
+	.social-container {
+		float: right;
+		margin-right: 0px;
+	}
+
+	&__cols {
+		float: left;
+		width: 50%;
+
+		&__col {
+			color: $white;
+			float: left;
+			font-family: "Open Sans";
+			margin-right: 45px;
+
+			h3 {
+				font-family: "Open Sans";
+				font-size: 16px;
+				margin-top: 15px;
+			}
+
+			&--lists {
+				a {
+					color: $white;
+					line-height: 25px;
+					text-decoration: none;
+				}
+			}
+
+			&--logo{
+				background: $footer-logo;
+				background-repeat: no-repeat;
+				background-size: 210px;
+				display: block;
+				float: left;
+				height: 50px;
+				margin-top: 20px;
+				width: 250px;
+			}
+
+			&--socials {
+				float: left;
+				margin-top: 20px;
+
+				li {
+					float: left;
+
+					a {
+						background-color: $menu-link-hover-color;
+						border-radius: 50%;
+						color: $white;
+						display: block;
+						font-size: 18px;
+						height: 20px;
+						margin-right: 3px;
+						padding: 14px;
+						text-align: center;
+						text-decoration: none;
+						width: 20px;
+					}
+
+					.zocial-facebook:before {
+						margin-left: -5px;
+					}
+
+					.fb{
+						&:hover {
+							background-color: $fb-icon-hover-color ;
+						}
+					}
+
+
+					.twitter:hover {
+						background-color: $twitter-icon-hover-color;
+					}
+
+					.linkedin:hover {
+						background-color: $linkedin-icon-hover-color;
+					}
+
+					.google:hover {
+						background-color: $google-icon-hover-color;
+					}
+
+					.youtube:hover {
+						background-color: $youtube-icon-hover-color;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+.footer-secondary {
+	background: $menu-link-color;
+	font-size:11px;
+	height: 125px;
+	padding-bottom: 10px;
+
+	&__cols {
+		color : $white;
+		float:left;
+		margin-top:80px;
+		width: 50%;
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+			float:left;
+			padding-right: 10px;
+			padding-left: 15px;
+			border-right : 1px solid $white;
+
+			&:last-of-type {
+				border : none;
+			}
+
+			a {
+				color : $white;
+				text-decoration: none;
+				text-transform: uppercase;
+
+				&:hover {
+					color: $menu-link-hover-color;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,42 @@
+.footer-primary {
+	background-color: $custom-blue;
+	border-top: 1px solid $ad-white;
+	height: 50px !important;
+	padding-bottom: 25px;
+
+	.adb-layout-default {
+		font-size: 12px;
+		margin-top: 30px;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-around;
+
+		&__item {
+			.link10 {
+				border-right: none !important;
+			}
+		}
+
+		a {
+			color: $footer-links-color;
+			border-right: 1px solid white;
+			padding-right: 18px;
+			padding-left: 10px;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.adb-icon__appdirect {
+		font-size: 12px;
+	}
+}
+
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}

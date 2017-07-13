@@ -1,0 +1,66 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: 'https://www.sonic.com/sites/default/files/logo.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$gray: #eaeaea;
+$black: #000;
+$blue: #45b3d8;
+$light-grey: #c6c6c6;
+$dark-grey: #676e81;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-bg: $white;
+$header-primary-border-color: $light-grey;
+$header-primary-bg-hover: $white;
+$header-primary-link-color: $dark-grey;
+$header-primary-link-hover-color: $blue;
+
+$dropdown-border-color: $gray;
+$dropdown-color: $black;
+$dropdown-bg: $white;
+$dropdown-hover-bg: $blue;
+$dropdown-hover-color: $white;
+
+$footer-bg: $white;
+
+$secondary-header-search-bg: $blue;
+$secondary-header-search-color: $white;
+$secondary-header-search-input-border: $blue;
+$secondary-header-border-color: $blue;
+$secondary-header-active-color: $blue;
+$subnav-header-color: $dark-grey;
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+$font-family: sans-serif;
+
+%active-state {
+	a {
+		color: $header-primary-link-hover-color;
+	}
+}
+
+$footer-height: 71px;

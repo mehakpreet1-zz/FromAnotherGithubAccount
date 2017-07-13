@@ -1,0 +1,100 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: "https://www.greatwestlife.com/content/dam/gwl/images/logo/logo_rgb_en.svg";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$custom-top-color: #f7f6f1;
+$custom-green: #63a60a;
+$custom-white-shade: #f9f9f9;
+$custom-footer-border: #546166;
+$custom-footer-bg: #34444a;
+$custom-footer-color: #f4f4f4;
+$custom-blue-shade: #2c3c42;
+$custom-dropdown: #115c8b;
+$custom-green-shade2: #458200;
+$custom-gray: #ededed;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+
+$primary: $ad-black;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-top-bg: $custom-top-color;
+$header-top-border-bottom-color: $custom-top-color;
+$header-top-height: 37px;
+$header-top-font-size: 16px;
+$header-top-font-color: $ad-black;
+$header-top-font-color-hover: $ad-black;
+
+$header-primary-bg: $ad-white;
+$header-primary-border-top-color: $ad-white;
+$header-primary-border-bottom-color: $custom-gray;
+$header-primary-logo-height: 36px;
+$header-primary-logo-width: 178px;
+$header-primary-font-size: 18px;
+$header-primary-font-color: $ad-black;
+$header-primary-font-color_hover: $ad-black;
+$header-primary-color_active: $ad-black;
+
+$dropdown-border-color: $ad-gray-shade5;
+$dropdown-border_width: 0;
+$dropdown-border-radius: 0;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 0;
+$dropdown-item-color: $ad-black;
+$dropdown-bg: $ad-white;
+$dropdown-item-hover-bg: $ad-white;
+$dropdown-item-hover-color: $custom-dropdown;
+
+$secondary-nav-search-button-color: $custom-white-shade;
+$secondary-nav-search-button-color_hover: $custom-white-shade;
+$secondary-nav-search-button-border-color: $custom-green;
+$secondary-nav-search-button-bg: $custom-green;
+$secondary-nav-search-button-bg_hover: $custom-green-shade2;
+
+$secondary-nav-selected-text-color: $ad-black;
+$secondary-nav-selected-item-border-color: $custom-green;
+
+$footer-height: 127px;
+$footer-primary-bg: $custom-footer-bg;
+$footer-primary-border-top: $custom-footer-border;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $custom-footer-color;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import "settings";
+
+// import computed values
+@import "components/INDEX";
+
+// import custom CSS

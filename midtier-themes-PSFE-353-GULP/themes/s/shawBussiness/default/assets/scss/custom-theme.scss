@@ -1,0 +1,72 @@
+$asset-logo: "http://assets.aws.shawbusiness.ca/uploadedimages/shawbusiness/images/shawbusiness-logo-white.png";
+
+$custom-ad-blue: #0082bb;
+$custom-ad-white: #ffffff;
+$custom-ad-gray1: #333333;
+$custom-ad-gray: #e0e0e0;
+$custom-gray-shade5: #787876;
+$custom-blue: #006f9f;
+$custom-header-primary-font: shaw, sans-serif;
+
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+
+$primary: $ad-black;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+$header_hover_color: $custom-blue;
+$header-primary-bg: $custom-ad-blue;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 30px;
+$header-primary-logo-width: 180px;
+$header-primary-font-size: 17px;
+$header-primary-font-color: $custom-ad-white;
+$header-primary-font-color_hover: $custom-ad-white;
+$header-primary-color_active: $ad-black;
+
+$dropdown-border-color: $custom-ad-white;
+$dropdown-border_width: 0;
+$dropdown-border-radius: 0;
+$dropdown-item-divider: $custom-ad-white;
+$dropdown-item-divider_width: 0;
+$dropdown-item-color: $custom-ad-blue;
+$dropdown-bg: $custom-ad-white;
+$dropdown-item-hover-bg: $custom-ad-gray;
+$dropdown-item-hover-color: $ad-gray-shade3;
+
+$secondary-nav-search-button-color: $custom-ad-blue;
+$secondary-nav-search-button-color_hover: $custom-ad-blue;
+$secondary-nav-search-button-border-color: $ad-gray-shade4;
+$secondary-nav-search-button-bg: $ad-white-shade3;
+$secondary-nav-search-button-bg_hover: $ad-white-shade1;
+
+$secondary-nav-selected-text-color: $custom-ad-blue;
+$secondary-nav-selected-item-border-color: $custom-ad-blue;
+
+$footer-height: 15px;
+$body-customise-search: $custom-blue;
+
+$footer-primary-bg: $ad-gray-shade3;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $custom-ad-white;
+$header-footer-color: $custom-ad-white;
+
+@import "settings";
+
+@import "components/INDEX";

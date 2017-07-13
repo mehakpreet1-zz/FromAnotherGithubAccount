@@ -1,0 +1,88 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	padding: 1em 0 2em;
+
+	& a {
+		font-size: 16px;
+		text-decoration: underline;
+
+		&:hover {
+			color: $ad-black;
+			text-decoration: underline !important;
+		}
+	}
+
+	&__container {
+		display: table-column;
+		justify-content: flex-start;
+		margin-left: initial;
+		padding-right: 144px;
+		line-height: 3;
+		padding-top: 67px;
+
+		&__left {
+			&__top {
+				display: flex;
+			}
+		}
+
+		&__right {
+			display: flex;
+
+			&__logo__footer {
+				background: url($footer_icon) no-repeat;
+				background-size: 40px 16px;
+				width: 41px;
+				height: 17px;
+				margin-top: 15px;
+			}
+
+			&-link {
+				padding-left: 10px;
+				width: 800px;
+				font-size: 16px;
+				color: $custom_black;
+			}
+		}
+	}
+
+	a {
+		color: $footer-links-color;
+		font-weight: 400;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.adb-icon__appdirect {
+		font-size: 14px;
+	}
+}
+
+.contain {
+	display: flex;
+	justify-content: space-between;
+}
+
+.copyright {
+	background-image: url($footer_logo);
+	background-size: 125px 102px;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 103px;
+	float: right;
+	margin-top: 20px;
+	line-height: 16;
+	cursor: pointer;
+	color: $custom_black;
+}
+
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+
+	&--content_item {
+		padding-right: 34px;
+	}
+}

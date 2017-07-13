@@ -1,0 +1,143 @@
+<footer class="footer-primary">
+    <div class="footer-primary__upper">
+        <div class="adb-layout-default">
+            <ul class="footer-primary__upper__list">
+                <li class="footer-primary--logo"></li>
+                <li class = "footer-primary--career"></li>
+                <ul class="footer-primary--icon-right">
+                    <li class="footer-primary--social-icon facebook"></li>
+                    <li class="footer-primary--social-icon twitter"></li>
+                    <li class="footer-primary--social-icon linkdin"></li>
+                    <li class="footer-primary--social-icon youtube "></li>
+                    <li class="footer-primary--social-icon blog"></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="adb-layout-default">
+        <div class="footer_secondary">
+            <ul class = "footer_secondary__list">
+                <li><a href="#" class="footer_secondary__list__link">About Us</a></li>
+                <li class = "footer_secondary__list__text">Contact Us</li>
+                <li class = "footer_secondary__list__text">Executive Team</li>
+                <li class = "footer_secondary__list__text">Supplier Diversity</li>
+                <li class = "footer_secondary__list__text">Awards</li>
+                <li class = "footer_secondary__list__text">Newsroom</li>
+                <li class = "footer_secondary__list__text">Corporate Social Responsibility</li>
+                <li class = "footer_secondary__list__text">Zones Careers</li>
+                <li class = "footer_secondary__list__text">Expertise</li>
+                <li class = "footer_secondary__list__text">Financing</li>
+            </ul>
+            <ul class = "footer_secondary__list">
+                <li><a href="#" class="footer_secondary__list__link">Solutions & Services</a></li>
+                <li class = "footer_secondary__list__text">Data Center</li>
+                <li class = "footer_secondary__list__text">Mobility</li>
+                <li class = "footer_secondary__list__text">Unified Communications</li>
+                <li class = "footer_secondary__list__text">Cloud</li>
+                <li class = "footer_secondary__list__text">Security</li>
+                <li class = "footer_secondary__list__text">Internet of Things (IoT)</li>
+                <li class = "footer_secondary__list__text">Zones Discovery Services</li>
+                <li class = "footer_secondary__list__text">Software</li>
+                <li class = "footer_secondary__list__text">Digital Signage</li>
+                <li class = "footer_secondary__list__text">Managed Print Solutions</li>
+            </ul>
+            <ul class = "footer_secondary__list">
+                <li class = "footer_secondary__list__text"><a href="#" class="footer_secondary__list__link">Products</a></li>
+                <li class = "footer_secondary__list__text">Healthcare</li>
+                <li class = "footer_secondary__list__text">Public Sector</li>
+                <li class = "footer_secondary__list__text">Retail</li>
+            </ul>
+            <ul class = "footer_secondary__list">
+                <li><a href="#" class="footer_secondary__list__link">Brand Partners</a></li>
+                <li class = "footer_secondary__list__text">Featured Brand Partners</li>
+                <li class = "footer_secondary__list__text">Partner with Zones</li>
+            </ul>
+            <ul class = "footer_secondary__list">
+                <li><a href="#" class="footer_secondary__list__link">Global</a></li>
+                <li class = "footer_secondary__list__text">Canada</li>
+                <li class = "footer_secondary__list__text">Europe</li>
+                <li class = "footer_secondary__list__text">India</li>
+            </ul>
+            <ul class = "footer_secondary__list">
+                <li><a href="#" class="footer_secondary__list__link">Knowledge Center</a></li>
+                <li class = "footer_secondary__list__text">Solutions Journals</li>
+                <li class = "footer_secondary__list__text">Resources</li>
+                <li class = "footer_secondary__list__text">Webinars</li>
+                <li class = "footer_secondary__list__text">Zones Blog</li>
+            </ul>
+            <ul class = "footer_secondary__list">
+                <li><a href="#" class="footer_secondary__list__link">800.408.9663</a></li>
+                <li class = "footer_secondary__list__text__up">customerservice@zones.com</li>
+                <li class = "footer_secondary__list__text">General Policies</li>
+                <li class = "footer_secondary__list__text">Terms and Conditions</li>
+                <li class = "footer_secondary__list__text__down">Copyright © 2017 Appdirect </li>
+            </ul>
+        </div>
+    </div>
+</div> 
+        
+</footer>
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<!--Scripts for Header behaviour -->
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+        // To display dropdown menu on hover uncomment the following code
+        
+        $('.header-primary .header-primary__menu__item').hover(function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+        });
+        
+    })();
+    (function manageDropdown() {
+        $(document).on('click', '.header-top .adb-context_menu--trigger', function() {
+            $('.header-top .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-top .adb-context_menu, .header-top .adb-context_menu--trigger')) {
+                $('.header-top .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+
+
+     $('.header-top .header-top__menu__item').hover(function() {
+            $('.header-top .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-top .adb-is-active').removeClass('adb-is-active');
+        });
+        
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+
+
+
+
+
+</script>

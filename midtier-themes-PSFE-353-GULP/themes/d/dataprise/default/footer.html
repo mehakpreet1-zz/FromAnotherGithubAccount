@@ -1,0 +1,58 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <div class="footer-primary__container">
+            <a href="http://www.appdirect.com">
+                <span class="adb-page_footer--content_item">
+                <a href="https://www.dataprise.com/privacyl" class="footer-primary__container--link">Privacy Policy&nbsp|</a>
+
+                <a href="https://www.dataprise.com/legal" class="footer-primary__container--link">&nbsp Legal&nbsp|</a>
+
+                <a href="https://www.dataprise.com/dataprisesitemap" class="footer-primary__container--link">&nbsp Site Map&nbsp|</a>
+
+                <a href="https://www.dataprise.com/jm" class="footer-primary__container--link"> &nbspEmployees & Partners</a>
+                </span>
+            </a>
+            
+        </div>
+        <div class="footer-primary__container_below--div">
+            <span class="footer-primary__container_below--link">© Dataprise, Inc. 2017 All Rights Reserved. All other marks are the properties of their respective owners.</span>
+         </div>      
+    </div>
+</div>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+<!--Scripts for Header behaviour -->
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+        
+        $('.header-primary .header-primary__menu__item').hover(function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+        });
+        
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

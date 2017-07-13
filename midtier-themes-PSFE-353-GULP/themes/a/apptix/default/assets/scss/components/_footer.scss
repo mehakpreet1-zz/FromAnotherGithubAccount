@@ -1,0 +1,35 @@
+.footer-primary {
+	border-top: 1px solid $footer-primary-border-top;
+	padding: 1em 0 2em;
+	clear: both;
+	background-image: url($footerbg-url);
+	height: $footer-height;
+	background-repeat: repeat-x;
+	color: $footer-links-color;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	a {
+		color: $footer-links-color;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.adb-icon__appdirect {
+		font-size: 14px;
+	}
+}
+
+// To make footer sticky need to think about other way of doing this
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}

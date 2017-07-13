@@ -1,0 +1,88 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	padding-top: 5px;
+	height: 61px;
+
+	&-logo {
+		display: flex;
+	}
+
+	&-links {
+		padding-right: 15px;
+		font-size: 12px;
+
+		&:hover {
+			text-decoration: underline !important;
+		}
+	}
+
+	&__container {
+		display: flex;
+		margin-top: 17.5px;
+
+		&--right {
+			margin-left: auto;
+			margin-top: 17.5px;
+		}
+
+		&--menu {
+			display: flex;
+			padding-right: 30px;
+
+			&--right {
+				display: flex;
+			}
+
+			&--item {
+				&--content {
+					color: $custom-gray-shade2;
+					font-size: 12px;
+				}
+
+				&--right {
+					margin-right: 10px;
+				}
+
+				&--telephone:before {
+					padding-left: 15px;
+					display: inline-block;
+					content: "\260E\FE0E";
+					margin-right: 3px;
+					font-size: 12px;
+				}
+
+				&--telephone:hover {
+					.footer-primary__container--menu--item--content {
+						text-decoration: underline !important;
+					}
+				}
+			}
+		}
+	}
+
+	a {
+		color: $footer-links-color;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.adb-icon__appdirect {
+		font-size: 14px;
+	}
+}
+
+.logo-icon {
+	display: block;
+	padding-left: 77px;
+}
+
+.fa {
+	font-size: 16px !important;
+}
+
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}

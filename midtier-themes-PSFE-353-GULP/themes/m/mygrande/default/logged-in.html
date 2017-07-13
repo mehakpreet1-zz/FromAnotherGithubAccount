@@ -1,0 +1,66 @@
+<div class="header-top">
+
+		<div class="header-top__row">
+			<div class="top-strip"></div>
+			<div class="adb-layout-default">
+				<!--<div class="header-top__row__col pull-right">-->
+					<!--<a class="services" href="http://mygrande.com/business/">-->
+						<!--LOOKING FOR BUSINESS SERVICES ?-->
+						<!--<i class="fa fa-caret-right" aria-hidden="true"></i>-->
+					<!--</a>-->
+
+					<!--<div class="header-top__row__col&#45;&#45;sublinks">-->
+						<!--<div class="pull-right">-->
+							<!--<a href="http://mygrande.com/">HOME</a>-->
+						<!--</div>-->
+						<!--<div class="pull-right">-->
+							<!--<a href="https://grd.convergentcare.com/grd/goToLogin.action?subClientId=202#Application/onReady">BILLING</a>-->
+						<!--</div>-->
+						<!--<div class="pull-right">-->
+							<!--<a href="http://portal.mygrande.net/">PORTAL</a>-->
+						<!--</div>-->
+						<!--<div class="clearfix"></div>-->
+					<!--</div>-->
+				<!--</div>-->
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+</div>
+<!-- Main header nav -->
+<nav class="header-primary">
+	<ul class="header-primary__menu adb-layout-default">
+		<li class="header-primary__menu__item pull-left">
+			<a class="header-primary__menu__item--logo" href="{{HOME_HREF}}">&nbsp;</a>
+		</li>
+		<li class="header-primary__menu__item pull-left mp-link">
+			<a class="header-primary__menu__item--logo" href="{{HOME_HREF}}">{{Marketplace}}</a>
+		</li>
+		<li class="header-primary__menu__item pull-right">
+			<menu class="adb-context_menu" data-placement="right">
+				<a class="header-primary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="username">{{USER_NAME}}</a>
+				<div class="js-dropdown-container">
+					<div class="adb-container adb-context_menu--menu">
+						<ul class="adb-stack">
+							<li><a href="{{PROFILE_HREF}}" data-auto="myProfile">{{My.Profile}}</a></li>
+							<li><a href="{{COMPANY_HREF}}" data-auto="myCompany">{{My.Company}}</a></li>
+							<li><a href="{{SETTINGS_HREF}}" data-auto="mySettings">{{my.settings}}</a></li>
+							<li><a href="{{LOGOUT_HREF}}" data-auto="logout">{{logout}}</a></li>
+						</ul>
+					</div>
+				</div>
+			</menu>
+		</li>
+		<li class="header-primary__menu__item js-manage-links pull-right">
+			<menu class="adb-context_menu" data-placement="left">
+				<a class="header-primary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="manage">{{Manage}}</a>
+				<div class="js-dropdown-container">
+					<div class="adb-container adb-context_menu--menu">{{MANAGE_LINKS}}</div>
+				</div>
+			</menu>
+		</li>
+		<li class="header-primary__menu__item pull-right">{{COMPANIES_DROPDOWN}}</li>
+		<li class="header-primary__menu__item pull-right myapps--active ">
+			<a class="header-primary__menu__item--link" href="{{MYAPPS_HREF}}" data-auto="myApps">{{My.Apps}}</a></li>
+	</ul>
+</nav>

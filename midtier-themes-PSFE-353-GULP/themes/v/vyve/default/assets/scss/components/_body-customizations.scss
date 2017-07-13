@@ -1,0 +1,27 @@
+// Customize the secondary nav (body)
+// ----------------------------------
+
+.adb-secondary_nav {
+	border-bottom: 1px solid $secondary-header-border;
+}
+
+#subnav-header {
+	border-bottom: 1px solid $secondary-header-border;
+}
+
+body {
+	color: $body-font-color;
+	font: 400 14px/28px $font-custom;
+}
+// footer sticky css
+
+.adb-page {
+	// applying important as v1 and v2 pages have different css applied on id (#content) and class (adb-page)
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page_footer,
+footer {
+	margin-top: 0;
+}

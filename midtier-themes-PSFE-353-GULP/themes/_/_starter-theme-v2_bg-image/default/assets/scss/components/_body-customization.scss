@@ -1,0 +1,28 @@
+html {
+	background: $body-bg-color url($asset-bg-img) repeat-x top center;
+}
+
+// 984px is adb-layout-default width
+body {
+	width: calc(984px + #{$body-padding * 2});
+	margin: $body-margin-top auto;
+	background: $ad-white;
+	height: auto;
+}
+
+// 1128px is adb-layout-default width in full screen
+@media only screen and (min-width: 1280px) {
+	body {
+		width: calc(1128px + #{$body-padding * 2});
+	}
+}
+
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}

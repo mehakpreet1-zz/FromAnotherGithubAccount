@@ -1,0 +1,169 @@
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clearfix {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+// ------------------------------------------------------------
+// Custom Header Top
+// ------------------------------------------------------------
+.header-top {
+	$header-top-height: 50px;
+	height: $header-top-height;
+	color: $top-header-color;
+
+	.top-strip {
+		background: $orange;
+		height:10px;
+	}
+
+	&__row {
+		&__col {
+			margin-top: 10px;
+
+			&--sublinks {
+				div {
+					margin-left: 10px;
+
+					a {
+						color: $menu-sublinks-color;
+						font-size: 11px;
+						font-weight: 700;
+						text-decoration: none;
+
+						&:hover {
+							color: $menu-sublinks-hover-color;
+						}
+					}
+				}
+			}
+
+			.services {
+				color: $link-green-color;
+				text-decoration: none;
+				font: {
+					size: 15px;
+					weight: normal;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+.header-primary {
+	background: $header-primary-bg url($primary-header-bg-img);
+	height: 95px;
+	border-bottom: 1px solid $top-header-border-color;
+
+	&__menu {
+		margin-top:17px;
+
+		.mp-link {
+			background: transparent;
+
+			&:hover {
+				background: transparent;
+			}
+
+			a:hover {
+				color: $orange;
+			}
+		}
+
+		&__item {
+
+			margin: {
+				right: -1px;
+				left: 20px;
+ 			}
+			padding: {
+				left : 10px;
+				right: 10px;
+			}
+			background: transparent;
+			display: inline-block;
+			list-style: none;
+			vertical-align: middle;
+
+			&:hover {
+				background: $menu-link-color;
+				color: $white;
+			}
+
+			.adb-is-active {
+				color:	$active-link-color;
+			}
+
+			a {
+				font: {
+					size: 17px;
+					weight: bold;
+				}
+				text: {
+					transform: uppercase;
+					decoration: none;
+				}
+				color: $menu-link-color;
+				display: block;
+				height: 45px;
+				line-height: 45px;
+
+				&:hover {
+					color: $menu-link-hover-color;
+				}
+
+				&:after {
+					width: 15px;
+					color: $orange;
+				}
+			}
+
+			&:first-child {
+				margin: {
+					top: -25px;
+					left: 0px;
+				}
+				border: none;
+				width: 250px;
+				padding: 0px;
+
+				&:hover {
+					background: transparent;
+				}
+
+				a {
+					background: $logo-url {
+						position-y: -5px;
+						position-x: -10px;
+						repeat: no-repeat;
+						size: 230px;
+					}
+					color: $white;
+					display: block;
+					height: 110px;
+					width: 250px;
+				}
+			}
+
+			.adb-context_menu[data-placement="right"] {
+				.js-dropdown-container {
+					.adb-context_menu--menu {
+						margin-right: -10px;
+					}
+				}
+			}
+		}
+	}
+}

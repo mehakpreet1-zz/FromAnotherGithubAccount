@@ -1,0 +1,59 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: 'http://www.firstcomm.com/wp-content/uploads/firstcomm-logo.png';
+$asset-sprite: 'http://www.firstcomm.com/wp-content/themes/novus/stylesheets/images/sprite/sprite.png';
+$asset-gif: 'http://www.firstcomm.com/wp-content/themes/novus/stylesheets/images/li-parent.gif';
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #FFF;
+$gray: #eaeaea;
+$black: #000;
+$purple: #78359f;
+$blue: #0060B4;
+$orange: #fc8a03;
+$dark-blue: #01539B;
+$light-gray: #636363;
+$blue-009abf: #009abf;
+$blue-52baff: #52baff;
+$blue-575757: #575757;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-bg: $white;
+
+$dropdown-border-color: $gray;
+$dropdown-color: $white;
+$dropdown-bg: $dark-blue;
+$dropdown-hover-bg: $blue;
+$dropdown-hover-color: $white;
+
+$footer-bg: $gray;
+$phone-color: #BBB;
+$header-gray: #555C62;
+$main-nav-a-color: #242424;
+$main-nav-a-color-hover: #3781B7;
+$footer-title-color: #c6c6c6;
+$header-top-bgcolor: $header-gray;
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+$nav-item-padding: 12px 10px; // example only

@@ -1,0 +1,20 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	border-top: 1px solid $footer-primary-border-top;
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		color: $footer-primary-color;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		font-size: 11.72px;
+		font-weight: 400;
+	}
+}
+
+// To make footer sticky need to think about other way of doing this
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}

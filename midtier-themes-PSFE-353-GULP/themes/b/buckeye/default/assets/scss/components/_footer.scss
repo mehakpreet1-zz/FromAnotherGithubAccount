@@ -1,0 +1,149 @@
+.footer-primary {
+	display: flex;
+	background: $footer-bg;
+	height: 360px;
+	padding-top: 40px;
+
+	&__container {
+		display: flex;
+		font-size: 10px;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 360px;
+		justify-content: flex-start;
+	}
+
+	&__column {
+		margin: 0 0 18px;
+		font-size: 14px;
+		line-height: 1.2;
+		width: 25%;
+		flex: 0 0 auto;
+		padding: 0 20px 0 0;
+
+		&__socials {
+			&--link {
+				span {
+					&:before {
+						display: inline-block;
+						content: ' ';
+						vertical-align: middle;
+					}
+				}
+
+				.ico-facebook:before {
+					background: url($svg-url) 88.99024% 54.10628%;
+					width: 15px;
+					height: 28px;
+				}
+
+				.ico-twitter:before {
+					background: url($svg-url) 75.0584% 76.43863%;
+					width: 30px;
+					height: 25px;
+				}
+
+				.ico-youtube:before {
+					background: url($svg-url) 98.71612% 64.69339%;
+					width: 31px;
+					height: 23px;
+				}
+
+				&:hover {
+					.ico-facebook:before {
+						background: url($svg-url) 98.18689% 59.74235%;
+						width: 15px;
+						height: 28px;
+					}
+
+					.ico-twitter:before {
+						background: url($svg-url) 79.33191% 76.43863%;
+						width: 30px;
+						height: 25px;
+					}
+
+					.ico-youtube:before {
+						background: url($svg-url) 94.29387% 64.69339%;
+						width: 31px;
+						height: 23px;
+					}
+				}
+			}
+
+			ul {
+				word-spacing: 14px;
+
+				li {
+					display: inline-block;
+				}
+			}
+		}
+
+		&--title {
+			margin: 0;
+			padding: 3px 0;
+			text-transform: uppercase;
+
+			a {
+				color: $footer-title-color;
+				text-decoration: none;
+				font-weight: 800;
+
+				&:hover {
+					color: $footer-title-hover-color;
+				}
+			}
+		}
+
+		&__links {
+			margin-bottom: 0;
+
+			li {
+				padding: 5px 0;
+
+				a {
+					color: $footer-title-hover-color;
+					text-decoration: none;
+					font-weight: 200;
+
+					&:hover {
+						color: $footer-title-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-site-location {
+	background: $footer-site-bg;
+	padding: 22px 0;
+	color: $footer-site-color;
+	font-size: 18px;
+	font-weight: 200;
+
+	&__container {
+		display: flex;
+
+		&--name {
+			margin-right: 10px;
+			display: flex;
+		}
+
+		&--name:first-child:after {
+			display: inline;
+			margin: 0 6px 0 14px;
+			content: '\2022';
+			font-size: 13px;
+		}
+
+		&--phone {
+			margin-left: 10px;
+
+			a {
+				color: $footer-title-color;
+				text-decoration: none;
+			}
+		}
+	}
+}

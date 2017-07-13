@@ -1,0 +1,49 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+// example
+$asset-logo: 'https://www.nex-tech.com/Portals/_default/Skins/NexTech/assets/ntlogo.png';
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$gray: #eaeaea;
+$light-gray: #e3e3e3;
+$dark-gray: #777;
+$more-dark-gray: #444;
+$black: #000;
+$light-black: #2b2b2b;
+$purple: #78359f;
+$blue: #009abf;
+$red: #ed1c24;
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-top-color: $dark-gray;
+$header-primary-bg: $more-dark-gray;
+$header-primary-color: $light-gray;
+$header-primary-border-color: $red;
+$header-primary-box-shadow-color: $black;
+
+$dropdown-border-color: $light-black;
+$dropdown-color: $white;
+$dropdown-bg: $light-black;
+$dropdown-hover-bg: $light-black;
+$dropdown-hover-color: $red;
+
+$footer-bg: $more-dark-gray;
+$footer-primary-color: $light-gray;
+$footer-color: $light-gray;
+$footer-height: 88px;
+
+
+$link-hover-color: $red;
+$font-custom: 'Open Sans', Arial, sans-serif;

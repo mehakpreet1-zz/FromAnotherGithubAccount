@@ -1,0 +1,53 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <div class="footer-primary__top">
+            <a class="right-links">FR</a>
+        </div>
+        <div class="footer-primary__container">
+            <span class="adb-page_footer--content_item">© Great-West Life 2009 - 2017</span>
+            <ul class = "footer-primary__container--right">
+                <li class="footer-primary__container--list">
+                    <a class="right-links">Privacy </a>
+                </li>
+                <li class="footer-primary__container--list">
+                    <a class="right-links">Legal</a>
+                </li>
+                <li class="footer-primary__container--list">
+                    <a class="right-links">Internet Security</a>
+                </li>
+                <li class="footer-primary__container--list">
+                    <a class="right-links">Accessibility</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Scripts for Header behaviour -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

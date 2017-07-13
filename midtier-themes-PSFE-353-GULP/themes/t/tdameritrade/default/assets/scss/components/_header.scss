@@ -1,0 +1,151 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.spacing {
+	height: 40px;
+}
+
+.header-primary {
+	-webkit-font-smoothing: antialiased;
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+			&--logo {
+				background: url($asset-logo) no-repeat {
+					size: contain;
+				};
+				display: block;
+				height: $header-primary-logo-height;
+				width: $header-primary-logo-width;
+				margin-left: -29px;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+.header-primary-top {
+	-webkit-font-smoothing: antialiased;
+
+	&__menu {
+		display: flex;
+		justify-content: flex-end;
+		margin-left: 20px;
+
+		&__item {
+			font-size: $header-primary-top-font-size;
+			margin: 17px 21px 0 0;
+
+			a {
+				color: $header-primary-top-font-color;
+
+				&:hover {
+					color: $header-primary-top-font-color;
+				}
+			}
+		}
+	}
+}
+
+.header-primary-top__menu__item__acc {
+	-webkit-font-smoothing: antialiased;
+	font-size: $header-primary-top-font-size;
+	margin: 17px 21px 0 0;
+
+	a {
+		color: $header-primary-top-acc-color;
+
+		&:hover {
+			color: $header-primary-top-acc-color;
+		}
+	}
+}
+
+.log-in-button {
+	border: 1px solid $login-button-border-color {
+		radius: 30px;
+	};
+	padding: 11px;
+	width: 128px;
+	color: $login-button-font-color;
+	background: $login-button-bg-color;
+	transition: all 0.1s linear;
+	box-shadow: none;
+	text-shadow: none;
+
+	&:hover {
+		border: 1px solid $login-button-border-color;
+		color: $login-button-hover-font-color;
+		background: $login-button-hover-bg-color;
+	}
+}
+
+.header-secondary__menu {
+	-webkit-font-smoothing: antialiased;
+	display: flex;
+	margin-top: 15px;
+	justify-content: flex-end;
+
+	&__item {
+		a {
+			color: $secondary-font-color;
+
+			&:hover {
+				text-decoration: none;
+				color: $secondary-font-color-hover;
+			}
+		}
+
+		font-size: $header-secondary-font-size;
+		margin-left: 1.5em;
+	}
+}
+
+.header-secondary__menu__spacing {
+	height: 36px;
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %signin-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

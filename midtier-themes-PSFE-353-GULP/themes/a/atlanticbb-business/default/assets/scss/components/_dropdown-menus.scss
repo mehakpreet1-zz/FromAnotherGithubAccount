@@ -1,0 +1,115 @@
+// ------------------------------------------------------------------
+// DROPDOWN MENU(S)
+// ------------------------------------------------------------------
+// This replicates AD dropdown menus for the header
+// All dropdowns in the header with proper classes will be affected.
+// ------------------------------------------------------------------
+
+.header-top__menu__item .adb-context_menu--menu ,
+.header-primary__menu__item .adb-context_menu--menu {
+	background-color: $white;
+	background: $dropdown-bg;
+	border: transparent;
+	border-radius: 0;
+	margin-top: 16px;
+
+	&::before {
+		bottom: 100%;
+		left: 20px;
+		content: $content-blank;
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border: {
+			color: rgba(194, 225, 245, 0);
+			bottom-color: $dropdown-gray;
+			width: 20px;
+			bottom-width: 8px;
+		}
+	}
+
+	&__top-menu {
+		&::before {
+			left: calc(100% - 50px) !important;
+		}
+	}
+
+	ul {
+		padding: 10px 5px;
+
+		li {
+			padding: 5px;
+		}
+	}
+
+	a {
+		display: block;
+		padding: 10px;
+		color: $dropdown-color;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		line-height: 1em;
+		border-bottom: transparent;
+		font: {
+			weight: 700;
+			size: 18px;
+		}
+
+		&:hover {
+			padding: 10px;
+			border-bottom: 0;
+			text-decoration: none;
+			box-shadow: none;
+			position: relative;
+			color: $dropdown-hover-color;
+			opacity: .6;
+			filter: alpha(opacity=60);
+			transition: opacity .2s linear;
+		}
+
+		&:hover::after {
+			width: 0;
+		}
+	}
+
+	&__links {
+		a {
+			text-align: right;
+			padding: 0 !important;
+			font: {
+				weight: 300 !important;
+				size: 16px !important;
+			}
+		}
+
+		li {
+			border: transparent;
+		}
+	}
+}
+
+.companies-dropdown {
+	position: relative;
+
+	a {
+		color: $link-color;
+	}
+
+	.adb-context_menu--menu {
+		border: 1px solid $dropdown-border-color;
+		border-radius: 3px;
+	}
+}
+
+.companies-dropdown li ~ li,
+.manage-links li ~ li {
+}
+
+// Show the dropdown containers when the menus are hovered
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu  {
+	display: block;
+}
+

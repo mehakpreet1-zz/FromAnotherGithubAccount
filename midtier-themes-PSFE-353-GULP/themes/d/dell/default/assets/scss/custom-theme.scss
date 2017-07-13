@@ -1,0 +1,81 @@
+$asset-logo: "http://i.dell.com/images/global/brand/ui/logo-wt-bl.png";
+$asset-icon: "http://i.dell.com/images/global/brand/ui/mh-icons-sprite-8b.png";
+$icon: "http://i.dell.com/images/global/brand/ui/mh-icon-sprite24.png";
+$feedback-icon: "http://www1-cdn.dell.com/css/images/masthead/c_feedback39c.gif";
+$work-icon: "http://i.dell.com/images/global/brand/ui/mh-icons-sprite-8b.png";
+$arrow-icon: "http://i.dell.com/images/global/brand/ui/mh-icons-sprite-8b.png";
+$active-arrow: "http://i.dell.com/images/global/brand/ui/mh-icons-sprite-8b.png";
+
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+$ad-gray-shade6: #cbcbcb;
+
+$custom-gray: #eee;
+$custom-gray-shade1: #737373;
+$custom-gray-shade2: #eeeeee;
+$custom-blue: #0085c3;
+$custom-blue-shade1: #45C4F8;
+$custom-blue-shade2: #40BCEF;
+
+$header-primary-top-color: #39c;
+$header-primary-top-color-normal: #006698;
+$header-primary-color: #7DC1E0;
+$footer-primary-bg: #333333;
+
+$primary: $ad-black;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+$header-primary-top-bg: $custom-gray;
+$header-primary-bg: $custom-blue;
+$header-primary-bottom-bg: $ad-white;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 49px;
+$header-primary-logo-width: 49px;
+$header-primary-font-size: 16px;
+$header-primary-font-color: $ad-black;
+$header-primary-font-color_hover: $ad-gray-shade5;
+$header-primary-color_active: $ad-black;
+
+$dropdown-border-color: transparent;
+$dropdown-border_width: 0;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $custom-blue;
+$dropdown-bg: $custom-gray-shade2;
+$dropdown-item-hover-bg: $primary;
+$dropdown-item-hover-color: $ad-white;
+
+$secondary-nav-search-button-color: $ad-white;
+$secondary-nav-search-button-color_hover: $ad-white;
+$secondary-nav-search-button-border-color: $custom-blue;
+$secondary-nav-search-button-bg: $custom-blue;
+$secondary-nav-search-button-bg_hover: $custom-blue;
+
+$secondary-nav-selected-text-color: $custom-blue;
+$secondary-nav-selected-item-border-color: $custom-blue;
+
+$footer-height: 65px;
+
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $ad-white;
+
+@import "settings";
+
+@import "components/INDEX";

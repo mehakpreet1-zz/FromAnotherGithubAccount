@@ -1,0 +1,119 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	border-top: 1px solid $footer-primary-border-top;
+	-webkit-font-smoothing: antialiased;
+
+	&__container {
+		display: flex;
+		justify-content: flex-start;
+		font-weight: normal;
+
+		&__social {
+			display: flex;
+			align-items: center;
+			margin-left: auto;
+
+			span {
+				color: $footer-links-color;
+				font-size: 15px;
+				font-weight: normal;
+				margin: -5px 10px 0 173px;
+			}
+
+			i {
+				font-size: 25px;
+			}
+		}
+
+		a {
+			color: $footer-links-color;
+
+			&:hover {
+				text-decoration: none;
+				background: #004f7a;
+			}
+		}
+
+		.footer__social__links {
+			color: #FFF;
+			display: block;
+			font-size: 15px;
+			height: 27px;
+			text-align: center;
+			text-decoration: none;
+			width: 32px;
+			padding-top: 5px;
+			margin-left: 5px;
+
+			&:hover {
+				transform: translateY(-5px);
+				transition: .4s ease-in-out;
+			}
+
+			&.fb.zocial-facebook {
+				background-color: #3b5998;
+			}
+
+			&.fa.fa-facebook.fb {
+				display: inline-block;
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: inherit;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+			}
+
+			&.twitter.zocial-twitter {
+				background-color: #1da1f2;
+			}
+
+			&.linkedin.zocial-linkedin {
+				background-color: #0077b5;
+			}
+
+			&.youtube.zocial-youtube {
+				background-color: #cd201f;
+			}
+		}
+	}
+}
+
+.footer-secondary {
+	border-top: 2px solid #003857;
+	background-color: $footer-primary-bg;
+	padding: 3em 0px 2em;
+	font: 11px/11px Arial, Helvetica, sans-serif;
+	font-family: inherit;
+	padding-right: 17px;
+	height: 50px;
+	-webkit-font-smoothing: antialiased;
+}
+
+// To make footer sticky need to think about other way of doing this
+footer,
+.adb-page_footer {
+	&--content_item {
+		color: $footer-links-color;
+		font-size: 15px;
+		padding: 23px 15px 18px 15px;
+		font-weight: normal;
+		margin-bottom: 10px;
+		padding-left: 2px;
+
+		&-copyright {
+			font-size: 11px;
+			color: $footer-links-color;
+			font-weight: normal;
+			margin-left: 10px;
+		}
+
+		&-footernotes {
+			font-size: 11px;
+			color: $footer-links-color;
+			font-weight: normal;
+			margin-left: 10px;
+			padding-right: 144px;
+		}
+	}
+
+	margin-top: 0 !important;
+}

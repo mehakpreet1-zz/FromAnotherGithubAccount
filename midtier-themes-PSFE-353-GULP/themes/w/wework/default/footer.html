@@ -1,0 +1,90 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <div class="footer-primary-logo">
+        <div class="footer-primary__container">
+            <ul class="footer-primary__container--menu">
+                <li class="footer-primary__container--menu--item">
+                    <span class="footer-primary__container--menu--item--content">WeWork HQ,115 W 18th St., New York, NY 10011</span>
+                </li>
+                <li class="footer-primary__container--menu--item">
+                    <a href="#" class="footer-primary__container--menu--item--telephone">
+                        <span class="footer-primary__container--menu--item--content">1-877-969-2840</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="footer-primary__container--menu">
+                <li><a href="#" class="footer-primary-links">Privacy</a></li>
+                <li><a href="#" class="footer-primary-links">Terms</a></li>
+            </ul>
+        </div>
+        <div class="footer-primary__container--right">
+            <ul class="footer-primary__container--menu--right">
+                <li class="footer-primary__container--menu--item--right">
+                    <a href="#" class="logo-icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="footer-primary__container--menu--item--right">
+                    <a href="#" class="logo-icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                 <li class="footer-primary__container--menu--item--right">
+                    <a href="#" class="logo-icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                 <li class="footer-primary__container--menu--item--right">
+                    <a href="#" class="logo-icon">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+     </div>
+     </div>
+</div>
+
+<!--Scripts for Header behaviour -->
+<link rel="stylesheet" href="https://www.wework.com/public/fonts/531468/65EDCEF74CF3F3793.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+    })();
+
+    $(window).scroll(function(){
+    if ($(this).scrollTop() > 70) {
+
+        if(!$('.header-primary').hasClass('fixed-height')) {
+
+            $('.header-primary').addClass('fixed-height').after("<div class='sticky-padding' style='padding-top:92px'></div>");
+        }
+    } else {
+      $('.header-primary').removeClass('fixed-height');
+      $('.sticky-padding').remove();
+    }
+  });
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>
+<script src="https://use.fontawesome.com/c4ee4d6de6.js"></script>

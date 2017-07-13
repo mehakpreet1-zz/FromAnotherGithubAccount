@@ -1,0 +1,95 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+    <div class="footer-primary__div">
+        <div class="footer-primary__text">
+            <ul class="footer-primary__text--links">
+                <li><a href="http://www.mindshift.com/Services/Managed-IT-Services.aspx">Managed IT Services</a></li>
+                <li><a href="http://www.mindshift.com/Services/Cloud-Services.aspx">Cloud Services</a></li>
+                <li><a href="http://www.mindshift.com/Services/Data-Center-Services.aspx">Data Center Services</a></li>
+                <li><a href="http://www.mindshift.com/Services/Professional-Services.aspx">Professional Services</a></li>
+            </ul>
+            <ul class="footer-primary__text--links">
+                <li><a href="http://www.mindshift.com/Pages/Search.aspx">Search </a></li>
+                <li><a href="http://www.mindshift.com/Resources.aspx">Resources</a></li>
+                <li><a href="http://www.mindshift.com/Blog.aspx">Blog</a></li>
+                <li><a href="http://www.mindshift.com/Resources/Webinars.aspx">Webinars</a></li>
+            </ul>
+            <ul class="footer-primary__text--links">
+                <li><a href="http://www.mindshift.com/Company/News-and-Events.aspx">News and Events</a></li>
+                <li><a href="http://www.mindshift.com/Company/ContactUs.aspx">Contact Us</a></li>
+                <li><a href="http://www.mindshift.com/Company/Directions.aspx">Directions</a></li>
+            </ul>
+            <ul class="footer-primary__text--links">
+                <li><a href="http://www.mindshift.com/Pages/Terms-of-Use.aspx">Terms of Use</a></li>
+                <li><a href="http://www.mindshift.com/Pages/Privacy-Policy.aspx">Privacy Policy</a></li>
+                <li><a href="http://www.mindshift.com/Pages/Disclaimer.aspx">Disclaimer</a></li>
+                <li><a href="http://www.mindshift.com/Pages/Site-Map.aspx">Site Map</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-primary__icon">
+        <ul class="footer-primary__icon__right">
+        <ul class="footer-primary__icon__right--links social">
+           <li> <a href="https://www.facebook.com/mindSHIFTTechnologiesInc" target="_blank"><img src="http://www.mindshift.com/~/media/Images/SocialLinks/icon-facebook-new" alt="Facebook" class=""></a></li>
+            <li><a href="http://twitter.com/mindSHIFT_Tech" target="_blank"><img src="http://www.mindshift.com/~/media/Images/SocialLinks/icon_twitter" alt="Twitter"></a></li>
+            <li><a href="http://www.linkedin.com/company/mindshift" target="_blank"><img src="http://www.mindshift.com/~/media/Images/SocialLinks/icon_linkedin" alt="LinkedIn"></a></li>
+           <li><a href="https://www.youtube.com/channel/UCkh9UpyOVAMUdcpPsDnakxA" target="_blank"><img src="http://www.mindshift.com/~/media/Images/SocialLinks/icon-youtube" alt="YouTube"></a></li>
+            <li><a href="http://www.slideshare.net/mindSHIFTTechnologiesInc" target="_blank"><img src="http://www.mindshift.com/~/media/Images/SocialLinks/icon-slideshare" alt="SlideShare"></a></li> 
+        </ul> 
+        <ul class="footer-primary__icon__right--links text">
+            <span>©2000-2017 mindSHIFT Technologies, Inc.,</span>
+            <span>a wholly owned subsidiary of Ricoh USA,</span>
+            <span>Inc. All rights reserved.</span>
+        </ul>
+      </ul>
+        <ul class="footer-primary__icon__right images">
+            
+           <li> <img src="http://www.mindshift.com/include/images/msp-mentor.png"></li>
+           <li> <img src="http://www.mindshift.com/include/images/sas-70.png"></li>
+        
+        </ul>
+        
+        
+
+        </div>
+        </div>
+    
+</div>
+<div class="footer-secondary"></div>
+
+<!--Scripts for Header behaviour -->
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+        
+        
+        $('.header-primary .header-primary__menu__item').hover(function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+        });
+        
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

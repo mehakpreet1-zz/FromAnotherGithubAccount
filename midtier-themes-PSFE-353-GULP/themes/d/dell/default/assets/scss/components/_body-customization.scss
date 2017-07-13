@@ -1,0 +1,67 @@
+#content {
+	background: $custom-gray-shade2;
+}
+
+html {
+	background: $custom-gray-shade2;
+}
+
+body {
+	font-family: 'roboto',Arial,Helvetica,sans-serif;
+
+	#main {
+		margin: 35px auto;
+		background: white;
+	}
+}
+
+.adb-page {
+	background: $custom-gray-shade2;
+	border-radius: 5px;
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+@media only screen and (min-width: 1280px) {
+	#main {
+		width: 1228px;
+	}
+}
+
+.adb-button__primary {
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+	border-radius: 15px !important;
+	box-shadow: 2px 2px 6px $ad-gray-shade1;
+}
+
+.channelPage {
+	#walkme-task-bar-43838 {
+		display: none !important;
+	}
+}
+
+[data-page='listing'] {
+	.adb-layout-row.adb-layout-content--centered-content {
+		padding: 24px 0;
+	}
+}
+
+[data-page='profile'], [data-page='bundle'] {
+	.adb-profile_header__product.adb-is-fixed {
+		left: 0;
+	}
+}
+
+.adb-profile_header__product .adb-profile_header--content {
+	border-radius: 15px 15px 0 0;
+}
+
+.adb-profile_header__product.adb-is-fixed .adb-profile_header--content {
+	border-radius: 0;
+}

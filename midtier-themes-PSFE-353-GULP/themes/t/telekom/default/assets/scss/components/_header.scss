@@ -1,0 +1,223 @@
+.header-primary {
+	background: $header-primary-bg;
+	border-top: 2px solid $header-primary-border-top-color;
+	height: $header-primary-height;
+	-webkit-font-smoothing: antialiased;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&__item {
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+				background-position-y: 10px;
+			}
+
+			margin-right: 20px;
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+
+			li:last-child {
+				margin-right: 0 !important;
+			}
+		}
+	}
+}
+
+.header-secondary {
+	background: $header-secondary-bg;
+	height: $header-secondary-height;
+	-webkit-font-smoothing: antialiased;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		height: 100%;
+
+		&_right {
+			height: 100%;
+			display: flex;
+			margin-left: auto;
+		}
+
+		.search123 {
+			width: auto;
+			display: flex;
+			align-items: center;
+			text-align: center;
+		}
+
+		&__item {
+			height: 98%;
+			display: flex;
+			align-items: center;
+			border-top: 2px solid transparent;
+			text-align: center;
+			padding-right: 10px;
+			padding-left: 13px;
+
+			&:hover {
+				background-color: $header-secondary-menu-item-background-color-hover;
+				color: $header-secondary-menu-item-font-color;
+			}
+
+			justify-content: center;
+
+			&:hover {
+				border-top: 2px solid $header-secondary-menu-item-border-top-color;
+			}
+
+			&--link-secondary,
+			.adb-context_menu--trigger {
+				padding-top: 0;
+				margin-top: -3px;
+
+				@extend %nav-link-secondary;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state-primary;
+
+		color: $marketplace-active-font-color;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state-primary;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}
+
+.search .search-wrapper button[type=submit] {
+	display: block;
+	width: 35px;
+	height: 36px;
+	margin: 12px 0;
+	padding: 0;
+	background: $header-secondary-search-button-background-color;
+	border: 1px solid transparent;
+	border-left: 0;
+	float: left;
+	border-radius: 0 3px 3px 0;
+	color: #383838;
+}
+
+.search .search-wrapper input[type=text], .search .search-wrapper input[type=search] {
+	display: block;
+	width: 215px;
+	height: 36px;
+	margin: 12px 0;
+	padding: 0;
+	border: 1px solid transparent;
+	border-right: 0;
+	float: left;
+	border-radius: 3px 0 0 3px;
+	text-indent: 15px;
+	outline: 0;
+	font-size: .888rem;
+}
+
+.adb-input_row--item:first-child .adb-input_row--item_content {
+	border-top-left-radius: 3px;
+	width: 252px;
+	border-bottom-left-radius: 3px;
+	height: initial;
+	border-right: none;
+}
+
+.search .search-wrapper button[type=submit] i, img {
+	vertical-align: middle;
+}
+
+.adb-input_row--item:last-child .adb-input_row--item_content {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-left: none;
+	background-color: $ad-white !important;
+}
+
+#sugg {
+	display: none;
+}
+
+.separator {
+	display: block;
+	height: 26px;
+	width: 1px;
+	background: $header-primary-separator-background-color;
+	margin-right: 20px;
+}
+
+.login_icon {
+	padding-top: 0 !important;
+}
+
+.login_icon:before {
+	content: '\e803';
+	font-family: 'fontello';
+	font-size: 22px;
+	background: url($login-icon) 0 88.46154% no-repeat;
+	width: 22px;
+	height: 22px;
+}
+
+.sign {
+	padding-left: 6px;
+}
+
+.adb-search_field--input {
+	&::-webkit-input-placeholder {
+		color: $header-secondary-search-button-font-color;
+	}
+}
+
+.ssr .dropdown-parent:focus, .ssr .icon.help:focus, .ssr .linkLook:focus, .ssr [contenteditable=true]:focus, .ssr [role=button]:focus, .ssr [role=link]:focus, .ssr a:focus, .ssr area:focus, .ssr button:focus, .ssr dd:focus, .ssr embed:focus, .ssr iframe:focus, .ssr input:focus, .ssr li:focus, .ssr object:focus, .ssr select:focus, .ssr textarea:focus, .ssr tr:focus, .ssr.ie #main a > span:focus {
+	outline: 0;
+}
+
+.adb-styled .adb-link, .adb-styled a {
+	color: $adb-link-color;
+}
+
+.adb-input_row--item_content adb-search_field--button {
+	border-left: none;
+	background-color: $header-secondary-search-button-background-color;
+}

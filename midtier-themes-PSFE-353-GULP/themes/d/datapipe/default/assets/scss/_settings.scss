@@ -1,0 +1,20 @@
+$header-primary-logo-margin-top: $header-primary-logo-height / 4;
+$header-primary-height: $header-primary-logo-height + 2 * $header-primary-logo-margin-top;
+$header-primary-font-color_active: $header-primary-font-color_hover;
+$dropdown-item-font-size: $header-primary-font-size * 0.875;
+
+%nav-link {
+	color: $header-primary-font-color;
+	font-size: $header-primary-font-size;
+	margin-left: 1.5em;
+
+	&:focus,
+	&:hover {
+		color: $header-primary-font-color_hover;
+		text-decoration: none;
+	}
+}
+
+%active-state {
+	color: $header-primary-color_active;
+}

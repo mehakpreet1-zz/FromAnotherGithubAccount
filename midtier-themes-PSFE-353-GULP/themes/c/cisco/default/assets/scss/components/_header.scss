@@ -1,0 +1,128 @@
+// ------------------------------------------------------------
+// Custom Header Top
+// ------------------------------------------------------------
+.header-top {
+	background: $header-top-bg;
+	height: $header-top-height;
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		height: $header-top-height;
+		justify-content: flex-end;
+		list-style: none;
+
+		&__item {
+			margin-top: 5px;
+
+			&--link {
+				@extend %nav-link-top;
+
+				&.worldwide-icon {
+					&:before {
+						background: url($asset-globe-icon) no-repeat 0 0;
+						height: 14px;
+						width: 14px;
+						content: '';
+						position: absolute;
+						margin-left: -23px;
+					}
+				}
+			}
+		}
+
+		&__links-container {
+			display: flex;
+			margin: 0 28px;
+			height: $header-top-height;
+
+			&__item {
+				&::after {
+					margin: 0 5px;
+					color: $header-top-seperator-color;
+					content: '|';
+				}
+
+				&:last-child {
+					&::after {
+						content: '';
+						margin: 0;
+					}
+				}
+
+				&--link {
+					@extend %nav-link-top-links;
+				}
+			}
+		}
+	}
+}
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	height: $header-primary-height;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+		}
+
+		&__item {
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: 100% 100%;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: 0 0 $header-primary-logo-margin-top;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+
+			&--link {
+				height: 66px;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

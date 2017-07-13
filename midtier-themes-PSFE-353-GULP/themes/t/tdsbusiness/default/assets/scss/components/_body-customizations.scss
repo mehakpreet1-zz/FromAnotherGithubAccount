@@ -1,0 +1,21 @@
+.adb-search_field--button {
+	background-color: $search-input-btn !important;
+	text-shadow: none;
+	border: 1px solid $search-input-btn;
+	border-left: none;
+	box-shadow: none;
+	color: $white;
+
+	&:hover {
+		border: 1px solid $search-input-btn;
+		box-shadow: none;
+		border-left: transparent;
+		color: $white;
+	}
+}
+
+.adb-secondary_nav--link {
+	&.adb-is-selected:before {
+		background-color: $search-input-btn;
+	}
+}

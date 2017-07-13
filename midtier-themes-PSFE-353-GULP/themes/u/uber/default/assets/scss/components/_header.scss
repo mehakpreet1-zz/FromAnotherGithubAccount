@@ -1,0 +1,160 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.smooth {
+	-webkit-font-smoothing: antialiased;
+}
+
+.padding-top-class {
+	padding-top: 8px !important;
+}
+
+.menu-right-login-font {
+	font-size: $custom-header-menu-right-login-font !important;
+	text-transform: uppercase;
+}
+
+.header-primary {
+	margin: 0;
+	background: $header-primary-bg;
+
+	///background: transparent;
+
+	height: $header-primary-height;
+	border-bottom: 1px solid $custom-secondary-nav-background;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 0;
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+			font-size: $custom-header-menu-right-logout-font;
+
+			&__item {
+				&--link,
+				.adb-context_menu--trigger {
+					@extend %nav-link;
+				}
+			}
+		}
+
+		&__item {
+			margin-left: -8px;
+			font-size: $header-primary-font-size;
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 30px $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+#subnav-header {
+	position: fixed;
+	width: 100%;
+	z-index: 998;
+	top: 0;
+	margin-top: 70px !important;
+
+	///margin-top: 79px !important;
+}
+
+#secondaryNav {
+	position: fixed;
+	width: 100%;
+	z-index: 997;
+	top: 0;
+	margin-top: 70px !important;
+}
+
+.secondary-nav {
+	height: $custom-secondary-nav-height;
+	background: $custom-secondary-nav-background;
+	border-bottom: 1px solid $custom_secondary-nav-border-bottom-color;
+	margin-left: -13px;
+	position: fixed;
+	width: 100%;
+	z-index: 996;
+	top: 0;
+
+	&__menu {
+		border-bottom: 1px solid $custom_secondary-nav-border-bottom-color;
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		//	margin-left: 143px;
+
+		&__item {
+			padding: 9px 0;
+
+			&--link {
+				color: $custom-secondary-nav-color;
+				font-size: $custom-secondary-nav-font-size;
+				padding: 0 12px;
+
+				///padding: 0 24px 0px 0px;
+
+				&:hover {
+					color: $custom-secondary-nav-hover-color;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+
+	.marketplace--active--secondary {
+		@extend %active-state-marketplace;
+	}
+}
+
+.active-state {
+	@extend %active-state;
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.signin--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

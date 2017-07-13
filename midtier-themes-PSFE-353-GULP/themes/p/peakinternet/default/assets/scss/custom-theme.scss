@@ -1,0 +1,52 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'http://www.peakinternet.com/image/prologo.svg';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$primary: black;
+$secondary: blue;
+$tertiary: gray;
+$emphasis: green;
+$theme_black: #2c2c2c;
+$primary-button-color: #4e5865;
+$theme-secondary: #79a342;
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: white;
+$header-primary-border-top-color: #cbcbcb;
+$header-primary-logo-height: 50px;
+$header-primary-logo-width: 120px;
+$header-primary-font-size: 16px;
+$header-primary-font-color: $theme_black;
+$header-primary-font-color_hover: $theme-secondary;
+
+
+
+$dropdown-border-color: gray;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: black;
+$dropdown-bg: white;
+$dropdown-item-hover-bg: white;
+$dropdown-item-hover-color: $theme-secondary;
+
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $header-primary-border-top-color;
+$footer-secondary-bg: blue;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

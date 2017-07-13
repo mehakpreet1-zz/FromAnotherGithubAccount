@@ -1,0 +1,45 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	border-top: 1px solid $footer-primary-border-top;
+	padding: 1em 0 2em;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		color: $footer-links-color;
+		font-size: 12px;
+	}
+
+	a {
+		color: $footer-primary-active-link-color;
+
+		&:hover {
+			text-decoration: none;
+			color: $footer-links-color-hover;
+		}
+	}
+}
+
+.test {
+	display: flex;
+	justify-content: center;
+}
+
+.play {
+	background-image: url($asset);
+	background-position: -479px -509px;
+	width: 1px;
+	height: 8px;
+	padding: 2px 0 2px 12px;
+}
+
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}
+
+.seprator::before {
+	content: '|';
+	padding-left: 5px;
+	padding-right: 5px;
+}

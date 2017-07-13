@@ -1,0 +1,64 @@
+// Customize the secondary nav (body)
+// ----------------------------------
+.adb-secondary_nav {
+    border-bottom: 1px solid #eaeaea;
+
+	.adb-search_field {
+
+		&--button {
+			background: $secondary-nav-color;
+            border-color: $secondary-nav-color;
+			color: #fff;
+            height: 30px;
+			text-shadow: none;
+
+			&:hover {
+				background: $secondary-nav-color-hover;
+				color: #fff;
+			}
+		}
+
+		.adb-input_row--item_content {
+
+			&:hover {
+				border-color: $secondary-nav-color-hover;
+			}
+		}
+
+		&--input {
+			border: 1px solid $secondary-nav-color;
+		}
+	}
+
+	&--item,
+	li {
+
+        .adb-secondary_nav--link,
+		a {
+			&.active,
+			&.adb-is-selected {
+				&:before {
+					background-color: $active-link-border-bottom-color;
+				}
+			}
+		}
+	}
+}
+
+#subnav-header {
+	a {
+		color: $secondary-nav-color;
+
+		&:focus,
+		&:hover,
+		&.active,
+		&:active {
+			color: $secondary-nav-color-hover;
+		}
+
+		&:active:before,
+		&.active:before {
+			background-color: $active-link-border-bottom-color;
+		}
+	}
+}

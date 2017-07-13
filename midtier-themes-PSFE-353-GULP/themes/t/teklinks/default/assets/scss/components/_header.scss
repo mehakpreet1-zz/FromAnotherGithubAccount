@@ -1,0 +1,112 @@
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	background: url($custom-header-background) no-repeat;
+	background-position: center top;
+	height: $header-primary-height;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		padding-left: 66px;
+
+		&_right {
+			display: flex;
+			align-items: center;
+			margin-left: auto;
+
+			&__social-icons {
+				display: flex;
+				align-items: center;
+				margin-left: 335px;
+
+				.icon {
+					padding-top: 8px;
+					margin-right: 5px;
+				}
+			}
+		}
+
+		&__item {
+			a {
+				color: $ad-white !important;
+			}
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+				padding-right: 111px;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}
+
+.facebook {
+	background: url($custom-facebook-logo) no-repeat;
+	width: 27;
+	height: 28px;
+	display: inline;
+	opacity: .30;
+	padding-left: 28px;
+	padding-top: 11px;
+}
+
+.twitter {
+	background: url($custom-twitter-logo) no-repeat;
+	width: 27;
+	height: 28px;
+	display: inline;
+	opacity: .30;
+	padding-left: 28px;
+	padding-top: 11px;
+}
+
+.linkedin {
+	background: url($custom-linkedin-logo) no-repeat;
+	width: 27;
+	height: 28px;
+	display: inline;
+	opacity: .30;
+	padding-left: 28px;
+	padding-top: 11px;
+}
+
+.searchform {
+	margin-left: 21px;
+}

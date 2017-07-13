@@ -1,0 +1,51 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'https://billing.hbci.com/QDSEBPP/Graphics/Company/hbc_logo_tagline.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$primary: #165b9e;
+$secondary: blue;
+$tertiary: gray;
+$emphasis: green;
+$white: #fff;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: white;
+$header-primary-border-top-color: $primary;
+$header-primary-border-top-color: $primary;
+$header-primary-logo-height: 80px;
+$header-primary-logo-width: 180px;
+$header-primary-font-size: 16px;
+$header-primary-font-color: $primary;
+$header-primary-font-color_hover: gray;
+
+$dropdown-border-color: gray;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: black;
+$dropdown-bg: white;
+$dropdown-item-hover-bg: $primary;
+$dropdown-item-hover-color: white;
+
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $header-primary-border-top-color;
+$footer-secondary-bg: blue;
+
+$search-input-btn: $primary;
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

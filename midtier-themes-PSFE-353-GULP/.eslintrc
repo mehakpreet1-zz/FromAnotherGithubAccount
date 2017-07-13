@@ -1,0 +1,30 @@
+{
+  "extends": "eslint-config-appdirect/es5",
+
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+
+  "rules": {
+    "strict": [2, "global"],
+    "indent": [2, "tab", {"SwitchCase": 1}],
+    "comma-dangle": [2, "never"],
+    "func-names": 0,
+    "no-multiple-empty-lines": 0,
+    "one-var": 0,
+    "vars-on-top": 0,
+    "no-console": 1
+  },
+
+  "ecmaFeatures": {
+    "modules": false
+  },
+
+  "globals": {
+    "$": false,
+    "_": false,
+    "APPDIRECT": false
+  }
+}

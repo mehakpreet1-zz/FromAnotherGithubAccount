@@ -1,0 +1,50 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'https://www.consolidated.com/Portals/0/Skins/CCI/img/CCI-logo.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$primary: black;
+$secondary: blue;
+$tertiary: gray;
+$emphasis: green;
+$theme-blue:#0054a2;
+$theme-orange:#ff802c;
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: white;
+$header-primary-border-top-color: transparent;
+$header-primary-border-bottom-color: $theme-blue;
+$header-primary-logo-height: 90px;
+$header-primary-logo-width: 234px;
+$header-primary-font-size: 18px;
+$header-primary-font-color: #666;
+$header-primary-font-color_hover: $theme-orange;
+
+$dropdown-border-color: gray;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: black;
+$dropdown-bg: white;
+$dropdown-item-hover-bg: $primary;
+$dropdown-item-hover-color: white;
+
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $header-primary-border-top-color;
+$footer-secondary-bg: blue;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

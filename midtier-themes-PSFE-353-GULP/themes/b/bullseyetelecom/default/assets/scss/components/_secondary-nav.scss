@@ -1,0 +1,63 @@
+// ----------------------------------
+// Customized secondary nav
+// ----------------------------------
+.adb-secondary_nav {
+	.adb-search_field {
+		&--input {
+			border: 1px solid $secondary-nav-search-button-bg_hover;
+			border-right: 0;
+		}
+
+		&--button {
+			color: $secondary-nav-search-button-color;
+			border: 1px solid $secondary-nav-search-button-border-color;
+			background: $secondary-nav-search-button-bg;
+			border-radius: 0px 3px 3px 0px;
+			box-shadow: none;
+			text-shadow: none;
+			font-weight: 600;
+			padding: 3px 8px;
+
+			&:hover {
+				color: $secondary-nav-search-button-color_hover;
+				background: $secondary-nav-search-button-bg_hover;
+			}
+		}
+
+		.adb-input_row--item_content {
+			border: {
+				color: $secondary-nav-search-button-border-color;
+				border-radius: 0px 3px 3px 0px;
+			};
+		}
+	}
+
+	&--item,
+	li {
+		.adb-secondary_nav--link,
+		a {
+			&.active,
+			&.adb-is-selected {
+				&::before {
+					background-color: $secondary-nav-selected-item-border-color;
+				}
+			}
+		}
+	}
+}
+
+#subnav-header {
+	a {
+		&:focus,
+		&:hover,
+		&.active,
+		&:active {
+			color: $secondary-nav-selected-text-color;
+		}
+
+		&:active::before,
+		&.active::before {
+			background-color: $secondary-nav-selected-item-border-color;
+		}
+	}
+}

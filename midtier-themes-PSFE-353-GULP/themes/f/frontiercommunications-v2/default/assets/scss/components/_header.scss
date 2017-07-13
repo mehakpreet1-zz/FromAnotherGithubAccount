@@ -1,0 +1,125 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $ad-white;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	border-top: 0;
+	height: auto;
+
+	&__menu {
+		display: flex;
+		list-style: none;
+
+		&__top {
+			background-color: $top-nav-bg;
+			height: 40px;
+			display: flex;
+
+			&__right {
+				display: flex;
+				margin-left: auto;
+				margin-right: 13%;
+
+				&__links {
+					padding: 10px;
+					margin-left: 5px;
+
+					&:hover {
+						background-color: $top-nav-bg-hover;
+					}
+
+					&:hover a{
+						color: $ad-white;
+					}
+
+					a:hover {
+						color: $ad-white !important;
+					}
+				}
+			}
+		}
+
+		&__secondary {
+			background-color: $ad-white;
+			height: calc(100% - 43px);
+			display: flex;
+			margin-right: 13%;
+
+			&__left {
+				display: flex;
+				margin-left: 2em;
+			}
+
+			&__right {
+				display: flex;
+				margin-left: auto;
+				width: auto !important;
+			}
+
+			ul {
+				width: 100%;
+			}
+
+			li {
+				display: flex;
+				align-self: center;
+			}
+		}
+
+		&__item {
+			&.logo-holder {
+				background-color: $logo-bg-color;
+				padding: 27px 10px;
+			}
+
+			&.right-holder {
+				width: 100%;
+			}
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: 0 20px;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.signin--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

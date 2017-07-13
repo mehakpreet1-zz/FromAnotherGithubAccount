@@ -1,0 +1,132 @@
+.footer-primary {
+	margin: 0 0 20px;
+	background-color: $white;
+	text-transform: uppercase;
+	color: $footer-text-color;
+	font: {
+		weight: normal;
+		size: 14px;
+		family: $custom-font;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+
+		&__column {
+			padding-left: 30px;
+			width: auto;
+		}
+	}
+
+	&__list {
+		padding-bottom: 10px;
+
+		&--title {
+			color: $footer-text-color;
+			margin-bottom: 5px;
+			text-transform: uppercase;
+			font: {
+				weight: 600;
+				size: 18px;
+			}
+
+			a {
+				color: $footer-text-color;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+				text-decoration: none;
+				font: {
+					weight: 600;
+					size: 18px;
+				}
+			}
+		}
+
+		&--link {
+			color: $black;
+			text-decoration: none;
+			font-weight: 300;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&--item {
+			padding: 5px 0;
+		}
+	}
+}
+
+.footer-secondary {
+	background: $foote-secondary-bg;
+	height: auto;
+	color: $footer-text-color;
+	font-family: $custom-font;
+
+	i {
+		color: $white;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+
+		&__column {
+			padding-left: 30px;
+			width: auto;
+
+			&--social {
+				a {
+					margin: 0 5px;
+				}
+			}
+		}
+
+		&--link {
+			width: 50%;
+
+			a {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		padding-bottom: 10px;
+
+		&--link {
+			color: $black;
+			text-decoration: none;
+			font-weight: 300;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		&--item {
+			padding: 5px 10px;
+
+			a {
+				color: $white;
+			}
+		}
+	}
+
+	&__content {
+		display: flex;
+		padding: 20px 0;
+	}
+
+	&__copy {
+		width: 30%;
+		color: $gray;
+		padding: 5px 0;
+		text-align: left;
+	}
+}

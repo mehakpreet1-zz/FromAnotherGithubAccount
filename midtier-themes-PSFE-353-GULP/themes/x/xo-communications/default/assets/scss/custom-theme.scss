@@ -1,0 +1,76 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'https://www.xo.com/themes/custom/xo/images/verizon/xo-verizon-logo-horiz.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade5: #808080;
+
+$custom-purple: #4b266c;
+$custom-purple-light: #833a96;
+$custom-grey: #9ca2a8;
+$custom-grey-dark: #27333d;
+$custom-blue: #00a9e0;
+
+$primary: $custom-purple-light;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $ad-white;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $primary;
+$header-primary-logo-height: 52px;
+$header-primary-logo-width: 100px;
+$header-primary-font-size: 18px;
+$header-primary-font-color: $custom-purple;
+$header-primary-font-color_hover: $primary;
+$header-primary-color_active: $primary;
+
+$dropdown-border-color: $primary;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 0;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $custom-purple;
+$dropdown-bg: $ad-white;
+$dropdown-item-hover-bg: $primary;
+$dropdown-item-hover-color: $ad-white;
+
+$secondary-nav-search-button-color: $ad-white;
+$secondary-nav-search-button-color_hover: $primary;
+$secondary-nav-search-button-border-color: $primary;
+$secondary-nav-search-button-bg: $primary;
+$secondary-nav-search-button-bg_hover: $ad-white;
+
+$secondary-nav-selected-text-color: $primary;
+$secondary-nav-selected-item-border-color: $primary;
+
+$footer-height: 65px;
+$footer-primary-bg: $custom-grey-dark;
+$footer-primary-border-top: $custom-grey-dark;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $custom-grey;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

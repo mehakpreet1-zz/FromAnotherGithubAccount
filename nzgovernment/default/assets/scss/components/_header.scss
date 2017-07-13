@@ -1,0 +1,221 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $header-primary-bg;
+	height: $header-primary-height;
+	font-family: $font-family;
+
+	&__menu {
+		height: 98px;
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+			margin-top: 10px;
+
+			& .header-primary__menu__item {
+				margin-top: 10px;
+			}
+		}
+
+		&__item {
+			& .marketplace--active {
+				margin-left: 60px;
+			}
+
+			&--logo {
+				background: url($asset-logo) no-repeat {
+					size: contain;
+				};
+				display: block;
+				height: $header-primary-logo-height;
+				margin: 26px 0 0;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+
+	.custom-search {
+		display: flex;
+		align-items: center;
+		margin: 0 5px;
+
+		&--box {
+			display: flex;
+			align-items: center;
+			background: $header-primary-search-bg;
+
+			font-size: 14px {
+				weight: bold;
+			};
+			width: 287px;
+
+			input {
+				background: transparent;
+				padding: 0;
+				height: 36px;
+				border: 0;
+				border-radius: 0;
+				margin-left: 15px;
+			}
+		}
+
+		&--button {
+			color: $header-primary-search-icon;
+			background: $header-primary-search-bg;
+			height: 38px;
+			width: 37px;
+			padding: 5px;
+
+			border: 1px $header-primary-search-button-border solid {
+				right: 1px solid $header-primary-search-button-border-right;
+			};
+			font-size: 15px;
+		}
+	}
+}
+
+.header-secondary {
+	background: $header-secondary-bg;
+	height: $header-secondary-height;
+	font-family: $font-family;
+
+	font-size: 15.54px {
+		weight: bold;
+	};
+
+	& .logged-out-ul {
+		margin-left: -10px;
+	}
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		height: 65px !important;
+		margin-left: -42px;
+
+		.one {
+			padding: 10px;
+			margin-left: -10px;
+
+			&:hover {
+				background-color: $header-secondary-item-one;
+			}
+		}
+
+		.two {
+			padding: 10px;
+
+			&:hover {
+				background-color: $header-secondary-item-two;
+			}
+		}
+
+		.three {
+			padding: 10px;
+
+			&:hover {
+				background-color: $header-secondary-item-three;
+			}
+		}
+
+		.four {
+			padding: 10px;
+
+			&:hover {
+				background-color: $header-secondary-item-four;
+			}
+		}
+
+		.five {
+			padding: 10px;
+
+			&:hover {
+				background-color: $header-secondary-item-five;
+			}
+		}
+
+		.six {
+			padding: 10px;
+
+			&:hover {
+				background-color: $header-secondary-item-six;
+			}
+		}
+
+		.seven {
+			padding: 21px;
+
+			&:hover {
+				background-color: $header-secondary-item-seven;
+			}
+		}
+
+		&__item {
+			width: 161px;
+			text-align: center;
+
+			a {
+				color: $header-secondary-item !important;
+				text-decoration: none;
+			}
+
+			a:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.login-links-properties {
+	height: 45px;
+	width: 180px;
+
+	a {
+		font-size: 16px;
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+
+	.product--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

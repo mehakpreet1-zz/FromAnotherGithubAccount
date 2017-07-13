@@ -1,0 +1,698 @@
+.header-primary__menu__item--link,
+.header-primary__menu__item .adb-context_menu--trigger,
+.companies-dropdown > a {
+  color: #555555;
+  font-size: 16px;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 31px;
+  padding: 0 10px;
+  border-bottom: 4px solid #174E32;
+}
+
+.header-primary__menu__item--link:hover,
+.header-primary__menu__item .adb-context_menu--trigger:hover,
+.companies-dropdown > a:hover {
+  border-bottom: 4px solid #fff;
+}
+
+.header-top__menu__item--link,
+.header-top__menu__item .adb-context_menu--trigger {
+  color: #555555;
+  font-size: 16px;
+  margin: 0 10px;
+  height: 37px !important;
+}
+
+.header-top__menu__item--link:focus,
+.header-top__menu__item .adb-context_menu--trigger:focus,
+.header-top__menu__item--link:hover,
+.header-top__menu__item .adb-context_menu--trigger:hover {
+  text-decoration: underline dotted red;
+}
+
+.myappsV2Page .myapps--active,
+.loginPage .login--active,
+.signupPage .signup--active {
+  color: #000;
+}
+
+.header-primary {
+  background: #174E32;
+  height: 37px;
+  font-family: verdana;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-primary .logged-in-links a:active {
+  color: #fff;
+}
+
+.header-primary .right-items {
+  margin-left: auto;
+}
+
+.header-primary__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-primary__menu__item .testname--active {
+  margin-right: 2px !important;
+}
+
+.header-primary__menu__item .myapps--active:hover {
+  color: #000;
+}
+
+.header-primary__menu__item--logo {
+  padding: 0;
+  background: url("https://www.tdcanadatrust.com/images/evergreen/logos/td_shield_nowhitespace.gif") no-repeat;
+  background-size: contain;
+  display: block;
+  height: 51px;
+  width: 56px;
+  margin: -6px 30px 0 15px;
+}
+
+.header-primary__menu__item span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 16px;
+  line-height: 19.5px;
+  margin: 2px 22px 0;
+  color: #fff;
+  cursor: default;
+}
+
+.header-primary__menu__item--link,
+.header-primary__menu__item .adb-context_menu--trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 16px;
+  line-height: 19.5px;
+  margin: 2px 22px 0;
+  color: #fff;
+  cursor: default;
+  list-style: none !important;
+  text-decoration: none;
+}
+
+.header-primary__menu__item .adb-context_menu--trigger {
+  height: 35px;
+}
+
+.header-primary__menu__item--link:hover {
+  background: #fff;
+  color: #000 !important;
+  margin-top: 2px;
+  text-decoration: none;
+}
+
+.header-primary__menu .active--product {
+  font-weight: bold;
+  border-bottom: 4px solid #95C838;
+}
+
+.header-primary__menu .active--product:hover {
+  border-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.header-primary span:hover {
+  background: #fff;
+  color: #000;
+  margin-top: 2px;
+}
+
+.header-top {
+  border-bottom: 0;
+  height: 40px;
+  background: #E4E4E4;
+  font-family: verdana;
+}
+
+.header-top__menu {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.header-top__menu .common {
+  border-right: 1px solid #E4E4E4;
+}
+
+.header-top__menu .common a:hover {
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+}
+
+.header-top__menu__item {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.header-top__menu__item--link,
+.header-top__menu__item .adb-context_menu--trigger {
+  font-size: 13px;
+}
+
+.header-top__menu__item .signup--active {
+  font-weight: bold;
+  color: #1a5336;
+}
+
+.header-top__menu__item .signup--active:hover {
+  color: #000;
+}
+
+.header-top__menu__item .login {
+  border: 1px solid #7ea292;
+  font-weight: bolder;
+  font-size: 11px;
+  padding: 2px 10px 4px 10px;
+  background: #CBE2A2;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #1a5336;
+}
+
+.header-top__menu__item .language-selector {
+  padding: 50px 50px 50px 50px;
+}
+
+.header-top__menu__item .language-selector li {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header-top__menu__item .language-selector li:hover {
+  border-bottom: none !important;
+}
+
+.header-top__menu .easyweb {
+  font-size: 11px;
+  color: #000;
+  height: 19px !important;
+}
+
+section.adb-layout-default.adb-layout-content--centered-content {
+  background-color: #fff;
+}
+
+[data-page='home'] .marketplace--active,
+[data-page='listing'] .marketplace--active,
+[data-page='profile'] .marketplace--active {
+  color: #fff;
+}
+
+[data-page='home'] .marketplace--active:hover,
+[data-page='listing'] .marketplace--active:hover,
+[data-page='profile'] .marketplace--active:hover {
+  color: #fff;
+}
+
+.myappsV2Page .myapps--active {
+  color: #fff;
+}
+
+.loginPage .login--active {
+  color: #fff;
+}
+
+.signupPage .signup--active {
+  color: #fff;
+}
+
+.header-primary__menu__item .adb-context_menu--menu {
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-top: 1px solid transparent;
+  border-radius: 1px;
+  margin-top: 0;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li:first-child a:hover,
+.header-primary__menu__item .adb-context_menu--menu li:first-child:hover {
+  border-radius: 1px 1px 0 0;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li:last-child a:hover,
+.header-primary__menu__item .adb-context_menu--menu li:last-child:hover {
+  border-radius: 0 0 1px 1px;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li ~ li {
+  border-top: 1px solid transparent;
+}
+
+.header-primary__menu__item .adb-context_menu--menu a {
+  padding: 10px;
+  color: #1a5336;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  line-height: 1em;
+  font-size: 12px;
+}
+
+.header-primary__menu__item .adb-context_menu--menu a:hover {
+  text-decoration: none;
+  box-shadow: none;
+  position: relative;
+  color: #000;
+}
+
+.header-top .adb-context_menu--menu a {
+  color: #555555;
+}
+
+.header-top .adb-context_menu--menu a:hover {
+  border-radius: 1px 1px 0 0;
+  border-bottom: 0 !important;
+}
+
+.companies-dropdown {
+  position: relative;
+}
+
+.companies-dropdown a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+  display: block;
+}
+
+footer,
+.adb-page_footer {
+  margin-top: 0 !important;
+}
+
+.footer-primary {
+  padding: 20px 0;
+}
+
+.footer-primary__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-primary__container__left-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-primary__container__left-item__image img {
+  height: 50px;
+  weight: 50px;
+  padding: 0 40px 0 50px;
+}
+
+.footer-primary__container__left-item__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+}
+
+.footer-primary__container__left-item__link .common {
+  border-left: 1px solid #E4E4E4;
+}
+
+.footer-primary__container__left-item__link--text {
+  padding: 0 0 0 14px;
+}
+
+.footer-primary__container__left-item__link a {
+  color: #1a5336;
+  text-decoration: none;
+}
+
+.footer-primary__container__left-item__link li {
+  text-decoration: none;
+}
+
+.footer-primary__container__left-item__link a:hover {
+  color: #000;
+}
+
+.footer-primary__container__right-item {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.footer-primary__container__right-item__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-primary__container__right-item__link__icon {
+  padding: 12px 11px 0 0;
+}
+
+.footer-primary__container__right-item__link img {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-primary__container__right-item__link--connect {
+  padding-top: 15px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #1a5336;
+}
+
+.footer-primary .adb-layout-default {
+  background: transparent !important;
+}
+
+.adb-layout-default {
+  width: calc(984px + 30px);
+}
+
+@media only screen and (min-width: 1024px) {
+  .adb-layout-default {
+    width: calc(994px + 30px);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .adb-layout-default {
+    width: calc(1138px + 30px);
+  }
+}
+
+html {
+  background-color: #E4E4E4;
+}
+
+#main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#header {
+  margin-top: 0;
+  z-index: 999;
+  position: relative;
+  background-color: #E4E4E4;
+}
+
+.adb-page {
+  margin-bottom: 0 !important;
+  min-height: calc(100vh - 65px) !important;
+}
+
+.accountpages #footer {
+  padding-top: 0 !important;
+}
+
+.adb-page--footer_helper {
+  padding-bottom: 20px !important;
+  background-color: #E4E4E4;
+}
+
+.adb-styled.adb-layout-default {
+  background-color: #fff;
+}
+
+.adb-layout-default {
+  background-color: #E4E4E4;
+}
+
+.accountpages .adb-layout-default,
+.myappsV2Page .adb-layout-default {
+  background-color: #fff;
+}
+
+.accountpages .header-top__menu,
+.myappsV2Page .header-top__menu {
+  background-color: #E4E4E4 !important;
+}
+
+.adb-layout-row {
+  margin: 0 auto;
+  padding: 24px calc(30px/2);
+}
+
+.adb-profile_header--content {
+  margin: 0 142px;
+  padding: 24px 10px;
+}
+
+.adb-profie_header {
+  margin-bottom: 0;
+}
+
+.adb-profile_header--navigation {
+  box-shadow: none !important;
+  border-bottom: none !important;
+  background-color: transparent !important;
+}
+
+.adb-tertiary_nav--items {
+  background-color: #fff;
+  border-bottom: 1px solid #cbcbcb !important;
+}
+
+.adb-layout-row {
+  background-color: #fff;
+}
+
+.adb-profile_header {
+  margin-bottom: 0;
+}
+
+.adb-layout-content--section {
+  padding-top: 24px !important;
+}
+
+[data-page='profile'] .adb-profile_header--content .adb-layout-default {
+  background-color: transparent;
+}
+
+.myappsV2Page #content,
+.accountpages #content,
+.settingsPage #content,
+.companyPage #content,
+.logged-in #content {
+  background: transparent;
+}
+
+.myappsV2Page #main {
+  padding-top: 0;
+}
+
+.accountpages #subnav-header,
+.developer #subnav-header,
+.accountpages #subnav-header,
+.marketplaceManage #subnav-header,
+.superuser #subnav-header {
+  background-color: #E4E4E4;
+  border-bottom: 1px solid transparent;
+}
+
+#subnav-header .wrapper {
+  padding: 0 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.accountpages .adb-page--content,
+.myappsV2Page .adb-page--content {
+  padding: 24px 15px 24px 15px;
+}
+
+.accountpages .adb-profile_header--content.adb-layout-default,
+.myappsV2Page .adb-profile_header--content.adb-layout-default {
+  padding: 20px 0;
+}
+
+.accountpages .adb-layout-row.adb-layout-default.userdetail-content,
+.myappsV2Page .adb-layout-row.adb-layout-default.userdetail-content {
+  padding: 0 0 24px 0;
+}
+
+.manageApps.accountpages .adb-page--content,
+.manageUsers.accountpages .adb-page--content {
+  padding: 0;
+}
+
+.manageApps.accountpages .adb-page--content .adb-layout-default,
+.manageUsers.accountpages .adb-page--content .adb-layout-default {
+  padding: 24px 20px;
+}
+
+.companyPage .adb-layout-default.adb-page--content,
+.settingsPage .adb-layout-default.adb-page--content,
+.channelPage .adb-layout-default.adb-page--content,
+.developer .adb-layout-default.adb-page--content {
+  padding: 24px 15px 24px 15px;
+  background: #fff;
+}
+
+[data-page='profile'] .adb-profile_header--content {
+  margin: 0;
+  background: transparent;
+  box-shadow: none;
+  border-top: 0;
+  padding: 0 !important;
+}
+
+[data-page='profile'] .adb-profile_header--content .adb-layout-default {
+  background-color: #575757;
+  padding: 20px;
+  border-top: 1px solid #cbcbcb;
+}
+
+[data-page='profile'] .adb-layout-default.adb-subscriptions {
+  background: transparent;
+}
+
+.developer #content {
+  background: transparent;
+}
+
+.accountpages .adb-secondary_nav--items,
+.developer .adb-secondary_nav--items,
+.channelPage .adb-secondary_nav--items {
+  border-bottom: 0;
+}
+
+.channelPage .adb-secondary_nav#subnav-header {
+  border-bottom: 0;
+  background-color: transparent;
+}
+
+.loginPage #content {
+  background-color: transparent;
+}
+
+.loginPage .adb-layout-default.adb-page--content {
+  padding-top: 24px;
+}
+
+[data-page='bundle'] .adb-profile_header--content {
+  margin: 0 auto;
+}
+
+[data-page='bundle'] .adb-profile_header--content .adb-layout-default {
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 1024px) {
+  [data-page='bundle'] .adb-profile_header--content {
+    width: calc(994px + 30px);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  [data-page='bundle'] .adb-profile_header--content {
+    width: calc(1138px + 30px);
+  }
+}
+
+.adb-secondary_nav {
+  background-color: #E4E4E4 !important;
+  border-bottom: 0 solid transparent;
+}
+
+.adb-secondary_nav .adb-search_field--input {
+  border: 1px solid #CBE2A2;
+  border-right: 0;
+}
+
+.adb-secondary_nav .adb-search_field--button {
+  color: #174E32;
+  border: 1px solid #7ea292;
+  background: #CBE2A2;
+  border-radius: 0 3px 3px 0;
+  box-shadow: none;
+  text-shadow: none;
+  font-weight: 600;
+  padding: 3px 8px;
+}
+
+.adb-secondary_nav .adb-search_field--button:hover {
+  color: #174E32;
+  background: #CBE2A2;
+}
+
+.adb-secondary_nav .adb-search_field .adb-input_row--item_content {
+  border-color: #7ea292;
+  border-border-radius: 0 3px 3px 0;
+}
+
+.adb-secondary_nav--items {
+  padding: 0 15px 0 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.adb-secondary_nav--item .adb-secondary_nav--link.active::before,
+.adb-secondary_nav--item .adb-secondary_nav--link.adb-is-selected::before,
+.adb-secondary_nav--item a.active::before,
+.adb-secondary_nav--item a.adb-is-selected::before,
+.adb-secondary_nav li .adb-secondary_nav--link.active::before,
+.adb-secondary_nav li .adb-secondary_nav--link.adb-is-selected::before,
+.adb-secondary_nav li a.active::before,
+.adb-secondary_nav li a.adb-is-selected::before {
+  color: #1a5336;
+  background-color: #95C838;
+}
+
+#subnav-header a:focus,
+#subnav-header a:hover,
+#subnav-header a.active,
+#subnav-header a:active {
+  color: #1a5336 !important;
+}
+
+#subnav-header a:active::before,
+#subnav-header a.active::before {
+  background-color: #95C838 !important;
+}
+
+#subnav-header .wrapper {
+  padding: 0 20px;
+}
+
+#secondaryNav .adb-is-selected {
+  color: #1a5336;
+}
+
+#secondaryNav .adb-is-selected:before {
+  background-color: #95C838;
+}

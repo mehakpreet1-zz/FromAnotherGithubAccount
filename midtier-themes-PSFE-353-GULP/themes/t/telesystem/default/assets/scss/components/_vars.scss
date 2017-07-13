@@ -1,0 +1,65 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: 'http://www.videotron.com/vcom/static/img/logo/head-videotron-logo-black.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #FFF;
+$gray: #eaeaea;
+$black: #000;
+$purple: #78359f;
+$blue: #009abf;
+$top-header-color: #8DC63F;
+
+$logo-url: url(http://www.telesystem.us/media/1102/ts-logo-color-440.png);
+$footer-logo: url(http://www.telesystem.us/media/1101/ts-logo-white-440.png);
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$top-header-bg: #005696;
+$header-primary-bg: $white;
+$header-border-color: #DADADA;
+$primary-header-menu-bg-color: #f6f6f6;
+$menu-link-color: #005696;
+$menu-link-hover-color: #8DC63F;
+$menu-border-color: #e0e0e0;
+
+
+$dropdown-border-color: $gray;
+$dropdown-color: $black;
+$dropdown-bg: $white;
+$dropdown-hover-bg: $blue;
+$dropdown-hover-color: $white;
+
+$fb-icon-hover-color: #3C599B;
+$twitter-icon-hover-color: #58ccff;
+$linkedin-icon-hover-color: #007BB6;
+$google-icon-hover-color: #DD4B39;
+$youtube-icon-hover-color: #E52C27;
+$primary-btn-border: #273d82;
+$black-333: #333;
+
+$footer-bg: $gray;
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+$nav-item-padding: 12px 10px; // example only

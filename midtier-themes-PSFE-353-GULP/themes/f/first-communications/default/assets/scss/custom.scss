@@ -1,0 +1,31 @@
+@import 'components/_INDEX';
+
+// ------------------------------------------------------------
+// Use the BEM method for writing SCSS
+//
+// More info here
+// --------------
+// 1. https://css-tricks.com/bem-101/
+// 2. https://medium.com/objects-in-space/objects-in-space-f6f404727#.864tiw7qu
+// 3. http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+// ------------------------------------------------------------
+
+// NO CODE IN THIS FILE PLEASE
+body { 
+	height: -moz-calc(100% - 305px); /* Firefox */
+	height: -webkit-calc(100% - 305px); /* Chrome, Safari */
+	height: calc(100% - 305px); /* IE9+ and future browsers */
+}
+
+.adb-button__primary {
+	&:hover {
+		background-color: $orange !important;
+		border-color: transparent !important;
+	}
+}
+.adb-search_field--button {
+	&:hover {
+		background-color: $orange !important;
+		border-color: transparent !important;
+	}
+}

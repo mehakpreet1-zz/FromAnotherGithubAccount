@@ -1,0 +1,84 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <div class="footer-primary__container">
+            <div class="footer-primary__container__column">
+                <h3 class="footer-primary__list--title">Our Services</h3>
+                <div class="footer-primary__container__column__inner">
+                    <div class="footer-primary__container__column__inner-column">
+                        <ul class="footer-primary__list">
+                            <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/products/metro-ethernet/">Ethernet</a></li>
+                            <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/products/nationwide-mpls/">MPLS / VPLS</a></li>
+                            <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/products/sip-trunking/">SIP Trunking</a></li>
+                            <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/products/converged-voice-data/">Voice Solutions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-primary__container__column__inner-column">
+                        <ul class="footer-primary__list">
+                            <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/products/internet-t1/">Internet</a></li>
+                            <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/products/pri-analog-t1/">Managed Services</a></li>
+                            <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/products/data-center/">Data Center</a></li>
+                            <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/products/cloud-solutions/">Cloud Solutions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-primary__container__column">
+                <h3 class="footer-primary__list--title">Partners</h3>
+                <ul class="footer-primary__list">
+                    <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/partners/agent-partner/">Agent Channel</a></li>
+                    <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/partners/referral-partners/">Referral Partner</a></li>
+                    <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/partners/partner-inquiry-form/">Partner Inquiry Form</a></li>
+                </ul>
+            </div>
+            <div class="footer-primary__container__column">
+                <h3 class="footer-primary__list--title">Resources</h3>
+                <ul class="footer-primary__list">
+                    <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/resources/webinars/">Webinars</a></li>
+                    <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/resources/pressrelease/">Press Release</a></li>
+                    <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/resources/white-papers/">White Papers</a></li>
+                    <li class="footer-primary__list--item"><a class="footer-primary__list--link" href="http://www.firstcomm.com/about/legal/privacy-statement/">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-primary__container__column footer-primary__contact">
+                <h3 class="footer-primary__list--title footer-primary__contact--title">Contact Us</h3>
+                <p class="footer-primary__contact--info">3340 West Market Street, Akron, Ohio 44333</p>
+                <p class="footer-primary__contact--info">Main Number:<span> 800-860-1261</span></p>
+                <p class="footer-primary__contact--info">Business Sales:<span> 866-339-0945</span></p>
+                <a class="footer-primary__contact--link" href="http://www.firstcomm.com/about/contact/">Contact Form &gt;&gt;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-secondary">
+    <div class="adb-layout-default">
+        <p class="footer-secondary__copy">© 2017 First Communications. All Rights Reserved</p>
+    </div>
+</div>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!--Scripts for Header behaviour -->
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+    })();
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary__menu .js-manage-links').remove();
+        }
+    })();
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

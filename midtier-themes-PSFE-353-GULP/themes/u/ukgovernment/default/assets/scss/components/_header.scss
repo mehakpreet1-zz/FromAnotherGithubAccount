@@ -1,0 +1,207 @@
+.header-primary {
+	background: $header-primary-bg;
+	height: $header-primary-height;
+	display: flex;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&__left {
+			display: flex;
+			width: 30%;
+
+			&__item {
+				&--logo {
+					background: url($asset-logo) no-repeat;
+					background-size: contain;
+					display: block;
+					margin-top: 24px;
+					text-indent: -9999px;
+					height: $header-primary-logo-height;
+					margin: $header-primary-logo-margin-top 0;
+					width: $header-primary-logo-width;
+				}
+
+				&--link {
+					&:hover {
+						color: $ad-white;
+						text-decoration: underline;
+					}
+
+					font-weight: 500;
+					font-size: 30px;
+				}
+
+				&--link,
+				.adb-context_menu--trigger {
+					@extend %nav-link;
+				}
+			}
+		}
+
+		&__right {
+			display: table-column;
+			list-style: none;
+			line-height: 1.5;
+			padding-top: 7px;
+
+			&__top {
+				&__item a {
+					text-size: 16px;
+					display: flex;
+					color: white;
+					font-size: 24px;
+					color: white;
+					width: 208px;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			&__bottom {
+				display: flex;
+
+				&__item a {
+					padding-right: 25px;
+					display: flex;
+					font-size: 16px;
+					color: white;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			&__item {
+				padding-right: 25px;
+
+				&--link,
+				.adb-context_menu--trigger {
+					@extend %nav-link;
+				}
+			}
+		}
+	}
+}
+
+.show {
+	display: flex;
+}
+
+.header-primary-login {
+	background: $header-primary-bg;
+	height: $header-primary-height;
+	display: flex;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+
+		&__left {
+			display: flex;
+			margin: auto;
+
+			&__item {
+				&--logo {
+					background: url($asset-logo) no-repeat;
+					background-size: contain;
+					display: block;
+					text-indent: -9999px;
+					margin-top: 24px;
+					height: $header-primary-logo-height;
+					margin: $header-primary-logo-margin-top 0;
+					width: $header-primary-logo-width;
+				}
+
+				&--link {
+					&:hover {
+						color: $ad-white;
+						text-decoration: underline;
+					}
+
+					font-size: 24px;
+				}
+
+				&--link,
+				.adb-context_menu--trigger {
+					@extend %nav-link;
+				}
+			}
+		}
+
+		&__right {
+			display: flex;
+			width: 50%;
+			list-style: none;
+			line-height: 1.5;
+			justify-content: flex-end;
+
+			&__item {
+				padding-left: 25px;
+				line-height: 3;
+				color: white;
+
+				&--link {
+					font-size: 24px;
+				}
+
+				&--link,
+				.adb-context_menu--trigger {
+					@extend %nav-link;
+				}
+			}
+		}
+	}
+}
+
+.adb-styled .adb-stack--item_content {
+	color: $ad-black;
+}
+
+.adb-styled .adb-header--item {
+	color: $ad-black;
+}
+
+.superuser #subnav-header ul li a {
+	font-size: 14px;
+}
+
+.adb-profile_header__product .adb-profile_header--content {
+	border-top: none;
+}
+
+.adb-styled .adb-text__full_width {
+	border-radius: 0px;
+}
+
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

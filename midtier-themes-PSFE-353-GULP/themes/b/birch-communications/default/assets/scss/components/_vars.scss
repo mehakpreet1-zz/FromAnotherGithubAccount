@@ -1,0 +1,60 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: "http://www.birch.com/hubfs/birch_logo_side_tagline.png?t=1485882479404";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$gray-shed1: #eaeaea;
+$gray-shed2: #e7e7e7;
+$gray-shed3: #6d6e71;
+$gray-shed4: #cbcbcb;
+
+$black: #000;
+$purple: #78359f;
+$blue-shed1: #141b4d;
+
+$red-shed1: #d21532;
+$red-shed2: #e52048;
+$red-shed3: #d20d23;
+
+$green-shed1: #4c8c2b;
+$green-shed2: #6cc24a;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-height: 90px;
+$footer-height: 68px;
+
+$header-primary-color: $blue-shed1;
+$header-primary-hover-color: $green-shed1;
+$header-primary-active-color: $green-shed1;
+$header-primary-border-color: $blue-shed1;
+
+$primary-button-color: $white;
+$primary-button-bg: $green-shed1;
+$primary-button-hover-bg: $green-shed2;
+
+$dropdown-border-color: $gray-shed2;
+$dropdown-color: $blue-shed1;
+$dropdown-bg: $white;
+$dropdown-hover-color: $blue-shed1;
+
+$secondary-nav-text-color: $blue-shed1;
+$secondary-nav-selected-text-color: $green-shed1;
+$secondary-nav-selected-item-border-color: $green-shed1;
+
+$footer-border-color: $gray-shed1;

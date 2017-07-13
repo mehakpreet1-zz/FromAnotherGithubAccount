@@ -1,0 +1,54 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: "http://www.hargray.com/wp-content/themes/hargray/img/logo_hargray_business.png";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #FFF;
+$gray-shed1: #eaeaea;
+$gray-shed2: #cbcbcb;
+$gray-shed3: #333;
+$gray-shed4: #e0eded;
+$black: #000;
+$purple: #78359f;
+$blue: #009abf;
+
+$red-shed1: #d21532;
+$red-shed2: #e52048;
+$red-shed3: #d20d23;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-height: 88px;
+$footer-height: 68px;
+
+$header-primary-color: $gray-shed3;
+$header-primary-hover-color: $red-shed1;
+$header-primary-border-color: $gray-shed2;
+
+$primary-button-color: $white;
+$primary-button-bg: $red-shed2;
+$primary-button-hover-bg: $red-shed3;
+
+$dropdown-border-color: $red-shed2;
+$dropdown-color: $black;
+$dropdown-bg: $white;
+$dropdown-hover-bg: $red-shed3;
+$dropdown-hover-color: $white;
+
+$secondary-nav-selected-text-color: $black;
+
+$footer-border-color: $gray-shed1;

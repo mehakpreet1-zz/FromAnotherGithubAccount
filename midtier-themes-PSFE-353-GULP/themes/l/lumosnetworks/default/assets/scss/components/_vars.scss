@@ -1,0 +1,52 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: 'https://www.lumosnetworks.com/sites/default/files/images/lumos-logo.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$gray: #f4f7fa;
+$black: #000;
+$purple: #78359f;
+$light-blue: #94c6e7;
+$blue: #009abf;
+$search-btn-bg: #00bce4;
+$search-btn-border: #cbcbcb;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-bg: $white;
+$header-link-color: #00bce4;
+$header-link-hover-color: #7fddf1;
+$dropdown-border-color: $gray;
+$dropdown-color: $black;
+$dropdown-bg: $white;
+$dropdown-hover-bg: $header-link-hover-color;
+$dropdown-hover-color: $white;
+
+$footer-bg: $gray;
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+$nav-item-padding: 12px 10px; // example only
+$font-family: 'Open Sans';
+$content-blank: ' ';

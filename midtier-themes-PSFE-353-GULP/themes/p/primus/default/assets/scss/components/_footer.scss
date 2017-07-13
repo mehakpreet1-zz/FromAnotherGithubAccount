@@ -1,0 +1,28 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	border-top: 1px solid $footer-primary-bg;
+	padding: 10px 10px 10px 80px;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 10px;
+	}
+
+	a {
+		color: $ad-white;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.adb-icon__appdirect {
+		font-size: 14px;
+	}
+}
+
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}

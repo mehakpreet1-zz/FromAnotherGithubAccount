@@ -1,0 +1,46 @@
+#footer {
+	background-color: $custom-blue;
+}
+
+.footer-primary {
+	background-color: $footer-primary-bg;
+	padding: 3em 0 2em;
+	height: $footer-height;
+
+	.footer-bottom {
+		padding-top: 10px;
+		background-color: $custom-blue;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+
+		#footer_links, #footer_copyright {
+			p.footertext {
+				font-family: "HelveticaNeueW01", Helvetica, Arial, sans-serif;
+				font-size: 12px;
+				font-weight: normal;
+				color: #9c9c9c;
+				line-height: 15px;
+			}
+		}
+	}
+
+	a {
+		color: $footer-links-color;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.adb-icon__appdirect {
+		font-size: 14px;
+	}
+}
+
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}

@@ -1,0 +1,41 @@
+<div class="custom-primary">
+  <nav class="adb-primary_nav">
+    <ul class="adb-primary_nav--items adb-layout-default">
+      <li class="adb-primary_nav--item"><a class="adb-primary_nav--link" href="{{HOME_HREF}}">
+        <span class="adb-primary_nav--logo">Acme</span>
+      </a>
+      </li>
+      <li class="adb-primary_nav--item"><a class="adb-primary_nav--link" href="/myapps">{{my.apps}}</a></li>
+      <li class="adb-primary_nav--item"><a class="adb-primary_nav--link" href="{{HOME_HREF}}">{{Marketplace}}</a></li>
+      <li class="adb-primary_nav--item js-primary-nav-user-menu adb-primary_nav--item__right">
+        <menu class="adb-context_menu" data-placement="right">
+          <a class="adb-primary_nav--link js-menu-trigger adb-context_menu--trigger" href="javascript:;">{{USER_NAME}}</a>
+          <div class="js-dropdown-container">
+            <div class="adb-container adb-context_menu--menu">
+              <ul class="adb-stack">
+                <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{PROFILE_HREF}}">{{My.Profile}}</a></li>
+                <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{COMPANY_HREF}}">{{My.Company}}</a></li>
+                <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{SETTINGS_HREF}}">{{my.settings}}</a></li>
+                <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{LOGOUT_HREF}}">{{logout}}</a></li>
+              </ul>
+            </div>
+          </div>
+        </menu>
+      </li>
+      <li class="adb-primary_nav--item adb-primary_nav--item__right">
+        <menu class="adb-context_menu" data-placement="right">
+          <a class="adb-primary_nav--link js-menu-trigger adb-context_menu--trigger" href="javascript:;">{{Manage}}</a>
+          <div class="js-dropdown-container">
+            <div class="adb-container adb-context_menu--menu">
+              {{MANAGE_LINKS}}
+            </div>
+          </div>
+        </menu>
+      </li>
+      <li class="adb-primary_nav--item js-primary-nav-company-menu adb-primary_nav--item__right">
+        {{COMPANIES_DROPDOWN}}
+      </li>
+    </ul>
+  </nav>
+</div>
+

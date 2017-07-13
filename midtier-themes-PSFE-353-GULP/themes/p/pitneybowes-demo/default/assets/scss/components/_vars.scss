@@ -1,0 +1,41 @@
+// local ASSETS - For use developing  HERE in the theme-customizer TOOL
+// ---------------------------------------------------------
+$assets: '/themes/pitneybowes-demo/default/assets/';
+
+$footer-logo: 'https://ad-od-p3h34mtl-file.s3.amazonaws.com/channel_custom_style_resources/img7922475577629184351?f34edce669eadb15cc8671250d8eb4bd';
+$sprite: 'https://ad-od-p3h34mtl-file.s3.amazonaws.com/channel_custom_style_resources/img7517821638973523808?67843c65d16d47e209e6c3fc90e00235';
+
+// remote ASSETS - For use developing in the theme-customizer (site)
+// ---------------------------------------------------------
+// $assets: "/wicket/resource/com.appdirect.wicket.resources.Resource/spa/themes/_starter-theme/";
+
+
+// ---------------------------------------------------------
+// COLORS
+// ---------------------------------------------------------
+$color-blue: #0165d4;
+
+// Color Usage
+// ------------------------------------
+$company-accent-color: $color-blue;
+
+$button-text-color: #fff;
+
+$nav-primary-height: 60px;
+$nav-secondary-color: $color-blue;
+
+// ---------------------------------------------------------
+// FONTS
+// ---------------------------------------------------------
+
+// @font-face
+// ------------------------------------
+
+
+// Font assignation
+// ------------------------------------
+$font-family-brand: "Precision Sans", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: $font-family-brand;
+}

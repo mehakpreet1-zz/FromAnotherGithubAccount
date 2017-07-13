@@ -1,0 +1,51 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: 'http://www.videotron.com/vcom/static/img/logo/head-videotron-logo-black.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #FFF;
+$gray: #eaeaea;
+$black: #000;
+$purple: #78359f;
+$blue: #009abf;
+$primary-color: #000;
+$theme-color: #9bd6d1;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$link-color: #0074a1;
+$link-hover-color: #004f6e;
+$header-primary-bg: $primary-color;
+$header-border-color: #ec5523;
+$logo: url('https://teksavvy.com/Themes/TekSavvy.Theme/Content/logo.png');
+$dropdown-border-color: $gray;
+$dropdown-color: $black;
+$dropdown-bg: $white;
+$dropdown-hover-bg: $blue;
+$dropdown-hover-color: $white;
+
+$footer-bg: $gray;
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+$nav-item-padding: 12px 10px; // example only

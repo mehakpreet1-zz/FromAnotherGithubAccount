@@ -1,0 +1,17 @@
+.adb-secondary_nav--link.adb-is-selected:before {
+	background-color: $theme-blue;
+}
+
+#secondaryNav {
+	.adb-search_field--button {
+		background-color: $primary-button-color;
+		box-shadow: none;
+		color: #fff;
+		text-shadow: none;
+		border-color: transparent;
+	}
+
+	.adb-search_field--input {
+		border-color: $primary-button-color;
+	}
+}

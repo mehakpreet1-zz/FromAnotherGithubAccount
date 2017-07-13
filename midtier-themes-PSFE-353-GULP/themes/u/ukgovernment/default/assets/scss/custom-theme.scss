@@ -1,0 +1,90 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: "https://www.digitalmarketplace.service.gov.uk/static/stylesheets/images/gov.uk_logotype_crown.png?0.19.2";
+$footer-logo: "https://assets.publishing.service.gov.uk/static/images/govuk-crest-2x-c6548884b516041752fc4156a50f084ca387b1e37e4f4668cd109058d924b197.png";
+$footer_icon: "https://www.digitalmarketplace.service.gov.uk/static/stylesheets/images/open-government-licence_2x.png?0.19.2";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+
+$custom_blue: #005ea5;
+$custom_black: #0b0c0c;
+$custom_footer_bg: #dee0e2;
+$custom_footer_text_color: #454a4c;
+$custom_black_hover: #171919;
+
+$primary: $custom_blue;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $custom_black;
+$header-primary-border-top-color: $custom_black;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 32px;
+$header-primary-logo-width: 49px;
+$header-primary-font-size: 24px;
+$header-primary-font-color: $ad-white;
+$header-primary-font-color_hover: $ad-gray-shade5;
+$header-primary-color_active: $ad-black;
+
+$dropdown-border-color: transparent;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: transparent;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $ad-black;
+$dropdown-bg: $ad-white;
+$dropdown-item-hover-bg: $custom_blue;
+$dropdown-item-hover-color: $ad-white;
+
+$secondary-nav-search-button-color: $ad-white;
+$secondary-nav-search-button-color_hover: $ad-white;
+$secondary-nav-search-button-border-color: $ad-black;
+$secondary-nav-search-button-bg: $ad-black;
+$secondary-nav-search-button-bg_hover: $custom_black_hover;
+
+$secondary-nav-selected-text-color: $ad-white;
+$secondary-nav-selected-item-border-color: $ad-black;
+
+$footer-height: 65px;
+$footer-primary-bg: $custom_footer_bg;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $custom_footer_text_color;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import "settings";
+
+// import computed values
+@import "components/INDEX";
+
+// import custom CSS

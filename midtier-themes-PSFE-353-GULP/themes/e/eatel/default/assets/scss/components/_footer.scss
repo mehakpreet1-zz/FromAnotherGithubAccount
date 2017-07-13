@@ -1,0 +1,250 @@
+.footer-primary {
+	border: {
+		bottom: 1px solid $footer-border-color;
+		top: 1px solid $footer-border-color2;
+	}
+	background-color: $footer-light-gray;
+	box-shadow: 0 1px 0px 0 $footer-border-color;
+
+	&__layout-container {
+		display: flex;
+		justify-content: space-around;
+
+		&--item {
+			width: 25%;
+			border-right: 1px solid $footer-border-color2;
+
+			&:first-of-type {
+				border-left: 1px solid $footer-border-color2;
+			}
+
+			a {
+				font: {
+					family: $font-family;
+					size: 16px;
+				}
+				text: {
+					decoration: none;
+					align: center;
+				}
+				width: 100%;
+				display: block;
+				padding: 1.6em 0em;
+				color: #555;
+
+				&:hover {
+					background-color: $footer-border-color2;
+				}
+			}
+		}
+	}
+}
+
+.footer-secondary {
+	background: $footer-border-color2;
+	font: {
+		size: 14px;
+		family: $font-family;
+	}
+
+	&__layout-container {
+		display: flex;
+		justify-content: space-around;
+		margin: 1.5em 0em;
+
+		&--item {
+			width: 20%;
+
+			a {
+				width: 100%;
+				display: block;
+				color: #555;
+				text-decoration: none;
+				padding: 15px 0px;
+
+				.small-box {
+					display: flex;
+					justify-content: flex-start;
+
+					&:before {
+						content: ' ';
+						display: table;
+					}
+					.img-section {
+						width: 34%;
+						height: 66px;
+						background-position: center;
+					}
+
+					.voice {
+						background: {
+							image: $voice-icon;
+							size: contain;
+							repeat: no-repeat;
+						}
+					}
+
+					.data {
+						background: {
+							image: $data-icon;
+							size: contain;
+							repeat: no-repeat;
+						}
+					}
+
+					.television {
+						background: {
+							image: $television-icon;
+							size: contain;
+							repeat: no-repeat;
+						}
+					}
+
+					.cloud {
+						background: {
+							image: $cloud-icon;
+							size: contain;
+							repeat: no-repeat;
+						}
+					}
+
+					.security {
+						background: {
+							image: $security-icon;
+							size: contain;
+							repeat: no-repeat;
+						}
+					}
+
+					.data-section {
+						width: 66%;
+
+						.title {
+							font-size: 17px;
+							line-height: 1.1;
+							margin: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.adb-layout-default {
+		.secondary-nav {
+			padding: 0 0 3em;
+
+			ul {
+				list-style: none;
+				display: flex;
+				justify-content: center;
+
+				li {
+					padding: 0em 1.125em;
+					border-right: 1px solid;
+
+					&:last-of-type {
+						border: none;
+					}
+
+					a {
+						color: $footer-link-color;
+						text-decoration: none;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.third-nav {
+			border-top: 1px solid $footer-border-color3;
+			border-bottom: 1px solid $footer-border-color3;
+
+			ul {
+				list-style: none;
+				display: flex;
+				justify-content: center;
+				padding: 10px 0px;
+
+				li {
+					padding: 0em 1.125em;
+					font-size: 14px;
+
+					a {
+						color: $footer-link-color;
+						text-decoration: none;
+					}
+
+					&.copyright {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+
+		.forth-nav {
+			padding: 20px 0px;
+
+			ul {
+				list-style: none;
+				display: flex;
+				justify-content: center;
+				padding: 10px 0px;
+
+				li {
+					padding: 0px 25px;
+					font-size: 14px;
+
+					a {
+						color: $footer-link-color;
+						text-decoration: none;
+					}
+
+					&.copyright {
+						font-size: 12px;
+					}
+
+					a {
+						background: {
+							size: contain;
+							repeat: no-repeat;
+							position: center;
+						}
+						font: {
+							family: $font-family;
+							size: 16px;
+						}
+						display: block;
+						width: 112px;
+						height: 30px;
+						padding-top: 10px;
+					}
+
+					.icon-eatel-vision {
+						background: {
+							image: $icon-eatel-vision;
+							size: 120px;
+							repeat: no-repeat;
+						}
+					}
+
+					.icon-eatel-venyu {
+						background: {
+							image: $icon-eatel-venyu;
+							size: 115px;
+							repeat: no-repeat;
+						}
+					}
+
+					.icon-eatel-upperline {
+						background: {
+							image: $icon-eatel-upperline;
+							size: 110px;
+							repeat: no-repeat;
+						}
+					}
+				}
+			}
+		}
+	}
+}

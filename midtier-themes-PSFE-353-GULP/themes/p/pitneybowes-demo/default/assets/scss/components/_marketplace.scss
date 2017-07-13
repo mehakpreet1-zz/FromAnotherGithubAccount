@@ -1,0 +1,40 @@
+// ------------------------------------------------------------
+// Styling for the Marketplace
+// ------------------------------------------------------------
+
+a {
+	color: #3E53A4;
+}
+
+#subnav-header,
+.adb-secondary_nav {
+	background: none;
+	border-bottom: none;
+}
+
+// Active state for Sidebar menu
+// ---------------------------------------
+%active-state-sidebar {
+	box-shadow: 0 0 0 1px #3E53A4;
+	border-top-color: #3E53A4;
+	background-color: #0c76ba;
+	color: #fff;
+}
+
+.adb-styled,
+.adb-container,
+.adb-multiple-navigation {
+
+	.adb-link__nav {
+		&:hover,
+		&.adb-is-selected {
+			@extend %active-state-sidebar;
+		}
+	}
+}
+
+.adb-styled .adb-link__option {
+	&:hover {
+		@extend %active-state-sidebar;
+	}
+}

@@ -1,0 +1,245 @@
+// ------------------------------------------------------------
+// Custom Header Top
+// ------------------------------------------------------------
+.header-top {
+	background: $header-top-bg;
+	height: 36px;
+
+
+	&__menu {
+		display: flex;
+		height: 36px;
+		align-items: center;
+
+		.links {
+			display: flex;
+			margin-top: 3px;
+
+			li {
+
+				&::after {
+					color: $header-top-color;
+					content: " | ";
+				}
+
+				a {
+					font-size: 15px;
+					font-weight: 700;
+					padding: 7px 15px 8px;
+					color: $header-top-color;
+					text-decoration: none;
+					text-transform: uppercase;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+
+				&:first-child {
+					a {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+
+		.social-icons {
+			margin: auto 0 auto auto;
+
+			a {
+				margin-left: 10px;
+
+				&:hover {
+					text-decoration: none;
+				}
+
+				.colored-icon {
+					font-size: 20px;
+					height: 20px;
+					color: $header-top-color;
+
+					&:hover {
+						color: $header-top-social-icon-hover-color;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	height: 88px;
+	background: url($asset-header-primary-bg-image) bottom repeat-x;
+	border-bottom: 1px solid $header-primary-color;
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		height: 88px;
+		list-style: none;
+
+		&__item {
+			margin: 5px;
+			color: $header-primary-color;
+			text-transform: capitalize;
+
+			a {
+				font-size: 17px;
+				padding: 8px;
+				border-radius: 0 0 3px 3px;
+				color: $header-primary-color;
+
+				&:hover {
+					color: $header-primary-color;
+					text-decoration: none;
+				}
+			}
+
+			&--logo {
+				display: block;
+				background: url($asset-logo) no-repeat;
+				background-size: 100% 100%;
+				height: 56px;
+				margin-left: -5px;
+				margin-right: 10px;
+				padding: 0;
+				width: 165px;
+
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		.fRight {
+			display: flex;
+			margin: 18px 0 auto auto;
+			flex-direction: column;
+			color: $header-primary-color;
+
+			&__top-links {
+				font-family: $font-sans-serif;
+				font-size: 12px;
+				display: flex;
+				justify-content: flex-end;
+				color: $header-primary-link-color;
+
+				li {
+					padding-left: 8px;
+
+					&::before {
+						content: ' | ';
+					}
+
+					&:first-child {
+
+						&::before {
+							content: ' ';
+						}
+					}
+
+					a {
+						color: $header-primary-link-color;
+						text-decoration: none;
+						padding-left: 3px;
+
+						&:hover {
+							color: $header-primary-color;
+						}
+					}
+				}
+			}
+
+			&__menu-items {
+				display: flex;
+				justify-content: flex-end;
+				margin-top: 10px;
+
+				// a {
+				// 	font-family: $font-cabin-bold;
+				// 	font-size: 17px;
+				// 	display: flex;
+				// 	padding: 4px 14px;
+				// 	text-decoration: none;
+				// 	color: $header-primary-color;
+				// 	background: $header-primary-menu-item-bg;
+				// 	border: 1px solid $header-primary-menu-border-color;
+
+				// 	&:hover,
+				// 	&.adb-is-active {
+				// 		background: $header-primary-menu-item-hover-bg;
+				// 		box-shadow: inset 0 0 30px 1px $header-primary-menu-item-shadow-color;
+				// 	}
+
+				// 	&.adb-is-active {
+				// 		border-top: 3px solid $header-primary-color;
+				// 	}
+
+				// 	&::after {
+				// 		content: "";
+				// 	}
+
+				// 	&.signup-link {
+				// 		font-family: $font-sans-serif;
+				// 		color: $header-primary-link-color;
+				// 		font-size: 12px;
+				// 		background: none;
+				// 		border: none;
+
+				// 		&:hover {
+				// 			box-shadow: none;
+				// 		}
+				// 	}
+
+				// 	&.manage-link {
+				// 		background: none;
+				// 		border: none;
+
+				// 		&:hover {
+				// 			box-shadow: none;
+				// 			color: $header-primary-color;
+				// 		}
+
+				// 	}
+
+				// }
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+
+	}
+}
+
+body.loginPage {
+	.login--active {
+		box-shadow: inset 0 0 30px 1px $header-primary-menu-item-shadow-color;
+
+	}
+}
+
+body.signupPage {
+	.signup--active {
+	}
+}

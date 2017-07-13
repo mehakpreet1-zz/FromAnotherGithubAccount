@@ -1,0 +1,118 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	border-top: 1px solid $footer-primary-border-top;
+	padding: 50px 0 30px;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+
+		.title {
+			font: {
+				family: customheaderfont;
+				size: 19px;
+				weight: 900;
+			}
+			color: $custom-orange;
+			display: block;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+		}
+
+		ul {
+			line-height: 26px;
+			margin: 24px 0 0 0px;
+			padding: 0;
+		}
+
+		a {
+			color: $custom-offwhite;
+			font-size: 14px;
+			text-decoration: none;
+			line-height: 30px;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+		.footer-social {
+			li {
+				margin: 0 0 15px;
+
+				a {
+					width: 60px;
+					height: 37px;
+					display: block;
+					padding-left: 62px;
+				}
+
+				.linkedin {
+					background: {
+						image: url('http://www.sgsgroup.us.com//images/homepage/SGS_hp_linkedin_icon_footer.png');
+						repeat: no-repeat;
+					}
+				}
+
+				.twitter {
+					background: {
+						image: url('http://www.sgsgroup.us.com//images/homepage/SGS_hp_twitter_icon_footer.png');
+						repeat: no-repeat;
+					}
+				}
+
+				.facebook {
+					background: {
+						image: url('http://www.sgsgroup.us.com//images/homepage/SGS_hp_facebook_icon_footer.png');
+						repeat: no-repeat;
+					}
+				}
+
+				.slideshare {
+					background: {
+						image: url('http://www.sgsgroup.us.com//images/homepage/SGS_hp_slideshare_icon_footer.png');
+						repeat: no-repeat;
+					}
+				}
+
+				.youtube {
+					background: {
+						image: url('http://www.sgsgroup.us.com//images/homepage/SGS_hp_youtube_icon_footer.png');
+						repeat: no-repeat;
+					}
+				}
+			}
+		}
+	}
+
+	.adb-icon__appdirect {
+		font-size: 14px;
+	}
+}
+
+.footer-secondary {
+	font-size: 12px;
+	padding: 10px 60px 10px;
+	background-color: #131313;
+	color: $custom-offwhite2;
+	ul {
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			color: $custom-offwhite2;
+			text-decoration: none;
+			margin: 0 10px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// To make footer sticky need to think about other way of doing this
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}

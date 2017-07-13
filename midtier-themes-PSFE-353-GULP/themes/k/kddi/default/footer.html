@@ -1,0 +1,82 @@
+<div class="footer-primary">
+    <div class="adb-layout-default">
+        <div class="footer-primary__container">
+            <div class="footer-primary__container--logo"></div>
+
+            <div class="footer-primary__container--links">
+
+                <ul class="footer-primary__container__top">
+                    <li class="footer-primary__container--list-item">
+                        <a class="footer-primary__container--linkage" href="http://www.kddi.com/english/">Kddi home</a>
+                    </li>
+                    <li class="footer-primary__container--list-item">
+                        <a class="footer-primary__container--linkage" href="">Personal</a>
+                    </li>
+                    <li class="footer-primary__container--list-item">
+                        <a class="footer-primary__container--linkage" href="http://www.kddi.com/english/business/">Business</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-primary__container__bottom">
+                    <li class="footer-primary__container--list-item">
+                        <a class="footer-primary__container--linkage" href="http://www.kddi.com/english/sitemap/">Site Map</a>
+                    </li>
+                    <li class="footer-primary__container--list-item">
+                        <a class="footer-primary__container--linkage" href="http://www.kddi.com/english/terms/sitepolicy/">Site Policy
+                        </a>
+                    </li>
+                    <li class="footer-primary__container--list-item">
+                        <a class="footer-primary__container--linkage" href="http://www.kddi.com/english/corporate/kddi/public/privacy/">Privacy Policy
+                    </a>
+                    </li>
+                    <li class="footer-primary__container--list-item">
+                        <a class="footer-primary__container--linkage" href="http://www.kddi.com/english/terms/sitepolicy/#a01">Disclaimer
+                        </a>
+                    </li>
+                    <li class="footer-primary__container--list-item">
+                        <a class="footer-primary__container--linkage" href="http://www.kddi.com/english/trademark/">About Trademarks
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-primary__container--copyright">COPYRIGHT © KDDI CORPORATION, ALL RIGHTS RESERVED</p>
+    </div>
+</div>
+
+<!--Scripts for Header behaviour -->
+<script>
+    (function manageDropdown() {
+        $(document).on('click', '.header-primary-sub .adb-context_menu--trigger', function() {
+            $('.header-primary-sub .adb-is-active').removeClass('adb-is-active');
+            $(this).toggleClass('adb-is-active');
+        });
+        $(document).on('click', function(e) {
+            if (!$(e.target).is('.header-primary-sub .adb-context_menu, .header-primary-sub .adb-context_menu--trigger')) {
+                $('.header-primary-sub .adb-is-active').removeClass('adb-is-active');
+            }
+        });
+
+        // To display dropdown menu on hover uncomment the following code
+        /*
+        $('.header-primary .header-primary__menu__item').hover(function() {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+        }, function(e) {
+            $('.header-primary .adb-is-active').removeClass('adb-is-active');
+        });
+        */
+    })();
+
+    (function hideEmptyManageLinks() {
+        if ($('.manage-links li').length === 0) {
+            $('.header-primary-sub__menu .js-manage-links').remove();
+        }
+    })();
+
+    (function hideEmptyCompanyLink() {
+        if ($('.js-companies-link div').length < 1) {
+            $('.js-companies-link').remove();
+        }
+    })();
+</script>

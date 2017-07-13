@@ -1,0 +1,48 @@
+<div class="footer-primary">
+	<div class="adb-layout-default">
+		<div class="footer-primary__container">
+			<a href="http://www.appdirect.com">
+				<span class="adb-icon adb-icon__appdirect"></span>
+				<span class="adb-page_footer--content_item">{{Powered.by.AppDirect}} ©2017</span>
+			</a>
+			<span class="adb-page_footer--content_item">{{Call.us.toll.free}} (877) 404-APPS</span>
+		</div>
+	</div>
+</div>
+
+<!--Scripts for Header behaviour -->
+<script>
+	(function manageDropdown() {
+		$(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+			$('.header-primary .adb-is-active').removeClass('adb-is-active');
+			$(this).toggleClass('adb-is-active');
+		});
+		$(document).on('click', function(e) {
+			if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+				$('.header-primary .adb-is-active').removeClass('adb-is-active');
+			}
+		});
+
+		// To display dropdown menu on hover uncomment the following code
+		/*
+		$('.header-primary .header-primary__menu__item').hover(function() {
+			$('.header-primary .adb-is-active').removeClass('adb-is-active');
+			$(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+		}, function(e) {
+			$('.header-primary .adb-is-active').removeClass('adb-is-active');
+		});
+		*/
+	})();
+
+	(function hideEmptyManageLinks() {
+		if ($('.manage-links li').length === 0) {
+			$('.header-primary__menu .js-manage-links').remove();
+		}
+	})();
+
+	(function hideEmptyCompanyLink() {
+		if ($('.js-companies-link div').length < 1) {
+			$('.js-companies-link').remove();
+		}
+	})();
+</script>

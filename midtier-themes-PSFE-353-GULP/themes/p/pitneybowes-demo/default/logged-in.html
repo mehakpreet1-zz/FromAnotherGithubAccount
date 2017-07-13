@@ -1,0 +1,55 @@
+<nav class="custom-primary">
+    <div class="adb-layout-default">
+        <a class="custom-primary__logo" href="{{HOME_HREF}}"></a>
+
+        <ul class="custom-primary__menu fRight">
+            <li class="custom-primary__menu__item"><a class="custom-primary__menu__item__link" href="http://www.pitneybowes.com/us/support" data-auto="login">Support</a></li>
+            <li class="custom-primary__menu__item">
+                <menu class="adb-context_menu" data-placement="right">
+                    <a class="custom-primary__menu__item__link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="manage">{{Manage}}</a>
+                    <div class="js-dropdown-container">
+                        <div class="adb-container adb-context_menu--menu">{{MANAGE_LINKS}}</div>
+                    </div>
+                </menu>
+            </li>
+            <!--<li class="custom-primary__menu__item">{{COMPANIES_DROPDOWN}}</li>-->
+            <li class="custom-primary__menu__item">
+                <menu class="adb-context_menu" data-placement="right">
+                    <a class="custom-primary__menu__item__link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="username">{{USER_NAME}}</a>
+                    <div class="js-dropdown-container">
+                        <div class="adb-container adb-context_menu--menu">
+                            <ul class="adb-stack">
+                                <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{PROFILE_HREF}}" data-auto="myProfile">{{My.Profile}}</a></li>
+                                <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{COMPANY_HREF}}" data-auto="myCompany">{{My.Company}}</a></li>
+                                <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{SETTINGS_HREF}}" data-auto="mySettings">{{my.settings}}</a></li>
+                                <li class="adb-stack--item"><a class="adb-link__nav adb-link__option adb-stack--item_content" href="{{LOGOUT_HREF}}" data-auto="logout">{{logout}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </menu>
+            </li>
+        </ul>
+</nav>
+
+
+
+<!-- Optional Sub Header / that is removed on Product pages (behaviour can be modified in CSS) -->
+<div class="custom-secondary">
+    <nav class="adb-layout-default">
+        <ul class="custom-secondary__menu">
+            <li class="custom-secondary__menu__item marketplace--active">
+                <a class="custom-secondary__menu__item__link" href="{{HOME_HREF}}" data-auto="home">
+                    {{Marketplace}}
+                    <i class="adb-icon__marketplace"></i>
+                </a>
+            </li>
+            <li class="custom-secondary__menu__item myapps--active">
+                <a class="custom-secondary__menu__item__link" href="{{MYAPPS_HREF}}" data-auto="myApps">
+                    {{My.Apps}}
+                    <i class="adb-icon__apps"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</div>

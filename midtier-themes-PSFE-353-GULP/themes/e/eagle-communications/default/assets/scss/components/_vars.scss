@@ -1,0 +1,72 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: 'http://djeagle.s3.amazonaws.com/static/static_dirs/image/logo.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+$gray: #eaeaea;
+$black: #333333;
+$black-shade: #777777;
+$blue: #01A6E3;
+$blue-shade: #188AB9;
+$light-grey: #e5e5e5;
+$dark-grey: #ddd;
+$dark-grey-shade: #555555;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-bg: $white;
+$header-primary-border-color: $dark-grey;
+$header-primary-bg-hover: $white;
+$header-primary-link-color: $black-shade;
+$header-primary-link-hover-color: $blue-shade;
+$header-primary-button-active-bg: $blue;
+$header-primary-button-active-color: $white;
+
+$dropdown-border-color: $gray;
+$dropdown-color: $black;
+$dropdown-hover-bg: $light-grey;
+$dropdown-hover-color: $black;
+$dropdown-bottom-color: $blue;
+
+$footer-border-color: $gray;
+$footer-color: $dark-grey-shade;
+
+$secondary-header-search-bg: $blue;
+$secondary-header-search-color: $white;
+$secondary-header-search-input-border: $blue;
+$secondary-header-border-color: $blue-shade;
+$secondary-header-active-color: $blue-shade;
+$subnav-header-color: $black-shade;
+
+// OTHER VARIABLES
+// ---------------------------------------------------------
+//      Any other variables that you might need can be placed
+//      here.
+//      For example, if you notice that you need a custom padding in
+//      multiple places it might be worthwhile to create a
+//      variable called
+// ---------------------------------------------------------
+$font-family: 'Roboto', sans-serif;
+
+%active-state {
+	a {
+		color: $header-primary-link-hover-color;
+	}
+}
+
+$footer-height: 70px;

@@ -1,0 +1,30 @@
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+
+.adb-page_footer--content_item {
+	color: $footer-links-color;
+}
+
+.adb-context_menu--trigger:after {
+	margin-top: 1px;
+}
+
+.companies-dropdown > a:hover {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.adb-context_menu {
+	left: 5px;
+}

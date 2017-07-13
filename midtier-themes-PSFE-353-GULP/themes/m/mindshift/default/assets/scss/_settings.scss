@@ -1,0 +1,24 @@
+$header-primary-logo-margin-top: 0;
+$header-primary-height: 57px;
+$header-primary-font-color_active: $header-primary-font-color_hover;
+$dropdown-item-font-size: $header-primary-font-size * 0.875;
+
+// generates the link styling in the header. Needed as the
+// companies dropdown has slightly different classes than other dropdowns.
+%nav-link {
+	color: $header-primary-font-color;
+	font-size: $header-primary-font-size;
+	padding: 20px 15px 18px 15px;
+
+	&:focus,
+	&:hover {
+		color: $header-primary-font-color_hover;
+		background-color: $primary-nav-hover-color;
+		text-decoration: none;
+	}
+}
+
+// generates the active state for the header nav.
+%active-state {
+	color: $header-primary-color_active;
+}

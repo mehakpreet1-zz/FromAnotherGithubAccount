@@ -1,0 +1,76 @@
+<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+<!--<div class="footer-primary">
+	<div class="adb-layout-default footer-primary__container">
+		<ul class="footer-primary__left">
+			<ul class="footer-primary__left__menu-items">
+				<li><a href="http://www.alaskacommunications.com/For-Your-Business">Business</a></li>
+				<li><a href="http://www.alaskacommunications.com/For-Your-Home">Home</a></li>
+				<li><a href="http://www.alaskacommunications.com/Offers">Offers</a></li>
+				<li><a href="http://www.alaskacommunications.com/Account">Account</a></li>
+				<li><a href="http://www.alaskacommunications.com/Online-Care">Support</a></li>
+				<li><a href="http://www.alaskacommunications.com/About-Us">About</a></li>
+			</ul>
+			<ul class="footer-primary__left__config-items">
+				<li><a href="http://www.alaskacommunications.com/About-Us/News">News</a></li>
+				<li><a href="http://www.alaskacommunications.com/Careers">Careers</a></li>
+				<li><a href="http://www.alaskacommunications.com/Investors">Investors</a></li>
+				<li><a href="http://www.alaskacommunications.com/Privacy">Privacy</a></li>
+				<li><a href="http://www.alaskacommunications.com/Regulatory">Regulatory</a></li>
+				<li><a href="http://www.alaskacommunications.com/Acceptable-Use-Policy">Acceptable Use Policy</a></li>
+				<li><a href="http://www.alaskacommunications.com/Online-Care/Contact-Us">Contact Us</a></li>
+			</ul>
+		</ul>
+		<ul class="footer-primary__right">
+			<li class="footer-primary__right__item">
+				<a class="footer-primary__right__item&#45;&#45;logo" href="{{HOME_HREF}}"></a>
+			</li>
+		</ul>
+	</div>
+</div>-->
+<div class="footer-primary">
+	<div class="adb-page_footer--content adb-layout-default footer-primary__container">
+		<span class="adb-page_footer--content_item">{{Powered.by.AppDirect}} ©2009-2017</span>
+		<div class="adb-page_footer--content_item">
+			{{LANGUAGE_SELECT}}
+		</div>
+		<nav class="adb-footer_nav adb-page_footer--content_item">
+			<ul classname="adb-footer_nav--items">
+				<li class="adb-footer_nav--item"><a class="adb-footer_nav--link" href="http://support.appdirect.com">{{help.center}}</a></li>
+				<li class="adb-footer_nav--item"><a class="adb-footer_nav--link" href="mailto:support@appdirect.com">{{Contact}}</a></li>
+			</ul>
+		</nav>
+		<span class="adb-page_footer--content_item">{{Call.us.toll.free}} (877) 404-APPS</span>
+	</div>
+</div>
+<!--<div class="footer-secondary">
+	<div class="adb-layout-default">
+		<ul class="footer-secondary__copyright">
+			<li>© 2017 Alaska Communications. All Rights Reserved.</li>
+			<li>All product names, logos and trademarks are property of their respective owners.</li>
+		</ul>
+	</div>
+</div>-->
+<!--Scripts for Header behaviour -->
+<script>
+	(function manageDropdown() {
+		$(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+			$('.header-primary .adb-is-active').removeClass('adb-is-active');
+			$(this).toggleClass('adb-is-active');
+		});
+		$(document).on('click', function(e) {
+			if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+				$('.header-primary .adb-is-active').removeClass('adb-is-active');
+			}
+		});
+	})();
+	(function hideEmptyManageLinks() {
+		if ($('.manage-links li').length === 0) {
+			$('.header-primary__menu .js-manage-links').remove();
+		}
+	})();
+	(function hideEmptyCompanyLink() {
+		if ($('.js-companies-link div').length < 1) {
+			$('.js-companies-link').remove();
+		}
+	})();
+</script>

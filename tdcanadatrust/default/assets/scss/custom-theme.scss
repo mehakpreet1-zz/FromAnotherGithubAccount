@@ -1,0 +1,115 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'https://www.tdcanadatrust.com/images/evergreen/logos/td_shield_nowhitespace.gif';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+
+$primary: $ad-black;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+$custom-green: #174E32;
+$custom-white: #F1F1F1;
+$custom-greyshade1: #cbcbcb;
+$custom-greyshade2: #575757;
+$custom-greyshade3: #cccccc;
+$custom-greenshade1: #CBE2A2;
+$custom-greenshade2: #7ea292;
+$custom-greenshade3: #1a5336;
+$custom-greenshade4: #7ea292;
+$custom-greenshade5: #CBE2A2;
+
+$custom-parrot-green: #95C838;
+$custom-white: #E4E4E4;
+
+$custom-blackish-grey: #555555;
+$custom-footer-right-border-item-color: $custom-white;
+
+$custom-secondary-nav-border-color: $custom-greyshade1;
+$custom-appbundle-bg-grey: $custom-greyshade2;
+$custom-footer-link-green: $custom-greenshade3;
+
+$custom-border-active-green-color: $custom-parrot-green;
+$custom-login-button-bg-green-color: $custom-greenshade1;
+$custom-login-button-border-green-color: $custom-greenshade2;
+$custom-login-button-green-color: $custom-greenshade3;
+$custom-adb-layout-default-bg-color: $ad-white;
+
+$custom-header-top-bg-color: $custom-white;
+$custom-header-text-hover: $ad-black;
+$custom-header-top-background-color: $ad-white;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $custom-green;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 51px;
+$header-primary-logo-width: 56px;
+$header-primary-font-size: 16px;
+$header-primary-font-color: $ad-black;
+$header-primary-font-color_hover: $ad-gray-shade5;
+$header-primary-color_active: $ad-black;
+
+$dropdown-border-color: $custom-greyshade3;
+$dropdown-border-radius: 1px;
+$dropdown-item-divider: transparent;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $custom-footer-link-green;
+$dropdown-bg: $ad-white;
+$dropdown-item-hover-bg: $primary;
+$dropdown-item-hover-color: $ad-white;
+$custom-dropdown-text-hover: $ad-black;
+$custom-top-dropdown-text-hover: $custom-blackish-grey;
+
+$secondary-nav-search-button-color: $custom-green;
+$secondary-nav-search-button-color_hover: $custom-green;
+$secondary-nav-search-button-border-color: $custom-greenshade4;
+$secondary-nav-search-button-bg: $custom-greenshade5;
+$secondary-nav-search-button-bg_hover: $custom-greenshade5;
+
+$secondary-nav-selected-text-color: $custom-login-button-green-color;
+$secondary-nav-selected-item-border-color: $custom-border-active-green-color;
+
+$footer-height: 65px;
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $ad-gray-shade1;
+$custom-footer-text-hover: $ad-black;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings';
+
+// import computed values
+@import 'components/INDEX';
+
+// import custom CSS

@@ -1,0 +1,40 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	border-top: 1px solid $footer-primary-border-top;
+	padding: 1em 0 2em;
+	height: $footer-height;
+	color: $header-footer-color;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		font-family: $custom-header-primary-font;
+		size: 10px;
+
+		&_item {
+			display: flex !important;
+
+			&_list {
+				padding-right: 8px;
+				font-family: $custom-header-primary-font;
+				font-weight: 400;
+				font-style: normal;
+				size: 10px;
+				color: $footer-links-color;
+
+				&:hover {
+					text-decoration: underline !important;
+				}
+			}
+		}
+
+		.adb-icon__appdirect {
+			size: 10px;
+		}
+	}
+}
+
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}

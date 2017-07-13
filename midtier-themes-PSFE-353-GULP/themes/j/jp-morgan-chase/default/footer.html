@@ -1,0 +1,94 @@
+<div class="footer-primary">
+	<div class="adb-layout-default">
+		<div class="footer-primary__info">
+			<p>All accounts subject to approval. Restrictions and limitations apply.</p>
+			<p>Products and services described as well as associated fees, charges, interest rates and balance requirements may differ among different geographic locations. Not all products and services are offered at all locations.</p>
+			<p>JPMorgan Chase Bank, N.A. Member FDIC. Equal Opportunity Lender.</p>
+			<p>“Chase,” “JPMorgan,” “JPMorgan Chase,” “Chase for Business,” “The Morning Bell,” “The Morning Bell for Small Business,” the JPMorgan Chase logo and the Octagon Symbol are trademarks of JPMorgan Chase Bank, N.A. </p>
+			<p>JPMorgan Chase Bank, N.A. is a wholly-owned subsidiary of JPMorgan Chase & Co.</p>
+			<ul class="footer-primary__bottom-links">
+				<li>
+					<a href="https://www.chase.com/digital/resources/privacy-security">Privacy</a>
+				</li>
+				<li>
+					<a href="https://www.chase.com/digital/resources/privacy-security">Security</a></li>
+				<li >
+					<a href="https://www.chase.com/digital/resources/terms-of-use">Terms of use</a></li>
+				<li >
+					<a href="https://www.chase.com/digital/resources/accessibility">Our commitment to accessibility</a></li>
+				<li >
+					<a href="https://www.chase.com/mortgage/mortgage-assistance">Help for homeowners</a></li>
+				<li >
+					<a href="https://www.chase.com/digital/resources/sitemap">Site map</a></li>
+				<li >
+					<a href="http://www.aboutads.info/choices/">AdChoices
+						<img class="footer_secondary__links__text--ad-logo" src="https://www.chase.com/c/021617/etc/designs/chase-ux/css/img/choices-logo-blue_lite.png">
+					</a>
+				</li>
+				<li >
+					<a href="#">Member FDIC</a>
+				</li>
+				<li>
+					<img class="footer_secondary__links__text--home-logo" src="https://www.chase.com/c/021617/etc/designs/chase-ux/css/img/EHL-Slice.png">
+					<a href="#">Equal Housing Lender</a>
+				</li>
+		   </ul>
+		   <p>© 2017 JPMorgan Chase & Co.</p>
+		</div>
+	</div>
+</div>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!--Scripts for Header behaviour -->
+<script>
+
+	$(document).ready(function(){
+		var userLoggedIn = window.UserInfo != null;
+		(function manageDropdown() {
+			$(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+				$('.header-primary .adb-is-active').removeClass('adb-is-active');
+				$(this).toggleClass('adb-is-active');
+			});
+			$(document).on('click', function(e) {
+				if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+					$('.header-primary .adb-is-active').removeClass('adb-is-active');
+				}
+			});
+		})();
+
+		(function hideEmptyManageLinks() {
+			if ($('.manage-links li').length === 0) {
+				$('.header-primary__menu .js-manage-links').remove();
+			}
+		})();
+
+		(function hideEmptyCompanyLink() {
+			if ($('.js-companies-link div').length < 1) {
+				$('.js-companies-link').remove();
+			}
+		})();
+
+		(function addCustomMargin() {
+			var loc = window.location.pathname;
+			if (loc.indexOf('profile') > -1) {
+				var main = document.getElementById('main');
+				main.style.paddingTop = "85px";
+			}
+		})();
+		$("body").click(function(e){
+			chaeckUserObject();
+		}); 
+		function chaeckUserObject(){
+			setTimeout(function(){
+				if ($('#header__home').length > 0 && $('#header__home').css('display') != "none") { 
+					$('#secondaryNav, .adb-secondary_nav, .adb-page--footer_helper').attr('style', 'margin-top: 0px !important;')
+				}else {
+					 $('#secondaryNav, .adb-secondary_nav').attr('style', 'margin-top: 70px !important;');
+				}
+			},300)
+		}
+		$(window).on('popstate', function(event) {
+			chaeckUserObject();
+		});
+		chaeckUserObject();
+	});
+</script>

@@ -1,0 +1,190 @@
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clearfix {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.shift-5 {
+	margin: 0 5px;
+}
+
+.justify {
+	margin: 0 10px;
+}
+
+body, header,footer {
+	font-family: "Open Sans";
+}
+
+// ------------------------------------------------------------
+// Custom Header Top
+// ------------------------------------------------------------
+.header-top {
+	$header-top-height: 50px;
+	height: $header-top-height;
+	color: $top-header-color;
+	font-size: 12px;
+	background: $top-header-bg url("https://d3bql97l1ytoxn.cloudfront.net/channel_custom_style_resources/img1066436362173686102?2bb049caa46a04b6d24590369278c749") 50% 6% no-repeat;
+
+	&__row {
+		line-height: 50px;
+
+		&__col {
+			width: 50%;
+
+			a {
+				color : $top-header-color;
+				text-decoration: none;
+			}
+
+			button {
+				background: $top-header-bg;
+				border: 1px solid $primary-btn-border;
+				border-radius: 3px;
+				box-shadow: none;
+				color: $white;
+				font-size: 14px;
+				font-weight: 400;
+				height: 36px;
+				margin-right: -10px;
+				margin-top: 7px;
+				padding: 6px 12px;
+				text-decoration: none;
+				text-shadow: none;
+
+				&:hover {
+					background-color: #333;
+				}
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.white {
+	color: $white;
+	margin-right: 5px;
+}
+
+.big-dot {
+	font-size: 12px;
+}
+
+.header-primary {
+	background: $header-primary-bg;
+	border: 1px solid $header-border-color;
+	height: 75px;
+
+
+	&__menu {
+
+		.no-bg {
+			background: none;
+			border: none;
+		}
+
+		&__item {
+			background: $primary-header-menu-bg-color;
+			border-left: 1px solid $menu-border-color;
+			border-right: 1px solid $menu-border-color;
+			box-shadow: inset 1px 0px 0 0 $white;
+			display: inline-block;
+			list-style: none;
+			margin-right: -1px;
+			vertical-align: middle;
+
+			a {
+				color: $menu-link-color;
+				font-size: 13px;
+				font-weight: bold;
+				line-height: 75px;
+				padding: 1em 2em;
+				text-decoration: none;
+				text-transform: uppercase;
+
+				&:hover {
+					color: $menu-link-hover-color;
+				}
+			}
+
+			&:first-child{
+				background-color: $white;
+				border: none;
+				width: 250px;
+
+				a {
+					background: $logo-url;
+					background-position-y: 13px;
+					background-repeat: no-repeat;
+					background-size: 230px;
+					color: $white;
+					display: block;
+					height: 45px;
+					width: 250px;
+				}
+			}
+
+
+			.adb-context_menu--menu {
+				background-color: $primary-header-menu-bg-color;
+				margin-top: 0;
+				min-width: 135px;
+				padding-bottom: 10px;
+
+				a {
+					color : $menu-link-color;
+					font-size: 13px;
+					padding-left: 2em;
+
+					&:hover {
+						background-color: $primary-header-menu-bg-color;
+						color: $menu-link-hover-color;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Header Secondary
+// ------------------------------------------------------------
+.header-secondary {
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+	}
+}
+
+body.loginPage {
+	.login--active {
+	}
+}
+
+body.signupPage {
+	.signup--active {
+	}
+}

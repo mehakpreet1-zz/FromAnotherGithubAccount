@@ -1,0 +1,79 @@
+body {
+	font-family: 'Open Sans', Helvetica, arial, sans-serif;
+}
+
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+
+// ----------------------------------
+// Customized secondary nav
+// ----------------------------------
+.adb-secondary_nav {
+
+	.adb-search_field {
+
+		&--button {
+			color: $primary-button-color;
+			background: $primary-button-bg;
+			border: 1px solid $primary-button-bg;
+			box-shadow: none;
+			text-shadow: none;
+			font-weight: 600;
+			padding: 4.5px 8px;
+
+			&:hover {
+				// box-shadow: inset 0 0 30px 1px $primary-button-bg;
+				background: $primary-button-hover-bg;
+			}
+		}
+
+		.adb-input_row--item_content {
+			border: {
+				color: $primary-button-bg;
+				radius: 0;
+			}
+		}
+
+		&--input {
+			border: 1px solid $primary-button-bg;
+		}
+	}
+
+	&--item,
+	li {
+
+		.adb-secondary_nav--link,
+		a {
+			&.active,
+			&.adb-is-selected {
+
+				&::before {
+					background-color: $primary-button-bg;
+				}
+			}
+		}
+	}
+}
+
+#subnav-header {
+
+	a {
+		&:focus,
+		&:hover,
+		&.active,
+		&:active {
+			color: $primary-button-bg;
+		}
+
+		&:active::before,
+		&.active::before {
+			background-color: $primary-button-bg;
+		}
+	}
+}

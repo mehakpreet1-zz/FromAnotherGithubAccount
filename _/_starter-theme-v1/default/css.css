@@ -1,0 +1,82 @@
+.header-primary__menu__item .adb-context_menu--menu {
+  background-color: #FFF;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li:first-child a:hover,
+.header-primary__menu__item .adb-context_menu--menu li:first-child:hover {
+  border-radius: 3px 3px 0 0;
+}
+
+.header-primary__menu__item .adb-context_menu--menu li:last-child a:hover,
+.header-primary__menu__item .adb-context_menu--menu li:last-child:hover {
+  border-radius: 0 0 3px 3px;
+}
+
+.header-primary__menu__item .adb-context_menu--menu a {
+  padding: 10px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  line-height: 1em;
+  font-size: 14px;
+}
+
+.header-primary__menu__item .adb-context_menu--menu a:hover {
+  text-decoration: none;
+  box-shadow: none;
+  position: relative;
+  background-color: #009abf;
+  color: #FFF;
+}
+
+.companies-dropdown {
+  position: relative;
+}
+
+.companies-dropdown .adb-context_menu--menu {
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+}
+
+.companies-dropdown li ~ li,
+.manage-links li ~ li {
+  border-top: 1px solid #eaeaea;
+}
+
+.adb-context_menu--trigger.adb-is-active + .js-dropdown-container > .adb-context_menu--menu,
+.adb-context_menu--trigger.adb-is-active ~ .adb-context_menu--menu {
+  display: block;
+}
+
+.header-top {
+  background: #eee;
+  height: 30px;
+}
+
+.header-primary {
+  background: #78359f;
+  height: 75px;
+}
+
+.header-primary__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style: none;
+}
+
+.footer-primary {
+  background: #eaeaea;
+  height: 200px;
+}
+
+.footer-secondary {
+  background: #009abf;
+  height: 50px;
+}

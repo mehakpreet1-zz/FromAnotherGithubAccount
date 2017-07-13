@@ -1,0 +1,80 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	// position: fixed;
+	// width: 100%;
+	// z-index: 999;
+	// top: 0;
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	height: $header-primary-height;
+	font-family: 'Noto Sans', sans-serif;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		height: $custom-header-primary-menu-height;
+		-webkit-font-smoothing: antialiased;
+		letter-spacing: 0.06px;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+			height: $custom-header-primary-menu-height;
+		}
+
+		&__item {
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				display: block;
+				height: $header-primary-logo-height;
+				margin-top: -1px;
+
+				//margin: $header-primary-logo-margin-top 0;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+.header-primary__menu__item.marketplacelink {
+	margin-left: 17px;
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.signin--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

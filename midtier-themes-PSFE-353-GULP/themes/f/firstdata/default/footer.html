@@ -1,0 +1,114 @@
+    <div class="footer-primary">
+        <div class="adb-layout-default">
+            <div class="footer-primary__container">
+                <a href="https://www.firstdata.com/en_us/contact.html">
+                    <span class="adb-page_footer--content_item">Contact</span>
+                </a>
+                <a href="https://www.firstdata.com/en_us/about-first-data/careers-home.html">
+                    <span class="adb-page_footer--content_item">Careers</span>
+                </a>
+                <a href="https://www.firstdata.com/en_us/privacy.html">
+                    <span class="adb-page_footer--content_item">Privacy & Legal</span>
+                </a>
+                <a href="https://www.firstdata.com/en_us/site-map.html">
+                    <span class="adb-page_footer--content_item">Site Map</span>
+                </a>
+                <a href="https://www.firstdata.com/global-selector.html#change">
+                    <span class="adb-page_footer--content_item">United States/Change</span>
+                </a>
+                <div class="footer-primary__container__social">
+                 <span>Follow First Data:</span>
+                   <a href="https://www.facebook.com/FirstData" target="_blank" class="footer__social__links fb zocial-facebook">
+                    <i class="fa fa-facebook fb"></i>
+                    </a>
+                    <a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=FirstData" target="_blank" class="footer__social__links twitter zocial-twitter">
+                    <i class="fa fa-twitter tw"></i>
+                    </a>
+                     <a href="https://www.linkedin.com/company-beta/2020/?pathWildcard=2020" target="_blank" class="footer__social__links linkedin zocial-linkedin">
+                    <i class="fa fa-linkedin linked"></i>
+                    </a>
+                     <a href="https://www.youtube.com/user/firstdata?sub_confirmation=1" target="_blank" class="footer__social__links youtube zocial-youtube">
+                    <i class="fa fa-youtube yt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-secondary">
+        <div class="adb-layout-default">
+            <p class="adb-page_footer--content_item-copyright">
+              ©
+                2009–2017 First Data Corporation. All rights reserved. 
+            </p>
+            <p class="adb-page_footer--content_item-footernotes">
+            Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. Apple Pay and Touch ID are trademarks of Apple Inc. Android™ is a trademark of Google, Inc. EMV® is a registered mark owned by EMVCo LLC. www.emvco.com
+            </p>
+        </div>
+    </div>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Scripts for Header behaviour -->
+    <script>
+
+        $(window).scroll(function(){
+     if ($(this).scrollTop() > 84) {
+       $('.header-primary-bottom').addClass('fixed');
+     } else {
+       $('.header-primary-bottom').removeClass('fixed');
+     }
+   });
+$(window).scroll(function(){
+     if ($(this).scrollTop() > 84) {
+       $('.header-primary-bottom-login').addClass('fixed');
+     } else {
+       $('.header-primary-bottom-login').removeClass('fixed');
+     }
+   });
+
+
+
+
+
+        (function manageDropdown() {
+            $(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+                $(this).toggleClass('adb-is-active');
+            });
+            $(document).on('click', function(e) {
+                if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+                    $('.header-primary .adb-is-active').removeClass('adb-is-active');
+                }
+            });
+            $(document).on('click', '.header-primary-bottom-login .adb-context_menu--trigger', function() {
+                $('.header-primary-bottom-login .adb-is-active').removeClass('adb-is-active');
+                $(this).toggleClass('adb-is-active');
+            });
+            $(document).on('click', function(e) {
+                if (!$(e.target).is('.header-primary-bottom-login .adb-context_menu, .header-primary-bottom-login .adb-context_menu--trigger')) {
+                    $('.header-primary-bottom-login .adb-is-active').removeClass('adb-is-active');
+                }
+            });
+
+            // To display dropdown menu on hover uncomment the following code
+            /*
+            $('.header-primary .header-primary__menu__item').hover(function() {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+                $(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+            }, function(e) {
+                $('.header-primary .adb-is-active').removeClass('adb-is-active');
+            });
+            */
+           
+        })();
+
+        (function hideEmptyManageLinks() {
+            if ($('.manage-links li').length === 0) {
+                $('.header-primary__menu .js-manage-links').remove();
+            }
+        })();
+
+        (function hideEmptyCompanyLink() {
+            if ($('.js-companies-link div').length < 1) {
+                $('.js-companies-link').remove();
+            }
+        })();
+    </script>

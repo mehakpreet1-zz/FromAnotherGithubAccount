@@ -1,0 +1,89 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: "https://d3bql97l1ytoxn.cloudfront.net/channel_custom_style_resources/img8829417705725311990?23d649544daddf1e69dba23a76ef4efb";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+
+$custom-yellow: #fffef2;
+$custom-gray-shade1: #d7d4c4;
+$custom-gray-shade2: #282829;
+$custom-footer-yellow: #fcf9eb;
+$custom-white-shade: #fffef2;
+$custom-border-shade: #ece9d9;
+
+$primary: $ad-black;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $custom-yellow;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $custom-border-shade;
+$header-primary-logo-height: 31px;
+$header-primary-logo-width: 122px;
+$header-primary-font-size: 16px;
+$header-primary-font-color: $ad-black;
+$header-primary-font-color_hover: $custom-gray-shade2;
+$header-primary-color_active: $ad-black;
+
+$dropdown-border-color: $custom-border-shade;
+$dropdown-border_width: 0;
+$dropdown-border-radius: 0;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 0;
+$dropdown-item-color: $custom-gray-shade2;
+$dropdown-bg: $custom-yellow;
+$dropdown-item-hover-bg: $custom-yellow;
+$dropdown-item-hover-color: $custom-gray-shade2;
+
+$secondary-nav-search-button-color: $custom-white-shade;
+$secondary-nav-search-button-color_hover: $custom-white-shade;
+$secondary-nav-search-button-border-color: $custom-white-shade;
+$secondary-nav-search-button-bg: $custom-gray-shade2;
+$secondary-nav-search-button-bg_hover: $custom-gray-shade2;
+
+$secondary-nav-selected-text-color: $custom-gray-shade2;
+$secondary-nav-selected-item-border-color: $custom-gray-shade2;
+
+$footer-height: 65px;
+$footer-primary-bg: $custom-footer-yellow;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $custom-gray-shade2;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import "settings";
+
+// import computed values
+@import "components/INDEX";
+
+// import custom CSS

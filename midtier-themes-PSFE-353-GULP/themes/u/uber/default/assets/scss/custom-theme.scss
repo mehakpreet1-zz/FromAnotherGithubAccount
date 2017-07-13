@@ -1,0 +1,103 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'https://static4.businessinsider.com/image/56b10e64c08a80431d8bc158-326-163/uber_logobit_digital_white.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+
+$primary: $ad-black;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+$custom-green: #285228;
+$custom-font: 'Maven Pro', 'Helvetica Neue', Helvetica, sans-serif;
+$custom-transition-border-effect: all 400ms ease;
+$custom-header-primary-hover-font-color: #216c55;
+$custom-secondary-nav-height: 40px;
+$custom-secondary-nav-background: #f8f8f9;
+$custom-secondary-nav-color: #717171;
+$custom-secondary-nav-hover-color: #184f3e;
+$custom-secondary-nav-font-size: 15.5px;
+$custom-header-menu-right-login-font: 16px;
+$custom-header-menu-right-logout-font: 17px;
+$custom-footer-top: #282727;
+$custom-footer-hover: #c0c0c0;
+$custom-search-green: #216c55;
+$custom-search-green-hover: #184f3e;
+$custom_secondary-nav-border-bottom-color: #cbcbcb;
+$custom-active-state-green: #377037;
+$custom-alert-buttons-grey: #c4c4c4;
+$custom-media-screen-body-color: #E5E5E4;
+$custom-footer-white-color: $ad-white;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $ad-white;
+$header-primary-border-top-color: $ad-white;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 47px;
+$header-primary-logo-width: 91px;
+$header-primary-font-size: 18.5px;
+
+$header-primary-font-color: $ad-black;
+$header-primary-font-color_hover: #216c55;
+$header-primary-color_active: #216c55;
+
+$dropdown-border-color: $ad-gray-shade5;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $custom-green;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $custom-green;
+$dropdown-bg: $ad-white;
+$dropdown-item-hover-bg: $custom-search-green-hover;
+$dropdown-item-hover-color: $ad-white;
+
+$secondary-nav-search-button-color: $ad-white;
+$secondary-nav-search-button-color_hover: $ad-white;
+$secondary-nav-search-button-border-color: $custom-green;
+$secondary-nav-search-button-bg: $custom-search-green;
+$secondary-nav-search-button-bg_hover: $custom-search-green-hover;
+
+$secondary-nav-selected-text-color: $custom-green;
+$secondary-nav-selected-item-border-color: $custom-green;
+
+$footer-height: 60px;
+$footer-primary-bg: $ad-black;
+$footer-primary-border-top: $custom-footer-top;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $ad-gray-shade1;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings';
+
+// import computed values
+@import 'components/INDEX';
+
+// import custom CSS

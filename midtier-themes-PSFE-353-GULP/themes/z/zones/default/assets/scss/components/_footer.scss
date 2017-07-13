@@ -1,0 +1,98 @@
+.footer-primary {
+    background: $ad-white-shade5;
+    height: 409px;
+
+    &__upper {
+        height: 100px;
+        background: url($asset-footer-logo) no-repeat;
+
+        &__list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+    }
+
+    &--social-icon {
+        background: url($asset-social-icons) no-repeat;
+        width: 30px;
+        height: 30px;
+        margin-top: 8px;
+    }
+
+    &--logo {
+        width: 117px;
+        height: 26px;
+        margin-top: 12px;
+        background: url($asset-logo) no-repeat;
+    }
+
+    &--career {
+        margin-top: 3px;
+        background: url($asset-career-logo) no-repeat;
+        width: 220px;
+    }
+
+    &--icon-right {
+        list-style-type: none;
+        display: flex;
+    }
+}
+
+.facebook {
+    background-position: 0 -280px;
+}
+
+.twitter {
+    background-position: 0 -340px;
+}
+
+.linkdin {
+    background-position: 0 -460px;
+}
+
+.youtube {
+    background-position: 0 -520px;
+}
+
+.blog {
+    background-position: 0 -580px;
+}
+
+.footer_secondary {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+
+    &__list {
+        list-style-type: none;
+
+        &__link {
+            line-height: 3;
+            color: $ad-gray-shade6;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        &__text {
+            color: $ad-gray-shade6;
+
+            &__up {
+                margin-top: -13px;
+                margin-bottom: 10px;
+            }
+
+            &__down {
+                margin-top: 18px;
+            }
+        }
+    }
+}
+
+// To make footer sticky need to think about other way of doing this
+footer,
+.adb-page_footer {
+    margin-top: 0 !important;
+}

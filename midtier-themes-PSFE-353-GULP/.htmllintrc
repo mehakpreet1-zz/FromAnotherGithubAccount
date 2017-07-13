@@ -1,0 +1,21 @@
+{
+  "attr-bans": ["align", "background", "bgcolor", "border", "frameborder", "longdesc", "marginwidth", "marginheight", "scrolling", "style", "width"],
+ "attr-name-style": "lowercase",
+  "attr-new-line": 5,
+  "attr-no-dup":true,
+  "attr-no-unsafe-char":true,
+  "attr-quote-style":"quoted",
+  "attr-req-value":true,
+  "class-no-dup":true,
+  "id-no-dup":true,
+  "img-req-alt":false,
+  "img-req-src":true,
+  "indent-style": "tabs",
+  "input-radio-req-name":true,
+  "tag-bans": ["style", "b", "i"],
+  "tag-close": true,
+  "tag-name-lowercase":true,
+  "tag-name-match":true,
+  "title-no-dup":true,
+  "id-class-style": false
+}

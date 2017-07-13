@@ -1,0 +1,22 @@
+.body-div {
+	display: flex;
+	margin-left: 60px;
+	margin-right: 80px;
+	margin-top: 45px;
+
+
+	.common {
+		background-color: $primary-white;
+		border: 1px solid $border-bottom-color;
+		border-radius: 3px;
+		margin-left: 20px;
+		display: flex;
+		width: 35%;
+		height: 700px;
+		display: flex;
+        flex-direction: column;
+        overflow: scroll;
+	}
+
+}
+

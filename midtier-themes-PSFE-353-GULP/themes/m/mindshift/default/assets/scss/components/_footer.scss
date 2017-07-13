@@ -1,0 +1,76 @@
+.footer-primary {
+	background-color: $footer-primary-bg;
+	border-top: 1px solid $footer-primary-border-top;
+	font-size: 13px;
+
+	&__div {
+		display: flex;
+	}
+
+	&__text {
+		display: flex;
+		padding-top: 28px;
+
+		&--links {
+			padding-right: 40px;
+
+			a {
+				color: $footer-links-color;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__icon {
+		display: flex;
+		margin-left: auto;
+
+		&__right {
+			display: flex;
+			flex-direction: column;
+			padding: 8px 0 0 10px;
+
+			&--links {
+				display: flex;
+			}
+
+			.social {
+				padding: 20px 0 15px 0;
+				border-bottom: 1px solid $custom-footer-social-link-border-color;
+
+				li {
+					padding-right: 10px;
+				}
+			}
+
+			.text {
+				padding-top: 10px;
+				display: flex;
+				flex-direction: column;
+				color: $footer-grey-text-color;
+			}
+		}
+
+		.images {
+			padding: 10px;
+		}
+	}
+}
+
+.footer-secondary {
+	height: 35px;
+	background-color: $footer-secondary-bg;
+}
+
+// To make footer sticky need to think about other way of doing this
+footer,
+.adb-page_footer {
+	margin-top: 0 !important;
+}
+
+.adb-layout-defaul {
+	display: flex;
+}

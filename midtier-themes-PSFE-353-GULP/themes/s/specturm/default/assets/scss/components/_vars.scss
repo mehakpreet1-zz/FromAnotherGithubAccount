@@ -1,0 +1,56 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: 'https://business.spectrum.com/resources/images/business/browse/spectrum-business-logo.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #fff;
+
+$gray-shed1: #eaeaea;
+$gray-shed2: #cbcbcb;
+$gray-shed3: #333;
+$gray-shed4: #e0eded;
+
+$black: #000;
+$purple: #78359f;
+
+$blue-shed1: #118abd;
+$blue-shed2: #0672a1;
+
+$orange: #fdaa18;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-height: 130px;
+$footer-height: 43px;
+
+$header-primary-color: $white;
+$header-primary-bg: $blue-shed1;
+$header-primary-hover-color: $white;
+$header-primary-hover-bg: $blue-shed2;
+$header-primary-border-color: $gray-shed2;
+
+$primary-button-color: $white;
+$primary-button-bg: $blue-shed1;
+$primary-button-hover-bg: $blue-shed2;
+
+$dropdown-border-color: $gray-shed4;
+$dropdown-color: $black;
+$dropdown-bg: $white;
+$dropdown-hover-bg: $blue-shed2;
+$dropdown-hover-color: $white;
+
+$footer-bg: $gray-shed1;

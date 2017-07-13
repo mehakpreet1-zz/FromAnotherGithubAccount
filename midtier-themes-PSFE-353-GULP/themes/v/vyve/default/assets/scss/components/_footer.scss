@@ -1,0 +1,135 @@
+.footer-social {
+	background: $footer-social-bg;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	text-align: center;
+
+	h4 {
+		font: 400 24px/32px $font-custom;
+		padding-bottom: 15px;
+		color: $footer-color-header;
+	}
+
+	.facebook {
+		background: url($social-facebook) no-repeat 0 0 transparent;
+		background-size: 60px 60px;
+
+		&:hover {
+			background: url($social-facebook-hover) no-repeat 0 0 transparent;
+			background-size: 60px 60px;
+		}
+	}
+
+	.twitter {
+		background: url($social-twitter) no-repeat 0 0 transparent;
+		background-size: 60px 60px;
+
+		&:hover {
+			background: url($social-twitter-hover) no-repeat 0 0 transparent;
+			background-size: 60px 60px;
+		}
+	}
+
+	.youtube {
+		background: url($social-youtube) no-repeat 0 0 transparent;
+		background-size: 60px 60px;
+
+		&:hover {
+			background: url($social-youtube-hover) no-repeat 0 0 transparent;
+			background-size: 60px 60px;
+		}
+	}
+
+	.linkedin {
+		background: url($social-linkedin) no-repeat 0 0 transparent;
+		background-size: 60px 60px;
+
+		&:hover {
+			background: url($social-linkedin-hover) no-repeat 0 0 transparent;
+			background-size: 60px 60px;
+		}
+	}
+
+	a {
+		display: block;
+		height: 60px;
+		overflow: hidden;
+		text-decoration: none;
+		text-indent: 100%;
+		white-space: nowrap;
+		width: 60px;
+	}
+
+	ul {
+		display: flex;
+		justify-content: center;
+
+		li {
+			margin: 0 15px;
+		}
+	}
+}
+
+.footer-primary {
+	background: $footer-bg;
+	text-align: center;
+	color: $footer-color;
+	padding: 40px 0 80px;
+
+	&-links-container {
+		display: inline-flex;
+	}
+
+	a {
+		color: $footer-color-links;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	.copyright {
+		font: 400 12px/20px $font-custom-montserrat;
+		margin: 10px 0 0;
+	}
+}
+
+.footer-secondary {
+	background: $footer-secondary-bg;
+	height: 57px;
+	padding: 0;
+	width: 100%;
+
+	.footer-secondary-container {
+		display: flex;
+		color: $footer-color;
+	}
+
+	.footer-column-1 {
+		width: 66%;
+		margin: 0 15px;
+
+		h6 {
+			font: 400 18px/50px $font-custom-montserrat;
+			text-align: center;
+		}
+	}
+
+	.footer-column-2 {
+		width: 33%;
+		margin: 0 15px;
+
+		ul {
+			display: flex;
+
+			li {
+				font: 14px/50px $font-custom;
+				margin-left: auto;
+			}
+		}
+	}
+
+	a {
+		color: $footer-color-links;
+	}
+}

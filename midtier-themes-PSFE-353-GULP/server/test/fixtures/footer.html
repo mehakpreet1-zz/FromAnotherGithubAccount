@@ -1,0 +1,51 @@
+<footer><div class="custom-footer">
+  <nav class="adb-layout-default">
+    <span>© 1995 - 2016 Rogers Communications</span>
+    <menu>
+      <a href="http://www.rogers.com/consumer/support/contactus">Contact Us</a>
+      <a href="https://www.rogers.com/web/content/Privacy-Policy">Privacy Policy</a>
+      <a href="http://www.rogers.com/web/content/support-terms">Terms & Conditions</a>
+      <a href="https://www.rogers.com/web/content/Privacy-CRTC">Wireless Code of Conduct - CRTC Webs</a>
+    </menu>
+  </nav>
+  <nav class="adb-layout-default">
+    <script type="text/javascript">
+  function changeLanguage(lang) {
+    document.cookie = 'locale-language=' + lang + '; path=/';
+    window.location.reload();
+  }
+</script><ul class="language-links"><li class="selected"><a onclick="changeLanguage('en')">English</a></li><li class=""><a onclick="changeLanguage('en-US')">English (United States)</a></li><li class=""><a onclick="changeLanguage('fr-CA')">Français (Canada)</a></li><li class=""><a onclick="changeLanguage('fr-FR')">Français (France)</a></li></ul>
+  </nav>
+</div>
+
+<script type="text/javascript">
+
+$(document).on('click', function (e) {
+  $('.dropdown-active').removeClass('dropdown-active');
+});
+
+$(document).on('click', '.dropdown-component, .dropdown-component--trigger', function (e) {
+  e.stopPropagation();
+});
+
+// Dropdowns
+$(document).on('click', '.dropdown-component--trigger', function(e) {
+  $(this).toggleClass('dropdown-active');
+  $(this).parent().toggleClass('dropdown-active');
+});
+
+//Dropdown menus from primary nav
+$(document).on('click', '.custom-primary .adb-context_menu--trigger', function(e) {
+  $(this).toggleClass('adb-is-active');
+  $(this).parent().toggleClass('adb-is-active');
+});
+$(document).on('click', function(e) {
+  if (!$(e.target).is('.adb-context_menu, .adb-context_menu--trigger')) {
+    $('.custom-primary .adb-is-active').removeClass('adb-is-active');
+  }
+  if(!$(e.target).is('.dropdown-menu, .dropdown-toggle')) {
+    $('.custom-primary .open').removeClass('open');
+  }
+});
+
+</script></footer></body></html>

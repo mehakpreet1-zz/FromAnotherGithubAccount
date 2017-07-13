@@ -1,0 +1,95 @@
+body[data-page='home'] .header__home {
+	background: #5EC0EA url(https://www.chase.com/content/services/structured-image/image.desktop.jpg/chase-ux/heroimage/primary/business-resource-center-hero.jpg) center top no-repeat;
+	height: 400px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+
+	&__caption {
+		font-size: 3.5em;
+		color: #fff;
+		z-index: 999;
+		position: absolute;
+		margin-top: 320px;
+	}
+}
+
+body[data-page='listing'] .header__home {
+	background: #5EC0EA url(https://www.chase.com/content/services/structured-image/image.desktop.jpg/chase-ux/heroimage/primary/business-resource-center-hero.jpg) center top no-repeat;
+	height: 400px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+
+	&__caption {
+		font-size: 3.5em;
+		color: #fff;
+		z-index: 999;
+		position: absolute;
+		margin-top: 320px;
+	}
+}
+
+.header__home {
+	display: none;
+}
+
+body[data-page='home'] .header__home:after {
+	background-image: linear-gradient(to top,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.6) 20%,rgba(0,0,0,0) 100%);
+	top: 270px;
+	content: "";
+	display: block;
+	height: 9.375em;
+	position: absolute;
+	width: 100%;
+}
+
+body[data-page='listing'] .header__home:after {
+	background-image: linear-gradient(to top,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.6) 20%,rgba(0,0,0,0) 100%);
+	top: 270px;
+	content: "";
+	display: block;
+	height: 9.375em;
+	position: absolute;
+	width: 100%;
+}
+
+body[data-page='home'] #secondaryNav, .adb-secondary_nav, .adb-page--footer_helper{
+	margin-top: 0;
+}
+
+.developer .adb-page--footer_helper,
+.channelPage .adb-page--footer_helper,
+.marketplacepage .adb-page--footer_helper,
+.accountpages .adb-page--footer_helper {
+	margin-top: 0 !important;
+}
+
+// .logged-in .adb-secondary_nav,
+// .developer .adb-secondary_nav,
+// .marketplaceManage .adb-secondary_nav,
+.companyPage .adb-page--footer_helper,
+.settingsPage .adb-page--footer_helper{
+	margin-top: 70px !important;
+}
+
+
+#login_page{
+	margin-top: 100px;
+}
+
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.myappsV2Page #main {
+	margin-top: 70px !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}

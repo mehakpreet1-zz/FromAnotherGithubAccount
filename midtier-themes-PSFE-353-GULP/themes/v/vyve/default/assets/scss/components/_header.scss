@@ -1,0 +1,108 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+.header-primary {
+	background-color: $header-primary-bg;
+	background-image: linear-gradient($header-primary-bg-gradient-grey, $header-primary-bg-gradient-black);
+	height: 150px;
+	width: 100%;
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+
+		&--nav {
+			&_left {
+				display: flex;
+
+				li:first-child {
+					padding-left: 0;
+				}
+
+				li:first-child:hover {
+					background: none;
+					box-shadow: none;
+				}
+			}
+
+			&_right {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+
+		&__item {
+			font: 14px/150px $font-custom;
+			height: 150px;
+			padding: 0 30px;
+
+			&:hover {
+				background-image: linear-gradient($header-menu-item-light-shade, $header-menu-item-dark-shade);
+				color: $header-primary-links-hover;
+				box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.75), -5px 0 15px -5px rgba(0, 0, 0, 0.75);
+			}
+
+			a {
+				color: $link-color;
+				display: block;
+				text-decoration: none;
+
+				&:hover {
+					color: $header-primary-links-hover;
+				}
+
+				&:after {
+					content: '';
+				}
+			}
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				height: 94px;
+				margin: 30px 0 0;
+				width: 165px;
+			}
+		}
+	}
+}
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+		background-image: linear-gradient($header-menu-item-light-shade, $header-menu-item-dark-shade);
+		color: $header-primary-links-hover;
+		box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.75), -5px 0 15px -5px rgba(0, 0, 0, 0.75);
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+		background-image: linear-gradient($header-menu-item-light-shade, $header-menu-item-dark-shade);
+		color: $header-primary-links-hover;
+		box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.75), -5px 0 15px -5px rgba(0, 0, 0, 0.75);
+	}
+}
+
+body.loginPage {
+	.login--active {
+		background-image: linear-gradient($header-menu-item-light-shade, $header-menu-item-dark-shade);
+		color: $header-primary-links-hover;
+		box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.75), -5px 0 15px -5px rgba(0, 0, 0, 0.75);
+	}
+}
+
+body.signupPage {
+	.signup--active {
+		background-image: linear-gradient($header-menu-item-light-shade, $header-menu-item-dark-shade);
+		color: $header-primary-links-hover;
+		box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.75), -5px 0 15px -5px rgba(0, 0, 0, 0.75);
+	}
+}

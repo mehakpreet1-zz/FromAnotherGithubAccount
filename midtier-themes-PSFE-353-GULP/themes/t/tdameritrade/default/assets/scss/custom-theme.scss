@@ -1,0 +1,122 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: "https://www.tdameritrade.com/retail-en_us/resources/images/td_ameritradelogo.svg";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding.
+//      For appdirect specific colors use prefix ad-. e.g. $ad-blue: #00f
+//      For theme-based colors use prefix custom- e.g. $custom-blue: #00e.
+// -----------------------------------------------------------------
+$ad-white: #fff;
+$ad-white-shade1: #fdfdfd;
+$ad-white-shade2: #f5f5f5;
+$ad-white-shade3: #f5f5f5;
+
+$ad-black: #000;
+$ad-blue: #00f;
+$ad-green: #008000;
+
+$ad-gray-shade1: #9c9c9c;
+$ad-gray-shade2: #585858;
+$ad-gray-shade3: #575757;
+$ad-gray-shade4: #c4c4c4;
+$ad-gray-shade5: #808080;
+
+$primary: $ad-black;
+$secondary: $ad-blue;
+$tertiary: $ad-gray-shade5;
+$emphasis: $ad-green;
+
+$custom-green: #50b948;
+$custom-black: #222;
+$custom-gray: #999;
+$custom-gray2: #f6f6f6;
+$custom-gray3: #888;
+$custom-gray4: #dedede;
+$custom-gray5: #b1b0b0;
+$custom-gray6: #f4f5f6;
+
+$login-button-bg-color: $custom-green;
+$login-button-hover-bg-color: $ad-white;
+$login-button-font-color: $ad-white;
+$login-button-hover-font-color: $custom-green;
+$login-button-border-color: $custom-green;
+$sign-in-active: $custom-green;
+$custom-footer-primary-heading: $custom-green;
+$secondary-font-color: $custom-black;
+$secondary-font-color-hover: $custom-green;
+$header-secondary-font-size: 18px;
+$header-primary-top-font-size: 16px;
+$header-primary-top-font-color: $custom-gray;
+$header-primary-top-acc-color: $custom-green;
+$footer-border-bottom-color: $custom-gray4;
+$footer-primary-column-head-color: $custom-gray5;
+$asset-footer-logo: "https://www.tdameritrade.com/retail-en_us/resources/images/cs-module-dummy-title.png";
+$footer-barron-logo: "https://www.tdameritrade.com/retail-en_us/resources/images/why-tda/accolades/barrons-2017-footer.png";
+$icon-bg-color: $ad-white;
+$tertiary-color: $custom-green;
+$tertiary-nav-link-color: $ad-gray-shade3;
+$adb-input-search-color: $custom-green;
+$adb-input-search-color-bg: $custom-gray2;
+$footer-primary-divider-color: $custom-gray4;
+$adb-search-field: $custom-gray2;
+$search-input-placeholder: $custom-black;
+
+//$search-placeholder-color:
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $ad-white;
+$header-primary-border-top-color: $primary;
+$header-primary-border-bottom-color: $ad-gray-shade4;
+$header-primary-logo-height: 108px;
+$header-primary-logo-width: 310px;
+$header-primary-font-size: 18px;
+$header-primary-font-color: $custom-black;
+$header-primary-font-color_hover: $custom-green;
+$header-primary-color_active: $custom-green;
+$footer-phone-color: $custom-black;
+$dropdown-border-color: $ad-gray-shade5;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 0;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: $ad-black;
+$dropdown-bg: $ad-white;
+$dropdown-item-hover-bg: $custom-gray2;
+$dropdown-item-hover-color: $custom-green;
+
+$secondary-nav-search-button-color: $custom-black;
+$secondary-nav-search-button-color_hover: $custom-black;
+$secondary-nav-search-button-border-color: $custom-green;
+$secondary-nav-search-button-bg: $custom-green;
+$secondary-nav-search-button-bg_hover: $custom-green;
+
+$secondary-nav-selected-text-color: $custom-green;
+$secondary-nav-selected-item-border-color: $custom-green;
+
+$footer-height: 65px;
+$footer-primary-bg: $custom-gray6;
+$footer-primary-border-top: $ad-gray-shade4;
+$footer-secondary-bg: $ad-blue;
+$footer-links-color: $ad-gray-shade1;
+$footer-links-color-hover: $custom-green;
+$footer-secondary-link-color: $custom-black;
+$footer-secondary-link-color-hover: $custom-green;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import "settings";
+
+// import computed values
+@import "components/INDEX";
+
+// import custom CSS

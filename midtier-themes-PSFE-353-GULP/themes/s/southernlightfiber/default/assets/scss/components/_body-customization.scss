@@ -1,0 +1,12 @@
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+.adb-secondary_nav--link.adb-is-selected:before {
+	background-color: #fb4f14;
+}

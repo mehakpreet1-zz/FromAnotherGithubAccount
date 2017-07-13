@@ -1,0 +1,83 @@
+<div class="footer-primary">
+	<div class="adb-layout-default">
+		<div class="footer-container">
+			<div class="footer-flex long-box">
+				<div class="links">
+					<a href="http://mygrande.com/about">About Grande</a>
+				</div>
+				<div class="links">
+					<a href="http://mygrande.com/careers">Careers</a>
+				</div>
+				<div class="links">
+					<a href="http://mygrande.com/privacy-statement">Privacy</a>
+				</div>
+				<div class="links">
+					<a href="http://mygrande.com/tariffs">Tariffs</a>
+				</div>
+				<div class="links">
+					<a href="http://mygrande.com/phone/lifeline-program">Lifeline</a>
+				</div>
+				<div class="links">
+					<a href="http://mm.mygrande.com/pdf/Grande_FCC_Network_Management_Disclosures_12-2-2015.pdf" target="_blank">Network Management</a>
+				</div>
+				<div class="links">
+					<a href="http://mygrande.com/site-map">Sitemap</a>
+				</div>
+			</div>
+
+			<div class="footer-flex left-align short-box">
+					<span class="heading">Follow us on:</span>
+					<a href="https://www.facebook.com/pages/Grande-Communications/57305423860?ref=hl" target="_blank" class="social-icon">
+						<i class="fa fa-facebook fb"></i>
+					</a>
+					<a href="https://twitter.com/grandecom" target="_blank" class="social-icon">
+						<i class="fa fa-twitter tw"></i>
+					</a>
+			</div>
+		</div>
+
+		<div class="info">
+			&copy; 2017 Grande Communications Networks LLC
+		</div>
+		<div class="info">
+			The information on this website is periodically updated. The documents, information and/or related graphics published on this website could include typographical errors or inadvertent technical inaccuracies, for which Grande Communications is not liable.
+			See full <a href="http://mm.mygrande.com/pdf/Grande-Website-Disclaimer.pdf">disclaimer</a>
+		</div>
+	</div>
+</div>
+
+<!--Scripts for Header behaviour -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script>
+	$('.header-primary .header-primary__menu__item').hover(
+			function() {
+				$('.header-primary .adb-is-active').removeClass('adb-is-active');
+				$(this).find('.adb-context_menu--trigger').toggleClass('adb-is-active');
+			}, function(e) {
+				$('.header-primary .adb-is-active').removeClass('adb-is-active');
+			}
+	);
+
+	(function manageDropdown() {
+		$(document).on('click', '.header-primary .adb-context_menu--trigger', function() {
+			$('.header-primary .adb-is-active').removeClass('adb-is-active');
+			$(this).toggleClass('adb-is-active');
+		});
+		$(document).on('click', function(e) {
+			if (!$(e.target).is('.header-primary .adb-context_menu, .header-primary .adb-context_menu--trigger')) {
+				$('.header-primary .adb-is-active').removeClass('adb-is-active');
+			}
+		});
+	})();
+	(function hideEmptyManageLinks() {
+		if ($('.manage-links li').length === 0) {
+			$('.header-primary__menu .js-manage-links').remove();
+		}
+	})();
+	(function hideEmptyCompanyLink() {
+		if ($('.js-companies-link div').length < 1) {
+			$('.js-companies-link').remove();
+		}
+	})();
+</script>

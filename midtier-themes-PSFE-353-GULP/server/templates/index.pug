@@ -1,0 +1,37 @@
+doctype html
+html
+    head
+        title #{title}
+        link(rel='stylesheet', href='/styles/generated-styles.css')
+        link(rel='stylesheet', href='/styles/generated-styles-custom.css')
+        link(rel='stylesheet', href='/css/tooling.css')
+        link(rel='stylesheet', href='/themes/'+directory+url+'css.css')
+        script(src='/javascript/themeControl.js')
+        script(src='/lib/jquery/dist/jquery.js')
+        script(src='/css/design-properties.js')
+         
+         
+        != LRScript
+        include ./includes/dropdown.pug
+        include ./includes/menubutton.pug
+        include ./includes/zipbutton.pug
+        script matchUrl('#{url}', '#{language}', '#{company}', '#{status}');
+ 
+
+    body
+        .toolingContainer
+            menu.adb-toggle_buttons(data-toggle='buttons-radio')
+                +menubutton("logged-out", status)
+                +menubutton("logged-in", status)
+                +menubutton("checkout", status)
+                    
+            +dropdown(alphabets, "alphabet")
+            +dropdown(themes, "theme")
+            +zipbutton("createZip")
+
+        header !{header}
+        include ./includes/mp-components/secondaryNav
+        .adb-layout-default
+            include ./includes/mp-components/buttons
+            include ./includes/mp-components/ui-elements
+        footer !{footer}

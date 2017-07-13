@@ -1,0 +1,51 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+
+// example
+$asset-logo: "http://www.fidelitycommunications.com/images/fidelity-web-logo.png";
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$white: #FFF;
+$gray-shed1: #eaeaea;
+$gray-shed2: #cbcbcb;
+$gray-shed3: #333;
+$gray-shed4: #e0eded;
+$black: #000;
+$purple: #78359f;
+$blue: #009abf;
+$green-shed1: #8dc63f;
+$green-shed2: #8ec449;
+$green-shed3: #7ab035;
+
+// COLOR USAGE
+// ---------------------------------------------------------
+//      assign variables for all of the custom colors for the customization
+//      and use only the variables in the actual SCSS.
+//      Add as many variables as needed.
+// ---------------------------------------------------------
+$header-primary-height: 73px;
+$footer-height: 71px;
+
+$header-primary-color: $gray-shed3;
+$header-primary-hover-color: $green-shed1;
+$header-primary-border-color: $gray-shed2;
+
+$primary-button-color: $white;
+$primary-button-bg: $green-shed2;
+$primary-button-hover-bg: $green-shed3;
+
+$dropdown-border-color: $gray-shed4;
+$dropdown-color: $black;
+$dropdown-bg: $white;
+$dropdown-hover-bg: $green-shed1;
+$dropdown-hover-color: $white;
+
+$footer-bg: $gray-shed1;

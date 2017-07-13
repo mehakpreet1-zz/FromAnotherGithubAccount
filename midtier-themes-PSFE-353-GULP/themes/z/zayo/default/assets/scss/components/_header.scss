@@ -1,0 +1,102 @@
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+
+.header-top {
+	height: $custom-header-top-height;
+	background: $custom-header-top-color;
+	display: flex;
+
+	&__left {
+		height: 45px;
+		width: 385px;
+		margin-left: -19px;
+		transform: skew(-40deg, 0);
+		background-color: $custom-header-top-left;
+	}
+}
+
+.header-top__list__left {
+	display: flex;
+}
+
+.header-primary {
+	background: $header-primary-bg;
+	border-bottom: 1px solid $header-primary-border-bottom-color;
+	display: flex;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		width: 100%;
+
+		&__left {
+			display: flex;
+			margin-left: 61px;
+			margin-right: 380px;
+		}
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+			margin-right: 156px;
+		}
+
+		&__item {
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+.header-primary__container {
+	background-color: $custom-header-top-left;
+	min-width: 385px;
+	height: 90px;
+	margin-left: -76px;
+	transform: skew(-40deg, 0);
+
+	&--logo {
+		background: url($asset-logo) no-repeat;
+		background-size: contain;
+		display: block;
+		height: $header-primary-logo-height;
+		margin-left: 254px;
+		margin-top: 28px;
+		transform: skew(40deg);
+		width: $header-primary-logo-width;
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}

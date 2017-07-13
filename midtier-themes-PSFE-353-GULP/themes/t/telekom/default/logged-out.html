@@ -1,0 +1,59 @@
+<nav class="header-primary">
+	<ul class="header-primary__menu adb-layout-default">
+		<li class="header-primary__menu__item">
+			<a class="header-primary__menu__item--logo" href="{{HOME_HREF}}"></a>
+		</li>
+		
+		
+		<ul class="header-primary__menu_right">
+		<li class="header-primary__menu__item">
+				<a class="header-primary__menu__item--link signup--active" href="{{SIGNUP_HREF}}" data-auto="signup">
+				<span class="sign">{{signup.button}}</span></a>
+			</li> 
+			<span class="separator"></span>
+			<li class="header-primary__menu__item">
+				<a class="header-primary__menu__item--link signin--active login_icon" href="{{LOGIN_HREF}}" > 
+					<i class="icon-profile-black"><span class="sign">{{sign.in}}</span></i>
+				</a> 
+			</li>
+		</ul>
+	</ul>
+</nav>
+<nav class="header-secondary">
+	<ul class="header-secondary__menu adb-layout-default">
+		<li class="header-secondary__menu__item">
+			<menu class="adb-context_menu" data-placement="right">
+					<a class="header-secondary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="username">Cloud Software </a>
+			</menu>
+		</li>
+
+		<li class="header-secondary__menu__item">
+			<menu class="adb-context_menu" data-placement="right">
+					<a class="header-secondary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="username">Cloud Infrastrukturen </a>
+			</menu>
+		</li>
+		<li class="header-secondary__menu__item">
+			<a class="header-secondary__menu__item--link-secondary" href="{{HOME_HREF}}" data-auto="home">Blog</a>
+		</li>
+		<li class="header-secondary__menu__item">
+			<menu class="adb-context_menu" data-placement="right">
+				<a class="header-secondary__menu__item--link js-menu-trigger adb-context_menu--trigger" href="javascript:;" data-auto="username">Service & Hilfe</a>
+			</menu>
+		</li>
+		<ul class="header-secondary__menu_right">
+			<li class="search123">
+			 <form class="custom-search" name="searchForm" id="idc" method="get" action="/listing">
+			  	<div class="adb-search_field adb-input_row adb-input_row__search">
+	                <div class="adb-input_row--item adb-input_row--primary">
+	                    <input class="adb-input_row--item_content adb-search_field--input" name="searchString" maxlength="100" id="qinput" autocomplete="off" type="text" value="" placeholder="search TelekomCLOUD">
+	                    <div id="sugg" class="sugg" style="display: none;"></div>
+	                </div>
+                  	<div class="adb-input_row--item">
+                    <button class="adb-input_row--item_content adb-search_field--button" type="submit"><i class="adb-icon__search"></i></button>
+                  	</div>
+	            </div>
+	           </form>
+	        </li>
+		</ul>
+	</ul>
+</nav>

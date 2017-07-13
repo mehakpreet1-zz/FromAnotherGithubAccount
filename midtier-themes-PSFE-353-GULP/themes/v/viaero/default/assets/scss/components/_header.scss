@@ -1,0 +1,100 @@
+// ------------------------------------------------------------
+// Custom Header Top
+// ------------------------------------------------------------
+.header-top {
+
+	&__content {
+		background: $header-top-bg;
+		height: 10px;
+	}
+}
+
+// ------------------------------------------------------------
+// Custom Header Primary
+// ------------------------------------------------------------
+.header-primary {
+	background: $white;
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		&--nav {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin-left: auto;
+		}
+
+		&__marketplace {
+			margin-left: 20px;
+		}
+
+		&__item {
+			list-style: none;
+
+			a {
+				position: relative;
+				font-family: $custom-font;
+			}
+
+			.adb-container {
+				border: 1px solid $container-bg;
+				border-radius: 0 !important;
+			}
+
+			.companies-dropdown ul {
+				border: transparent;
+				border-radius: 0 !important;
+			}
+
+			.companies-dropdown > a,
+			&--link {
+				margin-left: 10px;
+				padding: 15px 0 0 15px;
+				border: 1px solid transparent;
+				font: {
+					size: 16px;
+					family: $custom-font;
+					weight: 700;
+				}
+				text-transform: uppercase;
+				color: $header-top-bg;
+				transition: .25s ease;
+
+				&.active,
+				&:hover {
+					text-decoration: none;
+					color: $header-link-hover;
+				}
+			}
+
+			&--logo {
+				display: inline-block;
+				margin: 20px 0 0;
+				background: url($asset-logo) no-repeat;
+				background-size: contain;
+				width: 200px;
+				height: 100px;
+			}
+		}
+	}
+}
+
+// ------------------------------------------------------------
+// CSS workaround to display active tab(s)
+//  - - - - - - - - - - - - - - > PLEASE DELETE IF NOT REQUIRED
+// ------------------------------------------------------------
+body[data-page='home'],
+body[data-page='listing'],
+body[data-page='profile'] {
+	.marketplace--active {
+	}
+}
+
+body.myappsV2Page {
+	.myapps--active {
+	}
+}
+

@@ -1,0 +1,54 @@
+// To avoid extra blank space in content area for pages having less content
+.adb-page {
+	margin-bottom: 0 !important;
+	min-height: calc(100vh - #{$footer-height}) !important;
+}
+
+.adb-page--footer_helper {
+	padding-bottom: 20px !important;
+}
+
+body[data-page='home'] .header__home {
+	background: url($asset-banner-image) center top no-repeat;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	color: $banner-color;
+
+	&--headline {
+		font-size: 58px;
+		max-width: 880px;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	&--description {
+		font-size: 22px;
+	}
+
+	&--button {
+		background: $banner-button-bg;
+		font-size: 16px;
+		border-radius: 30px;
+		color: $banner-color;
+		padding: 10px 30px 11px;
+		text-decoration: none;
+
+		&:hover {
+			background: $banner-button-bg-hover;
+		}
+	}
+}
+
+.header__home {
+	display: none;
+}
+
+.adb-button__emphasis {
+	&:hover,
+	&:focus {
+		border-color: transparent;
+	}
+}

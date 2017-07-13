@@ -1,0 +1,8 @@
+// Match the product banner to the Company Color
+body[data-page="profile"],
+body[data-page="bundle"] {
+
+    .adb-profile_header--content {
+      background: $primary-dark !important;
+    }
+}

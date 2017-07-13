@@ -1,0 +1,55 @@
+// ASSETS
+// -----------------------------------------------------------------
+//      assign your assets to variables here. It is recommended that
+//      you use the URLs from the company website whenever possible.
+//      and use that url in the SCSS
+// -----------------------------------------------------------------
+$asset-logo: 'https://www.telepacific.com/img/tpacLogo-2016.png';
+
+// COLORS
+// -----------------------------------------------------------------
+//      assign your colors to color variables. These are to be used
+//      in the custom branding
+// -----------------------------------------------------------------
+$primary: black;
+$secondary: blue;
+$tertiary: gray;
+$emphasis: green;
+$white: #fff;
+$primary-color: #596e91;
+
+// THEME VARIABLES
+// -----------------------------------------------------------------
+//      variables to customize the header and footer
+// -----------------------------------------------------------------
+$header-primary-bg: $white;
+$header-primary-border-top-color: $primary;
+$header-primary-border-top-color: #40a2d4;
+$header-primary-logo-height: 50px;
+$header-primary-logo-width: 180px;
+$header-primary-font-size: 14px;
+$header-primary-font-weight: normal;
+$header-primary-font-family: Arial, Helvetica, sans-serif;
+$header-primary-font-color: black;
+$header-primary-font-color_hover: #40a2d4;
+
+$dropdown-border-color: gray;
+$dropdown-border_width: 1px;
+$dropdown-border-radius: 3px;
+$dropdown-item-divider: $dropdown-border-color;
+$dropdown-item-divider_width: 1px;
+$dropdown-item-color: black;
+$dropdown-bg: $white;
+$dropdown-item-hover-bg: #40a2d4;
+$dropdown-item-hover-color: $white;
+
+$search-input-btn: #40a2d4;
+
+$footer-primary-bg: transparent;
+$footer-primary-border-top: $header-primary-border-top-color;
+$footer-secondary-bg: blue;
+
+// BUILD THEME CSS
+// -----------------------------------------------------------------
+@import 'settings'; // import computed values
+@import 'components/INDEX'; // import custom CSS

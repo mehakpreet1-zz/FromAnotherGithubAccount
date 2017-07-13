@@ -1,0 +1,65 @@
+.header-primary {
+	background: $header-primary-bg;
+	height: $header-primary-height;
+	font-family: $custom-header-primary-font;
+
+	&__menu {
+		align-items: center;
+		display: flex;
+		list-style: none;
+		font-weight: 100;
+
+		&_right {
+			display: flex;
+			margin-left: auto;
+			font-family: $custom-header-primary-font;
+		}
+
+		&__item {
+			font-family: $custom-header-primary-font;
+			position: relative;
+			font-size: $header-primary-font-size;
+
+			&--logo {
+				background: url($asset-logo) no-repeat;
+				background-size: 100% 100%;
+				display: block;
+				height: $header-primary-logo-height;
+				margin: $header-primary-logo-margin-top 0qqqqqqaa;
+				margin-bottom: 5px;
+				width: $header-primary-logo-width;
+			}
+
+			&--link,
+			.adb-context_menu--trigger {
+				@extend %nav-link;
+			}
+		}
+	}
+}
+
+[data-page='home'],
+[data-page='listing'],
+[data-page='profile'] {
+	.marketplace--active {
+		@extend %active-state;
+	}
+}
+
+.myappsV2Page {
+	.myapps--active {
+		@extend %active-state;
+	}
+}
+
+.loginPage {
+	.login--active {
+		@extend %active-state;
+	}
+}
+
+.signupPage {
+	.signup--active {
+		@extend %active-state;
+	}
+}
